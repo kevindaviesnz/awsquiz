@@ -1,0 +1,5 @@
+To cache or not to cache
+    Not caching is less complicated from the frontend point of view.
+    Caching = less lambda calls.
+    For < 10 or so questions added complexity not worth it, ie depends on number of questions per quiz.
+    
