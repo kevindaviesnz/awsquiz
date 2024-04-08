@@ -1,0 +1,11 @@
+User goes to website.
+
+User clicks on "Start quiz" button.
+
+Website changes to show a question with underneath 3 possible answers.
+
+User selects an answer and clicks "Send"
+
+Website shows the correct answer with a message to the user.
+
+After 10 questions user is shown their score.

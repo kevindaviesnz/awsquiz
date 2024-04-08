@@ -1,0 +1,21 @@
+Frontend
+    Web page
+        Design
+        Start button
+        Question/Answers form
+    Javascript/React
+        JS to send question request to backend
+        JS to handle question/answers JSON from server 
+        JS to render question/answers on web page.
+        JS to send question/answer to backend.
+
+Backend
+    DB to store questions and answers. NoSQL vs SQL.
+    DB design.
+    Lambda function to handle question request from frontend.
+    Lambda function to format question/answer data to send to frontend.
+    API Gateway
+
+
+
+
