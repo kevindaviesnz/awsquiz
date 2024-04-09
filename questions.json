@@ -1,0 +1,32 @@
+[
+    {
+        "category": "entertainment",
+        "questions": [
+            {
+                "question": "Who is Darth Vader?",
+                "answers": [
+                    "Sith Lord",
+                    "Death Star butler"
+                ],
+                "correct_answer": "Sith Lord"
+            },
+            {
+                "question": "Who destroyed the first Death Star?",
+                "answers": [
+                    "Luke Skywalker",
+                    "Some random stormtrooper who forgot to turn off the gas oven"
+                ],
+                "correct_answer": "Luke Skywalker"
+            }, 
+            {
+                "question": "Which movie one best picture in 2024?",
+                "answers": [
+                    "Oppenheimer",
+                    "Barbie",
+                    "Poor things"
+                ],
+                "correct_answer": "Oppenheimer"
+            }                       
+        ]
+    }
+]
