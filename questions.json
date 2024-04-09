@@ -1,6 +1,5 @@
-[
-    {
-        "category": "entertainment",
+{
+    "entertainment": {
         "questions": [
             {
                 "question": "Who is Darth Vader?",
@@ -17,16 +16,25 @@
                     "Some random stormtrooper who forgot to turn off the gas oven"
                 ],
                 "correct_answer": "Luke Skywalker"
-            }, 
+            },
             {
-                "question": "Which movie one best picture in 2024?",
+                "question": "Which movie won best picture in 2024?",
                 "answers": [
                     "Oppenheimer",
                     "Barbie",
-                    "Poor things"
+                    "Joe Dirt"
                 ],
                 "correct_answer": "Oppenheimer"
-            }                       
+            },
+            {
+                "question": "In 'Oppenheimer', what's the main conflict?",
+                "answers": [
+                    "Nuclear warfare",
+                    "Oppenheimer's love for chemistry set",
+                    "Alien invasion"
+                ],
+                "correct_answer": "Nuclear warfare"
+            }
         ]
     }
-]
+}
