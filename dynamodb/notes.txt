@@ -1,0 +1,2 @@
+https://www.alexdebrie.com/posts/dynamodb-single-table/
+

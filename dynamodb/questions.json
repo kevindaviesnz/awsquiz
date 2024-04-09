@@ -1,0 +1,87 @@
+{
+    "entertainment": {
+        "set_count": 3,
+        "set::1::easy": {
+            "questions": [
+                {
+                    "question": "Who is Darth Vader?",
+                    "answers": [
+                        "Sith Lord",
+                        "Death Star butler"
+                    ],
+                    "correct_answer": "Sith Lord"
+                },
+                {
+                    "question": "Who destroyed the first Death Star?",
+                    "answers": [
+                        "Luke Skywalker",
+                        "Some random stormtrooper who forgot to turn off the gas oven"
+                    ],
+                    "correct_answer": "Luke Skywalker"
+                },
+                {
+                    "question": "Which movie won best picture in 2024?",
+                    "answers": [
+                        "Oppenheimer",
+                        "Barbie",
+                        "Joe Dirt"
+                    ],
+                    "correct_answer": "Oppenheimer"
+                },
+                {
+                    "question": "In 'Oppenheimer', what's the main conflict?",
+                    "answers": [
+                        "Nuclear warfare",
+                        "Oppenheimer's love for chemistry set",
+                        "Alien invasion"
+                    ],
+                    "correct_answer": "Nuclear warfare"
+                }
+            ]
+        },
+        "set::2::medium": {
+            "questions": [
+                {
+                    "question": "Who directed the movie 'Inception'?",
+                    "answers": [
+                        "Christopher Nolan",
+                        "Michael Bay",
+                        "Quentin Tarantino"
+                    ],
+                    "correct_answer": "Christopher Nolan"
+                },
+                {
+                    "question": "What is the name of the fictional land in 'The Lord of the Rings'?",
+                    "answers": [
+                        "Middle-earth",
+                        "Narnia",
+                        "Hogwarts"
+                    ],
+                    "correct_answer": "Middle-earth"
+                }
+            ]
+        },
+        "set::3::hard": {
+            "questions": [
+                {
+                    "question": "Who wrote the novel '1984'?",
+                    "answers": [
+                        "George Orwell",
+                        "Aldous Huxley",
+                        "Ray Bradbury"
+                    ],
+                    "correct_answer": "George Orwell"
+                },
+                {
+                    "question": "What is the real name of the character Neo in 'The Matrix' trilogy?",
+                    "answers": [
+                        "Thomas Anderson",
+                        "John Wick",
+                        "Jack Sparrow"
+                    ],
+                    "correct_answer": "Thomas Anderson"
+                }
+            ]
+        }
+    }
+}
