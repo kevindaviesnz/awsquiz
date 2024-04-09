@@ -6,3 +6,15 @@ Thoughts on caching:
     No cachine makes it much harder to scale.
 My recommendation would be that caching overweighs any extra complexity on the frontend
 so we should go with that.
+
+SQL vs NoSQL
+
+Some thoughts on whether to use an SQL or NoSQL db.
+1. If this was real life project what I would see is users going to the site and doing short fun quizzes.
+2. As time goes on the site would get more and more users and lots of db reads. 
+3. The only time the db would change is when an admin is adding new questions and making corrections.
+4. It would be far easier to make corrections with regards to NoSQL db as a question can be grouped together with the possible answers.
+5. I don't see consistency as being important.
+6. It'd be good to be able to add extra "fields" to a question in addition to possible answers eg difficulty ranking etc.
+So overall I think we should go with a NoSQL db.
+
