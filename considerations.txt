@@ -20,4 +20,13 @@ So overall I think we should go with a NoSQL db.
 
 State Machine invocation
 How to Invoke the Step Function from Lambda:
-https://kashyapgohil25.medium.com/how-to-invoke-the-step-function-from-lambda-7ff0b7812554`
+https://kashyapgohil25.medium.com/how-to-invoke-the-step-function-from-lambda-7ff0b7812554
+I'm thinking about having the API Gateway through a GET request calling a lambda function that 
+activates a State Machine, that will call a lambda function that will pass "search" parameters to
+ a dynamodb query task, that will send the result to another lambda function that will format the 
+ results back to the frontend. Basically 
+Gateway -> lambda to call State Machine (lambda to pass search params -> DynamoDB query ->
+ Lambda to format result) -> Frontend.  Lambda to format the result isn't actually required as 
+ the result from the dynamodb query can be just sent to the frontend as is.  The advantage is that 
+ we can keep the lambda functions fairly simple and focused - eg we don't have to including any 
+ SDK code that queries the DynamoDB table.
