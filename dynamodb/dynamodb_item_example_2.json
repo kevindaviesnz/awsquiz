@@ -1,0 +1,58 @@
+{
+    "category": {
+      "S": "history"
+    },
+    "set_name": {
+      "S": "set::1::easy"
+    },
+    "questions": {
+      "L": [
+        {
+          "M": {
+            "answers": {
+              "L": [
+                {
+                  "S": "George Washington"
+                },
+                {
+                  "S": "Abraham Lincoln"
+                },
+                {
+                  "S": "Thomas Jefferson"
+                }
+              ]
+            },
+            "correct_answer": {
+              "S": "George Washington"
+            },
+            "question": {
+              "S": "Who was the first president of the United States?"
+            }
+          }
+        },
+        {
+          "M": {
+            "answers": {
+              "L": [
+                {
+                  "S": "1945"
+                },
+                {
+                  "S": "1918"
+                },
+                {
+                  "S": "1939"
+                }
+              ]
+            },
+            "correct_answer": {
+              "S": "1945"
+            },
+            "question": {
+              "S": "What year did World War II end?"
+            }
+          }
+        }
+      ]
+    }
+  }
