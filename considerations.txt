@@ -18,3 +18,6 @@ Some thoughts on whether to use an SQL or NoSQL db.
 6. It'd be good to be able to add extra "fields" to a question in addition to possible answers eg difficulty ranking etc.
 So overall I think we should go with a NoSQL db.
 
+State Machine invocation
+How to Invoke the Step Function from Lambda:
+https://kashyapgohil25.medium.com/how-to-invoke-the-step-function-from-lambda-7ff0b7812554`
