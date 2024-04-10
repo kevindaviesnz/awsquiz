@@ -1,0 +1,17 @@
+{
+  "TableName": "awsquiz",
+  "KeyConditionExpression": "#category = :categoryValue AND #set_name = :setNameValue",
+  "ExpressionAttributeNames": {
+    "#category": "category",
+    "#set_name": "set_name"
+  },
+  "ExpressionAttributeValues": {
+    ":categoryValue": {
+      "S.$": "$.category"
+    },
+    ":setNameValue": {
+      "S.$": "$.set_name"
+    }
+  }
+}
+
