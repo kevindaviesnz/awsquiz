@@ -1,24 +1,14 @@
 # This file: python/awsquiz_get_questions/lambda_function.py
 # To install a library in the current directory:
 # pip3 install requests --target .
-import requests
-import uuid
-import datetime
-import hashlib
-
-import logging
-
-# @todo logging
-logger = logging.getLogger(__name__)
-
 
 def lambda_handler(event, context):
     try:
         
         category = event["category"]
         difficulty = event["difficulty"]
-        set_number = event["set_number"]
-        set_name = f"set::{set_number}::{difficulty}"
+        set = event["set"]
+        set_name = f"set::{set}::{difficulty}"
           
         return {
             "category":category,
@@ -27,10 +17,6 @@ def lambda_handler(event, context):
     
     
     except Exception as err:
-        logger.error(
-            "Error. %s: %s", 
-            type(err).__name__, str(err)
-        )
 
         return {
             'statusCode': 500,
@@ -45,7 +31,5 @@ if __name__ == "__main__":
         "statusCode": 200,
         "category": "entertainment",
         "difficulty": "easy",
-        "set_number":1
-        
-
+        "set":1
     }

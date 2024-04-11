@@ -1,0 +1,50 @@
+API Gateway -> State machine
+ref. https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-api-gateway.html
+Invoke url: https://1kzfv9a3xe.execute-api.ap-southeast-2.amazonaws.com/alpha/execution
+Note: "name" must be unique for each execution
+$ curl -X POST -d '{"input": "{}","name": "MyExecution2","stateMachineArn": "arn:aws:states:ap-southeast-2:881617337234:stateMachine:MyStateMachine-di9jzahp0"}' https://1kzfv9a3xe.execute-api.ap-southeast-2.amazonaws.com/alpha/execution
+
+$ curl -X POST -d '{"input": "{\"category\":\"entertainment\", \"difficulty\":\"easy\", \"set\": 1}","name": "MyExecution3","stateMachineArn": "arn:aws:states:ap-southeast-2:881617337234:stateMachine:MyStateMachine-di9jzahp0"}' https://1kzfv9a3xe.execute-api.ap-southeast-2.amazonaws.com/alpha/execution
+
+$ curl -X POST -d '{"input": "{\"category\":\"entertainment\", \"difficulty\":\"easy\", \"set\": 1}", "name": "MyExecution3", "stateMachineArn": "arn:aws:states:ap-southeast-2:881617337234:stateMachine:MyStateMachine-di9jzahp0", "outputPath": "$"}' https://1kzfv9a3xe.execute-api.ap-southeast-2.amazonaws.com/alpha/execution
+
+aws stepfunctions describe-execution --execution-arn arn:aws:states:ap-southeast-2:881617337234:execution:MyStateMachine-di9jzahp0:MyExecution5
+
+Test input (request body)
+https://ap-southeast-2.console.aws.amazon.com/apigateway/main/apis/1kzfv9a3xe/resources?api=1kzfv9a3xe&experience=rest&region=ap-southeast-2
+{
+   "input": "{\"category\":\"entertainment\", \"difficulty\":\"easy\", \"set\": 1}",
+   "name": "MyExecution11",
+   "stateMachineArn": "arn:aws:states:ap-southeast-2:881617337234:stateMachine:MyStateMachine-di9jzahp0"
+}
+
+mapping template
+https://ap-southeast-2.console.aws.amazon.com/apigateway/main/apis/1kzfv9a3xe/resources/36tc3v/methods/POST/integration-response/200/edit?api=1kzfv9a3xe&experience=rest&region=ap-southeast-2
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html?icmpid=docs_apigateway_console
+#set($inputRoot = $input.path('$'))
+#set($bodyJson = $util.parseJson($inputRoot.body))
+{
+  "question": $bodyJson.question,
+  "answers": $bodyJson.answers,
+  "correct_answer": $bodyJson.correct_answer
+}
+
+
+#set($inputRoot = $input.path('$'))
+{
+  "count": $inputRoot.count,
+  "items": [
+#foreach($elem in $inputRoot.items)
+    {
+      "creation_date": "$elem.creation_date",
+      "title": "$elem.title",
+      "author": "$elem.author.first_name $elem.author.last_name",
+      "body": "$elem.body",
+      "publish_date": "$elem.publish_date",
+      "article_url": "$elem.article_url"
+    }#if($foreach.hasNext),#end
+
+#end
+  ],
+  "version": $inputRoot.version
+}
