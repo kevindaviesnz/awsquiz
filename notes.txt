@@ -6,7 +6,7 @@ $ curl -X POST -d '{"input": "{}","name": "MyExecution2","stateMachineArn": "arn
 
 $ curl -X POST -d '{"input": "{\"category\":\"entertainment\", \"difficulty\":\"easy\", \"set\": 1}","name": "MyExecution3","stateMachineArn": "arn:aws:states:ap-southeast-2:881617337234:stateMachine:MyStateMachine-di9jzahp0"}' https://1kzfv9a3xe.execute-api.ap-southeast-2.amazonaws.com/alpha/execution
 
-$ curl -X POST -d '{"input": "{\"category\":\"entertainment\", \"difficulty\":\"easy\", \"set\": 1}", "name": "MyExecution3", "stateMachineArn": "arn:aws:states:ap-southeast-2:881617337234:stateMachine:MyStateMachine-di9jzahp0", "outputPath": "$"}' https://1kzfv9a3xe.execute-api.ap-southeast-2.amazonaws.com/alpha/execution
+$ curl -X POST -d '{"input": "{Pa
 
 aws stepfunctions describe-execution --execution-arn arn:aws:states:ap-southeast-2:881617337234:execution:MyStateMachine-di9jzahp0:MyExecution5
 
@@ -48,3 +48,6 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping
   ],
   "version": $inputRoot.version
 }
+
+URL to fetch questions:
+https://610c9js5uc.execute-api.ap-southeast-2.amazonaws.com/alpha/questions

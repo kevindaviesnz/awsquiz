@@ -18,15 +18,10 @@ Some thoughts on whether to use an SQL or NoSQL db.
 6. It'd be good to be able to add extra "fields" to a question in addition to possible answers eg difficulty ranking etc.
 So overall I think we should go with a NoSQL db.
 
-State Machine invocation
-How to Invoke the Step Function from Lambda:
-https://kashyapgohil25.medium.com/how-to-invoke-the-step-function-from-lambda-7ff0b7812554
-I'm thinking about having the API Gateway through a GET request calling a lambda function that 
-activates a State Machine, that will call a lambda function that will pass "search" parameters to
- a dynamodb query task, that will send the result to another lambda function that will format the 
- results back to the frontend. Basically 
-Gateway -> lambda to call State Machine (lambda to pass search params -> DynamoDB query ->
- Lambda to format result) -> Frontend.  Lambda to format the result isn't actually required as 
- the result from the dynamodb query can be just sent to the frontend as is.  The advantage is that 
- we can keep the lambda functions fairly simple and focused - eg we don't have to including any 
- SDK code that queries the DynamoDB table.
+State machine or lambda function
+I've chosen to use a lambda function that queries dynamodb instead of a State machine.
+The idea here was for the API Gateway to invoke a State machine that would run a dynamodb query task and return the result to the 
+web page. This turned out to be not possible as invoking a State machine is an "async" process and returns only the 
+execution arn and the start time. To get around it you would need to have a lambda function execute the State machine, 
+and inside the lambda function poll the execution arn and then return results. This of course negates any advantages of 
+having the API Gateway invoke a State machine.

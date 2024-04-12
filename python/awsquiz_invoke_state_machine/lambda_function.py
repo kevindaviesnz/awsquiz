@@ -22,7 +22,6 @@ def lambda_handler(event, context):
             input = json.dumps(input_dict)
         )
 
-
         response = sf.describe_execution(
             executionArn = execution_result['executionArn']
         )

@@ -8,14 +8,20 @@
 # @see https://www.bitslovers.com/crud-with-python-and-dynamodb/
 
 import boto3
+import logging
+
+logger = logging.getLogger(__name__)
 
 def lambda_handler(event, context):
     try:
         
         table_name = "awsquiz"
-        partition_key = "category"
-        sort_key = "set:1:easy"
-        
+
+        category = event["category"]
+        difficulty = event["difficulty"]
+        set = event["set"]
+        set_name = f"set::{set}::{difficulty}"
+
         # Initialize DynamoDB client
         dynamodb = boto3.resource('dynamodb')
         
@@ -23,9 +29,41 @@ def lambda_handler(event, context):
         table = dynamodb.Table(table_name)
         
         # Do query using partion key and sort key
+        resp = table.get_item(
+            Key = {
+                "category": category,
+                "set_name": set_name
+            }
+        )
+
+        if resp.get("Item") == None:
+
+            logger.error(
+                f'Questions not found, category={category}, set name={set_name}',
+            )
+                            
+            return {
+                'statusCode': 404
+            }
         
-    
+        """
+        {'category': 'entertainment', 'set_name': 'set::1::easy', 'questions': [{'question': 'Who is Darth Vader', 'answers': ['Sith Lord', 'Death Star butler'], 'correct_answer': 'Sith Lord'},
+          {'question': 'Who destroyed the first Death Star', 'answers': ['Luke Skywalker', 'Some random stormtrooper who forgot to turn off the gas oven.'], 'correct_answer': 'Luke Skywalker'}]}
+        """
+        return {
+            'statusCode':200,
+            "category": category,
+            "difficulty": event["difficulty"],
+            "set":event["set"],
+            'questions':resp.get("Item")["questions"]
+        }
+        
+        
     except Exception as err:
+
+        logger.error(
+            f'{table_name} {event["set"]} {event["difficulty"]} {err.response["Error"]["Code"]} {err.response["Error"]["Message"]}'
+        )
 
         return {
             'statusCode': 500,
@@ -33,12 +71,11 @@ def lambda_handler(event, context):
         }
 
 
-
-
 if __name__ == "__main__":
     event = {
-        "statusCode": 200,
         "category": "entertainment",
         "difficulty": "easy",
         "set":1
     }
+    response = lambda_handler(event, None)
+    print(response)
