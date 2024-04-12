@@ -12,14 +12,21 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+import boto3
+import logging
+
+logger = logging.getLogger(__name__)
+
 def lambda_handler(event, context):
     try:
         
+
         table_name = "awsquiz"
 
         category = event["category"]
         difficulty = event["difficulty"]
         set = event["set"]
+        
         set_name = f"set::{set}::{difficulty}"
 
         # Initialize DynamoDB client
@@ -53,8 +60,8 @@ def lambda_handler(event, context):
         return {
             'statusCode':200,
             "category": category,
-            "difficulty": event["difficulty"],
-            "set":event["set"],
+            "difficulty":difficulty,
+            "set":"1",
             'questions':resp.get("Item")["questions"]
         }
         
@@ -62,12 +69,17 @@ def lambda_handler(event, context):
     except Exception as err:
 
         logger.error(
-            f'{table_name} {event["set"]} {event["difficulty"]} {err.response["Error"]["Code"]} {err.response["Error"]["Message"]}'
+            "%s %s %s %s ",
+            "awsquiz",
+            "1",
+           "easy",
+            str(err)
         )
 
         return {
             'statusCode': 500,
-            'error': str(err)
+            'error': str(err),
+            'event': str(event)
         }
 
 
