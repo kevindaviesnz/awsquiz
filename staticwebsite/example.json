@@ -1,1 +1,18 @@
-{"statusCode": 200, "category": "entertainment", "difficulty": "easy", "set": "1", "questions": [{"question": "Who is Darth Vader", "answers": ["Sith Lord", "Death Star butler"], "correct_answer": "Sith Lord"}, {"question": "Who destroyed the first Death Star", "answers": ["Luke Skywalker", "Some random stormtrooper who forgot to turn off the gas oven."], "correct_answer": "Luke Skywalker"}]}
+{
+  "statusCode": 200,
+  "category": "entertainment",
+  "difficulty": "easy",
+  "set": "1",
+  "questions": [
+    {
+      "question": "Who is Darth Vader",
+      "answers": ["Sith Lord", "Death Star butler", "Han Solo's father", "Someone who really likes dressing in black."],
+      "correct_answer": "Sith Lord"
+    },
+    {
+      "question": "Who destroyed the first Death Star",
+      "answers": ["Luke Skywalker", "Some random stormtrooper who forgot to turn off the gas oven.", "Han Solo", "The Force"],
+      "correct_answer": "Luke Skywalker"
+    }
+  ]
+}

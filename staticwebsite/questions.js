@@ -2,92 +2,57 @@
 // @see https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 
 /*
-{"statusCode": 200, "category": "entertainment", "difficulty": "easy", "set": "1", "questions": [{"question": "Who is Darth Vader", "answers": ["Sith Lord", "Death Star butler"], "correct_answer": "Sith Lord"}, {"question": "Who destroyed the first Death Star", "answers": ["Luke Skywalker", "Some random stormtrooper who forgot to turn off the gas oven."], "correct_answer": "Luke Skywalker"}]}
+{"statusCode": 200, "category": "entertainment", "difficulty": "easy", "set": "1", 
+"questions": [
+  {
+    "question": "Who is Darth Vader", 
+    "answers": ["Sith Lord", "Death Star butler"],
+ "correct_answer": "Sith Lord"}, {"question": "Who destroyed the first Death Star", "answers": ["Luke Skywalker", "Some random stormtrooper who forgot to turn off the gas oven."], "correct_answer": "Luke Skywalker"}]}
 */
+var showQuestionSet = null
 
 async function fetchQuestions() {
+  
   const response = await fetch("http://localhost:8080/example.json");
   const json = await response.json();
   console.log(json["questions"]);
+  
   // Map questions to get the expected format
   questions = json["questions"].map((question_set, i) => {
-  
+    return {
+      "numb": i + 1,
+      "question": question_set["question"],
+      "options": question_set["answers"],
+      "answer": question_set["correct_answer"]
+    }
   })
+
+  // Here we create a closure, call it immediately, and return it as a function.
+ showQuestionSet = ((qs) => {
+   return (index) => {
+     // Was showQuetions(index)
+      const que_text = document.querySelector(".que_text");
+      //creating a new span and div tag for question and option and passing the value using array index
+      let que_tag = '<span>' + qs[index].numb + ". " + qs[index].question + '</span>';
+      let option_tag = '<div class="option"><span>' + qs[index].options[0] + '</span></div>'
+          + '<div class="option"><span>' + qs[index].options[1] + '</span></div>'
+          + '<div class="option"><span>' + qs[index].options[2] + '</span></div>'
+          + '<div class="option"><span>' + qs[index].options[3] + '</span></div>';
+      que_text.innerHTML = que_tag; //adding new span tag inside que_tag
+      option_list.innerHTML = option_tag; //adding new div tag inside option_tag
+      
+      const option = option_list.querySelectorAll(".option");
+
+      // set onclick attribute to all available options
+      for (i = 0; i < option.length; i++) {
+          option[i].setAttribute("onclick", "optionSelected(this)");
+      }
+    };
+  })(questions);
+
+  
+
 }
 
 fetchQuestions()
-
-let questions = [
-    {
-    numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
-    options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
-    ]
-  },
-    {
-    numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-    {
-    numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-    {
-    numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-    {
-    numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
-];
-
-
 
