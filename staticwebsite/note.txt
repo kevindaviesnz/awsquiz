@@ -1,0 +1,6 @@
+(Mac)
+httpd.conf file:
+/private/etc/apache2/httpd.conf
+Document root:
+/Library/WebServer/Documents
+http://localhost:8080
