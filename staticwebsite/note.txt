@@ -4,3 +4,8 @@ httpd.conf file:
 Document root:
 /opt/homebrew/var/www/index.html
 http://localhost:8080
+
+script.js
+function showQuetions(index){
+    ...
+}

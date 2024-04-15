@@ -1,4 +1,22 @@
 // creating an array and passing the number, questions, options, and answers
+// @see https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+
+/*
+{"statusCode": 200, "category": "entertainment", "difficulty": "easy", "set": "1", "questions": [{"question": "Who is Darth Vader", "answers": ["Sith Lord", "Death Star butler"], "correct_answer": "Sith Lord"}, {"question": "Who destroyed the first Death Star", "answers": ["Luke Skywalker", "Some random stormtrooper who forgot to turn off the gas oven."], "correct_answer": "Luke Skywalker"}]}
+*/
+
+async function fetchQuestions() {
+  const response = await fetch("http://localhost:8080/example.json");
+  const json = await response.json();
+  console.log(json["questions"]);
+  // Map questions to get the expected format
+  questions = json["questions"].map((question_set) => {
+      
+  })
+}
+
+fetchQuestions()
+
 let questions = [
     {
     numb: 1,
