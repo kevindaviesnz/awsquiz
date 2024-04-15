@@ -10,8 +10,8 @@ async function fetchQuestions() {
   const json = await response.json();
   console.log(json["questions"]);
   // Map questions to get the expected format
-  questions = json["questions"].map((question_set) => {
-      
+  questions = json["questions"].map((question_set, i) => {
+  
   })
 }
 
