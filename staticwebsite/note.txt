@@ -2,5 +2,5 @@
 httpd.conf file:
 /private/etc/apache2/httpd.conf
 Document root:
-/Library/WebServer/Documents
+/opt/homebrew/var/www/index.html
 http://localhost:8080
