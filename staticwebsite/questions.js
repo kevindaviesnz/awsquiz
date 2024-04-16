@@ -28,7 +28,7 @@ async function fetchQuestions() {
   })
 
   // Here we create a closure, call it immediately, and return it as a function.
- showQuestionSet = ((qs) => {
+  showQuestionSet = ((qs) => {
    return (index) => {
      // Was showQuetions(index)
       const que_text = document.querySelector(".que_text");

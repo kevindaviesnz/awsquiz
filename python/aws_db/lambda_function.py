@@ -1,16 +1,7 @@
-# This file: python/awsquiz_get_questions/lambda_function.py
-# To install a library in the current directory:
-# pip3 install requests --target .
-
 # @see https://docs.aws.amazon.com/code-library/latest/ug/python_3_dynamodb_code_examples.html
 # @see https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb
 # @see https://dheeraj3choudhary.com/crud-operations-for-aws-dynamodb-using-python-boto3-script
 # @see https://www.bitslovers.com/crud-with-python-and-dynamodb/
-
-import boto3
-import logging
-
-logger = logging.getLogger(__name__)
 
 import boto3
 import logging
