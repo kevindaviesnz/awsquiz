@@ -13,7 +13,8 @@ var showQuestionSet = null
 
 async function fetchQuestions() {
   
-  const response = await fetch("https://jviz2q48ei.execute-api.ap-southeast-2.amazonaws.com/epsilon/awsqr2?category=general&set=1&difficulty=easy");
+  uri = "https://14g9om8i2h.execute-api.ap-southeast-2.amazonaws.com/default/asq2-using-trigger?category=general&set=1&difficulty=easy"
+  const response = await fetch(uri);
   const json = await response.json();
   console.log(json["questions"]);
   
