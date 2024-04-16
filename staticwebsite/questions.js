@@ -13,7 +13,7 @@ var showQuestionSet = null
 
 async function fetchQuestions() {
   
-  const response = await fetch("https://5t3emk4n5f.execute-api.ap-southeast-2.amazonaws.com/asq/awsquiz");
+  const response = await fetch("https://jviz2q48ei.execute-api.ap-southeast-2.amazonaws.com/epsilon/awsqr2?category=general&set=1&difficulty=easy");
   const json = await response.json();
   console.log(json["questions"]);
   
