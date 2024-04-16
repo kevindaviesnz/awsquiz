@@ -1,0 +1,64 @@
+{
+  "category": {
+    "S": "general"
+  },
+  "set_name": {
+    "S": "set::1::easy"
+  },
+  "questions": {
+    "L": [
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Sith Lord"
+              },
+              {
+                "S": "Death Star butler"
+              },
+              {
+                "S": "Someone who really likes dressing in black"
+              },
+              {
+                "S": "Han Solo's father"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Sith Lord"
+          },
+          "question": {
+            "S": "Who is Darth Vader"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Luke Skywalker"
+              },
+              {
+                "S": "Some random stormtrooper who forgot to turn off the gas oven."
+              },
+              {
+                "S": "Han Solo."
+              },
+              {
+                "S": "The Force."
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Luke Skywalker"
+          },
+          "question": {
+            "S": "Who destroyed the first Death Star"
+          }
+        }
+      }
+    ]
+  }
+}
