@@ -51,3 +51,5 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping
 
 URL to fetch questions:
 https://610c9js5uc.execute-api.ap-southeast-2.amazonaws.com/awsquiz/questions?category=entertainment&difficulty=easy&set=1
+
+https://akl-restart-sandbox.awsapps.com/start/#/?tab=accounts
