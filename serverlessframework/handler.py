@@ -16,11 +16,8 @@ def awsquiz_fetch_questions(event, context):
         table_name = "awsquiz"
 
         category = event["queryStringParameters"]["category"]
-        #category="general"
         difficulty = event["queryStringParameters"]["difficulty"]
-        # difficulty="easy"
         set = event["queryStringParameters"]["set"]
-        # set=1
         
         set_name = f"set::{set}::{difficulty}"
 
@@ -65,7 +62,6 @@ def awsquiz_fetch_questions(event, context):
                 "difficulty": difficulty,
                 "set": set,
                 "questions": resp.get("Item")["questions"],
-                "event": event
             })
         }
         
