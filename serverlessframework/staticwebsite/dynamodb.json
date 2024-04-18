@@ -1,0 +1,335 @@
+{
+  "category": {
+    "S": "general"
+  },
+  "set_name": {
+    "S": "set::1::easy"
+  },
+  "questions": {
+    "L": [
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Hyper Text Preprocessor"
+              },
+              {
+                "S": "Hyper Text Markup Language"
+              },
+              {
+                "S": "Hyper Text Multiple Language"
+              },
+              {
+                "S": "Hyper Tool Multi Language"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Hyper Text Markup Language"
+          },
+          "question": {
+            "S": "What does HTML stand for?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Common Style Sheet"
+              },
+              {
+                "S": "Colorful Style Sheet"
+              },
+              {
+                "S": "Computer Style Sheet"
+              },
+              {
+                "S": "Cascading Style Sheet"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Cascading Style Sheet"
+          },
+          "question": {
+            "S": "What does CSS stand for?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Hypertext Preprocessor"
+              },
+              {
+                "S": "Hypertext Programming"
+              },
+              {
+                "S": "Hypertext Preprogramming"
+              },
+              {
+                "S": "Hometext Preprocessor"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Hypertext Preprocessor"
+          },
+          "question": {
+            "S": "What does PHP stand for?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Stylish Question Language"
+              },
+              {
+                "S": "Stylesheet Query Language"
+              },
+              {
+                "S": "Statement Question Language"
+              },
+              {
+                "S": "Structured Query Language"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Structured Query Language"
+          },
+          "question": {
+            "S": "What does SQL stand for?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "eXtensible Markup Language"
+              },
+              {
+                "S": "eXecutable Multiple Language"
+              },
+              {
+                "S": "eXTra Multi-Program Language"
+              },
+              {
+                "S": "eXamine Multiple Language"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "eXtensible Markup Language"
+          },
+          "question": {
+            "S": "What does XML stand for?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Hyper Text Markup Language"
+              },
+              {
+                "S": "Client-side scripting"
+              },
+              {
+                "S": "Cascading Style Sheet"
+              },
+              {
+                "S": "Structured Query Language"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Client-side scripting"
+          },
+          "question": {
+            "S": "What does JavaScript primarily provide in web development?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "HTML"
+              },
+              {
+                "S": "Python"
+              },
+              {
+                "S": "Ruby"
+              },
+              {
+                "S": "SQL"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "HTML"
+          },
+          "question": {
+            "S": "Which of the following is NOT a programming language?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Javascript"
+              },
+              {
+                "S": "C++"
+              },
+              {
+                "S": "Java"
+              },
+              {
+
+                "S": "Swift"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Javascript"
+          },
+          "question": {
+            "S": "Which programming language is commonly used for creating dynamic and interactive web pages?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "Creating database schemas"
+              },
+              {
+                "S": "Styling web pages with complex layouts"
+              },
+              {
+                "S": "Executing server-side scripts"
+              },
+              {
+                "S": "Querying databases"
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": "Styling web pages with complex layouts"
+          },
+          "question": {
+            "S": "What does CSS Grid Layout help developers achieve?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": "String"
+              },
+              {
+                "S": "Boolean"                
+              },
+              {
+                "S": "Array"
+              },
+              {
+                "S": "Integer"
+              }
+            ]
+          },
+          "correct_answer": {            
+            "S": "Integer"
+          },
+          "question": {
+            "S": "Which of the following is NOT a valid data type in JavaScript?"
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": ""
+              },
+              {
+                "S": ""
+              },
+              {
+                "S": ""
+              },
+              {
+                "S": ""
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": ""
+          },
+          "question": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "answers": {
+            "L": [
+              {
+                "S": ""
+              },
+              {
+                "S": ""
+              },
+              {
+                "S": ""
+              },
+              {
+                "S": ""
+              }
+            ]
+          },
+          "correct_answer": {
+            "S": ""
+          },
+          "question": {
+            "S": ""
+          }
+        }
+      }
+
+
+
+
+
+
+
+
+      
+
+    ]
+  }
+}

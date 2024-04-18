@@ -1,0 +1,70 @@
+# Requires:
+# npm install serverless-s3-sync
+
+service: awsquiz
+
+app: awsquiz
+org: kdaviesnz
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: ap-southeast-2
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "dynamodb:GetItem"
+            - "dynamodb:Query"
+            - "dynamodb:Scan"
+            - "s3:PutObject" 
+          Resource:
+            - "arn:aws:dynamodb:ap-southeast-2:881617337234:table/awsquiz"
+            - "arn:aws:dynamodb:ap-southeast-2:881617337234:table/awsquiz/index/*"
+        - Effect: "Allow"
+          Action:
+            - "s3:PutBucketPolicy"
+          Resource: "arn:aws:s3:::awsquizawesomesite"        
+
+functions:
+  awsquiz_fetch_questions:
+    handler: handler.awsquiz_fetch_questions
+    events:
+      - http:
+          path: fetch-questions
+          method: get
+          cors: true
+
+plugins:
+  - serverless-s3-sync
+
+resources:
+  Resources:
+    WebsiteBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: awsquizawesomesite
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: error.html
+
+    BucketPolicy:
+      Type: AWS::S3::BucketPolicy
+      DependsOn: WebsiteBucket
+      Properties:
+        Bucket: !Ref WebsiteBucket
+        PolicyDocument:
+          Statement:
+            - Effect: "Allow"
+              Principal: "*"
+              Action: "s3:GetObject"
+              Resource: "arn:aws:s3:::awsquizawesomesite/*"          
+
+custom:
+  s3Sync:
+    - bucketName: awsquizawesomesite
+      localDir: staticwebsite
+
