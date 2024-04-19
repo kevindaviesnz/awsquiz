@@ -55,3 +55,14 @@ https://610c9js5uc.execute-api.ap-southeast-2.amazonaws.com/awsquiz/questions?ca
 https://akl-restart-sandbox.awsapps.com/start/#/?tab=accounts
 
 ValidationError: Stack [Serverless-Inc-Role-Stack] does not exist
+
+$ npm install -g serverless
+$ serverless 
+$ serverless create --template aws-python3 
+
+
+$ sls package --verbose 
+$ sls deploy --verbose --region ap-southeast-2
+
+To remove:
+$ serverless remove
