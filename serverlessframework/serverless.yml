@@ -22,12 +22,12 @@ provider:
             - "dynamodb:Scan"
             - "s3:PutObject" 
           Resource:
-            - "arn:aws:dynamodb:ap-southeast-2:881617337234:table/awsquiz"
-            - "arn:aws:dynamodb:ap-southeast-2:881617337234:table/awsquiz/index/*"
+            - "arn:aws:dynamodb:ap-southeast-2:637423330642:table/awsquiz"
+            - "arn:aws:dynamodb:ap-southeast-2:637423330642:table/awsquiz/index/*"
         - Effect: "Allow"
           Action:
             - "s3:PutBucketPolicy"
-          Resource: "arn:aws:s3:::awsquizawesomesite"   
+          Resource: "arn:aws:s3:::t01awsquizawesomesite"   
           
 functions:
   awsquiz_fetch_questions:
@@ -44,7 +44,7 @@ plugins:
 
 custom:
   s3Sync:
-    - bucketName: awsquizawesomesite
+    - bucketName: t01awsquizawesomesite
       localDir: staticwebsite
 
 resources:
@@ -52,8 +52,7 @@ resources:
     WebsiteBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: awsquizawesomesite
-        # Optionally, configure this bucket for website hosting
+        BucketName: t01awsquizawesomesite
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: error.html
