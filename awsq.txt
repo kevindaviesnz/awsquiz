@@ -1,0 +1,148 @@
+[q]
+The automotive industry is now developing a specified unmanned groupd vehicle (UGV) to be used by the militarty that provides alerts to the operator of hazardous conditions, loss of connection, or vehicle damage. They know they will need to align their National Institute of Standard and Technolog(NIST) guidelines 800-171 regarding the vehicles security strength to protect its location at all times. The application used by each UGV will be hosted in its own virtual private cloud (VPC) and run in a subnet.
+
+The operator wants to view the logs produced by the application in Amazon CloudWatch Logs.
+
+What type of connectivity solution should be used to send the application log data to CloudWatch Logs without going through the internet?
+
+[answers]
+AWS VPN CloudHub
+Gateway VPC endpoint
+Interface VPC endpoint
+NAT instance
+
+[correct]
+Interface VPC endpoint
+
+[q] The local power company has recently installed a new power grid within the community. They are working with the local government to acquire funding for a second power grid, but must show data that shows that the cost reductions and how that translates to increased consumption time windows. This data needs to be kept for a minimum of 10 years in case of audit or by inquiry of a government agency. The power company wants to engage the community and gain their support, as their individual and communal power consumption is reflected in the data.
+
+The power company has determined they will access the data at the end of each quarter, but the CEO wants to be able to access this data at anytime without wait.
+
+What storage solution would support this use case the best?
+
+[answers]
+Amazon Simple Storage Service (Amazon S3)
+Amazon S3 STANDARD Infrequent Access (IA)
+Amazon Elastic Block Store (Amazon EBS)
+Amazon Glacier
+
+[correct]
+Amazon S3 STANDARD Infrequent Access (IA)
+
+
+[q] The local power company has recently installed a new power grid within the community. They are working with the local government to acquire funding for a second power grid, but must show data that shows that the cost reductions and how that translates to increased consumption time windows. This data needs to be kept for a minimum of 10 years in case of audit or by inquiry of a government agency. The power company wants to engage the community and gain their support, as their individual and communal power consumption is reflected in the data.
+
+The CFO of the company has inquired why there is a sudden increase in the cost of using Amazon Simple Storage Service (Amazon S3). Another department has noted that there is HTTP 503 slowdown response for any PUT or DELETE requests.
+
+What could be the issue?
+
+[answers]
+Cross-origin resource sharing (CORS) configuration has not been enabled
+Versioning has been enabled
+Elastic Lopad Balancing (ELB) has not been enabled
+Amazon EC2 Auto Scaling has not been enabled
+
+[correct]
+Versioning has been enabled
+
+
+[q] The local power company has recently installed a new power grid within the community. They are working with the local government to acquire funding for a second power grid, but must show data that shows that the cost reductions and how that translates to increased consumption time windows. This data needs to be kept for a minimum of 10 years in case of audit or by inquiry of a government agency. The power company wants to engage the community and gain their support, as their individual and communal power consumption is reflected in the data.
+
+The AWS Storage Gateway has encountered a failure, which is causing read and write operations to fail. Upon inspection, you determined that the cache disk is still accessible and usable.
+
+What step should be taken to reconfigure the gateway and resume functionality quickly?
+
+[answers]
+Mount the cache disks to an emphemeral drive
+Mount the disk from the gateway
+Reconnect the gateway
+Create a new gateway
+
+[correct]
+Reconnect the gateway
+
+
+A federal contractor located in Seattle is expanding their cloud presence to Germany, which has strict rules on data that originated in Germany leaving the region, known as data sovereignty. They know that they will auditors auditing both regions. Which services would be considered global for this customer? (Select THREE)
+
+[answers]
+Amazon Route 53
+AWS Identity and Access Management (IAM)
+Amazon Elastic Compute Cloud (Amazon EC2)
+Amazon CloudFront
+Amazon Machine Images (AMIs)
+
+[correct]
+Amazon Route 53
+AWS Identity and Access Management (IAM)
+Amazon CloudFront
+
+
+[q]
+A company has a three-tier web application that is deployed on AWS. The web servers are deployed in a public subnet in a VPC. The application servers and the database servers are deployed in private subnets in the same VPC. The company has deployed a third-party virtual firewall appliance from AWS Marketplace in an inspection VPC. The appliance is configured with an IP interface that can accept IP packets.
+
+A solutions architect needs to integrate the web application with the appliance to inspect all traffic to the application before the traffic reaches the web server.
+
+Which solution will these requirement with the LEAST operational overhead?
+
+[answers]
+Create a Network Load Balancer in the public subnet of the application's VPC to route the traffic to the appliance for packet inspection.
+Create an Application Load Balancer in the public subnet of the application's VPC to route the traffic to the appliance for packet inspection.
+Deploy a transit gateway in the inspection VPConfigure route tables to route the incoming packets through the transit gateway
+Deploy a Gatway Load Balancer in the inspection VPC. Create a Load Balancer endpoint to receive the incoming packets and forward the packets to the appliance.
+
+[correct]
+Deploy a Gatway Load Balancer in the inspection VPC. Create a Load Balancer endpoint to receive the incoming packets and forward the packets to the appliance.
+
+
+[q]
+A local hospital is preparing for an audit and needs to show that they are in compliance with HIPAA requirements. This includes security, data lifecycle management, and compliance. They have experienced probems in the past with an employee that has accessed patient records that were not relevant to their immediate job tasks. The CEO of the hospital wants to ensure that mitigation to this issue has been resovled and has had the SysOps team employ various AWS monitoring and security services.
+
+The SysOps Department manager has decided to use tags to classify log groups with Amazon CloudWatch Logs. The CFO sees tagging as an added benefit that will help them obtain a detailed view of the costs accross the hospital.
+
+Which statements describe a tage restriction? (Select THREE)
+
+[answers]
+Tag value length maximum of 256 Unicode characters
+Tag key length between 1 - 128 Unicode characters
+Tag keys can start with aws:
+Keys and values are case-sensitive in a tag
+Maximum tags per group is 20
+
+[correct]
+Tag value length maximum of 256 Unicode characters
+Tag key length between 1 - 128 Unicode characters
+Keys and values are case-sensitive in a tag
+
+
+[q]
+A local hospital is preparing for an audit and needs to show that they are in compliance with HIPAA requirements. This includes security, data lifecycle management, and compliance. They have experienced probems in the past with an employee that has accessed patient records that were not relevant to their immediate job tasks. The CEO of the hospital wants to ensure that mitigation to this issue has been resovled and has had the SysOps team employ various AWS monitoring and security services.
+
+A Support Engineer is trying to retrieve AWS CloudTrail log files.
+
+What file extension is asssociated with this type of log file?
+
+[answers]
+.gz
+.log
+.png
+.aws
+
+[correct]
+.gz
+
+
+[q]
+A local hospital is preparing for an audit and needs to show that they are in compliance with HIPAA requirements. This includes security, data lifecycle management, and compliance. They have experienced probems in the past with an employee that has accessed patient records that were not relevant to their immediate job tasks. The CEO of the hospital wants to ensure that mitigation to this issue has been resovled and has had the SysOps team employ various AWS monitoring and security services.
+
+The Support Engineer has been notified that AWS Config is not aggregatin data from an organization within the hospital. After investigation, it is found that AWS Config cannot access the organiation's details because of an invalid AWS Identity and Access Management (IAM) role.
+
+What corrective step should be taken based on this issue?
+
+[answers]
+Enable AWS Config in the source account
+Enable all features in AWS Organizations
+Select or create a valid IAM role
+Integrate AWS Config and AWS Organizations through an application programming interface (API)
+
+[correct]
+Select or create a valid IAM role
