@@ -2,12 +2,14 @@
 # npm install serverless-s3-sync
 
 service: awsquiz
-
 app: awsquiz
 org: kdaviesnz
 
 frameworkVersion: '3'
 
+# Here we set the provider to AWS and also set the IAM role to enable
+# putting objects into a bucket (required in order to add website files)
+# and also allow reading of the DynamoDB table.
 provider:
   name: aws
   runtime: python3.9
@@ -28,7 +30,9 @@ provider:
           Action:
             - "s3:PutBucketPolicy"
           Resource: "arn:aws:s3:::t01awsquizawesomesite"   
-          
+
+# Here we set lambda function that will read from the DynamoDB table
+# and also create the API Gateway.          
 functions:
   awsquiz_fetch_questions:
     handler: handler.awsquiz_fetch_questions
@@ -38,15 +42,17 @@ functions:
           method: get
           cors: true
 
-
+# This required into order to copy files into the static website bucket.
 plugins:
   - serverless-s3-sync
 
+# Configuration to copy files into the static website bucket.
 custom:
   s3Sync:
     - bucketName: t01awsquizawesomesite
       localDir: staticwebsite
 
+# Here we create the bucket for the static website and configure it as a static website.
 resources:
   Resources:
     WebsiteBucket:
