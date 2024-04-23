@@ -12,9 +12,8 @@ logger = logging.getLogger(__name__)
 def awsquiz_fetch_questions(event, context):
     try:
         
-
         table_name = "awsquiz"
-
+        
         category = event["queryStringParameters"]["category"]
         difficulty = event["queryStringParameters"]["difficulty"]
         set = event["queryStringParameters"]["set"]
@@ -45,10 +44,6 @@ def awsquiz_fetch_questions(event, context):
                 'statusCode': 404
             }
         
-        """
-        {'category': 'entertainment', 'set_name': 'set::1::easy', 'questions': [{'question': 'Who is Darth Vader', 'answers': ['Sith Lord', 'Death Star butler'], 'correct_answer': 'Sith Lord'},
-          {'question': 'Who destroyed the first Death Star', 'answers': ['Luke Skywalker', 'Some random stormtrooper who forgot to turn off the gas oven.'], 'correct_answer': 'Luke Skywalker'}]}
-        """
         response = {
             "isBase64Encoded": False,
             "statusCode": 200,
@@ -66,15 +61,26 @@ def awsquiz_fetch_questions(event, context):
         }
         
         return response
-                
+      
+    except KeyError as e:          
+        
+        logger.error(
+            f"Key error {e}",
+        )
+
+        return {
+            'statusCode': 500,
+            'error': f"Key error {e}",
+            'event': str(event)
+        }
         
     except Exception as err:
 
         logger.error(
             "%s %s %s %s ",
             "awsquiz",
-            "1",
-           "easy",
+            set,
+           difficulty,
             str(err)
         )
 
@@ -87,10 +93,12 @@ def awsquiz_fetch_questions(event, context):
 
 if __name__ == "__main__":
     event = {
-        "category": "entertainment",
-        "difficulty": "easy",
-        "set":1
+        "queryStringParameters": {
+            "category": "general",
+            "difficulty": "easy",
+            "set":1
+        }
     }
-    response = lambda_handler(event, None)
+    response = awsquiz_fetch_questions(event, None)
     print(response)
 
