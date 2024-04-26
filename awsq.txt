@@ -146,3 +146,106 @@ Integrate AWS Config and AWS Organizations through an application programming in
 
 [correct]
 Select or create a valid IAM role
+
+
+[q]
+Which AWS service can run a managed PostgresSQL database that provides online transaction processing (OLTP)?
+
+[answers]
+Amazon DynamoDB
+Amazon Athena
+Amazon RDS
+Amazon EMR
+
+[correct]
+Amazon RDS
+
+
+[q]
+Which of the following services can be used to block network traffic to an instance? (Choose two.)
+
+[answers]
+Security groups
+Amazon Virtual Private Cloud (Amazon VPC) flow logs
+Network ACLSs
+Amazon CloudWatch
+AWS CloudTrail
+
+[correct]
+Security groups
+Network ACLS
+
+
+[q]
+Which AWS service can identify when an Amazon EC2 instance was terminated?
+
+[answers]
+AWS Identityand Access Management (IAM)
+AWS CloudTrail
+AWS Compute optimizer
+Amazon EventBridge
+
+[correct]
+AWS CloudTrail
+
+[q]
+A hospital recently deployed a RESTful API with Amazon API Gateway and AWS Lambda. The hospital uses API Gateway and Lambda to upload reports that are in 
+PDF format and JPEG format. The hospitalneed to modify the Lambda code to identify protected health information (PHI) in the reports.
+
+Which solution will meet those requirement with the LEAST operational overhead?
+
+[answers]
+Use existing Python libraries to extract the text from the reports and to identify the PHI from the extracted text.
+Use Amazon Textract to extract the text from the reports. Use Amazon SageMaker to identifythe PHI from the extracted text.
+Use Amazon Textract to extract the text from the repoorts. Use Amazon Comprehend Medical to identify the PHI from the extracted text.
+Use Amazon Rekognition to extract the text from the reports. Use Amazon Comprehend Medical to identify the PHI from the extracted text.
+
+[correct]
+Use Amazon Textract to extract the text from the repoorts. Use Amazon Comprehend Medical to identify the PHI from the extracted text.
+
+
+[q]
+A company collects data for temperature, humidity, and atmospheric pressure in cities across multiple continents. The average volume
+of data that the company collects from each site daily is 500GB. Each site has a high-speed internet connection.
+
+The company wants to aggregate the data from all these global sites as a quickly as possible in a single Amazon S3 bucket. The solution
+must minimize operational complexity.
+
+Which solution meets these requirements?
+
+[answers]
+Turn on S3 Transfer Acceleration on the destinatoin S3 bucket. Use multipart uploads to directly upload site data to the destination
+S3 bucket.
+Upload the data from each site to an S3 bucket in the closest Region. Use S3 Cross-Region Replication to copy objects to the destination
+S3 bucket. Then remove the data from the origin S3 bucket.
+Schedule AWS Snowball Edge Storage Optimized device jobs dailty to transfer data from each site to the closest Region. Use S3 Cross-Region
+Replicatoin to copy objects to the destination bucket.
+Upload the data from each site to an Amazon EC2 instance in the closest Region. Store the data in an Amazon Block Store (Amazon EBS) volume. 
+At regular intervals, take an EBS snapshot and copy it to the Region that contains the destination S3 bucket. Restore the EBS volume in that Region.
+
+[correct]
+Turn on S3 Transfer Acceleration on the destinatoin S3 bucket. Use multipart uploads to directly upload site data to the destination
+S3 bucket.
+
+[q]
+A solutions architect is developing a VPC architecture that includes multipart subnets. The architecture will host applications that use 
+Amazon EC2 instances and Amazon RDS DB intances. The architecture consists of six subnets in two Availability Zones. Each Availability 
+Zone inclueds a public subnet, a private subnet, and a dedicated subnet for databases. Only Ec2 instances that run in the private 
+subnets can have access to the RDS databases.
+
+Which solutoin will meet these requirements?
+
+[answers]
+Create a new route table that excludes the route to the public subnets' CIDR blocks. Associate the route table the database subnets.
+Create a security group that denies inbound traffic from the security group that is assigned to instances in the public subnets. Attach the security group to the DB instances.
+Create a security group that allows inbound traffic from the security group that is assigned to instances in the pricate subnets. Attach the security group to the DB instances.
+Create a new peering connection between the public subnets and private subnets. Create a different peering connection between the private subnets and the database subnets.
+
+[correct]
+Create a security group that allows inbound traffic from the security group that is assigned to instances in the pricate subnets. Attach the security group to the DB instances.
+
+<storage 4 years>
+
+
+
+

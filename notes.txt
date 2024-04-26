@@ -53,6 +53,7 @@ URL to fetch questions:
 https://610c9js5uc.execute-api.ap-southeast-2.amazonaws.com/awsquiz/questions?category=entertainment&difficulty=easy&set=1
 
 https://akl-restart-sandbox.awsapps.com/start/#/?tab=accounts
+arn:aws:dynamodb:ap-southeast-2:637423330642:table/awsquiz
 
 ValidationError: Stack [Serverless-Inc-Role-Stack] does not exist
 
@@ -66,3 +67,5 @@ $ sls deploy --verbose --region ap-southeast-2
 
 To remove:
 $ serverless remove
+
+CloudFormation -> Stacks -> Create Stack ->  Sample template = WordPress blog -> Submit
