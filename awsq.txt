@@ -379,5 +379,171 @@ Configure the sercurity group for the database tier to allow inbound traffic on 
 Configure the security group for the web tier to allow inbound traffic on port 443 from 0.0.0.0/0
 Configure the security group for the database tier to allow inbound traffic on port 1433 from the security goup for the web tier
 
+[q]
+A company is developing a two-tier web application on AWS. The company's developers have deployed the application on an Amazon EC2 instance that connects
+directly to a backend Amazon RDS database. The company must not hardcode database credentials in the application. The company must also implement a 
+solution to automatically rotate the database credentials on a regular basis.
+
+Which solution will meet these requirements?
+
+[answers]
+Store the database credentials in the instance metadata. Use Amazon EventBridge (Amazon CloudWatch Events) rules to run a scheduled AWS Lambda function that updates RDS credentials and instance metadata at the same time.
+Store the database credentials in a configuration file in an encrypted Amazon S3 bucket. Use Amazon EventBridge (Amazon CloudWatch Events) rules to run a scheduled AWS Lambda function that updates the RDS credentials and the credentials in the configuration file at the saem time. Use S3 Versioning to ensure the ability to fall back to previous values.
+Store the database credentials as a secret in AWS Secrets Manager. Turn on automatic rotation for the secret. Attach the required permission to the EC2 role to grant access to the secret.
+Store the database credentials as encrypted parameters in AWS Systems Manager Parameter Store. Turn on automatic rotation for the encrypted parameters. Attach the required permission to the EC2 role to grant access to the encrypted parameters.
+
+[correct]
+Store the database credentials as a secret in AWS Secrets Manager. Turn on automatic rotation for the secret. Attach the required permission to the EC2 role to grant access to the secret.
+
+[q]
+A company has an application that runs on Amazon EC2 instances and used an Amazon Aurora database. The EC2 instances connect to the local database by using user names and 
+passwords that are stored locally in a file. The company wants to minimize the operational overhead of credential management.
+
+What should a solutions architect do to accomplish this goal?
+
+[answers]
+Use AWS Secrets Manager. Turn on automatic rotation.
+User AWS Systems Manager Parameter Store. Turn on automatic rotation.
+Create an Amazon S3 bucket to store objects that are encrypted with an AWS Key Management Service (AWS KMS) encryption key. Migrate the credential file to the S3 bucket. Point the application to the S3 bucket.
+Create an encrypted Amazon Elastic Block Store (Amazon EBS) volume for each EC2 instance. Attach the new EBS volume to each EC2 instance. Migrate the credential file to the new EBS volume. Point the application to the new EBS volume
+
+[correct]
+Use AWS Secrets Manager. Turn on automatic rotation.
+
+[q]
+A company wants to establish a schedule for rotating database user credentials. 
+
+Which AWS service will support this requirement with the LEAST amount of operational overhead?
+
+[answers]
+AWS Systems Manager
+AWS Secrets Manager
+AWS License Manager
+AWS Managed services
+
+[correct]
+AWS Secrets Manager
+
+[q]
+A company is implementing a new business application. The application runs on two Amazon EC2 instances and used an Amazon S3 bucket for document storage. A solutions architect
+needs to ensure that the EC2 instances can access the S3 bucket.
+
+What should the solution architect do to meet this requirement?
+
+[answers]
+Create an IAM role that grants access to the S3 bucket. Attach the role to the EC2 instances.
+Create an IAM policy that grants access to the S3 bucket. Attach the policy to the EC2 instances.
+Create an IAM group that grants access to the S3 bucket. Attach the group to the EC2 instances.
+Create an IAM user that grants access to the S3 bucket. Attach the user account to the EC2 instances.
+
+[correct]
+Create an IAM role that grants access to the S3 bucket. Attach the role to the EC2 instances.
+
+
+[q]
+Which AWS services or tools can identify rightsizing opportunities for Amazon EC2 instances? (Choose two)
+
+[answers]
+AWS Cost Explorer
+AWS Billing Conductor
+Amazon CodeGuru
+Amazon SageMaker
+AWS Compute Optimizer
+
+[correct]
+AWS Cost Explorer
+AWS Compute Optimizer
+
+[q]
+Which of the following are benefits of using AWS Trusted Advisor? (Choose two)
+
+[answers]
+Providing high-performance container orchestration
+Creating and rotating encryption keys
+Detecting underutilized resources to save costs
+Improving sercurity by proactively monitoring the AWS environment
+Implementing enforced tagging across AWS resources
+
+[correct]
+Detecting underutilized resources to save costs
+Improving sercurity by proactively monitoring the AWS environment
+
+[q]
+A company wants to run a NoSQL database on Amazon EC2 instances.
+
+Which task is the responsibility of AWS in the scenario?
+
+[answers]
+Update the guest operating system of the EC2 instances
+Maintain high availability at the database layer.
+Patch the physical infrastructure that hosts the EC2 instances.
+Configure the security group filewall.
+
+[correct]
+Maintain high availability at the database layer.
+
+[q]
+A company wants to make an upfront commitment for continued use of its production Amazon EC2 instances in exchange for a reduced overall cost.
+
+Which pricing options meets these requirements with the LOWEST cost? (Choose two)
+
+[answers]
+Spot instances
+On-Demand instances
+Reserved instances
+Saving plans
+Dedicated hosts
+
+[correct]
+Reserved instances
+Saving plans
+
+[q]
+A company is running a popular social media website. The website gives users the ability to upload images to share with other users. The copany wants to make sure
+that the images do not contain inappropriate content. The company needs a solution that minimises development effort.
+
+What should a solutions architect do to meets these requirements?
+
+[answers]
+Use Amazon Comprehend to detect inappropriate content. Use human review for low-confidence predictions.
+Use Amazon Rekognition to detect inappropriate content. Use human review for low-confidence predictions.
+Use Amazon SageMaker to detect inappropriate content. Use ground truth to label low-confidence predictions
+Uses AWS Fargate to deploy a custom machine learning model to detect inappropriate content. Use ground truth to label low-confidence predictions
+
+[correct]
+Use Amazon Rekognition to detect inappropriate content. Use human review for low-confidence predictions.
+
+[q]
+A company wants to migrate its on-premises relational databases to the AWS cloud. The company wants to use infrastructure as close to its current geographical location
+as possible.
+
+Which AWS service or resource should the company use to select its Amazon RDS deployment area?
+
+[answers]
+Amazon connect
+AWS Wavelength
+AWS Regions
+AWS Direct Connect
+
+[correct]
+AWS Regions
+
+[q]
+A company is exploring the use of the AWS Cloud, and needs to create a cost estimate for a project before the infrastructure is provisioned.
+
+Which AWS service or feature can be used to estimate the costs before deployment?
+
+[answers]
+AWS Free Tier
+AWS Pricing Calculator
+AWS Billing and Cost Management
+AWS Cost and Usage reports
+
+[correct]
+AWS Pricing Calculator
+
+
+
+
 
 

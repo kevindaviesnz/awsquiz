@@ -1,0 +1,74 @@
+{
+    "category": {
+      "S": "aws"
+    },
+    "set_name": {
+      "S": "set::1::easy"
+    },
+    "questions": {
+      "L": [
+        {
+          "M": {
+            "answers": {
+              "L": [
+                {
+                  "S": "AWS VPN CloudHub"
+                },
+                {
+                  "S": "Gateway VPC endpoint"
+                },
+                {
+                    "S": "Interface VPC endpoint"
+                },
+                {
+                    "S": "NAT instance"
+                  }
+                ]
+            },
+            "correct_answer": {
+              "S": "Interface VPC endpoint"
+            },
+            "question": {
+              "S": "The automotive industry is now developing a specified unmanned groupd vehicle (UGV) to be used by the militarty that provides alerts to the operator of hazardous conditions, loss of connection, or vehicle damage. They know they will need to align their National Institute of Standard and Technolog(NIST) guidelines 800-171 regarding the vehicles security strength to protect its location at all times. The application used by each UGV will be hosted in its own virtual private cloud (VPC) and run in a subnet.
+
+              The operator wants to view the logs produced by the application in Amazon CloudWatch Logs.
+              
+              What type of connectivity solution should be used to send the application log data to CloudWatch Logs without going through the internet?
+              "
+            }
+          }
+        },
+        {
+          "M": {
+            "answers": {
+              "L": [
+                {
+                  "S": "Amazon Simple Storage Service (Amazon S3)"
+                },
+                {
+                  "S": "Amazon S3 STANDARD Infrequent Access (IA)"
+                },
+                {
+                    "S": "Amazon Elastic Block Store (Amazon EBS)"
+                  },
+                  {
+                    "S": "Amazon Glacier"
+                  }
+                ]
+            },
+            "correct_answer": {
+              "S": "Amazon S3 STANDARD Infrequent Access (IA)"
+            },
+            "question": {
+              "S": "The local power company has recently installed a new power grid within the community. They are working with the local government to acquire funding for a second power grid, but must show data that shows that the cost reductions and how that translates to increased consumption time windows. This data needs to be kept for a minimum of 10 years in case of audit or by inquiry of a government agency. The power company wants to engage the community and gain their support, as their individual and communal power consumption is reflected in the data.
+
+              The power company has determined they will access the data at the end of each quarter, but the CEO wants to be able to access this data at anytime without wait.
+              
+              What storage solution would support this use case the best?"
+            }
+          }
+          
+        }
+      ]
+    }
+  }
