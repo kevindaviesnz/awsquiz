@@ -542,6 +542,91 @@ AWS Cost and Usage reports
 [correct]
 AWS Pricing Calculator
 
+[q]
+How many internet gateways (IGWs) can you attach to an Amazon VPC at any one time?
+
+[answers]
+3
+2
+4
+1
+
+[correct]
+1
+
+[q]
+What happens when you create a new virtual private cloud (VPC) with Amazon Virtual Private Cloud (Amazon VPC)? Select the best answer.
+
+[answers]
+Three subnets are created by default, with one subnet for each Availability Zone.
+Three subnets are created by default in one Availability Zone.
+A main route table is created by default.
+An internet gateway is created by default
+
+[correct]
+A main route table is created by default.
+
+[q]
+Which component of the AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery? Select the best answer.
+
+[answers]
+AWS edge locations
+Amazon Virtual Private Cloud (Amazon VPC)
+AWS Availability Zones
+AWS Regions
+
+[correct]
+AWS Availability Zones
+
+[q]
+True of false? Private subnets have direct access to the internet.
+
+[answers]
+True
+False
+
+[correct]
+False
+
+
+[q]
+You must allow resources in a private subnet to access the internet. Which of the following provides this capability?
+
+[answers]
+Network addresss translation (NAT) Gateway
+Security groups
+Network access control lists (network ACLs)
+Route tables
+
+[answer]
+Network addresss translation (NAT) Gateway
+
+[q]
+What is the minimum size subnet you have in an Amazon Virtual Private Cloud (Amazon VPC)?
+
+[answers]
+/24
+/28
+/26
+/30
+
+[correct]
+/28
+
+[q]
+True or false. Within a Region, you can create multiple Amazon Virtual Private Cloud (Amazon VPC) and have complete control of the network
+configuration for each VPC
+
+[answers]
+False
+True
+
+[correct]
+True
+
+<pvpc_14_virtual_network_interface.png>
+
+
 
 
 
