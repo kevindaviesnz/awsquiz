@@ -1,0 +1,52 @@
+[q]
+What are the three basic types of cloud services and the AWS products that are built based on them?
+[answers]
+Pricing, Computing, Storage
+Storage, AI, Networking
+Computing, Storage, Networking
+Computing, ML, Storage
+[correct]
+Computing, Storage, Networking
+
+[q]
+What is the relation between the Availability Zone and Region?
+[answers]
+AWS regions are areas inside an Availability zones
+Availability Zone and Region are the same thing
+AWS Regions and Availability Zones are separate areas
+AWS regions are separate geographical areas. Availabiliy Zones are the areas that are present inside the regions.
+[correct]
+AWS regions are separate geographical areas. Availabiliy Zones are the areas that are present inside the regions.
+
+[q]
+What is auto-scaling?
+[answers]
+Auto-scaling is a function that allows increasing capacity of existing instances on demand. 
+Auto-scaling is a function that allows removing of existing instances on demand. 
+Auto-scaling is a function that allows provision and launching of new instances on demand. 
+Auto-scaling is a function that allows the addition of new routes in a route table.
+[correct]
+Auto-scaling is a function that allows provision and launching of new instances on demand. 
+
+[q]
+What is geo-targeting in CloudFront?
+[answers]
+Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL. 
+Geo-Targeting is a concept where businesses can target specific businesses without changing the URL
+Geo-Targeting is a concept where business can target their audience based on latency
+Geo-Targeting is a concept where business can restrict audience based on geographical location
+[correct]
+Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL. 
+
+[q]
+What are the tools and techniques that you can use in AWS to identify if you are paying more than you should be?
+[answers]
+Check the Top Services Table, Cost Explorer, AWS Budgets, Cost Allocation Tags
+Check the Top Services Table, Cost Explorer, AWS Budgets, AWS Config
+Cost Explorer, AWS Budgets, AWS Config, Cost Allocation Tags
+AWS Budgets, AWS Config
+[correct]
+Check the Top Services Table, Cost Explorer, AWS Budgets, Cost Allocation Tags
+
+
+
