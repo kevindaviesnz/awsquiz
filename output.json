@@ -2042,6 +2042,216 @@
                         ]
                     }
                 }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What are the three basic types of cloud services and the AWS products that are built based on them?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Pricing, Computing, Storage"
+                            },
+                            {
+                                "S": "Storage, AI, Networking"
+                            },
+                            {
+                                "S": "Computing, Storage, Networking"
+                            },
+                            {
+                                "S": "Computing, ML, Storage"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Computing, Storage, Networking"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What is the relation between the Availability Zone and Region?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS regions are areas inside an Availability zones"
+                            },
+                            {
+                                "S": "Availability Zone and Region are the same thing"
+                            },
+                            {
+                                "S": "AWS Regions and Availability Zones are separate areas"
+                            },
+                            {
+                                "S": "AWS regions are separate geographical areas. Availabiliy Zones are the areas that are present inside the regions."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS regions are separate geographical areas. Availabiliy Zones are the areas that are present inside the regions."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What is auto-scaling?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Auto-scaling is a function that allows increasing capacity of existing instances on demand."
+                            },
+                            {
+                                "S": "Auto-scaling is a function that allows removing of existing instances on demand."
+                            },
+                            {
+                                "S": "Auto-scaling is a function that allows provision and launching of new instances on demand."
+                            },
+                            {
+                                "S": "Auto-scaling is a function that allows the addition of new routes in a route table."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Auto-scaling is a function that allows provision and launching of new instances on demand."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What is geo-targeting in CloudFront?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL."
+                            },
+                            {
+                                "S": "Geo-Targeting is a concept where businesses can target specific businesses without changing the URL"
+                            },
+                            {
+                                "S": "Geo-Targeting is a concept where business can target their audience based on latency"
+                            },
+                            {
+                                "S": "Geo-Targeting is a concept where business can restrict audience based on geographical location"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What are the tools and techniques that you can use in AWS to identify if you are paying more than you should be?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Check the Top Services Table, Cost Explorer, AWS Budgets, Cost Allocation Tags"
+                            },
+                            {
+                                "S": "Check the Top Services Table, Cost Explorer, AWS Budgets, AWS Config"
+                            },
+                            {
+                                "S": "Cost Explorer, AWS Budgets, AWS Config, Cost Allocation Tags"
+                            },
+                            {
+                                "S": "AWS Budgets, AWS Config"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Check the Top Services Table, Cost Explorer, AWS Budgets, Cost Allocation Tags"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What are the native AWS Security logging capabilities?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS CloudFront, AWS Config"
+                            },
+                            {
+                                "S": "AWS Config"
+                            },
+                            {
+                                "S": "AWS CloudTrail"
+                            },
+                            {
+                                "S": "AWS CloudTrail, AWS Config"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS CloudTrail, AWS Config"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What AWS services are not region-specific?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IAM, Route 53, CloudFront"
+                            },
+                            {
+                                "S": "IAM, Route 53, Web Application Firewall, CloudFront"
+                            },
+                            {
+                                "S": "IAM, Route 53, Web Application Firewall"
+                            },
+                            {
+                                "S": "IAM, Web Application Firewall, CloudFront"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "IAM, Route 53, Web Application Firewall, CloudFront"
+                            }
+                        ]
+                    }
+                }
             }
         ]
     }
