@@ -988,8 +988,502 @@ IAM, Web Application Firewall, CloudFront
 [correct]
 IAM, Route 53, Web Application Firewall, CloudFront
 
+[q]
+Which of the following six advantages enables small start-up companies to
+immediately start consuming IT services from public cloud vendors such as AWS?
+[answers]
+A. Trade capital expense for variable expense
+B. Go global in minutes
+C. Stop guessing capacity
+D. Increase speed and agility
+[correct]
+D. Increase speed and agility
+
+[q]
+Which feature of cloud computing enables customers to deploy their resources
+in a matter of minutes using a self-service model?
+[answers]
+A. Access to cloud provider APIs
+B. Access to cloud provider engineers to rack and stack servers
+C. Scalability features
+D. Multiple server options
+[correct]
+A. Access to cloud provider APIs
+
+[q]
+What is a hypervisor?
+[answers]
+A. Software that enables you to create and managed virtualized resources running on physical hardware, such as VMs
+B. Software used to monitor the health of your Windows servers
+C. Software used to create HA websites
+D. Hardware that enables you to increase the performance of your physical servers
+[correct]
+A. Software that enables you to create and managed virtualized resources running on physical hardware, such as VMs
+
+[q]
+Which of the following are the primary benefits of server virtualization? (Select two answers.)
+[answers]
+A. Efficient use of physical hardware resources
+B. Ability to provision virtual servers in a matter of minutes
+C. Enhanced encryption services
+D. Ability to meet compliance requirements
+[correct]
+A. Efficient use of physical hardware resources
+B. Ability to provision virtual servers in a matter of minutes
+
+[q]
+Which of the following is a prime example of IaaS?
+[answers]
+A. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application
+B. A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process
+C. A service that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure
+D. A service that allows you to consume hardware resources for a short lease period and pay on a metered basis
+[correct]
+A. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application
+
+[q]
+Which of the following is a prime example of PaaS?
+[answers]
+A. A platform that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure
+B. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application
+C. A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process
+D. A service that allows you to build infrastructure using code for repeat deployments in different environment
+[correct]
+C. A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process
+
+[q]
+Which of the following is a prime example of SaaS?
+[answers]
+A. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application
+B. A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process
+C. A service that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure
+D. A service that allows developers to adopt DevOps strategies for their software development life cycle
+[correct]
+C. A service that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure
+
+[q]
+Which cloud deployment model enables you to connect your on-premises
+workloads with resources you have deployed with a public cloud provider
+such as AWS?
+[answers]
+A. Private cloud
+B. Public cloud
+C. Hybrid cloud
+D. Hyper cloud
+[correct]
+C. Hybrid cloud
+
+[q]
+Which of the following AWS support plans gives you access to all AWS Trusted
+Advisor reports? (Select two answers)
+[answers]
+A. Basic support plan
+B. Developer support plan
+C. Business support plan
+D. Enterprise support plan
+E. Global support plan
+[correct]
+C. Business support plan
+D. Enterprise support plan
+
+[q]
+You have spent months developing a new application for your customers. You are
+now ready to go live and want to ensure that you have access to AWS technical
+support engineers if there are any issues with your application servers or backend
+database. Your organization is comfortable with 1-hour response times for
+production-system down issues. Which support plan is the most cost-effective
+option for you?
+[answers]
+A. Basic support plan
+B. Developer support plan
+C. Business support plan
+D. Enterprise support plan
+[correct]
+C. Business support plan
+
+[q]
+Which AWS support plan gives you access to a technical account manager who will
+monitor your environment and provide guidance to optimize your workloads on
+the AWS platform?
+[answers]
+A. Basic support plan
+B. Developer support plan
+C. Business support plan
+D. Enterprise support plan
+[correct]
+D. Enterprise support plan
+
+[q]
+You are planning to build a test and development environment on AWS as a
+precursor to ultimately migrating your workloads to the platform. In the interim
+period, your developers require some basic technical support as they are new to
+cloud computing. Which AWS support plan offers cost-effective access to Cloud
+Support associates during business hours?
+[answers]
+A. Basic support plan
+B. Developer support plan
+C. Business support plan
+D. Enterprise support plan
+[correct]
+B. Developer support plan
+
+[q]
+Which of the following services is provided across all AWS support plans and allows
+support access 24/7 via telephone, chat, and email?
+[answers]
+A. Access to technical support via telephone and chat
+B. Access to customer support services to resolve any billing or account login issues
+C. Access to a technical account manager to help you manage your account
+D. Access to a full range of reports from the AWS Trusted Advisor
+[correct]
+B. Access to customer support services to resolve any billing or account
+
+[q]
+Which feature of the AWS Global Infrastructure enables you to launch applications
+and store data in a manner that is compliant with regulatory requirements?
+[answers]
+A. Regions
+B. AZs
+C. Edge location
+D. CloudFront
+[correct]
+A. Regions
+
+[q]
+Which component of the AWS Global Infrastructure enables you to distribute your
+content to users across the globe such that cached versions of your digital assets are
+available locally to those users?
+[answers]
+A. Regions
+B. AZs
+C. Edge locations
+D. AWS RDS
+[correct]
+C. Edge locations
+
+[q]
+Which component of the AWS Global Infrastructure enables you to architect your
+application solution to offer high-availability capabilities within a specific Region?
+[answers]
+A. Regions
+B. AZs
+C. Edge locations
+D. Regional edge caches
+[correct]
+B. AZs
+
+[q]
+Which of the following services are considered global services on the AWS
+platform? (Select two answers)
+[answers]
+A. AWS IAM
+B. Amazon Virtual Private Cloud (VPC)
+C. Amazon Snowball
+D. AWS EC2
+E. Amazon CloudFront
+[correct]
+A. AWS IAM
+E. Amazon CloudFront
+
+[q]
+Which of the following services are designed to be set up, configured, and
+consumed on premises? (Select two answers)
+[answers]
+A. AWS Outposts
+B. Amazon Storage Gateway
+C. Amazon DynamoDB
+D. AWS Simple Notification Service (SNS)
+E. AWS PHD
+[correct]
+A. AWS Outposts
+B. Amazon Storage Gateway
+
+[q]
+As part of the signup process, you are required to adhere to policy guidelines that
+describe prohibited activities. Which policy does this fall under?
+[answers]
+A. Compliance policy
+B. Password policy
+C. AuP
+D. Vulnerability testing guidelines
+[correct]
+C. AuP
+
+[q]
+Which AWS service publishes up-to-the-minute information regarding any outages
+or issues with any service across all Regions of the AWS ecosystem?
+[answers]
+A. PHD
+B. Outage and issues dashboard
+C. Service Health Dashboard
+D. Amazon CloudWatch
+[correct]
+C. Service Health Dashboard
+
+[q]
+Before setting up your billing alarms, which preference setting needs to be
+enabled first?
+[answers]
+A. Enable billing alerts
+B. Enable alarms
+C. Set up AWS Organizations
+D. Configure MFA
+[correct]
+A. Enable billing alerts
+
+[q]
+Which AWS service enables you to centrally manage multiple AWS accounts with
+SCPs to establish permission guardrails using which services can be enabled in
+those accounts?
+[answers]
+A. AWS Organizations
+B. AWS IAM
+C. AWS VPC
+D. AWS GuardDuty
+[correct]
+A. AWS Organizations
+
+[q]
+Which of the following services are offered completely free by AWS?
+(Select two answers.)
+[answers]
+A. AWS Identity and Access Management (IAM)
+B. AWS Elastic Beanstalk
+C. Amazon Simple Storage Service (Amazon S3)
+D. Amazon Relational Database Service (Amazon RDS)
+E. AWS Simple Notification Service (SNS)
+[correct]
+A. AWS Identity and Access Management (IAM)
+B. AWS Elastic Beanstalk
+
+[q]
+Which feature of AWS Organizations enables you to combine the costs of each
+member account to take advantage of any volume discounts on offer?
+[answers]
+A. Consolidated billing
+B. AWS EC2 savings plan
+C. AWS Control Tower
+D. AWS IAM
+[correct]
+A. Consolidated billing
+
+[q]
+Which of the following is required when creating an AWS Free Tier account?
+[answers]
+A. A credit card
+B. A bank statement
+C. A passport or driving license
+D. An invitation letter from Amazon
+[correct]
+A. A credit card
+
+[q]
+Which AWS service enables you to automatically set up a new landing zone in
+accordance with best practices?
+[answers]
+A. AWS Landing Zone
+B. AWS Control Tower
+C. AWS Organizations
+D. AWS Free Tier Account
+[correct]
+B. AWS Control Tower
+
+[q]
+Which feature of the AWS Organizations service enables you to combine AWS
+accounts in a container that has common workloads and then apply a common set
+of policies to those accounts?
+[answers]
+A. AWS Control Tower
+B. AWS Landing Zone
+C. Organization Units (OUs)
+D. Service Control Policies (SCPs)
+[correct]
+B. AWS Landing Zone
+
+[q]
+1. Which of the following is true regarding Amazon S3? (Select 2 answers)
+[answers]
+A. Amazon S3 is object-based storage.
+B. Amazon S3 is an example of file storage.
+C. Amazon S3 is an example of block storage.
+D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability. Amazon S3 can be configured as shared mount volumes for Linux-based EC2 instances.
+[correct]
+A. Amazon S3 is object-based storage.
+D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability. Amazon S3 can be configured as shared mount volumes for Linux-based EC2 instances.
+
+[q]
+2. You wish to enforce a policy on an S3 bucket that grants anonymous access to its
+content if users connect to the data from the corporate and branch offices as part
+of your security strategy. Which S3 configuration feature will enable you to define
+the IP ranges from where you will allow access to the data?
+[answers]
+A. Security groups
+B. Bucket policy
+C. NTFS permissions
+D. Network ACLs (NACLs)
+[correct]
+B. Bucket policy
+
+[q]
+3. Which AWS service is the most cost-effective if you need to host static website
+content for an upcoming product launch?
+[answers]
+A. Amazon EC2
+B. Amazon EFS
+C. Amazon S3
+D. Azure ExpressRoute
+[correct]
+C. Amazon S3
+
+[q]
+4. Which Amazon S3 storage class enables you to optimize costs by automatically
+moving data to the most cost-effective access tier, while ensuring that frequently
+accessed data is made available immediately?
+[answers]
+A. Amazon S3 Standard
+B. Amazon S3 One-Zone IA
+C. Amazon Snowball
+D. Amazon S3 Intelligent-Tiering
+[correct]
+D. Amazon S3 Intelligent-Tiering
+
+[q]
+5. Which Amazon S3 service can be configured to automatically migrate data from
+one storage class to another after a set number of days as a means of reducing your
+costs, especially where frequent instant access may not be required to that subset
+of data?
+[answers]
+A. Static website hosting
+B. Lifecycle management
+C. Storage transition
+D. S3 migration
+[correct]
+B. Lifecycle management
+
+[q]
+6. When retrieving data from Amazon Glacier, what is the typical time taken
+by a Standard retrieval option to make the archive available for download?
+[answers]
+A. 20 minutes
+B. 24 hours
+C. 3 to 5 hours
+D. 90 seconds
+[correct]
+C. 3 to 5 hours
+
+[q]
+7. Which feature of the Amazon S3 platform enables you to upload content to
+a centralized bucket from across any location via Amazon edge locations,
+ensuring faster transfer speeds and avoidance of public internet congestion?
+[answers]
+A. Amazon S3TA
+B. AWS S3 Storage Gateway
+C. Amazon VPC
+D. CloudFront
+[correct]
+A. Amazon S3TA
+
+[q]
+8. Your on-premises applications require access to a centrally managed cloud storage
+service. The application running on your servers need to be able to store and
+retrieve files as durable objects on Amazon S3 over standard NFS-based access
+with local caching. Which AWS service can help you deliver a solution to meet the
+aforementioned requirements?
+[answers]
+A. AWS Storage Gateway— Amazon S3File Gateway
+B. AWS EFS
+C. Amazon Redshift
+D. EBS volumes
+[correct]
+A. AWS Storage Gateway— Amazon S3File Gateway
+
+[q]
+9. You are looking to migrate your on-premises data to the cloud. As part of
+a one-time data migration effort, you need to transfer over 900 TB of data to
+Amazon S3 in a couple of weeks. Which is the most cost-effective strategy to
+transfer this amount of data to the cloud?
+[answers]
+A. Use the Amazon RDS service
+B. Use the Amazon Snowball service
+C. Use the Amazon VPN connection between your on-premises network and AWS
+D. Use AWS Rain
+[correct]
+B. Use the Amazon Snowball service
 
 
+1. Which VPC component enables to you grant internet access to servers in the public
+subnet deployed in the VPC?
+A. NAT gateway
+B. Internet gateway
+C. VPC peering
+D. Security group
+2. Which of the following statements are true?
+A. NACLs protect entire subnets, whereas security groups protect the individual
+instance.
+B. NACLs protect the individual instance, whereas security groups protect the entire
+subnet.
+C. NACLs enable instances in the private subnet to access the internet and act as a
+NAT device, whereas security groups are used to assign IAM policies to servers
+that need access to S3 buckets.
+D. NACLs enable instances in the private subnet to access the internet and act as a
+NAT device, whereas security groups are used to assign IAM policies to servers
+that need access to S3 buckets.
+3. Which AWS service enables you to purchase and register new domain names that
+can be used to publish your website on the internet?
+A. Route53
+B. VPC
+C. RDS
+D. Elastic Beanstalk
+
+4. Which AWS service enables you to distribute your digital assets such that it is
+cached locally to users who attempt to access this content for a time to live, and thus
+helps to reduce network latency?
+A. AWS CloudFront
+B. AWS CloudTrail
+C. AWS CloudWatch
+D. AWS CloudScape
+5. Your organization hosts multiple AWS accounts with multiple VPCs. You would
+like to connect these VPCs together and centrally manage connectivity policies.
+Which AWS service enables you to connect multiple VPCs configured as a hub
+that controls how traffic is routed among all the connected networks, which act like
+spokes?
+A. AWS Transit Gateway
+B. AWS Global Accelerator
+C. AWS VPC Peering
+D. AWS Virtual Private Gateway
+6. Which AWS service enables you to grant internet access to EC2 instances
+configured with IPv4, and located in the private subnet of your VPC?
+A. Egress-only internet gateway
+B. NAT gateway
+C. VPC endpoint
+D. VPN tunnel
+7. You company has a primary production website in the US and a DR site in Sydney.
+You need to configure DNS such that if your primary site becomes unavailable,
+you can fail DNS over to the secondary site. Which DNS routing policy can you
+configure to achieve this?
+A. Weighted Routing
+B. Geolocation Routing
+C. Latency Routing
+D. Failover Routing
+
+8. You plan to set up DNS failover using Amazon Route53. Which feature of Route53
+can you use to test your web application's availability and reachability?
+A. Private DNS
+B. CloudWatch
+C. Health checks
+D. DNS ping
+9. Which VPC firewall solution enables you to deny inbound traffic from a specific IP
+address, which can be used to prevent malicious attacks?
+A. AWS Firewall
+B. AWS Security Groups
+C. AWS Network Access Control Lists (NACLs)
+D. AWS CloudFront
+10. Which AWS service enables you to connect your private data center to your
+Amazon VPC with up to 100 Gbps network connectivity?
+A. Snowball
+B. Direct Connect
+C. Virtual Private Network (VPN)
+D. Virtual Satellite Network (VSN)
 
 <pvpc_14_virtual_network_interface.png>
 
