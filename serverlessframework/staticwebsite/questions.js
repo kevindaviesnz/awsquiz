@@ -13,9 +13,11 @@ var showQuestionSet = null
 
 async function fetchQuestions() {
   
-  uri = "https://0x3ns0i81h.execute-api.ap-southeast-2.amazonaws.com/dev/fetch-questions?category=general&set=1&difficulty=easy"
+  uri = "https://jit6rh5po1.execute-api.ap-southeast-2.amazonaws.com/dev/fetch-questions?category=aws&set=1&difficulty=easy"
+  //uri = "https://0x3ns0i81h.execute-api.ap-southeast-2.amazonaws.com/dev/fetch-questions?category=general&set=1&difficulty=easy"
   const response = await fetch(uri);
   const json = await response.json();
+  json.questions.sort(() => Math.random() - 0.5);
   console.log(json["questions"]);
   
   // Map questions to get the expected format

@@ -94,7 +94,7 @@ def awsquiz_fetch_questions(event, context):
 if __name__ == "__main__":
     event = {
         "queryStringParameters": {
-            "category": "general",
+            "category": "aws",
             "difficulty": "easy",
             "set":1
         }
