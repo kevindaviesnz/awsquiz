@@ -29,7 +29,7 @@ provider:
         - Effect: "Allow"
           Action:
             - "s3:PutBucketPolicy"
-          Resource: "arn:aws:s3:::t01awsquizawesomesite"   
+          Resource: "arn:aws:s3:::t02awsquizawesomesite"   
 
 # Here we set lambda function that will read from the DynamoDB table
 # and also create the API Gateway.          
@@ -49,7 +49,7 @@ plugins:
 # Configuration to copy files into the static website bucket.
 custom:
   s3Sync:
-    - bucketName: t01awsquizawesomesite
+    - bucketName: t02awsquizawesomesite
       localDir: staticwebsite
 
 # Here we create the bucket for the static website and configure it as a static website.
@@ -58,7 +58,7 @@ resources:
     WebsiteBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: t01awsquizawesomesite
+        BucketName: t02awsquizawesomesite
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: error.html

@@ -24,7 +24,7 @@ async function fetchQuestions() {
       "numb": i + 1,
       "question": question_set["question"],
       "options": question_set["answers"],
-      "answer": question_set["correct_answer"]
+      "answer": question_set["correct_answer"][0]
     }
   })
 
