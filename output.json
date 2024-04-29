@@ -1107,6 +1107,941 @@
                         ]
                     }
                 }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "How many internet gateways (IGWs) can you attach to an Amazon VPC at any one time?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "3"
+                            },
+                            {
+                                "S": "2"
+                            },
+                            {
+                                "S": "4"
+                            },
+                            {
+                                "S": "1"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "1"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What happens when you create a new virtual private cloud (VPC) with Amazon Virtual Private Cloud (Amazon VPC)? Select the best answer."
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Three subnets are created by default, with one subnet for each Availability Zone."
+                            },
+                            {
+                                "S": "Three subnets are created by default in one Availability Zone."
+                            },
+                            {
+                                "S": "A main route table is created by default."
+                            },
+                            {
+                                "S": "An internet gateway is created by default"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A main route table is created by default."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which component of the AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery? Select the best answer."
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS edge locations"
+                            },
+                            {
+                                "S": "Amazon Virtual Private Cloud (Amazon VPC)"
+                            },
+                            {
+                                "S": "AWS Availability Zones"
+                            },
+                            {
+                                "S": "AWS Regions"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Availability Zones"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "True of false? Private subnets have direct access to the internet."
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "True"
+                            },
+                            {
+                                "S": "False"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "False"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You must allow resources in a private subnet to access the internet. Which of the following provides this capability?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Network addresss translation (NAT) Gateway"
+                            },
+                            {
+                                "S": "Security groups"
+                            },
+                            {
+                                "S": "Network access control lists (network ACLs)"
+                            },
+                            {
+                                "S": "Route tables"
+                            },
+                            {
+                                "S": "[answer]"
+                            },
+                            {
+                                "S": "Network addresss translation (NAT) Gateway"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": []
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What is the minimum size subnet you have in an Amazon Virtual Private Cloud (Amazon VPC)?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "/24"
+                            },
+                            {
+                                "S": "/28"
+                            },
+                            {
+                                "S": "/26"
+                            },
+                            {
+                                "S": "/30"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "/28"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "True or false. Within a Region, you can create multiple Amazon Virtual Private Cloud (Amazon VPC) and have complete control of the network\nconfiguration for each VPC"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "False"
+                            },
+                            {
+                                "S": "True"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "True"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to specify a monthly cost amount for your AWS\naccount and send out an alert if the actual or forecast spending is likely to cross the\nbudgeted threshold values?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS Budgets"
+                            },
+                            {
+                                "S": "B. AWS Cost Explorer"
+                            },
+                            {
+                                "S": "C. AWS Config"
+                            },
+                            {
+                                "S": "D. AWS Pricing Calculator"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. AWS Budgets"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to access 12 months of usage and spending data as\nwell as forecasting what your future costs will be for the next 12 months?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS Cost Explorer"
+                            },
+                            {
+                                "S": "B. AWS Billing alarms"
+                            },
+                            {
+                                "S": "C. AWS Config"
+                            },
+                            {
+                                "S": "D. AWS annual report"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. AWS Cost Explorer"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "The finance department would like to get a report on the total monthly spending\nfor all AWS resources broken down by business unit/project name. The purpose of\nwhich is to understand how much each business unit/project costs. Which feature\nof the AWS Billing and Cost Management services enables you to achieve this\nrequirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Cost allocation tags"
+                            },
+                            {
+                                "S": "B. Cost and usage report"
+                            },
+                            {
+                                "S": "C. AWS Budgets"
+                            },
+                            {
+                                "S": "D. AWS CloudWatch"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. Cost allocation tags"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can analyze your monthly compute usage and offer\nrecommendations for purchasing EC2 RI for your existing on-demand workloads?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS CloudTrail"
+                            },
+                            {
+                                "S": "B. AWS Budgets"
+                            },
+                            {
+                                "S": "C. AWS Cost Explorer"
+                            },
+                            {
+                                "S": "D. AWS Migration Evaluator"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "C. AWS Cost Explorer"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are planning on architecting and building a three-tier application solution,\ncomprising EC2 instances, load balancers, the Auto Scaling service, and a backend\ndatabase. Which AWS service can you use to produce an estimated monthly cost\nfor your proposal?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS Cost Explorer"
+                            },
+                            {
+                                "S": "B. AWS Pricing Calculator"
+                            },
+                            {
+                                "S": "C. AWS Cost Optimization Analyzer"
+                            },
+                            {
+                                "S": "D. AWS SNS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. AWS Pricing Calculator"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You wish to deploy a dev and test environment on AWS. You want to ensure that\nyour developers can access your AWS account using a highly secure authentication\nprocess and follow best practices. Which of the following two configuration options\nwill help ensure enhanced security? (Choose two answers)"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Configure your IAM accounts with MFA."
+                            },
+                            {
+                                "S": "B. Configure your IAM password policy with complexity rules."
+                            },
+                            {
+                                "S": "C. Ensure you encrypt your EBS volumes."
+                            },
+                            {
+                                "S": "D. Create RDS databases with Multi-AZ."
+                            },
+                            {
+                                "S": "E. Provide the root account credential details to your developers."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. Configure your IAM accounts with MFA."
+                            },
+                            {
+                                "S": "B. Configure your IAM password policy with complexity rules."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your developer is working from home this weekend and needs to access your AWS\naccount using the CLI to configure your RDS database from their local computer.\nWhich type of IAM credentials would they need to configure the AWS CLI tool on\ntheir machine?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. IAM username and password"
+                            },
+                            {
+                                "S": "B. Access key IDs and secret access keys"
+                            },
+                            {
+                                "S": "C. Access keys and secret ID"
+                            },
+                            {
+                                "S": "D. HTTPS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. Access key IDs and secret access keys"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to troubleshoot your IAM policies and identify the\nsets of permissions that may be denying access to a given AWS service?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. IAM policy simulator"
+                            },
+                            {
+                                "S": "B. CloudWatch"
+                            },
+                            {
+                                "S": "C. CloudTrail"
+                            },
+                            {
+                                "S": "D. IAM policy manager"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. IAM policy simulator"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following AWS services is a better option to securely grant your\napplication running on an EC2 instance access to a backend database running on\nAmazon RDS?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Access keys"
+                            },
+                            {
+                                "S": "B. IAM role"
+                            },
+                            {
+                                "S": "C. IAM group"
+                            },
+                            {
+                                "S": "D. Security group"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. IAM role"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which format are IAM policy documents written in?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. JSON"
+                            },
+                            {
+                                "S": "B. YAML"
+                            },
+                            {
+                                "S": "C. XML"
+                            },
+                            {
+                                "S": "D. JAVA"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. JSON"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What best practice strategy should you follow when assigning permissions to IAM\nusers and groups?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Follow the principle of least privilege."
+                            },
+                            {
+                                "S": "B. Follow the principle of most privilege."
+                            },
+                            {
+                                "S": "C. Follow the ITIL principles."
+                            },
+                            {
+                                "S": "D. Follow the GDPR principle."
+                            },
+                            {
+                                "S": "A. IAM groups"
+                            },
+                            {
+                                "S": "B. IAM policies"
+                            },
+                            {
+                                "S": "C. IAM collection"
+                            },
+                            {
+                                "S": "D. IAM roles"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. Follow the principle of least privilege."
+                            },
+                            {
+                                "S": "Which IAM service enables you to effectively manage users by creating a collection"
+                            },
+                            {
+                                "S": "of them based on their job function and assigning them permissions according to"
+                            },
+                            {
+                                "S": "their roles to the entire collective?"
+                            },
+                            {
+                                "S": "A. IAM groups"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of IAM enables you to use your existing corporate Active Directory\nuser credentials to log in to the AWS Management Console and therefore offer an\nSSO service?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Identity federation"
+                            },
+                            {
+                                "S": "B. IAM user database"
+                            },
+                            {
+                                "S": "C. Active Directory users and computers"
+                            },
+                            {
+                                "S": "D. MFA"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. Identity federation"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to generate and download a report that lists your\nIAM users and the state of their various credentials, including passwords, access\nkeys, and MFA devices?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS policies"
+                            },
+                            {
+                                "S": "B. AWS Explorer"
+                            },
+                            {
+                                "S": "C. Credentials report"
+                            },
+                            {
+                                "S": "D. User report"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "C. Credentials report"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service is responsible for assigning and managing temporary\ncredentials to entities that assume an IAM role?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS Password Manager"
+                            },
+                            {
+                                "S": "B. AWS Security Token Service"
+                            },
+                            {
+                                "S": "C. AWS Credentials Manager"
+                            },
+                            {
+                                "S": "D. AWS Credentials Report"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. AWS Security Token Service"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "A company plans to migrate its on-premises MySQL database to Amazon RDS.\nWhich AWS service should they use for this task?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Amazon Snowball"
+                            },
+                            {
+                                "S": "B. AWS Database Migration Service (AWS DMS)"
+                            },
+                            {
+                                "S": "C. AWS VM Import/Export"
+                            },
+                            {
+                                "S": "D. AWS Server Migration Service"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. AWS Database Migration Service (AWS DMS)"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following is the primary benefit of using an Amazon RDS database\ninstead of installing a MySQL-compatible database on your EC2 instance?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Managing the database, including patching and backups, is taken care of"
+                            },
+                            {
+                                "S": "by Amazon."
+                            },
+                            {
+                                "S": "B. Managing the database, including patching and backups, is taken care of by"
+                            },
+                            {
+                                "S": "the customer."
+                            },
+                            {
+                                "S": "C. You have full access to the operating system layer that the RDS database runs on."
+                            },
+                            {
+                                "S": "D. You can choose which drive and partition to install the RDS database on."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. Managing the database, including patching and backups, is taken care of by Amazon."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "AWS RDS supports six database engines. From the following list, choose three\nengines supported by Amazon RDS."
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Microsoft SQL"
+                            },
+                            {
+                                "S": "B. Oracle"
+                            },
+                            {
+                                "S": "C. MySQL"
+                            },
+                            {
+                                "S": "D. FoxPro"
+                            },
+                            {
+                                "S": "E. Db2"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. Microsoft SQL"
+                            },
+                            {
+                                "S": "B. Oracle"
+                            },
+                            {
+                                "S": "C. MySQL"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are building an application for a wealth asset management company that\nwill be used to store portfolio data and transactions of stocks, mutual funds,\nand forex purchased. To that end, you need a backend database solution that\nwill ensure a ledger-like functionality because they want to maintain an accurate\nhistory of their applications' data, for example, tracking the history of credits and\ndebits for its customers. Which AWS database solution would you recommend for\nthis business requirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Amazon RDS"
+                            },
+                            {
+                                "S": "B. Amazon DynamoDB"
+                            },
+                            {
+                                "S": "C. Amazon QLDB"
+                            },
+                            {
+                                "S": "D. Amazon Redshift"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "C. Amazon QLDB"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS database solution enables you to build a complete data warehousing\nsolution, capable of handling complex analytic queries against petabytes\nof structured data using standard SQL and industry-recognized business\nintelligence tools?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS DynamoDB"
+                            },
+                            {
+                                "S": "B. AWS Redshift"
+                            },
+                            {
+                                "S": "C. AWS Neptune"
+                            },
+                            {
+                                "S": "D. AWS Pluto"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. AWS Redshift"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are looking to host a production-grade enterprise relational database solution\nthat offers high-end features such as self-healing storage systems that are capable of\nscaling up to 128 TB per database instance. Which of the following AWS database\nsolutions fulfills the requirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Amazon DynamoDB"
+                            },
+                            {
+                                "S": "B. Amazon Aurora"
+                            },
+                            {
+                                "S": "C. Amazon Redshift"
+                            },
+                            {
+                                "S": "D. Amazon Neptune"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. Amazon Aurora"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS feature of Amazon Redshift enables you to run SQL queries against\ndata stored directly on Amazon S3 buckets?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Redshift DaX"
+                            },
+                            {
+                                "S": "B. Athena"
+                            },
+                            {
+                                "S": "C. Redshift Spectrum"
+                            },
+                            {
+                                "S": "D. Redshift Cache"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "C. Redshift Spectrum"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to migrate an on-premises MySQL database to an\nAmazon RDS database running the Oracle Engine?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS Cross-Region Replication"
+                            },
+                            {
+                                "S": "B. AWS SMS"
+                            },
+                            {
+                                "S": "C. AWS DMS"
+                            },
+                            {
+                                "S": "D. AWS EFS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "C. AWS DMS"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are running a single RDS DB instance. Which configuration would you\nrecommend so that you can avoid I/O suspension issues when performing backups?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. Configure RDS read replicas."
+                            },
+                            {
+                                "S": "B. Configure RDS Multi-AZ."
+                            },
+                            {
+                                "S": "C. Configure RDS Cross Region Backup."
+                            },
+                            {
+                                "S": "D. Configure DynamoDB DaX."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. Configure RDS Multi-AZ."
+                            }
+                        ]
+                    }
+                }
             }
         ]
     }

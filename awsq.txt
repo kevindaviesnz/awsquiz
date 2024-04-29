@@ -624,6 +624,300 @@ True
 [correct]
 True
 
+
+[q]
+Which AWS service enables you to specify a monthly cost amount for your AWS
+account and send out an alert if the actual or forecast spending is likely to cross the
+budgeted threshold values?
+
+[answers]
+A. AWS Budgets
+B. AWS Cost Explorer
+C. AWS Config
+D. AWS Pricing Calculator
+[correct]
+A. AWS Budgets
+
+[q]
+Which AWS service enables you to access 12 months of usage and spending data as
+well as forecasting what your future costs will be for the next 12 months?
+[answers]
+A. AWS Cost Explorer
+B. AWS Billing alarms
+C. AWS Config
+D. AWS annual report
+[correct]
+A. AWS Cost Explorer
+
+[q]
+The finance department would like to get a report on the total monthly spending
+for all AWS resources broken down by business unit/project name. The purpose of
+which is to understand how much each business unit/project costs. Which feature
+of the AWS Billing and Cost Management services enables you to achieve this
+requirement?
+[answers]
+A. Cost allocation tags
+B. Cost and usage report
+C. AWS Budgets
+D. AWS CloudWatch
+[correct]
+A. Cost allocation tags
+
+[q]
+Which AWS service can analyze your monthly compute usage and offer
+recommendations for purchasing EC2 RI for your existing on-demand workloads?
+[answers]
+A. AWS CloudTrail
+B. AWS Budgets
+C. AWS Cost Explorer
+D. AWS Migration Evaluator
+[correct]
+C. AWS Cost Explorer
+
+[q]
+You are planning on architecting and building a three-tier application solution,
+comprising EC2 instances, load balancers, the Auto Scaling service, and a backend
+database. Which AWS service can you use to produce an estimated monthly cost
+for your proposal?
+[answers]
+A. AWS Cost Explorer
+B. AWS Pricing Calculator
+C. AWS Cost Optimization Analyzer
+D. AWS SNS
+[correct]
+B. AWS Pricing Calculator
+
+[q]
+You wish to deploy a dev and test environment on AWS. You want to ensure that
+your developers can access your AWS account using a highly secure authentication
+process and follow best practices. Which of the following two configuration options
+will help ensure enhanced security? (Choose two answers)
+[answers]
+A. Configure your IAM accounts with MFA.
+B. Configure your IAM password policy with complexity rules.
+C. Ensure you encrypt your EBS volumes.
+D. Create RDS databases with Multi-AZ.
+E. Provide the root account credential details to your developers.
+[correct]
+A. Configure your IAM accounts with MFA.
+B. Configure your IAM password policy with complexity rules.
+
+[q]
+Your developer is working from home this weekend and needs to access your AWS
+account using the CLI to configure your RDS database from their local computer.
+Which type of IAM credentials would they need to configure the AWS CLI tool on
+their machine?
+[answers]
+A. IAM username and password
+B. Access key IDs and secret access keys
+C. Access keys and secret ID
+D. HTTPS
+[correct]
+B. Access key IDs and secret access keys
+
+[q]
+Which AWS service enables you to troubleshoot your IAM policies and identify the
+sets of permissions that may be denying access to a given AWS service?
+[answers]
+A. IAM policy simulator
+B. CloudWatch
+C. CloudTrail
+D. IAM policy manager
+[correct]
+A. IAM policy simulator
+
+[q]
+Which of the following AWS services is a better option to securely grant your
+application running on an EC2 instance access to a backend database running on
+Amazon RDS?
+[answers]
+A. Access keys
+B. IAM role
+C. IAM group
+D. Security group
+[correct]
+B. IAM role
+
+[q]
+Which format are IAM policy documents written in?
+[answers]
+A. JSON
+B. YAML
+C. XML
+D. JAVA
+[correct]
+A. JSON
+
+[q]
+What best practice strategy should you follow when assigning permissions to IAM
+users and groups?
+[answers]
+A. Follow the principle of least privilege.
+B. Follow the principle of most privilege.
+C. Follow the ITIL principles.
+D. Follow the GDPR principle.
+[correct]
+A. Follow the principle of least privilege.
+
+Which IAM service enables you to effectively manage users by creating a collection
+of them based on their job function and assigning them permissions according to
+their roles to the entire collective?
+[answers]
+A. IAM groups
+B. IAM policies
+C. IAM collection
+D. IAM roles
+[correct]
+A. IAM groups
+
+[q]
+Which feature of IAM enables you to use your existing corporate Active Directory
+user credentials to log in to the AWS Management Console and therefore offer an
+SSO service?
+[answers]
+A. Identity federation
+B. IAM user database
+C. Active Directory users and computers
+D. MFA
+[correct]
+A. Identity federation
+
+[q]
+Which AWS service enables you to generate and download a report that lists your
+IAM users and the state of their various credentials, including passwords, access
+keys, and MFA devices?
+[answers]
+A. AWS policies
+B. AWS Explorer
+C. Credentials report
+D. User report
+[correct]
+C. Credentials report
+
+[q]
+Which AWS service is responsible for assigning and managing temporary
+credentials to entities that assume an IAM role?
+[answers]
+A. AWS Password Manager
+B. AWS Security Token Service
+C. AWS Credentials Manager
+D. AWS Credentials Report
+[correct]
+B. AWS Security Token Service
+
+[q]
+A company plans to migrate its on-premises MySQL database to Amazon RDS.
+Which AWS service should they use for this task?
+[answers]
+A. Amazon Snowball
+B. AWS Database Migration Service (AWS DMS)
+C. AWS VM Import/Export
+D. AWS Server Migration Service
+[correct]
+B. AWS Database Migration Service (AWS DMS)
+
+[q]
+Which of the following is the primary benefit of using an Amazon RDS database
+instead of installing a MySQL-compatible database on your EC2 instance?
+[answers]
+A. Managing the database, including patching and backups, is taken care of
+by Amazon.
+B. Managing the database, including patching and backups, is taken care of by
+the customer.
+C. You have full access to the operating system layer that the RDS database runs on.
+D. You can choose which drive and partition to install the RDS database on.
+[correct]
+A. Managing the database, including patching and backups, is taken care of by Amazon.
+
+[q]
+AWS RDS supports six database engines. From the following list, choose three
+engines supported by Amazon RDS.
+[answers]
+A. Microsoft SQL
+B. Oracle
+C. MySQL
+D. FoxPro
+E. Db2
+[correct]
+A. Microsoft SQL
+B. Oracle
+C. MySQL
+
+[q]
+You are building an application for a wealth asset management company that
+will be used to store portfolio data and transactions of stocks, mutual funds,
+and forex purchased. To that end, you need a backend database solution that
+will ensure a ledger-like functionality because they want to maintain an accurate
+history of their applications' data, for example, tracking the history of credits and
+debits for its customers. Which AWS database solution would you recommend for
+this business requirement?
+[answers]
+A. Amazon RDS
+B. Amazon DynamoDB
+C. Amazon QLDB
+D. Amazon Redshift
+[correct]
+C. Amazon QLDB
+
+[q]
+Which AWS database solution enables you to build a complete data warehousing
+solution, capable of handling complex analytic queries against petabytes
+of structured data using standard SQL and industry-recognized business
+intelligence tools?
+[answers]
+A. AWS DynamoDB
+B. AWS Redshift
+C. AWS Neptune
+D. AWS Pluto
+[correct]
+B. AWS Redshift
+
+[q]
+You are looking to host a production-grade enterprise relational database solution
+that offers high-end features such as self-healing storage systems that are capable of
+scaling up to 128 TB per database instance. Which of the following AWS database
+solutions fulfills the requirement?
+[answers]
+A. Amazon DynamoDB
+B. Amazon Aurora
+C. Amazon Redshift
+D. Amazon Neptune
+[correct]
+B. Amazon Aurora
+
+[q]
+Which AWS feature of Amazon Redshift enables you to run SQL queries against
+data stored directly on Amazon S3 buckets?
+[answers]
+A. Redshift DaX
+B. Athena
+C. Redshift Spectrum
+D. Redshift Cache
+[correct]
+C. Redshift Spectrum
+
+[q]
+Which AWS service enables you to migrate an on-premises MySQL database to an
+Amazon RDS database running the Oracle Engine?
+[answers]
+A. AWS Cross-Region Replication
+B. AWS SMS
+C. AWS DMS
+D. AWS EFS
+[correct]
+C. AWS DMS
+
+[q]
+You are running a single RDS DB instance. Which configuration would you
+recommend so that you can avoid I/O suspension issues when performing backups?
+[answers]
+A. Configure RDS read replicas.
+B. Configure RDS Multi-AZ.
+C. Configure RDS Cross Region Backup.
+D. Configure DynamoDB DaX.
+[correct]
+B. Configure RDS Multi-AZ.
+
 <pvpc_14_virtual_network_interface.png>
 
 
