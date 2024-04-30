@@ -1925,6 +1925,83 @@ D. AWS Kinesis Firehose
 C. AWS QuickSight
 
 
+[q]
+1. Which AWS service automatically provisions the necessary infrastructure (for
+example, load balancing, auto-scaling, and health monitoring) and enables
+developers to automatically deploy an application's built-in supported languages
+such as Node.js, PHP, and Python?
+[answers]
+A. AWS CloudFormation
+B. AWS Lambda
+C. AWS Elastic Beanstalk
+D. AWS Deployer
+[correct]
+C. AWS Elastic Beanstalk
+
+[q]
+2. You work for a web application development company and have been asked to
+design an infrastructure solution that can be repeatedly created using scripted
+templates. This will allow you to create individual sandbox environments for your
+developers to use. Some infrastructure components will include the setup and
+configuration of a VPC, EC2 instances, S3 buckets, and more. Which AWS service
+enables you to design an infrastructure template that can be deployed to create
+repeatable infrastructure for your developers to use as a sandbox environment?
+[answers]
+A. AWS Systems Manager
+B. AWS CloudFormation
+C. AWS Config
+D. AWS FSx for Lustre
+[correct]
+B. AWS CloudFormation
+
+[q]
+3. Which two file formats are used when creating CloudFormation templates?
+(Choose 2.)
+[answers]
+A. JSON
+B. YAML
+C. XML
+D. HTML
+E. Java
+[correct]
+A. JSON
+B. YAML
+
+[q]
+4. Which AWS service provides integration with Chef recipes to start new application
+instances, configure application server software, and deploy the application?
+[answers]
+A. Amazon CloudFormation
+B. Amazon Elastic Beanstalk
+C. Amazon OpsWorks
+D. Amazon Cookbook.
+[correct]
+C. Amazon OpsWorks
+
+[q]
+5. Which type of environment do you need to configure for an Elastic Beanstalk
+deployment to host backend application layer services?
+[answers]
+A. Web server environment tier
+B. Worker environment tier
+C. Backend environment tier
+D. Hybrid environment
+[correct]
+B. Worker environment tier
+
+[q]
+6. Which feature of the Amazon CloudFormation service enables you to review any
+proposed changes you wish to make to an environment and identify how those
+changes will impact your environment?
+[answers]
+A. Drift detection
+B. Change sets
+C. Stack sets
+D. Change management
+[correct]
+B. Change sets
+
+
 
 <pvpc_14_virtual_network_interface.png>
 
