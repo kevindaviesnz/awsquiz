@@ -9,10 +9,10 @@ import json
 
 logger = logging.getLogger(__name__)
 
-def awsquiz_fetch_questions(event, context):
+def awscpe_fetch_questions(event, context):
     try:
         
-        table_name = "awsquiz"
+        table_name = "awscpe"
         
         category = event["queryStringParameters"]["category"]
         difficulty = event["queryStringParameters"]["difficulty"]
@@ -99,6 +99,6 @@ if __name__ == "__main__":
             "set":1
         }
     }
-    response = awsquiz_fetch_questions(event, None)
+    response = awscpe_fetch_questions(event, None)
     print(response)
 

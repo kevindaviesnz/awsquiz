@@ -1,0 +1,64 @@
+# Requires:
+# npm install serverless-s3-sync
+
+service: awscpe2
+app: awscpe2
+org: kdaviesnz
+
+frameworkVersion: '3'
+
+# Here we set the provider to AWS and also set the IAM role to enable
+# putting objects into a bucket (required in order to add website files)
+# and also allow reading of the DynamoDB table.
+provider:
+  name: aws
+  runtime: python3.9
+  region: ap-southeast-2
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "dynamodb:GetItem"
+            - "dynamodb:Query"
+            - "dynamodb:Scan"
+            - "s3:PutObject" 
+          Resource:
+            - "arn:aws:dynamodb:ap-southeast-2:881617337234:table/awscpe2"
+            - "arn:aws:dynamodb:ap-southeast-2:881617337234:table/awscpe2/index/*"
+        - Effect: "Allow"
+          Action:
+            - "s3:PutBucketPolicy"
+          Resource: "arn:aws:s3:::t03awscpe2"   
+
+# Here we set lambda function that will read from the DynamoDB table
+# and also create the API Gateway.          
+functions:
+  awsquiz_fetch_questions:
+    handler: handler.awsquiz_fetch_questions
+    events:
+      - http:
+          path: fetch-questions
+          method: get
+          cors: true
+
+# This required into order to copy files into the static website bucket.
+plugins:
+  - serverless-s3-sync
+
+# Configuration to copy files into the static website bucket.
+custom:
+  s3Sync:
+    - bucketName: t03awscpe2
+      localDir: staticwebsite
+
+# Here we create the bucket for the static website and configure it as a static website.
+resources:
+  Resources:
+    WebsiteBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: t03awscpe2
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: error.html
