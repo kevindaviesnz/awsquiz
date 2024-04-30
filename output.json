@@ -5356,7 +5356,11 @@
                         ]
                     },
                     "correct_answer": {
-                        "L": []
+                        "L": [
+                            {
+                                "S": "100"
+                            }
+                        ]
                     }
                 }
             },
@@ -5368,27 +5372,592 @@
                     "answers": {
                         "L": [
                             {
-                                "S": "5"
-                            },
-                            {
                                 "S": "50"
                             },
                             {
                                 "S": "10"
                             },
                             {
-                                "S": "100"
+                                "S": "5"
                             },
                             {
-                                "S": "`"
+                                "S": "100"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "5"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What are the different types of EC2 instances based on their costs?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "On-demand Instance, Spot Instance, Annual"
+                            },
+                            {
+                                "S": "Spot Instance, Annual, Reserved Instance"
+                            },
+                            {
+                                "S": "On demand, Annual, Reserved Instance"
+                            },
+                            {
+                                "S": "On-demand Instance, Spot Instance, Reserved Instance"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "On-demand Instance, Spot Instance, Reserved Instance"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "VPC is not resolving the server through DNS. What might be the issue, and how can you fix it?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Enable the DNS hostname resolution, so that the problem resolves itself."
+                            },
+                            {
+                                "S": "Check security groups"
+                            },
+                            {
+                                "S": "Check NAT tables"
+                            },
+                            {
+                                "S": "Check of API Gateway is enabled"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Enable the DNS hostname resolution, so that the problem resolves itself."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "How do you connect multiple sites to a VPC?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Use Amazon Connect"
+                            },
+                            {
+                                "S": "Use Amazon CloudFront"
+                            },
+                            {
+                                "S": "Use Amazon CloudHSM"
+                            },
+                            {
+                                "S": "Use AWS VPN CloudHub."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Use AWS VPN CloudHub."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "How many Subnets can you have per VPC?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "10"
+                            },
+                            {
+                                "S": "200"
+                            },
+                            {
+                                "S": "1000"
+                            },
+                            {
+                                "S": "100"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "200"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What are the different types of load balancers in AWS?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Application Load Balancer, Network Load Balancer, Traffic Load Balancer"
+                            },
+                            {
+                                "S": "Application Load Balancer, Network Load Balancer, Classic Load Balancer"
+                            },
+                            {
+                                "S": "AZ Load Balancer, Network Load Balancer, Classic Load Balancer"
+                            },
+                            {
+                                "S": "AZ Load Balancer, Traffic Load Balancer, Classic Load Balancer"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Application Load Balancer, Network Load Balancer, Classic Load Balancer"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Can AWS Config aggregate data across different AWS accounts?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Yes"
+                            },
+                            {
+                                "S": "No"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Yes"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Suppose you are a game designer and want to develop a game with single-digit millisecond latency, which of the following database services would you use?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon RDS"
+                            },
+                            {
+                                "S": "Amazon Neptune"
+                            },
+                            {
+                                "S": "Amazon Snowball"
+                            },
+                            {
+                                "S": "Amazon DynamoDB"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon DynamoDB"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "If you need to perform real-time monitoring of AWS services and get actionable insights, which services would you use?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Firewall Manager"
+                            },
+                            {
+                                "S": "Amazon GuardDuty"
+                            },
+                            {
+                                "S": "Amazon CloudWatch"
+                            },
+                            {
+                                "S": "Amazon EBS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon CloudWatch"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "As a web developer, you are developing an app, targeted primarily for the mobile platform. Which of the following lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Shield"
+                            },
+                            {
+                                "S": "AWS Macie"
+                            },
+                            {
+                                "S": "AWS Inspector"
+                            },
+                            {
+                                "S": "Amazon Cognito"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Cognito"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are a Machine Learning Engineer who is on the lookout for a solution that will discover sensitive information that your enterprise stores in AWS and then use NLP to classify the data and provide business-related insights. Which among the services would you choose?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Firewall Manager"
+                            },
+                            {
+                                "S": "AWS IAM"
+                            },
+                            {
+                                "S": "AWS Macie"
+                            },
+                            {
+                                "S": "AWS CloudHSM"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Macie"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are the system administrator in your company, which is running most of its infrastructure on AWS. You are required to track your users and keep tabs on how they are being authenticated. You wish to create and manage AWS users and use permissions to allow and deny their access to AWS resources. Which of the following services suits you best?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Firewall Manager"
+                            },
+                            {
+                                "S": "AWS Shield"
+                            },
+                            {
+                                "S": "Amazon API Gateway"
+                            },
+                            {
+                                "S": "AWS IAM"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS IAM"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which service do you use if you want to allocate various private and public IP addresses to make them communicate with the internet and other instances?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Route 53"
+                            },
+                            {
+                                "S": "Amazon VPC"
+                            },
+                            {
+                                "S": "Amazon API Gateway"
+                            },
+                            {
+                                "S": "Amazon CloudFront"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon VPC"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "This service provides you with cost-efficient and resizable capacity while automating time-consuming administration tasks"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Relational Database Service"
+                            },
+                            {
+                                "S": "Amazon Elasticache"
+                            },
+                            {
+                                "S": "Amazon VPC"
+                            },
+                            {
+                                "S": "Amazon Glacier"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Relational Database Service"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following is a means for accessing human researchers or consultants to help solve problems on a contractual or temporary basis?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Mechanical Turk"
+                            },
+                            {
+                                "S": "Amazon Elastic Mapreduce"
+                            },
+                            {
+                                "S": "Amazon DevPay"
+                            },
+                            {
+                                "S": "Multi-Factor Authentication"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Mechanical Turk"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "This service is used to make it easy to deploy, manage, and scale containerized applications using Kubernetes on AWS. Which of the following is this AWS service?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastic Container Service"
+                            },
+                            {
+                                "S": "AWS Batch"
+                            },
+                            {
+                                "S": "AWS Elastic Beanstalk"
+                            },
+                            {
+                                "S": "Amazon Lightsail"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastic Container Service"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "This service lets you run code without provisioning or managing servers. Select the correct service from the below options"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon EC2 Auto Scaling"
+                            },
+                            {
+                                "S": "AWS Lambda"
+                            },
+                            {
+                                "S": "AWS Batch"
+                            },
+                            {
+                                "S": "Amazon Inspector"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Lambda"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "As an AWS Developer, using this pay-per-use service, you can send, store, and receive messages between software components. Which of the following is it?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Step Functions"
+                            },
+                            {
+                                "S": "Amazon MQ"
+                            },
+                            {
+                                "S": "Amazon Simple Queue Service"
+                            },
+                            {
+                                "S": "Amazon Simple Notification Service"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Simple Queue Service"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which service do you use if you would like to host a real-time audio and video conferencing application on AWS, this service provides you with a secure and easy-to-use application?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Chime"
+                            },
+                            {
+                                "S": "Amazon WorkSpaces"
+                            },
+                            {
+                                "S": "Amazon MQ"
+                            },
+                            {
+                                "S": "Amazon AppStream"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Chime"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "As your company's AWS Solutions Architect, you are in charge of designing thousands of similar individual jobs. Which of the following services best meets your requirements?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS EC2 Auto Scaling"
+                            },
+                            {
+                                "S": "AWS Snowball"
+                            },
+                            {
+                                "S": "AWS Fargate"
+                            },
+                            {
+                                "S": "AWS Batch"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Batch"
                             },
                             {
                                 "S": "<pvpc_14_virtual_network_interface.png>"
                             }
                         ]
-                    },
-                    "correct_answer": {
-                        "L": []
                     }
                 }
             }

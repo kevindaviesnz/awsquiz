@@ -2234,6 +2234,165 @@ Use AWS VPN CloudHub.
 [correct]
 Use AWS VPN CloudHub. 
 
+[q]
+How many Subnets can you have per VPC?
+[answers]
+10
+200
+1000
+100
+[correct]
+200
+
+[q]
+What are the different types of load balancers in AWS?
+[answers]
+Application Load Balancer, Network Load Balancer, Traffic Load Balancer
+Application Load Balancer, Network Load Balancer, Classic Load Balancer
+AZ Load Balancer, Network Load Balancer, Classic Load Balancer
+AZ Load Balancer, Traffic Load Balancer, Classic Load Balancer
+[correct]
+Application Load Balancer, Network Load Balancer, Classic Load Balancer
+
+[q]
+Can AWS Config aggregate data across different AWS accounts?
+[answers]
+Yes
+No
+[correct]
+Yes
+
+[q]
+Suppose you are a game designer and want to develop a game with single-digit millisecond latency, which of the following database services would you use?
+[answers]
+Amazon RDS
+Amazon Neptune
+Amazon Snowball
+Amazon DynamoDB
+[correct]
+Amazon DynamoDB
+
+[q]
+If you need to perform real-time monitoring of AWS services and get actionable insights, which services would you use?
+[answers]
+Amazon Firewall Manager
+Amazon GuardDuty
+Amazon CloudWatch
+Amazon EBS
+[correct]
+Amazon CloudWatch
+
+[q]
+As a web developer, you are developing an app, targeted primarily for the mobile platform. Which of the following lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily?
+[answers]
+AWS Shield
+AWS Macie
+AWS Inspector
+Amazon Cognito
+[correct]
+Amazon Cognito
+
+[q]
+You are a Machine Learning Engineer who is on the lookout for a solution that will discover sensitive information that your enterprise stores in AWS and then use NLP to classify the data and provide business-related insights. Which among the services would you choose?
+[answers]
+AWS Firewall Manager
+AWS IAM
+AWS Macie
+AWS CloudHSM
+
+[correct]
+AWS Macie
+
+[q]
+You are the system administrator in your company, which is running most of its infrastructure on AWS. You are required to track your users and keep tabs on how they are being authenticated. You wish to create and manage AWS users and use permissions to allow and deny their access to AWS resources. Which of the following services suits you best?
+[answers]
+AWS Firewall Manager
+AWS Shield
+Amazon API Gateway
+AWS IAM
+[correct]
+AWS IAM
+
+[q]
+Which service do you use if you want to allocate various private and public IP addresses to make them communicate with the internet and other instances?
+[answers]
+Amazon Route 53
+Amazon VPC
+Amazon API Gateway
+Amazon CloudFront
+[correct]
+Amazon VPC
+
+[q]
+This service provides you with cost-efficient and resizable capacity while automating time-consuming administration tasks
+[answers]
+Amazon Relational Database Service
+Amazon Elasticache
+Amazon VPC
+Amazon Glacier
+[correct]
+Amazon Relational Database Service
+
+[q]
+Which of the following is a means for accessing human researchers or consultants to help solve problems on a contractual or temporary basis?
+[answers]
+Amazon Mechanical Turk
+Amazon Elastic Mapreduce
+Amazon DevPay
+Multi-Factor Authentication
+[correct]
+Amazon Mechanical Turk
+
+[q]
+This service is used to make it easy to deploy, manage, and scale containerized applications using Kubernetes on AWS. Which of the following is this AWS service?
+[answers]
+Amazon Elastic Container Service
+AWS Batch
+AWS Elastic Beanstalk
+Amazon Lightsail
+[correct]
+Amazon Elastic Container Service
+
+[q]
+This service lets you run code without provisioning or managing servers. Select the correct service from the below options
+[answers]
+Amazon EC2 Auto Scaling
+AWS Lambda
+AWS Batch
+Amazon Inspector
+[correct]
+AWS Lambda
+
+[q]
+As an AWS Developer, using this pay-per-use service, you can send, store, and receive messages between software components. Which of the following is it?
+[answers]
+AWS Step Functions
+Amazon MQ
+Amazon Simple Queue Service
+Amazon Simple Notification Service
+[correct]
+Amazon Simple Queue Service
+
+[q]
+Which service do you use if you would like to host a real-time audio and video conferencing application on AWS, this service provides you with a secure and easy-to-use application?
+[answers]
+Amazon Chime
+Amazon WorkSpaces
+Amazon MQ
+Amazon AppStream
+[correct]
+Amazon Chime
+
+[q]
+As your company's AWS Solutions Architect, you are in charge of designing thousands of similar individual jobs. Which of the following services best meets your requirements?
+[answers]
+AWS EC2 Auto Scaling
+AWS Snowball
+AWS Fargate
+AWS Batch
+[correct]
+AWS Batch
+
 
 <pvpc_14_virtual_network_interface.png>
 
