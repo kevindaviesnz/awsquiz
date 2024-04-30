@@ -5953,9 +5953,6 @@
                         "L": [
                             {
                                 "S": "AWS Batch"
-                            },
-                            {
-                                "S": "<pvpc_14_virtual_network_interface.png>"
                             }
                         ]
                     }
