@@ -820,10 +820,8 @@ B. AWS Database Migration Service (AWS DMS)
 Which of the following is the primary benefit of using an Amazon RDS database
 instead of installing a MySQL-compatible database on your EC2 instance?
 [answers]
-A. Managing the database, including patching and backups, is taken care of
-by Amazon.
-B. Managing the database, including patching and backups, is taken care of by
-the customer.
+A. Managing the database, including patching and backups, is taken care of by Amazon.
+B. Managing the database, including patching and backups, is taken care of by the customer.
 C. You have full access to the operating system layer that the RDS database runs on.
 D. You can choose which drive and partition to install the RDS database on.
 [correct]
@@ -1647,6 +1645,200 @@ C. AWS RDS
 D. AWS Snowball
 [correct]
 A. AWS SNS
+
+[q]
+1. You are planning on developing a website in multiple languages such that you have
+one fleet of EC2 instances that serves the English version of your site and another
+fleet that serves the Spanish version of your site. For each language version, you will
+be configuring URLs with different paths such that the English version of your site
+will contain /en/ in the path and the Spanish version will contain /es/.
+Which type of load balancer would you use to route traffic to ensure users connect
+to the site in their desired language?
+[answers]
+A. CLB
+B. NLB
+C. ALB
+D. Path-based load balancer
+[correct]
+C. ALB
+
+[q]
+2. You are building a multi-tier architecture with web servers placed in the public
+subnet and application servers placed in the private subnet of your VPC. You need
+to deploy ELBs to distribute traffic to both the web server farm and the application
+server farm. Which type of load balancer would you choose to distribute traffic to
+your application servers?
+[answers]
+A. Internet-facing
+B. Internal load balancer
+C. Dynamic load balancer
+D. Static load balancer
+[correct]
+B. Internal load balancer
+
+[q]
+3. Which ELB is ideal for handling volatile workloads and can scale to millions of
+requests per second?
+[answers]
+A. ALB
+B. NLB
+C. CLB
+D. Premium load balancer
+[correct]
+B. NLB
+
+[q]
+4. Which configuration feature of the AWS Auto Scaling service enables you to define
+a maximum number of EC2 instances that can be launched in your fleet?
+[answers]
+A. Auto Scaling group
+B. Auto Scaling Launch Configuration
+C. Auto Scaling max fleet size
+D. Auto Scaling policy
+[correct]
+A. Auto Scaling group
+
+[q]
+5. When an ELB detects an unhealthy EC2 instance, which action does it perform
+regarding distributing incoming traffic?
+[answers]
+A. It continues to send traffic to the failed instance.
+B. It terminates the failed instance so that it is not part of the ELB target group.
+C. It only sends traffic to the remaining healthy instances.
+D. It restarts the unhealthy EC2 instance.
+[correct]
+C. It only sends traffic to the remaining healthy instances.
+
+[q]
+6. Which service does an AWS ALB integrate with to protect your applications from
+common web attacks?
+[answers]
+A. WAF
+B. Shield
+C. Inspector
+D. Key Management Service (KMS)
+[correct]
+A. WAF
+
+[q]
+1. Which AWS services does Amazon CloudWatch use to send out email alerts to
+administrators when alarms are triggered and enter the Alarm state?
+[answers]
+A. Amazon SNS
+B. Amazon SES
+C. Amazon CloudTrail
+D. Amazon Email
+[correct]
+A. Amazon SNS
+
+[q]
+2. Which feature of Amazon CloudWatch enables you to create a visualization of
+metrics by resource type and service?
+[answers]
+A. CloudWatch Events
+B. CloudWatch Logs
+C. CloudWatch Alarms
+D. CloudWatch dashboards
+[correct]
+D. CloudWatch dashboards
+
+[q]
+3. Which AWS application integration service can be configured to offer A2P
+communication using mobile SMS to send out text alerts?
+[answers]
+A. Amazon SQS
+B. Amazon SNS
+C. Amazon Amplify
+D. Amazon Workspaces
+[correct]
+B. Amazon SNS
+
+[q]
+4. You need to configure your Amazon SNS topic to push out messages of newly
+uploaded videos to an Amazon S3 bucket, across three different SQS queues. Each
+queue is designed to encode the raw video into a different resolution. Which feature
+of Amazon SNS enables you to push out such notifications in parallel?
+[answers]
+A. Amazon SNS standard topic
+B. Amazon SNS FIFO topic
+C. Fanout scenario
+D. Amazon EventBridge
+[correct]
+C. Fanout scenario
+
+[q]
+5. Which Amazon SQS queue type offers maximum throughput, best-effort ordering,
+and at least one delivery?
+[answers]
+A. SQS standard queue
+B. SQS power queue
+C. SQS FIFO queue
+D. SQS LIFO queue
+[correct]
+A. SQS standard queue
+
+[q]
+6. Which AWS service is designed to help you build a decoupled application
+architecture where incoming web requests can be held in a queue until a backend
+application can retrieve and process the request?
+[answers]
+A. Amazon SQS
+B. Amazon SWF
+C. Amazon SNS
+D. Amazon Step Functions
+[correct]
+A. Amazon SQS
+
+[q]
+7. You are required to configure an SQS queue for your application where the order
+of messages needs to be preserved for the application to function correctly. Which
+type of queue do you need to configure?
+[answers]
+A. SQS standard queue
+B. SQS power queue
+C. SQS FIFO queue
+D. SQS LIFO queue
+[correct]
+B. SQS power queue
+
+[q]
+8. To reduce costs, you have been asked to automate the shutdown of a fleet of UAT
+test servers every weekday at 7 P.M. and then restart them the following weekday at
+8 A.M. The servers should remain in the shutdown state at weekends.
+Which AWS service can help you achieve the preceding requirements?
+[answers]
+A. Amazon SQS
+B. Amazon Athena
+C. Amazon EventBridge
+D. Amazon SNS
+[correct]
+C. Amazon EventBridge
+
+[q]
+9. Which AWS service enables you to manage application workflows as state machines
+by breaking them into multiple steps, adding flow logic, and tracking the inputs and
+outputs between the steps?
+[answers]
+A. Amazon Step Functions
+B. Amazon SQS
+C. Amazon SNS
+D. Amazon SWF
+[correct]
+A. Amazon Step Functions
+
+[q]
+10. Which AWS service offers an orchestration service to coordinate work across
+application components that make use of decider programs to determine the latest
+state of each task and use it to initiate subsequent tasks?
+[answers]
+A. Amazon SNS
+B. Amazon EventBridge
+C. Amazon SQS
+D. Amazon SWF
+[correct]
+D. Amazon SWF
+
+
 
 <pvpc_14_virtual_network_interface.png>
 
