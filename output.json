@@ -487,7 +487,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon S3. Company policy requires the files\nto be stored for 4 years before than can be deleted. Immediate accessibility is always required as the files contain critical business data that is not easy\nto reproduce. The files are frequently accessed in the first 30 days of object creation but are rarely accessed after the first 30 days.\n\nWhich storage solution is MOST cost-effective?"
+                        "S": "A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon SCompany policy requires the files\nto be stored for 4 years before than can be deleted. Immediate accessibility is always required as the files contain critical business data that is not easy\nto reproduce. The files are frequently accessed in the first 30 days of object creation but are rarely accessed after the first 30 days.\n\nWhich storage solution is MOST cost-effective?"
                     },
                     "answers": {
                         "L": [
@@ -3087,7 +3087,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which of the following is true regarding Amazon S3? (Select 2 answers)"
+                        "S": "Which of the following is true regarding Amazon S3? (Select 2 answers)"
                     },
                     "answers": {
                         "L": [
@@ -3120,7 +3120,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. You wish to enforce a policy on an S3 bucket that grants anonymous access to its\ncontent if users connect to the data from the corporate and branch offices as part\nof your security strategy. Which S3 configuration feature will enable you to define\nthe IP ranges from where you will allow access to the data?"
+                        "S": "You wish to enforce a policy on an S3 bucket that grants anonymous access to its\ncontent if users connect to the data from the corporate and branch offices as part\nof your security strategy. Which S3 configuration feature will enable you to define\nthe IP ranges from where you will allow access to the data?"
                     },
                     "answers": {
                         "L": [
@@ -3150,7 +3150,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which AWS service is the most cost-effective if you need to host static website\ncontent for an upcoming product launch?"
+                        "S": "Which AWS service is the most cost-effective if you need to host static website\ncontent for an upcoming product launch?"
                     },
                     "answers": {
                         "L": [
@@ -3180,7 +3180,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which Amazon S3 storage class enables you to optimize costs by automatically\nmoving data to the most cost-effective access tier, while ensuring that frequently\naccessed data is made available immediately?"
+                        "S": "Which Amazon S3 storage class enables you to optimize costs by automatically\nmoving data to the most cost-effective access tier, while ensuring that frequently\naccessed data is made available immediately?"
                     },
                     "answers": {
                         "L": [
@@ -3210,7 +3210,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. Which Amazon S3 service can be configured to automatically migrate data from\none storage class to another after a set number of days as a means of reducing your\ncosts, especially where frequent instant access may not be required to that subset\nof data?"
+                        "S": "Which Amazon S3 service can be configured to automatically migrate data from\none storage class to another after a set number of days as a means of reducing your\ncosts, especially where frequent instant access may not be required to that subset\nof data?"
                     },
                     "answers": {
                         "L": [
@@ -3240,7 +3240,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. When retrieving data from Amazon Glacier, what is the typical time taken\nby a Standard retrieval option to make the archive available for download?"
+                        "S": "When retrieving data from Amazon Glacier, what is the typical time taken\nby a Standard retrieval option to make the archive available for download?"
                     },
                     "answers": {
                         "L": [
@@ -3270,7 +3270,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "7. Which feature of the Amazon S3 platform enables you to upload content to\na centralized bucket from across any location via Amazon edge locations,\nensuring faster transfer speeds and avoidance of public internet congestion?"
+                        "S": "Which feature of the Amazon S3 platform enables you to upload content to\na centralized bucket from across any location via Amazon edge locations,\nensuring faster transfer speeds and avoidance of public internet congestion?"
                     },
                     "answers": {
                         "L": [
@@ -3300,7 +3300,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "8. Your on-premises applications require access to a centrally managed cloud storage\nservice. The application running on your servers need to be able to store and\nretrieve files as durable objects on Amazon S3 over standard NFS-based access\nwith local caching. Which AWS service can help you deliver a solution to meet the\naforementioned requirements?"
+                        "S": "Your on-premises applications require access to a centrally managed cloud storage\nservice. The application running on your servers need to be able to store and\nretrieve files as durable objects on Amazon S3 over standard NFS-based access\nwith local caching. Which AWS service can help you deliver a solution to meet the\naforementioned requirements?"
                     },
                     "answers": {
                         "L": [
@@ -3330,7 +3330,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "9. You are looking to migrate your on-premises data to the cloud. As part of\na one-time data migration effort, you need to transfer over 900 TB of data to\nAmazon S3 in a couple of weeks. Which is the most cost-effective strategy to\ntransfer this amount of data to the cloud?"
+                        "S": "You are looking to migrate your on-premises data to the cloud. As part of\na one-time data migration effort, you need to transfer over 900 TB of data to\nAmazon S3 in a couple of weeks. Which is the most cost-effective strategy to\ntransfer this amount of data to the cloud?"
                     },
                     "answers": {
                         "L": [
@@ -3360,7 +3360,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which VPC component enables to you grant internet access to servers in the public\nsubnet deployed in the VPC?"
+                        "S": "Which VPC component enables to you grant internet access to servers in the public\nsubnet deployed in the VPC?"
                     },
                     "answers": {
                         "L": [
@@ -3390,7 +3390,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. Which of the following statements are true?"
+                        "S": "Which of the following statements are true?"
                     },
                     "answers": {
                         "L": [
@@ -3420,7 +3420,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which AWS service enables you to purchase and register new domain names that\ncan be used to publish your website on the internet?"
+                        "S": "Which AWS service enables you to purchase and register new domain names that\ncan be used to publish your website on the internet?"
                     },
                     "answers": {
                         "L": [
@@ -3450,7 +3450,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which AWS service enables you to distribute your digital assets such that it is\ncached locally to users who attempt to access this content for a time to live, and thus\nhelps to reduce network latency?"
+                        "S": "Which AWS service enables you to distribute your digital assets such that it is\ncached locally to users who attempt to access this content for a time to live, and thus\nhelps to reduce network latency?"
                     },
                     "answers": {
                         "L": [
@@ -3480,7 +3480,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. Your organization hosts multiple AWS accounts with multiple VPCs. You would\nlike to connect these VPCs together and centrally manage connectivity policies.\nWhich AWS service enables you to connect multiple VPCs configured as a hub\nthat controls how traffic is routed among all the connected networks, which act like\nspokes?"
+                        "S": "Your organization hosts multiple AWS accounts with multiple VPCs. You would\nlike to connect these VPCs together and centrally manage connectivity policies.\nWhich AWS service enables you to connect multiple VPCs configured as a hub\nthat controls how traffic is routed among all the connected networks, which act like\nspokes?"
                     },
                     "answers": {
                         "L": [
@@ -3510,7 +3510,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. Which AWS service enables you to grant internet access to EC2 instances\nconfigured with IPv4, and located in the private subnet of your VPC?"
+                        "S": "Which AWS service enables you to grant internet access to EC2 instances\nconfigured with IPv4, and located in the private subnet of your VPC?"
                     },
                     "answers": {
                         "L": [
@@ -3540,7 +3540,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "7. You company has a primary production website in the US and a DR site in Sydney.\nYou need to configure DNS such that if your primary site becomes unavailable,\nyou can fail DNS over to the secondary site. Which DNS routing policy can you\nconfigure to achieve this?"
+                        "S": "You company has a primary production website in the US and a DR site in Sydney.\nYou need to configure DNS such that if your primary site becomes unavailable,\nyou can fail DNS over to the secondary site. Which DNS routing policy can you\nconfigure to achieve this?"
                     },
                     "answers": {
                         "L": [
@@ -3570,7 +3570,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "8. You plan to set up DNS failover using Amazon Route53. Which feature of Route53\ncan you use to test your web application's availability and reachability?"
+                        "S": "You plan to set up DNS failover using Amazon Route5Which feature of Route53\ncan you use to test your web application's availability and reachability?"
                     },
                     "answers": {
                         "L": [
@@ -3600,7 +3600,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "9. Which VPC firewall solution enables you to deny inbound traffic from a specific IP\naddress, which can be used to prevent malicious attacks?"
+                        "S": "Which VPC firewall solution enables you to deny inbound traffic from a specific IP\naddress, which can be used to prevent malicious attacks?"
                     },
                     "answers": {
                         "L": [
@@ -3630,7 +3630,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "10. Which AWS service enables you to connect your private data center to your\nAmazon VPC with up to 100 Gbps network connectivity?"
+                        "S": "Which AWS service enables you to connect your private data center to your\nAmazon VPC with up to 100 Gbps network connectivity?"
                     },
                     "answers": {
                         "L": [
@@ -3660,7 +3660,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which AWS EC2 pricing option can help you reduce costs by allowing you to use\nyour existing server-bound software licenses?"
+                        "S": "Which AWS EC2 pricing option can help you reduce costs by allowing you to use\nyour existing server-bound software licenses?"
                     },
                     "answers": {
                         "L": [
@@ -3690,7 +3690,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. Which AWS EC2 pricing option enables you to take advantage of unused EC2\ncapacity in the AWS cloud and can offer up to a 90% discount compared to\nOn-Demand prices?"
+                        "S": "Which AWS EC2 pricing option enables you to take advantage of unused EC2\ncapacity in the AWS cloud and can offer up to a 90% discount compared to\nOn-Demand prices?"
                     },
                     "answers": {
                         "L": [
@@ -3720,7 +3720,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which of the following is true with regards to the benefits of purchasing\na Convertible EC2 Reserved Instance? (Choose 2 answers)"
+                        "S": "Which of the following is true with regards to the benefits of purchasing\na Convertible EC2 Reserved Instance? (Choose 2 answers)"
                     },
                     "answers": {
                         "L": [
@@ -3756,7 +3756,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which feature of the AWS EC2 service helps prevent accidentally terminating an\nEC2 instance by preventing the user from issuing a termination command either\nfrom the console or CLI?"
+                        "S": "Which feature of the AWS EC2 service helps prevent accidentally terminating an\nEC2 instance by preventing the user from issuing a termination command either\nfrom the console or CLI?"
                     },
                     "answers": {
                         "L": [
@@ -3786,7 +3786,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. Which storage solution enables you to share a common filesystem across multiple\nLinux-based EC2 instances that can be used to support applications that require\naccess to data with very low latency connectivity?"
+                        "S": "Which storage solution enables you to share a common filesystem across multiple\nLinux-based EC2 instances that can be used to support applications that require\naccess to data with very low latency connectivity?"
                     },
                     "answers": {
                         "L": [
@@ -3816,7 +3816,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. Which type of IP address offering from AWS gives you a static, publicly routable\naddress that will not change, even if you stop and restart an EC2 instance that it is\nassociated with?"
+                        "S": "Which type of IP address offering from AWS gives you a static, publicly routable\naddress that will not change, even if you stop and restart an EC2 instance that it is\nassociated with?"
                     },
                     "answers": {
                         "L": [
@@ -3846,7 +3846,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "7. Which AWS service enables you to configure multiple Windows-based EC2\ninstances to share and access a common storage solution that is based on using\nthe industry-standard SMB protocol and eliminate the administrative overhead of\nmanaging Windows file servers?"
+                        "S": "Which AWS service enables you to configure multiple Windows-based EC2\ninstances to share and access a common storage solution that is based on using\nthe industry-standard SMB protocol and eliminate the administrative overhead of\nmanaging Windows file servers?"
                     },
                     "answers": {
                         "L": [
@@ -3876,7 +3876,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "8. Which of the following types of EBS volumes can be used as boot volumes for your\nEC2 instances? (Select 2 answers)"
+                        "S": "Which of the following types of EBS volumes can be used as boot volumes for your\nEC2 instances? (Select 2 answers)"
                     },
                     "answers": {
                         "L": [
@@ -3912,7 +3912,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "9. Which of the following AWS services enables you to quickly launch a web server\nwith a pre-configured WordPress installation pack, offers predictable monthly\npricing, comes with integrated certificate management, and provides free SSL/TLS\ncertificates?"
+                        "S": "Which of the following AWS services enables you to quickly launch a web server\nwith a pre-configured WordPress installation pack, offers predictable monthly\npricing, comes with integrated certificate management, and provides free SSL/TLS\ncertificates?"
                     },
                     "answers": {
                         "L": [
@@ -3942,7 +3942,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "10. Which AWS service can be used to run a piece of code that can create thumbnails of\nimages uploaded to one Amazon S3 bucket and copy them to another S3 bucket?"
+                        "S": "Which AWS service can be used to run a piece of code that can create thumbnails of\nimages uploaded to one Amazon S3 bucket and copy them to another S3 bucket?"
                     },
                     "answers": {
                         "L": [
@@ -3972,7 +3972,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. You are planning on developing a website in multiple languages such that you have\none fleet of EC2 instances that serves the English version of your site and another\nfleet that serves the Spanish version of your site. For each language version, you will\nbe configuring URLs with different paths such that the English version of your site\nwill contain /en/ in the path and the Spanish version will contain /es/.\nWhich type of load balancer would you use to route traffic to ensure users connect\nto the site in their desired language?"
+                        "S": "You are planning on developing a website in multiple languages such that you have\none fleet of EC2 instances that serves the English version of your site and another\nfleet that serves the Spanish version of your site. For each language version, you will\nbe configuring URLs with different paths such that the English version of your site\nwill contain /en/ in the path and the Spanish version will contain /es/.\nWhich type of load balancer would you use to route traffic to ensure users connect\nto the site in their desired language?"
                     },
                     "answers": {
                         "L": [
@@ -4002,7 +4002,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. You are building a multi-tier architecture with web servers placed in the public\nsubnet and application servers placed in the private subnet of your VPC. You need\nto deploy ELBs to distribute traffic to both the web server farm and the application\nserver farm. Which type of load balancer would you choose to distribute traffic to\nyour application servers?"
+                        "S": "You are building a multi-tier architecture with web servers placed in the public\nsubnet and application servers placed in the private subnet of your VPC. You need\nto deploy ELBs to distribute traffic to both the web server farm and the application\nserver farm. Which type of load balancer would you choose to distribute traffic to\nyour application servers?"
                     },
                     "answers": {
                         "L": [
@@ -4032,7 +4032,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which ELB is ideal for handling volatile workloads and can scale to millions of\nrequests per second?"
+                        "S": "Which ELB is ideal for handling volatile workloads and can scale to millions of\nrequests per second?"
                     },
                     "answers": {
                         "L": [
@@ -4062,7 +4062,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which configuration feature of the AWS Auto Scaling service enables you to define\na maximum number of EC2 instances that can be launched in your fleet?"
+                        "S": "Which configuration feature of the AWS Auto Scaling service enables you to define\na maximum number of EC2 instances that can be launched in your fleet?"
                     },
                     "answers": {
                         "L": [
@@ -4092,7 +4092,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. When an ELB detects an unhealthy EC2 instance, which action does it perform\nregarding distributing incoming traffic?"
+                        "S": "When an ELB detects an unhealthy EC2 instance, which action does it perform\nregarding distributing incoming traffic?"
                     },
                     "answers": {
                         "L": [
@@ -4122,7 +4122,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. Which service does an AWS ALB integrate with to protect your applications from\ncommon web attacks?"
+                        "S": "Which service does an AWS ALB integrate with to protect your applications from\ncommon web attacks?"
                     },
                     "answers": {
                         "L": [
@@ -4152,7 +4152,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which AWS services does Amazon CloudWatch use to send out email alerts to\nadministrators when alarms are triggered and enter the Alarm state?"
+                        "S": "Which AWS services does Amazon CloudWatch use to send out email alerts to\nadministrators when alarms are triggered and enter the Alarm state?"
                     },
                     "answers": {
                         "L": [
@@ -4182,7 +4182,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. Which feature of Amazon CloudWatch enables you to create a visualization of\nmetrics by resource type and service?"
+                        "S": "Which feature of Amazon CloudWatch enables you to create a visualization of\nmetrics by resource type and service?"
                     },
                     "answers": {
                         "L": [
@@ -4212,7 +4212,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which AWS application integration service can be configured to offer A2P\ncommunication using mobile SMS to send out text alerts?"
+                        "S": "Which AWS application integration service can be configured to offer A2P\ncommunication using mobile SMS to send out text alerts?"
                     },
                     "answers": {
                         "L": [
@@ -4242,7 +4242,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. You need to configure your Amazon SNS topic to push out messages of newly\nuploaded videos to an Amazon S3 bucket, across three different SQS queues. Each\nqueue is designed to encode the raw video into a different resolution. Which feature\nof Amazon SNS enables you to push out such notifications in parallel?"
+                        "S": "You need to configure your Amazon SNS topic to push out messages of newly\nuploaded videos to an Amazon S3 bucket, across three different SQS queues. Each\nqueue is designed to encode the raw video into a different resolution. Which feature\nof Amazon SNS enables you to push out such notifications in parallel?"
                     },
                     "answers": {
                         "L": [
@@ -4272,7 +4272,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. Which Amazon SQS queue type offers maximum throughput, best-effort ordering,\nand at least one delivery?"
+                        "S": "Which Amazon SQS queue type offers maximum throughput, best-effort ordering,\nand at least one delivery?"
                     },
                     "answers": {
                         "L": [
@@ -4302,7 +4302,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. Which AWS service is designed to help you build a decoupled application\narchitecture where incoming web requests can be held in a queue until a backend\napplication can retrieve and process the request?"
+                        "S": "Which AWS service is designed to help you build a decoupled application\narchitecture where incoming web requests can be held in a queue until a backend\napplication can retrieve and process the request?"
                     },
                     "answers": {
                         "L": [
@@ -4332,7 +4332,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "7. You are required to configure an SQS queue for your application where the order\nof messages needs to be preserved for the application to function correctly. Which\ntype of queue do you need to configure?"
+                        "S": "You are required to configure an SQS queue for your application where the order\nof messages needs to be preserved for the application to function correctly. Which\ntype of queue do you need to configure?"
                     },
                     "answers": {
                         "L": [
@@ -4362,7 +4362,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "8. To reduce costs, you have been asked to automate the shutdown of a fleet of UAT\ntest servers every weekday at 7 P.M. and then restart them the following weekday at\n8 A.M. The servers should remain in the shutdown state at weekends.\nWhich AWS service can help you achieve the preceding requirements?"
+                        "S": "To reduce costs, you have been asked to automate the shutdown of a fleet of UAT\ntest servers every weekday at 7 P.M. and then restart them the following weekday at\n8 A.M. The servers should remain in the shutdown state at weekends.\nWhich AWS service can help you achieve the preceding requirements?"
                     },
                     "answers": {
                         "L": [
@@ -4392,7 +4392,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "9. Which AWS service enables you to manage application workflows as state machines\nby breaking them into multiple steps, adding flow logic, and tracking the inputs and\noutputs between the steps?"
+                        "S": "Which AWS service enables you to manage application workflows as state machines\nby breaking them into multiple steps, adding flow logic, and tracking the inputs and\noutputs between the steps?"
                     },
                     "answers": {
                         "L": [
@@ -4422,7 +4422,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "10. Which AWS service offers an orchestration service to coordinate work across\napplication components that make use of decider programs to determine the latest\nstate of each task and use it to initiate subsequent tasks?"
+                        "S": "Which AWS service offers an orchestration service to coordinate work across\napplication components that make use of decider programs to determine the latest\nstate of each task and use it to initiate subsequent tasks?"
                     },
                     "answers": {
                         "L": [
@@ -4452,7 +4452,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which AWS service can help you ingest and deliver massive amounts of streaming\ndata into Amazon Redshift for near real-time analytics?"
+                        "S": "Which AWS service can help you ingest and deliver massive amounts of streaming\ndata into Amazon Redshift for near real-time analytics?"
                     },
                     "answers": {
                         "L": [
@@ -4482,7 +4482,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. Which AWS service can help you query streaming data using standard SQL queries\nin real time?"
+                        "S": "Which AWS service can help you query streaming data using standard SQL queries\nin real time?"
                     },
                     "answers": {
                         "L": [
@@ -4512,7 +4512,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. You are planning on building an application that will capture video streams from\nspeed cameras on country roads for analysis. You need to be able to capture all\nthe vehicles that break the speed limit and identify the offending drivers via the\nvehicles' license plates. Which two services on AWS can help you achieve these\nrequirements? (Choose 2 answers.)"
+                        "S": "You are planning on building an application that will capture video streams from\nspeed cameras on country roads for analysis. You need to be able to capture all\nthe vehicles that break the speed limit and identify the offending drivers via the\nvehicles' license plates. Which two services on AWS can help you achieve these\nrequirements? (Choose 2 answers.)"
                     },
                     "answers": {
                         "L": [
@@ -4548,7 +4548,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which AWS service enables you to index all types of content, offers integration with\nKibana, and helps you build data visualization tools to analyze large datasets?"
+                        "S": "Which AWS service enables you to index all types of content, offers integration with\nKibana, and helps you build data visualization tools to analyze large datasets?"
                     },
                     "answers": {
                         "L": [
@@ -4578,7 +4578,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. You store several network log files (in CSV format) in an Amazon S3 bucket. You\nhave been asked to analyze the contents of a specific file for possible malicious\nattacks. Which AWS service can help you analyze raw data in Amazon S3 and\nperform the necessary ad hoc analysis?"
+                        "S": "You store several network log files (in CSV format) in an Amazon S3 bucket. You\nhave been asked to analyze the contents of a specific file for possible malicious\nattacks. Which AWS service can help you analyze raw data in Amazon S3 and\nperform the necessary ad hoc analysis?"
                     },
                     "answers": {
                         "L": [
@@ -4592,7 +4592,7 @@
                                 "S": "C. Amazon Athena"
                             },
                             {
-                                "S": "D. Amazon Data Pipeline3."
+                                "S": "D. Amazon Data Pipeline"
                             }
                         ]
                     },
@@ -4608,7 +4608,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. Which AWS service can be used to perform serverless ETL functions to discover,\nprepare, enrich, clean, and transform your data from various sources for analysis?"
+                        "S": "Which AWS service can be used to perform serverless ETL functions to discover,\nprepare, enrich, clean, and transform your data from various sources for analysis?"
                     },
                     "answers": {
                         "L": [
@@ -4638,7 +4638,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "7. Which AWS service enables you to create and publish interactive BI dashboards for\nyour business data to provide access to meaningful information for your business to\nmake decisions?"
+                        "S": "Which AWS service enables you to create and publish interactive BI dashboards for\nyour business data to provide access to meaningful information for your business to\nmake decisions?"
                     },
                     "answers": {
                         "L": [
@@ -4668,7 +4668,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which AWS service automatically provisions the necessary infrastructure (for\nexample, load balancing, auto-scaling, and health monitoring) and enables\ndevelopers to automatically deploy an application's built-in supported languages\nsuch as Node.js, PHP, and Python?"
+                        "S": "Which AWS service automatically provisions the necessary infrastructure (for\nexample, load balancing, auto-scaling, and health monitoring) and enables\ndevelopers to automatically deploy an application's built-in supported languages\nsuch as Node.js, PHP, and Python?"
                     },
                     "answers": {
                         "L": [
@@ -4698,7 +4698,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. You work for a web application development company and have been asked to\ndesign an infrastructure solution that can be repeatedly created using scripted\ntemplates. This will allow you to create individual sandbox environments for your\ndevelopers to use. Some infrastructure components will include the setup and\nconfiguration of a VPC, EC2 instances, S3 buckets, and more. Which AWS service\nenables you to design an infrastructure template that can be deployed to create\nrepeatable infrastructure for your developers to use as a sandbox environment?"
+                        "S": "You work for a web application development company and have been asked to\ndesign an infrastructure solution that can be repeatedly created using scripted\ntemplates. This will allow you to create individual sandbox environments for your\ndevelopers to use. Some infrastructure components will include the setup and\nconfiguration of a VPC, EC2 instances, S3 buckets, and more. Which AWS service\nenables you to design an infrastructure template that can be deployed to create\nrepeatable infrastructure for your developers to use as a sandbox environment?"
                     },
                     "answers": {
                         "L": [
@@ -4728,7 +4728,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which two file formats are used when creating CloudFormation templates?\n(Choose 2.)"
+                        "S": "Which two file formats are used when creating CloudFormation templates?\n(Choose 2.)"
                     },
                     "answers": {
                         "L": [
@@ -4764,7 +4764,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which AWS service provides integration with Chef recipes to start new application\ninstances, configure application server software, and deploy the application?"
+                        "S": "Which AWS service provides integration with Chef recipes to start new application\ninstances, configure application server software, and deploy the application?"
                     },
                     "answers": {
                         "L": [
@@ -4794,7 +4794,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. Which type of environment do you need to configure for an Elastic Beanstalk\ndeployment to host backend application layer services?"
+                        "S": "Which type of environment do you need to configure for an Elastic Beanstalk\ndeployment to host backend application layer services?"
                     },
                     "answers": {
                         "L": [
@@ -4824,7 +4824,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. Which feature of the Amazon CloudFormation service enables you to review any\nproposed changes you wish to make to an environment and identify how those\nchanges will impact your environment?"
+                        "S": "Which feature of the Amazon CloudFormation service enables you to review any\nproposed changes you wish to make to an environment and identify how those\nchanges will impact your environment?"
                     },
                     "answers": {
                         "L": [
@@ -4854,7 +4854,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which AWS service enables you to track all API activity in your AWS account,\nregardless of whether the activity was performed using the AWS Management\nConsole of the CLI?"
+                        "S": "Which AWS service enables you to track all API activity in your AWS account,\nregardless of whether the activity was performed using the AWS Management\nConsole of the CLI?"
                     },
                     "answers": {
                         "L": [
@@ -4884,7 +4884,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. As part of implementing change management, which AWS service can be used to\nassess, audit, and evaluate change configurations of your AWS resources, enabling\nyou to identify whether a change was the cause of an incident?"
+                        "S": "As part of implementing change management, which AWS service can be used to\nassess, audit, and evaluate change configurations of your AWS resources, enabling\nyou to identify whether a change was the cause of an incident?"
                     },
                     "answers": {
                         "L": [
@@ -4914,7 +4914,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which AWS service can be used to monitor your company's fleet of EC2 instances,\nwhich can be used to identify performance issues related to CPU utilization or\nmemory consumptions?"
+                        "S": "Which AWS service can be used to monitor your company's fleet of EC2 instances,\nwhich can be used to identify performance issues related to CPU utilization or\nmemory consumptions?"
                     },
                     "answers": {
                         "L": [
@@ -4944,7 +4944,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which AWS service helps you identify potential unused resources, such as Elastic\nIP addresses, that are not attached to a running instance and thus highlight\nopportunities to save on costs?"
+                        "S": "Which AWS service helps you identify potential unused resources, such as Elastic\nIP addresses, that are not attached to a running instance and thus highlight\nopportunities to save on costs?"
                     },
                     "answers": {
                         "L": [
@@ -4974,7 +4974,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. Which capability of the AWS Systems Manager service enables you to remotely\nconnect to your Linux EC2 instances without having to use bastion hosts in\nyour VPC?"
+                        "S": "Which capability of the AWS Systems Manager service enables you to remotely\nconnect to your Linux EC2 instances without having to use bastion hosts in\nyour VPC?"
                     },
                     "answers": {
                         "L": [
@@ -5004,7 +5004,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "1. Which of the following is part of the customers' responsibility regarding the Shared\nSecurity Model? (Choose 2.)"
+                        "S": "Which of the following is part of the customers' responsibility regarding the Shared\nSecurity Model? (Choose 2.)"
                     },
                     "answers": {
                         "L": [
@@ -5040,7 +5040,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "2. Which service in AWS protects your virtual network and resources from common\nDDoS attacks?"
+                        "S": "Which service in AWS protects your virtual network and resources from common\nDDoS attacks?"
                     },
                     "answers": {
                         "L": [
@@ -5070,7 +5070,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "3. Which of the following AWS Security tools can protect your web applications or\nAPIs against common web exploits that may affect availability, compromise security,\nor consume excessive resources?"
+                        "S": "Which of the following AWS Security tools can protect your web applications or\nAPIs against common web exploits that may affect availability, compromise security,\nor consume excessive resources?"
                     },
                     "answers": {
                         "L": [
@@ -5100,7 +5100,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "4. Which AWS service uses machine learning to classify sensitive information\nstored in your Amazon S3 buckets and monitor access patterns for anomalies\nthat indicate risks or suspicious behavior, such as large quantities of source code\nbeing downloaded?"
+                        "S": "Which AWS service uses machine learning to classify sensitive information\nstored in your Amazon S3 buckets and monitor access patterns for anomalies\nthat indicate risks or suspicious behavior, such as large quantities of source code\nbeing downloaded?"
                     },
                     "answers": {
                         "L": [
@@ -5130,7 +5130,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "5. Which AWS service enables companies looking to migrate to the AWS cloud to\nobtain copies of various compliance documents such as ISO certifications, PCI,\nand SOC reports?"
+                        "S": "Which AWS service enables companies looking to migrate to the AWS cloud to\nobtain copies of various compliance documents such as ISO certifications, PCI,\nand SOC reports?"
                     },
                     "answers": {
                         "L": [
@@ -5160,7 +5160,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "6. To fulfill strict compliance requirements, you need to create and manage your\nencryption keys using FIPS 140-2 Level 3-validated HSM devices. Which type\nof encryption service would you recommend?"
+                        "S": "To fulfill strict compliance requirements, you need to create and manage your\nencryption keys using FIPS 140-2 Level 3-validated HSM devices. Which type\nof encryption service would you recommend?"
                     },
                     "answers": {
                         "L": [
@@ -5184,6 +5184,211 @@
                                 "S": "B. AWS CloudHSM"
                             }
                         ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "19. With specified private IP addresses, can an Amazon Elastic Compute Cloud (EC2) instance be launched? If so, which\nAmazon service makes it possible?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Yes. Utilizing VPC makes it possible (Virtual Private Cloud)."
+                            },
+                            {
+                                "S": "No."
+                            },
+                            {
+                                "S": "Yes, using Amazon CloudFormation"
+                            },
+                            {
+                                "S": "Yes, using Amazon Macie"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Yes. Utilizing VPC makes it possible (Virtual Private Cloud)."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "20. Define Amazon EC2 regions and availability zones?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Availability zones are geographically separate locations. Regions may have one or more availability zones."
+                            },
+                            {
+                                "S": "Availability zones are geographically separate locations. Regions only have one availability zone."
+                            },
+                            {
+                                "S": "Availability zones are areas within an availability zone."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Availability zones are geographically separate locations. Regions may have one or more availability zones."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "23. Will your standby RDS be launched in the same availability zone as your primary?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "No, standby instances are launched in different availability zones than the primary"
+                            },
+                            {
+                                "S": "Yes, standby instances are launched in the same availability zone than the primary"
+                            },
+                            {
+                                "S": "No, standby instances are launched in different Region than the primary"
+                            },
+                            {
+                                "S": "No, standby instances are launched in the same Region than the primary"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "No, standby instances are launched in different availability zones than the primary"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "How would you address a situation in which the relational database engine frequently collapses when traffic to your RDS instances increases, given that the RDS instance replica is not promoted as the master instance?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Create a larger RDS instance type"
+                            },
+                            {
+                                "S": "Reconnect the RDS instance"
+                            },
+                            {
+                                "S": "Add additional databases"
+                            },
+                            {
+                                "S": "Reset the RDS instance"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Create a larger RDS instance type"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Define Snapshots in Amazon Lightsail?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Point-in-time backups of EC2 instances, block storage drives, and databases."
+                            },
+                            {
+                                "S": "CloudFormation, block storage drives, and databases."
+                            },
+                            {
+                                "S": "Point-in-time backups of EC2 instances, and databases."
+                            },
+                            {
+                                "S": "Point-in-time backups of EC2 instances, and block storage drives"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Point-in-time backups of EC2 instances, block storage drives, and databases."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "How many S3 buckets can be created?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "100"
+                            },
+                            {
+                                "S": "50"
+                            },
+                            {
+                                "S": "1000"
+                            },
+                            {
+                                "S": "200"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": []
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What is the maximum limit of elastic IPs anyone can produce?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "5"
+                            },
+                            {
+                                "S": "50"
+                            },
+                            {
+                                "S": "10"
+                            },
+                            {
+                                "S": "100"
+                            },
+                            {
+                                "S": "`"
+                            },
+                            {
+                                "S": "<pvpc_14_virtual_network_interface.png>"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": []
                     }
                 }
             }

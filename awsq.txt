@@ -245,7 +245,7 @@ Create a new peering connection between the public subnets and private subnets. 
 Create a security group that allows inbound traffic from the security group that is assigned to instances in the pricate subnets. Attach the security group to the DB instances.
 
 [q]
-A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon S3. Company policy requires the files
+A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon SCompany policy requires the files
 to be stored for 4 years before than can be deleted. Immediate accessibility is always required as the files contain critical business data that is not easy
 to reproduce. The files are frequently accessed in the first 30 days of object creation but are rarely accessed after the first 30 days.
 
@@ -1299,7 +1299,7 @@ D. Service Control Policies (SCPs)
 B. AWS Landing Zone
 
 [q]
-1. Which of the following is true regarding Amazon S3? (Select 2 answers)
+Which of the following is true regarding Amazon S3? (Select 2 answers)
 [answers]
 A. Amazon S3 is object-based storage.
 B. Amazon S3 is an example of file storage.
@@ -1310,7 +1310,7 @@ A. Amazon S3 is object-based storage.
 D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability. Amazon S3 can be configured as shared mount volumes for Linux-based EC2 instances.
 
 [q]
-2. You wish to enforce a policy on an S3 bucket that grants anonymous access to its
+You wish to enforce a policy on an S3 bucket that grants anonymous access to its
 content if users connect to the data from the corporate and branch offices as part
 of your security strategy. Which S3 configuration feature will enable you to define
 the IP ranges from where you will allow access to the data?
@@ -1323,7 +1323,7 @@ D. Network ACLs (NACLs)
 B. Bucket policy
 
 [q]
-3. Which AWS service is the most cost-effective if you need to host static website
+Which AWS service is the most cost-effective if you need to host static website
 content for an upcoming product launch?
 [answers]
 A. Amazon EC2
@@ -1334,7 +1334,7 @@ D. Azure ExpressRoute
 C. Amazon S3
 
 [q]
-4. Which Amazon S3 storage class enables you to optimize costs by automatically
+Which Amazon S3 storage class enables you to optimize costs by automatically
 moving data to the most cost-effective access tier, while ensuring that frequently
 accessed data is made available immediately?
 [answers]
@@ -1346,7 +1346,7 @@ D. Amazon S3 Intelligent-Tiering
 D. Amazon S3 Intelligent-Tiering
 
 [q]
-5. Which Amazon S3 service can be configured to automatically migrate data from
+Which Amazon S3 service can be configured to automatically migrate data from
 one storage class to another after a set number of days as a means of reducing your
 costs, especially where frequent instant access may not be required to that subset
 of data?
@@ -1359,7 +1359,7 @@ D. S3 migration
 B. Lifecycle management
 
 [q]
-6. When retrieving data from Amazon Glacier, what is the typical time taken
+When retrieving data from Amazon Glacier, what is the typical time taken
 by a Standard retrieval option to make the archive available for download?
 [answers]
 A. 20 minutes
@@ -1370,7 +1370,7 @@ D. 90 seconds
 C. 3 to 5 hours
 
 [q]
-7. Which feature of the Amazon S3 platform enables you to upload content to
+Which feature of the Amazon S3 platform enables you to upload content to
 a centralized bucket from across any location via Amazon edge locations,
 ensuring faster transfer speeds and avoidance of public internet congestion?
 [answers]
@@ -1382,7 +1382,7 @@ D. CloudFront
 A. Amazon S3TA
 
 [q]
-8. Your on-premises applications require access to a centrally managed cloud storage
+Your on-premises applications require access to a centrally managed cloud storage
 service. The application running on your servers need to be able to store and
 retrieve files as durable objects on Amazon S3 over standard NFS-based access
 with local caching. Which AWS service can help you deliver a solution to meet the
@@ -1396,7 +1396,7 @@ D. EBS volumes
 A. AWS Storage Gateway— Amazon S3File Gateway
 
 [q]
-9. You are looking to migrate your on-premises data to the cloud. As part of
+You are looking to migrate your on-premises data to the cloud. As part of
 a one-time data migration effort, you need to transfer over 900 TB of data to
 Amazon S3 in a couple of weeks. Which is the most cost-effective strategy to
 transfer this amount of data to the cloud?
@@ -1409,7 +1409,7 @@ D. Use AWS Rain
 B. Use the Amazon Snowball service
 
 [q]
-1. Which VPC component enables to you grant internet access to servers in the public
+Which VPC component enables to you grant internet access to servers in the public
 subnet deployed in the VPC?
 [answers]
 A. NAT gateway
@@ -1420,7 +1420,7 @@ D. Security group
 B. Internet gateway
 
 [q]
-2. Which of the following statements are true?
+Which of the following statements are true?
 [answers]
 A.NACLs protect entire subnets, whereas security groups protect the individual instance.
 B.NACLs protect the individual instance, whereas security groups protect the entire subnet.
@@ -1430,7 +1430,7 @@ D.NACLs enable instances in the private subnet to access the internet and act as
 A.NACLs protect entire subnets, whereas security groups protect the individual instance.
 
 [q]
-3. Which AWS service enables you to purchase and register new domain names that
+Which AWS service enables you to purchase and register new domain names that
 can be used to publish your website on the internet?
 [answers]
 A. Route53
@@ -1441,7 +1441,7 @@ D. Elastic Beanstalk
 A. Route53
 
 [q]
-4. Which AWS service enables you to distribute your digital assets such that it is
+Which AWS service enables you to distribute your digital assets such that it is
 cached locally to users who attempt to access this content for a time to live, and thus
 helps to reduce network latency?
 [answers]
@@ -1453,7 +1453,7 @@ D. AWS CloudScape
 A. AWS CloudFront
 
 [q]
-5. Your organization hosts multiple AWS accounts with multiple VPCs. You would
+Your organization hosts multiple AWS accounts with multiple VPCs. You would
 like to connect these VPCs together and centrally manage connectivity policies.
 Which AWS service enables you to connect multiple VPCs configured as a hub
 that controls how traffic is routed among all the connected networks, which act like
@@ -1467,7 +1467,7 @@ D. AWS Virtual Private Gateway
 A. AWS Transit Gateway
 
 [q]
-6. Which AWS service enables you to grant internet access to EC2 instances
+Which AWS service enables you to grant internet access to EC2 instances
 configured with IPv4, and located in the private subnet of your VPC?
 [answers]
 A. Egress-only internet gateway
@@ -1478,7 +1478,7 @@ D. VPN tunnel
 B. NAT gateway
 
 [q]
-7. You company has a primary production website in the US and a DR site in Sydney.
+You company has a primary production website in the US and a DR site in Sydney.
 You need to configure DNS such that if your primary site becomes unavailable,
 you can fail DNS over to the secondary site. Which DNS routing policy can you
 configure to achieve this?
@@ -1491,7 +1491,7 @@ D. Failover Routing
 D. Failover Routing
 
 [q]
-8. You plan to set up DNS failover using Amazon Route53. Which feature of Route53
+You plan to set up DNS failover using Amazon Route5Which feature of Route53
 can you use to test your web application's availability and reachability?
 [answers]
 A. Private DNS
@@ -1502,7 +1502,7 @@ D. DNS ping
 C. Health checks
 
 [q]
-9. Which VPC firewall solution enables you to deny inbound traffic from a specific IP
+Which VPC firewall solution enables you to deny inbound traffic from a specific IP
 address, which can be used to prevent malicious attacks?
 [answers]
 A. AWS Firewall
@@ -1513,7 +1513,7 @@ D. AWS CloudFront
 C. AWS Network Access Control Lists (NACLs)
 
 [q]
-10. Which AWS service enables you to connect your private data center to your
+Which AWS service enables you to connect your private data center to your
 Amazon VPC with up to 100 Gbps network connectivity?
 [answers]
 A. Snowball
@@ -1525,7 +1525,7 @@ B. Direct Connect
 
 
 [q]
-1. Which AWS EC2 pricing option can help you reduce costs by allowing you to use
+Which AWS EC2 pricing option can help you reduce costs by allowing you to use
 your existing server-bound software licenses?
 [answers]
 A. On-Demand
@@ -1536,7 +1536,7 @@ D. Dedicated Hosts
 D. Dedicated Hosts
 
 [q]
-2. Which AWS EC2 pricing option enables you to take advantage of unused EC2
+Which AWS EC2 pricing option enables you to take advantage of unused EC2
 capacity in the AWS cloud and can offer up to a 90% discount compared to
 On-Demand prices?
 [answers]
@@ -1548,7 +1548,7 @@ D. Dedicated Hosts
 A. Spot Instances
 
 [q]
-3. Which of the following is true with regards to the benefits of purchasing
+Which of the following is true with regards to the benefits of purchasing
 a Convertible EC2 Reserved Instance? (Choose 2 answers)
 [answers]
 A. You can exchange a Convertible Reserved Instance for a Convertible Reserved Instance in a different Region.
@@ -1561,7 +1561,7 @@ C. To benefit from better pricing, you can exchange a No Upfront Convertible Res
 E. You can exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration, including instance family, operating system, and tenancy.
 
 [q]
-4. Which feature of the AWS EC2 service helps prevent accidentally terminating an
+Which feature of the AWS EC2 service helps prevent accidentally terminating an
 EC2 instance by preventing the user from issuing a termination command either
 from the console or CLI?
 [answers]
@@ -1573,7 +1573,7 @@ D. Enable "protect EC2"
 A. Enable "termination protection"
 
 [q]
-5. Which storage solution enables you to share a common filesystem across multiple
+Which storage solution enables you to share a common filesystem across multiple
 Linux-based EC2 instances that can be used to support applications that require
 access to data with very low latency connectivity?
 [answers]
@@ -1585,7 +1585,7 @@ D. NTFS
 A. EFS
 
 [q]
-6. Which type of IP address offering from AWS gives you a static, publicly routable
+Which type of IP address offering from AWS gives you a static, publicly routable
 address that will not change, even if you stop and restart an EC2 instance that it is
 associated with?
 [answers]
@@ -1597,7 +1597,7 @@ D. Regional IP address
 C. Elastic IP address
 
 [q]
-7. Which AWS service enables you to configure multiple Windows-based EC2
+Which AWS service enables you to configure multiple Windows-based EC2
 instances to share and access a common storage solution that is based on using
 the industry-standard SMB protocol and eliminate the administrative overhead of
 managing Windows file servers?
@@ -1610,7 +1610,7 @@ D. Amazon DFS Volumes for Windows File Server
 A. Amazon FSx for Windows File Server
 
 [q]
-8. Which of the following types of EBS volumes can be used as boot volumes for your
+Which of the following types of EBS volumes can be used as boot volumes for your
 EC2 instances? (Select 2 answers)
 [answers]
 A. General Purpose SSD (gp2)
@@ -1623,7 +1623,7 @@ A. General Purpose SSD (gp2)
 B. Provisioned IOPS SSD (io1)
 
 [q]
-9. Which of the following AWS services enables you to quickly launch a web server
+Which of the following AWS services enables you to quickly launch a web server
 with a pre-configured WordPress installation pack, offers predictable monthly
 pricing, comes with integrated certificate management, and provides free SSL/TLS
 certificates?
@@ -1636,7 +1636,7 @@ D. AWS Elastic Beanstalk
 A. AWS Lightsail
 
 [q]
-10. Which AWS service can be used to run a piece of code that can create thumbnails of
+Which AWS service can be used to run a piece of code that can create thumbnails of
 images uploaded to one Amazon S3 bucket and copy them to another S3 bucket?
 [answers]
 A. AWS SNS
@@ -1647,7 +1647,7 @@ D. AWS Snowball
 A. AWS SNS
 
 [q]
-1. You are planning on developing a website in multiple languages such that you have
+You are planning on developing a website in multiple languages such that you have
 one fleet of EC2 instances that serves the English version of your site and another
 fleet that serves the Spanish version of your site. For each language version, you will
 be configuring URLs with different paths such that the English version of your site
@@ -1663,7 +1663,7 @@ D. Path-based load balancer
 C. ALB
 
 [q]
-2. You are building a multi-tier architecture with web servers placed in the public
+You are building a multi-tier architecture with web servers placed in the public
 subnet and application servers placed in the private subnet of your VPC. You need
 to deploy ELBs to distribute traffic to both the web server farm and the application
 server farm. Which type of load balancer would you choose to distribute traffic to
@@ -1677,7 +1677,7 @@ D. Static load balancer
 B. Internal load balancer
 
 [q]
-3. Which ELB is ideal for handling volatile workloads and can scale to millions of
+Which ELB is ideal for handling volatile workloads and can scale to millions of
 requests per second?
 [answers]
 A. ALB
@@ -1688,7 +1688,7 @@ D. Premium load balancer
 B. NLB
 
 [q]
-4. Which configuration feature of the AWS Auto Scaling service enables you to define
+Which configuration feature of the AWS Auto Scaling service enables you to define
 a maximum number of EC2 instances that can be launched in your fleet?
 [answers]
 A. Auto Scaling group
@@ -1699,7 +1699,7 @@ D. Auto Scaling policy
 A. Auto Scaling group
 
 [q]
-5. When an ELB detects an unhealthy EC2 instance, which action does it perform
+When an ELB detects an unhealthy EC2 instance, which action does it perform
 regarding distributing incoming traffic?
 [answers]
 A. It continues to send traffic to the failed instance.
@@ -1710,7 +1710,7 @@ D. It restarts the unhealthy EC2 instance.
 C. It only sends traffic to the remaining healthy instances.
 
 [q]
-6. Which service does an AWS ALB integrate with to protect your applications from
+Which service does an AWS ALB integrate with to protect your applications from
 common web attacks?
 [answers]
 A. WAF
@@ -1721,7 +1721,7 @@ D. Key Management Service (KMS)
 A. WAF
 
 [q]
-1. Which AWS services does Amazon CloudWatch use to send out email alerts to
+Which AWS services does Amazon CloudWatch use to send out email alerts to
 administrators when alarms are triggered and enter the Alarm state?
 [answers]
 A. Amazon SNS
@@ -1732,7 +1732,7 @@ D. Amazon Email
 A. Amazon SNS
 
 [q]
-2. Which feature of Amazon CloudWatch enables you to create a visualization of
+Which feature of Amazon CloudWatch enables you to create a visualization of
 metrics by resource type and service?
 [answers]
 A. CloudWatch Events
@@ -1743,7 +1743,7 @@ D. CloudWatch dashboards
 D. CloudWatch dashboards
 
 [q]
-3. Which AWS application integration service can be configured to offer A2P
+Which AWS application integration service can be configured to offer A2P
 communication using mobile SMS to send out text alerts?
 [answers]
 A. Amazon SQS
@@ -1754,7 +1754,7 @@ D. Amazon Workspaces
 B. Amazon SNS
 
 [q]
-4. You need to configure your Amazon SNS topic to push out messages of newly
+You need to configure your Amazon SNS topic to push out messages of newly
 uploaded videos to an Amazon S3 bucket, across three different SQS queues. Each
 queue is designed to encode the raw video into a different resolution. Which feature
 of Amazon SNS enables you to push out such notifications in parallel?
@@ -1767,7 +1767,7 @@ D. Amazon EventBridge
 C. Fanout scenario
 
 [q]
-5. Which Amazon SQS queue type offers maximum throughput, best-effort ordering,
+Which Amazon SQS queue type offers maximum throughput, best-effort ordering,
 and at least one delivery?
 [answers]
 A. SQS standard queue
@@ -1778,7 +1778,7 @@ D. SQS LIFO queue
 A. SQS standard queue
 
 [q]
-6. Which AWS service is designed to help you build a decoupled application
+Which AWS service is designed to help you build a decoupled application
 architecture where incoming web requests can be held in a queue until a backend
 application can retrieve and process the request?
 [answers]
@@ -1790,7 +1790,7 @@ D. Amazon Step Functions
 A. Amazon SQS
 
 [q]
-7. You are required to configure an SQS queue for your application where the order
+You are required to configure an SQS queue for your application where the order
 of messages needs to be preserved for the application to function correctly. Which
 type of queue do you need to configure?
 [answers]
@@ -1802,7 +1802,7 @@ D. SQS LIFO queue
 B. SQS power queue
 
 [q]
-8. To reduce costs, you have been asked to automate the shutdown of a fleet of UAT
+To reduce costs, you have been asked to automate the shutdown of a fleet of UAT
 test servers every weekday at 7 P.M. and then restart them the following weekday at
 8 A.M. The servers should remain in the shutdown state at weekends.
 Which AWS service can help you achieve the preceding requirements?
@@ -1815,7 +1815,7 @@ D. Amazon SNS
 C. Amazon EventBridge
 
 [q]
-9. Which AWS service enables you to manage application workflows as state machines
+Which AWS service enables you to manage application workflows as state machines
 by breaking them into multiple steps, adding flow logic, and tracking the inputs and
 outputs between the steps?
 [answers]
@@ -1827,7 +1827,7 @@ D. Amazon SWF
 A. Amazon Step Functions
 
 [q]
-10. Which AWS service offers an orchestration service to coordinate work across
+Which AWS service offers an orchestration service to coordinate work across
 application components that make use of decider programs to determine the latest
 state of each task and use it to initiate subsequent tasks?
 [answers]
@@ -1840,7 +1840,7 @@ D. Amazon SWF
 
 
 [q]
-1. Which AWS service can help you ingest and deliver massive amounts of streaming
+Which AWS service can help you ingest and deliver massive amounts of streaming
 data into Amazon Redshift for near real-time analytics?
 [answers]
 A. Amazon Athena
@@ -1851,7 +1851,7 @@ D. Amazon RDS
 B. Amazon Kinesis Firehose
 
 [q]
-2. Which AWS service can help you query streaming data using standard SQL queries
+Which AWS service can help you query streaming data using standard SQL queries
 in real time?
 [answers]
 A. Amazon Kinesis Data Streams
@@ -1862,7 +1862,7 @@ D. Amazon QuickSight
 B. Amazon Kinesis Data Analytics
 
 [q]
-3. You are planning on building an application that will capture video streams from
+You are planning on building an application that will capture video streams from
 speed cameras on country roads for analysis. You need to be able to capture all
 the vehicles that break the speed limit and identify the offending drivers via the
 vehicles' license plates. Which two services on AWS can help you achieve these
@@ -1878,7 +1878,7 @@ C. Amazon Kinesis Video Streams
 E. Amazon Rekognition
 
 [q]
-4. Which AWS service enables you to index all types of content, offers integration with
+Which AWS service enables you to index all types of content, offers integration with
 Kibana, and helps you build data visualization tools to analyze large datasets?
 [answers]
 A. Amazon Elasticsearch
@@ -1889,7 +1889,7 @@ D. Amazon Kinesis Firehose
 A. Amazon Elasticsearch
 
 [q]
-5. You store several network log files (in CSV format) in an Amazon S3 bucket. You
+You store several network log files (in CSV format) in an Amazon S3 bucket. You
 have been asked to analyze the contents of a specific file for possible malicious
 attacks. Which AWS service can help you analyze raw data in Amazon S3 and
 perform the necessary ad hoc analysis?
@@ -1897,12 +1897,12 @@ perform the necessary ad hoc analysis?
 A. Amazon Glue
 B. Amazon QuickSight
 C. Amazon Athena
-D. Amazon Data Pipeline3. 
+D. Amazon Data Pipeline
 [correct]
 C. Amazon Athena
 
 [q]
-6. Which AWS service can be used to perform serverless ETL functions to discover,
+Which AWS service can be used to perform serverless ETL functions to discover,
 prepare, enrich, clean, and transform your data from various sources for analysis?
 [answers]
 A. AWS Glue
@@ -1913,7 +1913,7 @@ D. AWS Rekognition
 A. AWS Glue
 
 [q]
-7. Which AWS service enables you to create and publish interactive BI dashboards for
+Which AWS service enables you to create and publish interactive BI dashboards for
 your business data to provide access to meaningful information for your business to
 make decisions?
 [answers]
@@ -1926,7 +1926,7 @@ C. AWS QuickSight
 
 
 [q]
-1. Which AWS service automatically provisions the necessary infrastructure (for
+Which AWS service automatically provisions the necessary infrastructure (for
 example, load balancing, auto-scaling, and health monitoring) and enables
 developers to automatically deploy an application's built-in supported languages
 such as Node.js, PHP, and Python?
@@ -1939,7 +1939,7 @@ D. AWS Deployer
 C. AWS Elastic Beanstalk
 
 [q]
-2. You work for a web application development company and have been asked to
+You work for a web application development company and have been asked to
 design an infrastructure solution that can be repeatedly created using scripted
 templates. This will allow you to create individual sandbox environments for your
 developers to use. Some infrastructure components will include the setup and
@@ -1955,7 +1955,7 @@ D. AWS FSx for Lustre
 B. AWS CloudFormation
 
 [q]
-3. Which two file formats are used when creating CloudFormation templates?
+Which two file formats are used when creating CloudFormation templates?
 (Choose 2.)
 [answers]
 A. JSON
@@ -1968,7 +1968,7 @@ A. JSON
 B. YAML
 
 [q]
-4. Which AWS service provides integration with Chef recipes to start new application
+Which AWS service provides integration with Chef recipes to start new application
 instances, configure application server software, and deploy the application?
 [answers]
 A. Amazon CloudFormation
@@ -1979,7 +1979,7 @@ D. Amazon Cookbook.
 C. Amazon OpsWorks
 
 [q]
-5. Which type of environment do you need to configure for an Elastic Beanstalk
+Which type of environment do you need to configure for an Elastic Beanstalk
 deployment to host backend application layer services?
 [answers]
 A. Web server environment tier
@@ -1990,7 +1990,7 @@ D. Hybrid environment
 B. Worker environment tier
 
 [q]
-6. Which feature of the Amazon CloudFormation service enables you to review any
+Which feature of the Amazon CloudFormation service enables you to review any
 proposed changes you wish to make to an environment and identify how those
 changes will impact your environment?
 [answers]
@@ -2002,7 +2002,7 @@ D. Change management
 B. Change sets
 
 [q]
-1. Which AWS service enables you to track all API activity in your AWS account,
+Which AWS service enables you to track all API activity in your AWS account,
 regardless of whether the activity was performed using the AWS Management
 Console of the CLI?
 [answers]
@@ -2014,7 +2014,7 @@ D. Application load balancer logs
 A. AWS CloudTrail
 
 [q]
-2. As part of implementing change management, which AWS service can be used to
+As part of implementing change management, which AWS service can be used to
 assess, audit, and evaluate change configurations of your AWS resources, enabling
 you to identify whether a change was the cause of an incident?
 [answers]
@@ -2026,7 +2026,7 @@ D. AWS Outposts
 A. AWS Config
 
 [q]
-3. Which AWS service can be used to monitor your company's fleet of EC2 instances,
+Which AWS service can be used to monitor your company's fleet of EC2 instances,
 which can be used to identify performance issues related to CPU utilization or
 memory consumptions?
 [answers]
@@ -2038,7 +2038,7 @@ D. AWS CloudTrail
 A. Amazon CloudWatch
 
 [q]
-4. Which AWS service helps you identify potential unused resources, such as Elastic
+Which AWS service helps you identify potential unused resources, such as Elastic
 IP addresses, that are not attached to a running instance and thus highlight
 opportunities to save on costs?
 [answers]
@@ -2050,7 +2050,7 @@ D. AWS Budgets
 B. AWS Trusted Advisor
 
 [q]
-5. Which capability of the AWS Systems Manager service enables you to remotely
+Which capability of the AWS Systems Manager service enables you to remotely
 connect to your Linux EC2 instances without having to use bastion hosts in
 your VPC?
 [answers]
@@ -2062,7 +2062,7 @@ D. Incident Manager
 A. Session Manager
 
 [q]
-1. Which of the following is part of the customers' responsibility regarding the Shared
+Which of the following is part of the customers' responsibility regarding the Shared
 Security Model? (Choose 2.)
 [answers]
 A. Patch Windows EC2 instances with the latest security patches.
@@ -2075,7 +2075,7 @@ A. Patch Windows EC2 instances with the latest security patches.
 B. Configure NACL to only allow inbound ports 80 and 443 to Linux web servers from the internet.
 
 [q]
-2. Which service in AWS protects your virtual network and resources from common
+Which service in AWS protects your virtual network and resources from common
 DDoS attacks?
 [answers]
 A. AWS WAF
@@ -2086,7 +2086,7 @@ D. Amazon Macie
 B. AWS Shield
 
 [q]
-3. Which of the following AWS Security tools can protect your web applications or
+Which of the following AWS Security tools can protect your web applications or
 APIs against common web exploits that may affect availability, compromise security,
 or consume excessive resources?
 [answers]
@@ -2098,7 +2098,7 @@ D. AWS NACL
 A. AWS WAF
 
 [q]
-4. Which AWS service uses machine learning to classify sensitive information
+Which AWS service uses machine learning to classify sensitive information
 stored in your Amazon S3 buckets and monitor access patterns for anomalies
 that indicate risks or suspicious behavior, such as large quantities of source code
 being downloaded?
@@ -2111,7 +2111,7 @@ D. AWS WAF
 A. Amazon Macie
 
 [q]
-5. Which AWS service enables companies looking to migrate to the AWS cloud to
+Which AWS service enables companies looking to migrate to the AWS cloud to
 obtain copies of various compliance documents such as ISO certifications, PCI,
 and SOC reports?
 [answers]
@@ -2123,7 +2123,7 @@ D. AWS security reports
 A. AWS Artifact
 
 [q]
-6. To fulfill strict compliance requirements, you need to create and manage your
+To fulfill strict compliance requirements, you need to create and manage your
 encryption keys using FIPS 140-2 Level 3-validated HSM devices. Which type
 of encryption service would you recommend?
 [answers]
@@ -2134,6 +2134,74 @@ D. BitLocker
 [correct]
 B. AWS CloudHSM
 
+[q]
+19. With specified private IP addresses, can an Amazon Elastic Compute Cloud (EC2) instance be launched? If so, which 
+Amazon service makes it possible?
+[answers]
+Yes. Utilizing VPC makes it possible (Virtual Private Cloud).
+No.
+Yes, using Amazon CloudFormation
+Yes, using Amazon Macie
+[correct]
+Yes. Utilizing VPC makes it possible (Virtual Private Cloud).
+
+[q]
+20. Define Amazon EC2 regions and availability zones?
+[answers]
+Availability zones are geographically separate locations. Regions may have one or more availability zones. 
+Availability zones are geographically separate locations. Regions only have one availability zone. 
+Availability zones are areas within an availability zone. 
+[correct]
+Availability zones are geographically separate locations. Regions may have one or more availability zones. 
+
+[q]
+23. Will your standby RDS be launched in the same availability zone as your primary?
+[answers]
+No, standby instances are launched in different availability zones than the primary
+Yes, standby instances are launched in the same availability zone than the primary
+No, standby instances are launched in different Region than the primary
+No, standby instances are launched in the same Region than the primary
+[correct]
+No, standby instances are launched in different availability zones than the primary
+
+[q]
+How would you address a situation in which the relational database engine frequently collapses when traffic to your RDS instances increases, given that the RDS instance replica is not promoted as the master instance?
+[answers]
+Create a larger RDS instance type
+Reconnect the RDS instance
+Add additional databases
+Reset the RDS instance 
+[correct]
+Create a larger RDS instance type
+
+[q]
+Define Snapshots in Amazon Lightsail?
+[answers]
+Point-in-time backups of EC2 instances, block storage drives, and databases. 
+CloudFormation, block storage drives, and databases. 
+Point-in-time backups of EC2 instances, and databases. 
+Point-in-time backups of EC2 instances, and block storage drives
+[correct]
+Point-in-time backups of EC2 instances, block storage drives, and databases. 
+
+[q]
+How many S3 buckets can be created?
+[answers]
+100 
+50
+1000
+200
+
+[q]
+What is the maximum limit of elastic IPs anyone can produce?
+[answers]
+5
+50
+10
+100
+
+
+`
 <pvpc_14_virtual_network_interface.png>
 
 
