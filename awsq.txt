@@ -2061,7 +2061,78 @@ D. Incident Manager
 [correct]
 A. Session Manager
 
+[q]
+1. Which of the following is part of the customers' responsibility regarding the Shared
+Security Model? (Choose 2.)
+[answers]
+A. Patch Windows EC2 instances with the latest security patches.
+B. Configure NACL to only allow inbound ports 80 and 443 to Linux web servers from the internet.
+C. Update the network cabling in the us-east-1 data centers.
+D. Upgrade the underlying infrastructure support for the Lambda service.
+E. Upgrade the biometric readers in the London Region.
+[correct]
+A. Patch Windows EC2 instances with the latest security patches.
+B. Configure NACL to only allow inbound ports 80 and 443 to Linux web servers from the internet.
 
+[q]
+2. Which service in AWS protects your virtual network and resources from common
+DDoS attacks?
+[answers]
+A. AWS WAF
+B. AWS Shield
+C. AWS Detective
+D. Amazon Macie
+[correct]
+B. AWS Shield
+
+[q]
+3. Which of the following AWS Security tools can protect your web applications or
+APIs against common web exploits that may affect availability, compromise security,
+or consume excessive resources?
+[answers]
+A. AWS WAF
+B. AWS GuardDuty
+C. AWS Shield
+D. AWS NACL
+[correct]
+A. AWS WAF
+
+[q]
+4. Which AWS service uses machine learning to classify sensitive information
+stored in your Amazon S3 buckets and monitor access patterns for anomalies
+that indicate risks or suspicious behavior, such as large quantities of source code
+being downloaded?
+[answers]
+A. Amazon Macie
+B. Amazon X-Ray
+C. AWS Shield
+D. AWS WAF
+[correct]
+A. Amazon Macie
+
+[q]
+5. Which AWS service enables companies looking to migrate to the AWS cloud to
+obtain copies of various compliance documents such as ISO certifications, PCI,
+and SOC reports?
+[answers]
+A. AWS Artifact
+B. AWS Config
+C. AWS CloudWatch
+D. AWS security reports
+[correct]
+A. AWS Artifact
+
+[q]
+6. To fulfill strict compliance requirements, you need to create and manage your
+encryption keys using FIPS 140-2 Level 3-validated HSM devices. Which type
+of encryption service would you recommend?
+[answers]
+A. AWS KMS
+B. AWS CloudHSM
+C. Certificate Manager
+D. BitLocker
+[correct]
+B. AWS CloudHSM
 
 <pvpc_14_virtual_network_interface.png>
 
