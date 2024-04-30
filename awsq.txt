@@ -2393,12 +2393,71 @@ AWS Batch
 [correct]
 AWS Batch
 
+[q]
+Which statement describes an elastic network interface?
+[answers]
+A virtual network interface that you can attach to an instance in an Amazon Virtual Private Cloud (VPC)
+Enables the creation of a private connection between your Amazon Virtual Private Cloud (Amazon VPC) without requiring access over the internet or through a network address translation (NAT) instance
+A static IPv4 address designed for dynamic cloud computing
+An Amazon managed resource designed to operate like a network address translation (NAT) instance, but is simple to manager and is highly available within an Availability Zone
+[correct]
+Enables the creation of a private connection between your Amazon Virtual Private Cloud (Amazon VPC) without requiring access over the internet or through a network address translation (NAT) instance
 
-<pvpc_14_virtual_network_interface.png>
+[q]
+What defined a subnet?
+[answers]
+Classless Inter-Domain Routing (CIDR) block
+Instance
+Availability Zones
+Route table
+[correct]
+Classless Inter-Domain Routing (CIDR) block
 
+[q]
+You are a solutions architect who works for a large retails company that is migrating its existing infrastructure to AWS. You recommend they use
+a custom Amazon Virtual Private Cloud (Amazon VPC). They will need a public subnet for their web servers and a private subnet for their 
+databases. They require webs servers and database servers to be highly available, with a minimum of two web servers and two database servers each.
 
+How many subnets should you have to maintain high availability? Select the best answer
+[answers]
+4
+2
+3
+1
+[correct]
+4
 
+[q]
+Which AWS networking service enables a company to create a virtual network within AWS? Select the best answer.
+[answers]
+Amazon Virtual Private Cloud (Amazon VPC)
+AWS Direct Connect
+Amazon Route 53
+AWS Config
+[correct]
+Amazon Virtual Private Cloud (Amazon VPC)
 
+[q]
+A company has a test AWS environment. A company is planning on testing an application within AWS. The application testing can be interrupted
+and does not need to run continuously.
 
+Which Amazon EC2 purchasing option will these requirements MOST cost-effectively
+[answers]
+On-Demand Instances
+Dedicated Instances
+Spot Instances
+Reserved Instances
+[correct]
+Spot Instances
 
+[q]
+Which AWS service gives users the ability to discover and protect sensitive data that is stored in Amazon S3 buckets
+[answers]
+Amazon Macie
+Amazon Detective
+Amazon GuardDuty
+AWS IAM Access Analyzer
+[correct]
+Amazon Macie
 
+<pricing 2 montsh.png>
