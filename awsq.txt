@@ -2191,17 +2191,50 @@ How many S3 buckets can be created?
 50
 1000
 200
+[correct]
+100 
 
 [q]
 What is the maximum limit of elastic IPs anyone can produce?
 [answers]
-5
 50
 10
+5
 100
+[correct]
+5
+
+[q]
+What are the different types of EC2 instances based on their costs?
+[answers]
+On-demand Instance, Spot Instance, Annual
+Spot Instance, Annual, Reserved Instance
+On demand, Annual, Reserved Instance
+On-demand Instance, Spot Instance, Reserved Instance
+[correct]
+On-demand Instance, Spot Instance, Reserved Instance
+
+[q]
+VPC is not resolving the server through DNS. What might be the issue, and how can you fix it?
+[answers]
+Enable the DNS hostname resolution, so that the problem resolves itself.
+Check security groups
+Check NAT tables
+Check of API Gateway is enabled
+[correct]
+Enable the DNS hostname resolution, so that the problem resolves itself.
+
+[q]
+How do you connect multiple sites to a VPC?
+[answers]
+Use Amazon Connect
+Use Amazon CloudFront
+Use Amazon CloudHSM
+Use AWS VPN CloudHub. 
+[correct]
+Use AWS VPN CloudHub. 
 
 
-`
 <pvpc_14_virtual_network_interface.png>
 
 
