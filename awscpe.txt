@@ -12,7 +12,12 @@ Function as a Service (FaaS)
 [correct]
 Infrastructure as a Service (IaaS)
 [explanation]
-
+Infrastructure as a Service (IaaS) is a cloud service model that gives you access to virtualized infrastructure components comprising 
+computing, network, and storage services. This is very similar to hosting your own VMware or Hyper-V virtualized platforms, 
+where you deploy servers, attach storage volumes, and configure network connectivity services. However, the primary difference is that 
+you do not have access to the underlying hypervisor platform with cloud-hosted IaaS solutions. IaaS offerings give the greatest amount of 
+control over how the virtual components of your infrastructure are configured and also require you to take responsibility for managing, 
+maintaining, and enforcing security measures for those components.
 
 [q]
 Your company is looking to move all its applications and services to the cloud but would like to migrate workloads in stages. 
@@ -26,6 +31,12 @@ Multi-cloud
 [correct]
 Hybrid cloud
 [explanation]
+Companies who wish to move their entire suite of applications to the cloud would normally carry out a series of migration projects over time. 
+During this migration phase, connectivity between the on-premises environment and the AWS cloud would be required to facilitate the migration.
+Many companies may also require a more permanent hybrid design architecture. This could be because certain types of applications need to be 
+in much closer proximity to the on-premises infrastructure where users are based, such as your corporate office network, ultimately ensuring
+low-latency access, data residency requirements, or even unique local data processing requirements. AWS offers several services to build hybrid
+clouds from VPN technologies and Direct Connect services to offering on-premises services such as AWS Storage Gateway and AWS Outposts.
 
 [q]
 Which of the following statements are valid reasons for choosing a specific AWS Region to deploy your applications in? (Choose two)
@@ -39,6 +50,8 @@ Your organization would select an AWS Region that offered higher variable costs 
 Your organization would choose a specific AWS Region that enables you to ensure that your applications are closer to your end users, thereby reducing any latency.”
 If your organization has specific compliance or data residency laws to follow, then your choice of an AWS Region will be dictated by this requirement.
 [explanation]
+There are several reasons why you would choose a specific AWS Region to deploy your applications in, including the need for closer proximity
+to your end users and thus to reduce latency, data residence laws, regulatory requirements, the choice of services available, and costs.
 
 [q]
 Which component of the AWS Global Infrastructure enables you to cache content (videos, images, and documents) and offer low-latency 
@@ -51,7 +64,9 @@ Local Zones
 [correct]
 Edge locations
 [explanation]
-
+Edge locations are AWS infrastructure facilities located across the globe that help cache content for Amazon CloudFront. Any content that is 
+accessed from the origin is cached locally at one or more edge locations closer to users to access that content for a particular time to 
+live (TTL). This way, repeated access to the same content is delivered over a low latency connection.
 
 [q]
 Which of the following AWS services can help you design a hybrid cloud architecture and enable your on-premises applications to get access 
@@ -64,12 +79,15 @@ Amazon CloudFront
 [correct]
 AWS Storage Gateway
 [explanation]
-
+AWS Storage Gateway enables you to build hybrid cloud solutions by giving access to the Amazon S3 and Glacier environments from your 
+on-premises network. You install and configure the gateway appliance at your on-premises location and can use any one of four gateway types 
+to access unlimited storage in the cloud. These gateway types are Amazon S3 File Gateway, Amazon FSx File Gateway, Tape Gateway, and 
+Volume Gateway
 
 [q]
 You are planning on using AWS services to host an application that is still under development, and you need to decide which AWS support 
-plan you should subscribe to. You do not need production-level support currently and are happy with a 12-hour response time f
-or any system-impaired issues. Which is the most cost-effective support plan you should subscribe to?
+plan you should subscribe to. You do not need production-level support currently and are happy with a 12-hour response time for any 
+system-impaired issues. Which is the most cost-effective support plan you should subscribe to?
 [answers]
 Basic Support plan
 Developer Support plan
@@ -78,8 +96,8 @@ Enterprise Support plan
 [correct]
 Developer Support plan
 [explanation]
-
-
+The Developer Support plan gives you access to technical support via email and chats only. This support plan is cheaper than the Business 
+and Enterprise Support plans and is recommended for experimenting with or testing applications on AWS.
 
 [q]
 Which of the following are regarded as global services on AWS? (Choose two)
@@ -93,9 +111,9 @@ Amazon RDS
 AWS IAM
 Amazon Route53
 [explanation]
-
-
-
+Several services are configured from a global perspective on AWS. For example, with IAM, every IAM user in your AWS account 
+is unique across the entire AWS Global Infrastructure. The same applies to Amazon Route53, where domain names configured in 
+host zones have a global presence across all Regions on AWS. Another global service on AWS is Amazon CloudFront.
 
 [q]
 Which of the following statements closely relates to the advantage of cloud computing that discusses the ability to go global in minutes?
@@ -107,7 +125,9 @@ The ability to focus on experimentation and the development of your applications
 [correct]
 The ability to deploy your applications across multiple Regions with just a few mouse clicks.
 [explanation]
-
+One of the six advantages of cloud computing is the ability to go global in minutes. This is made possible because, as an AWS customer, 
+you have access to all Regions and Availability Zones where you can provision the resources required to host your application 
+in a matter of minutes.
 
 [q]
 Which AWS service can you configure to send out an alert to an email address if your total expenditure crosses a predefined monthly cost?
@@ -119,6 +139,9 @@ Set up a billing blarm in Amazon Trusted Advisor
 [correct]
 Set up a billing alarm in Amazon CloudWatch
 [explanation]
+Amazon CloudWatch enables you to set up alarms that can be triggered when a particular threshold is crossed. You can set up an alarm for 
+billing alerts that monitors when your total spend crosses a specified dollar amount. This alarm can be configured to send out an alert
+to an email address that uses the Amazon SNS service.
 
 
 [q]
@@ -131,8 +154,8 @@ Amazon DynamoDB
 [correct]
 Elastic Block Store (EBS)
 [explanation]
+Amazon EBS is like the virtual hard disks (volumes) that you attach to EC2 instances. They need to be provisioned in the same availability where the EC2 instance has been launched to be attached to that EC2 instance. Furthermore, you cannot attach an EBS volume to an EC2 instance in another Availability Zone. You could take a snapshot of the EBS volume and launch a new volume in another Availability Zone from that snapshot if required.”
 
-			 
 [q]			
 As part of enhancing the security of your AWS account, you need to ensure that all IAM users use complex passwords comprising of 
 at least one capital letter, a number, a symbol, and a minimum of 9 characters. Which AWS IAM feature can you use to configure 
@@ -145,7 +168,7 @@ Resource policies
 [correct]
 Password policies
 [explanation]
-
+AWS IAM Password Policies enable you to define custom policies on your AWS account to specify complexity requirements and mandatory rotation periods for your IAM users' passwords. This ensures that IAM user accounts are created with complex, hard-to-crack passwords.”
 
 [q]
 As a recommended best practice, what additional authentication security measure can you implement for your root user and IAM users?
@@ -157,7 +180,7 @@ Implement AWS Shield.
 [correct]
 Implement MFA.
 [explanation]
-
+Multi-Factor Authentication (MFA) is a recommended best practice authentication security measure. It requires you to authenticate with a username and password, as well as a security token generated by a physical or virtual device you own. Used together, these factors provide increased security for your AWS account settings and resources.”
 
 [q]
 What is the easiest way to assign permissions to many IAM users who share a common job function?
@@ -169,6 +192,7 @@ Create an IAM role with the necessary permissions and assign the role to all IAM
 [correct]
 Create an IAM Group, add IAM users who share the common job function to that group, and apply an IAM policy to the group with the necessary permissions.
 [explanation]
+An IAM Group can be used to club users who share common job functions. You can then assign the necessary permissions to the IAM Group, which will filter down to the IAM users that are members of the group.Where possible, entities that need access to services and resources on AWS ought to be granted access via IAM roles using temporary security credentials. For example, users who need to access resources in another AWS account can be granted permission to assume a role rather than having to create IAM accounts for them in the other account. This is considered best practice and AWS highly recommends this approach.”
 
 
 [q]
@@ -183,7 +207,7 @@ Root user
 [correct]
 IAM role
 [explanation]
-
+An IAM role enables you to grant external users access to resources in your AWS account using temporary credentials that are managed by the AWS Security Token Service (STS). An IAM role will also have an IAM policy attached to it that specifies the exact set of permissions the role will grant to the external user(s).”
 
 [q]
 Which tool on AWS can be used to estimate your monthly costs?
@@ -195,6 +219,8 @@ AWS Monthly Calculator
 [correct]
 AWS Pricing Calculator
 [explanation]
+AWS Pricing Calculator can help you estimate the monthly costs of the resources you wish to provision on AWS. In addition to specifying the expected usage for the month, to calculate the cost of the resources, you can provide additional details such as the amount of data transferred in and out of the AWS Region and cross-Region to get a complete estimate.”
+
 
 
 
@@ -209,6 +235,9 @@ Configure consolidated billing in AWS Organizations.
 [correct]
 Designate specific tags as cost allocation tags in the AWS Billing and Cost Management Console.
 [explanation]
+You can use cost allocation tags to identify your resource costs on your cost allocation report and track your AWS costs by resources and who owns them. AWS provides two types of cost allocation tags: AWS-generated tags and user-defined tags.”
+
+
 
 
 [q]             
@@ -221,6 +250,8 @@ AWS Personal Health Dashboard
 [correct]
 AWS Cost Explorer
 [explanation]
+AWS Cost Explorer enables you to view 12 months of usage and spending data, as well as a forecast of what your future costs will be for the next 12 months. Cost Explorer can also provide information on how much of your RI you have utilized, as well as the savings that have been made from using RIs over on-demand options for EC2 Amazon Redshift, Amazon RDS, and more.”
+
 
 
 [q]		
@@ -233,6 +264,8 @@ IAM key pairs
 [correct]
 IAM access key ID and secret access key
 [explanation]
+To access an AWS account as an IAM user, you need to create a set of access keys, which is a combination of an access key ID and a secret access key. Note these keys are considered long-term access keys. One set of keys is associated with a specific IAM use”
+
 
 
 [q]
@@ -247,6 +280,8 @@ Create an IAM role with the required level of permissions using an IAM policy. A
 [correct]
 Create an IAM role with the required level of permissions using an IAM policy. Attach the role to the EC2 instances that will host the application.
 [explanation]
+You can create an IAM role with the necessary permissions to upload objects to a specific Amazon S3 bucket. You should then deploy your EC2 instances with this role attached (this involves creating an instance profile associated with the role). The IAM role will enable the application running on the EC2 instance to access the Amazon S3 bucket. Using an IAM role, the EC2 instance will obtain temporary credentials from the Security Token Service (STS).”
+
 
 
 
@@ -260,6 +295,8 @@ AWS SCPs
 [correct]
 AWS Policy Simulator
 [explanation]
+AWS Policy Simulator can help you identify which set of policies are allowed and which are denied against specific identities, groups of identities, and IAM roles. You can obtain granular visibility into specific permissions that have been allowed and denied, helping you troubleshoot access issues.”
+
 
 
 [q]		
@@ -274,6 +311,8 @@ AWS Config
 [correct]
 IAM Credentials Report
 [explanation]
+The IAM Credentials Report enables you to review IAM user accounts created in your AWS account. You can identify if an IAM user has been configured with a username and password, as well as access keys. You can also identify IAM users that may not have accessed resources in your AWS accounts recently, which may indicate that those accounts may not be required anymore. Regularly deleting unwanted IAM user accounts is part of the security best practice.”
+
 
 
 [q]
@@ -284,8 +323,10 @@ Resource-based policies
 SCPs
 Permission boundaries
 [correct]
-SCPs
+Permission boundaries
 [explanation]
+Permission boundaries enable you to define the maximum set of permissions that can be granted by an identity-based policy for an IAM user or IAM role.”
+
 
 
 [q]
@@ -298,6 +339,8 @@ Permission boundaries
 [correct]
 SCPs
 [explanation]
+SCPs is a feature of the AWS Organization service that enables you to set the maximum set of permissions that can be defined for member accounts. You can also set policies to prevent the root users of member accounts from removing the membership to an organization management account once the invitation to become a member account has been accepted.”
+
 
 
 
@@ -311,6 +354,8 @@ Amazon S3 Standard
 [correct]
 Amazon S3 Standard-IA
 [explanation]
+Amazon S3 Standard-IA can be used to store objects that you are not going to frequently access, but at the same time, you have instant access to the data when you need it.”
+
 
 
 
@@ -327,6 +372,8 @@ Create an Amazon S3 Access Control List (ACL) with a condition statement that sp
 [correct]
 Create a resource policy granting the necessary level of access with a condition statement that defines and specifies the corporate office IP block.
 [explanation]
+You can create a resource policy with a condition statement that allows you to restrict the application of the policy based on a predefined condition, such as the corporate office network IP block.”
+
 
 
 
@@ -341,6 +388,8 @@ Amazon S3 Intelligent Tiering
 [correct]
 Amazon S3 Intelligent Tiering
 [explanation]
+Amazon S3 Intelligent Tiering is ideal if you are unsure of what your object access patterns might be. Objects are automatically transitioned across four different tiers, two of which are latency access tiers, which are designed to move objects between frequently accessed and infrequently accessed tiers, while the other two are optional archive access tiers. For the infrequent access tier, if you do not access your objects for 30 days, then it transitions to the Amazon S3 Standard-IA storage class, which is cheaper. If you need to access the same objects again later, they are transitioned back to the Amazon S3 Standard storage class.”
+
 
 
 
@@ -355,6 +404,8 @@ Set up Amazon S3 Termination Protection.
 [correct]
 Set up Amazon S3 Versioning on your S3 bucket. 
 [explanation]
+To protect against accidental deletions or overwriting, Amazon S3 Versioning can be enabled. This service ensures that if someone tries to perform a delete request on an object without specifying the version ID, it will not be deleted. Instead, a delete marker will be added and the object will be hidden from view. You can then delete this marker to reenable access to the object. You should also consider setting a bucket policy so that not all users can perform delete requests.”
+
 
 
 
@@ -369,6 +420,8 @@ Amazon S3 Multi-Copy
 [correct]
 Amazon S3 Cross-Region Replication (CRR)
 [explanation]
+Amazon S3 CRR is used to asynchronously copy objects across AWS buckets in different AWS Regions. This feature can be used to fulfill compliance and regulatory requirements, which may require you to store copies of data thousands of kilometers away for Disaster Recovery (DR) purposes.”
+
 
 
 [q]
@@ -382,6 +435,8 @@ Server-Side Encryption with KMS keys stored in AWS Key Management Service (SSE-K
 [correct]
 Server-Side Encryption with KMS keys stored in AWS Key Management Service (SSE-KMS) Bitlocker
 [explanation]
+With SSE-KMS, you can encrypt your objects in Amazon S3. You can create and manage your CMKs, as well as benefit from the auditing feature, which shows when your CMK was used and by whom. This service integrates with Amazon CloudTrail to offer full auditing features.”
+
 
 
 
@@ -394,6 +449,8 @@ Expedited retrieval option
 Bulk retrieval option
 Power retrieval option
 [correct]
+If you need urgent access to just a subset of your archives, you can opt for the Expedited retrieval option. Expedited retrievals are made available within 1 to 5 minutes for archives of up to 250 megabytes (MB).”
+
 
 
 [q]
@@ -408,6 +465,8 @@ Set up Amazon Express Route.
 [correct]
 Enable Amazon S3 Transfer Acceleration (S3TA) for your bucket.
 [explanation]
+S3TA reduces this speed variability that is often experienced due to the architecture of the public internet. S3TA routes your uploads via Amazon CloudFront's globally distributed edge locations and AWS backbone networks. This, in turn, gives faster speeds and consistently low latency for your data transfers.”
+
 
 
 [q]
@@ -422,6 +481,8 @@ Snowball Edge Function Optimized
 [correct]
 Snowball Edge Storage Optimized
 [explanation]
+The Amazon Snowball Edge Storage Optimized device offers a larger storage capacity and is ideal for data migration tasks. With 80 TB of HDD and 1 TB of serial advanced technology attachment (SATA) SDD volumes, you can start moving large volumes of data to the cloud. The device also comes with 40 vCPUs and 80 GB of memory.”
+
 
 
 [q]
@@ -435,6 +496,11 @@ Tape Gateway
 [correct]
 Amazon FSx File Gateway
 [explanation]
+Amazon FSx File Gateway enables you to connect your on-premises Windows applications that need large amounts of storage to the cloud-hosted Amazon FSx service for Windows File Server with low latency connectivity. Amazon FSx File Gateway also
+supports integration with Active Directory (AD) and the ability to configure access controls using ACLs.”
+
+
+
 
 
 
@@ -449,6 +515,8 @@ Route table
 [correct]
 NAT gateway
 [explanation]
+NAT gateways help relay outbound requests to the internet on behalf of EC2 instances configured to use them. The NAT gateway replaces the source IPv4 address of your EC2 instances with the private IP address of the NAT gateway, thus acting as a proxy. Response traffic is then redirected by the NAT gateway back to the private IP address of the EC2 instance that made the original request.”
+
 
 
 [q]
@@ -461,6 +529,8 @@ Security groups are used to limit what actions IAM users that are members of the
 [correct]
 Security groups are stateless and you do not need to configure both inbound and the corresponding outbound rules for traffic to flow bidirectionally.
 [explanation]
+Security groups are stateful. This means that even if you have not configured any inbound rules, response traffic to any outbound requests will be permitted inbound by the Security Group. Similarly, if you configured any inbound rules, outbound response traffic to any inbound traffic is permitted, without you having to explicitly create those outbound rules.”
+
 
 
 [q]
@@ -474,6 +544,8 @@ VPC endpoints
 [correct]
 VPC peering
 [explanation]
+A VPC peering connection is a private network connection between two VPCs. The service allows you to connect multiple VPCs so that instances in one VPC can access resources in another VPC over a private IP address space.”
+
 
 
 
@@ -487,6 +559,8 @@ IPSec VPN Tunnel
 [correct]
 AWS Transit Gateway
 [explanation]
+The problem with VPC peering, when you're configuring multiple VPC to connect, is that every VPC must establish a one-to-one connection with its peer. This can quickly create complex connections that are difficult to manage. Route tables for each VPC also need to be configured for every peering connection.AWS Transit Gateway allows you to connect your VPCs via the gateway in a hub-and-spoke model, greatly reducing this complexity as each VPC only needs to connect to the Gateway to access other VPCs.”
+
 
 
 [q]
@@ -500,6 +574,8 @@ Snowball
 [correct]
 Direct Connect
 [explanation]
+Direct Connect is a service that enables you to connect your corporate data center to your VPC and the public services offered by AWS, such as Amazon S3, via a dedicated private connection that bypasses the internet altogether. The service enables you to achieve bandwidth connectivity of up to 100 Gbps.”
+
 
 
 [q]
@@ -512,6 +588,8 @@ Amazon SNS
 [correct]
 Virtual Private Network (VPN)
 [explanation]
+You can set up a VPN connection between your on-premises network and your VPC. This is a secure encrypted site-to-site tunnel that's established between two endpoints over the public internet. It offers AES 128 or 256-bit IPsec encryption, which means that you can transfer data between the two endpoints securely.”
+
 
 
 [q]
@@ -526,6 +604,8 @@ Amazon Direct Connect
 [correct]
 Amazon Route53
 [explanation]
+Amazon Route53 can help you create alias records so that when a user types in a corporate domain-friendly name into the browser, it will direct th”
+
 
 
 [q]
@@ -538,6 +618,8 @@ Elastic Beanstalk
 [correct]
 Route53
 [explanation]
+Amazon Route 53 offers domain name registration. You can purchase and manage domain names such as example.com and Amazon Route 53 will automatically configure the DNS settings for your domains.”
+
 
 
 [q]
@@ -552,6 +634,8 @@ Geolocation routing policy
 [correct]
 Failover routing policy
 [explanation]
+To offer high availability of your web application, you can host two copies of your resources ideally across different Regions. One set of resources will be designated as your primary resource and the other as a secondary resource. If the primary resource is offline, then users' requests are redirected to the secondary resource.”
+
 
 
 [q]
@@ -566,6 +650,8 @@ Amazon Cloud9
 [correct]
 Amazon CloudFront
 [explanation]
+Amazon CloudFront is a Content Delivery Network (CDN) that helps you distribute your static and dynamic content globally over low latency connections. The service caches content at edge locations closer to where your users are accessing the website.”
+
 
 
 [q]
@@ -580,6 +666,8 @@ Use the Amazon Snowball service to send a copy of the AMI to your colleagues.
 [correct]
 Copy the AMI to other Regions.
 [explanation]
+To launch an EC2 instance with a custom AMI that you have built in another Region, you need to ensure that you copy the AMI to that Region.”
+
 
 
 [q]
@@ -592,6 +680,8 @@ Accelerated Computing
 [correct]
 Accelerated Computing
 [explanation]
+Accelerated Computing EC2 instance types are designed with hardware accelerators, or co-processors, to perform complex functions. They are best for processing complex graphics, number crunching, and machine learning.”
+
 
 
 [q]
@@ -605,6 +695,8 @@ Dedicated Host
 [correct]
 Dedicated Host
 [explanation]
+A Dedicated Host is a physical host dedicated for your use alone and gives you additional control and management capability over how instances are placed on a physical server. In addition, dedicated hosts can help address certain third-party licensing terms that are based on a per-CPU core/socket basis.”
+
 
 
 [q]
@@ -619,6 +711,8 @@ Dedicated Host
 [correct]
 On-Demand
 [explanation]
+On-Demand is ideal for users who need the flexibility to consume compute resources when required and without any long-term commitment. They are ideal for test/dev environments or for applications that have short spiky or unpredictable workloads.”
+
 
 
 [q]                
@@ -631,6 +725,8 @@ io1
 [correct]
 io1
 [explanation]
+Provisioned IOPS SSDs offering high-performance EBS storage is ideal for critical, I/O-intensive databases and application workloads.”
+
 
 
 [q]
@@ -643,6 +739,8 @@ A 3-year commitment with payment made using the All Upfront option.
 [correct]
 A 3-year commitment with payment made using the All Upfront option.
 [explanation]
+Using an All Upfront payment option for your RIs means paying for the entire term of the RI upfront at the beginning of the contract. You do not get a monthly/hourly bill and you benefit from the maximum available discount. Furthermore, a 3-year commitment will offer a bigger discount than a 1-year one.”
+
 
 
 [q]
@@ -656,6 +754,8 @@ Amazon ECR
 [correct]
 Amazon Lightsail
 [explanation]
+Amazon Lightsail is a VPS solution that comes pre-configured with common application stacks such as WordPress, Drupal, Plesk, LAMP, and your chosen operating system. You choose the size of the server and it comes preconfigured with SSD storage, an IP address, and more. The best part about Lightsail is that you have a fixed monthly fee based on the instance type and the associated operating system and applications that have been deployed.”
+
 
 
 [q]
@@ -670,6 +770,8 @@ Amazon ECS deployed with Lambda functions to manage your servers
 [correct]
 Amazon ECS deployed using the Fargate Launch Type
 [explanation]
+The ECS Fargate Launch Type enables you to set up your ECS environment without having to spin up EC2 instances, provision and scale clusters, or patch and update virtual servers yourself. AWS will manage how the ECS tasks are placed on the cluster, scale them as required, and fully manage the entire environment for you.”
+
 
 
 [q]
@@ -682,6 +784,8 @@ AWS CloudFront
 [correct]
 AWS Lambda
 [explanation]
+Amazon Lambda is a serverless offering from AWS that allows you to run code and perform some tasks. Amazon Lambda is known as a Function as a Service (FaaS) solution that can be used to build an entirely serverless architecture comprised of storage, databases, and network capabilities where you do not manage any underlying servers.”
+
 
 
 [q]
@@ -695,6 +799,8 @@ AWS instance store volumes
 [correct]
 Amazon FSx for Windows File Server 
 [explanation]
+Microsoft Windows-aware applications that need to share files can easily use FSx for Windows File Share, which offers support for the SMB protocol and Windows NTFS, AD integration, and Distributed File System (DFS).”
+
 
 
 [q]
@@ -709,6 +815,8 @@ Amazon EBS
 [correct]
 Amazon Elastic File System (EFS)
 [explanation]
+Amazon EFS can be used by Linux-based EC2 instances as a centralized file storage solution. This is particularly useful when you have applications deployed across multiple EC2 instances that need to share common files. Amazon EFS can also be accessed from on-premises servers over a VPN or Direct Connect service.”
+
 
 
 [q]
@@ -721,6 +829,8 @@ Use the key pair to decrypt the password.
 [correct]
 Use the key pair to decrypt the password.
 [explanation]
+When you launch a server (Windows or Linux), you must configure it to be associated with a key pair. This is an encrypted key where you will be able to use your private key to log in to Linux-based servers or decrypt the Windows administrator password using the AWS Management Console.”
+
 
 
 [q]
@@ -734,6 +844,11 @@ AWS Route53
 [correct]
 AWS Outposts
 [explanation]
+AWS Outposts is ideal when you want to run AWS resources with very low latency connections to your on-premises application or if you require local data processing due to any compliance and regulatory requirements. You can get AWS Outposts delivered to
+your local on-premises location as a 42U rack and can scale from 1 rack to 96 racks to create pools of compute and storage capacity.”
+
+
+
 
 
 
@@ -749,6 +864,8 @@ AWS Blockchain
 [correct]
 AWS Batch
 [explanation]
+AWS Batch can be used to run thousands of batch computing jobs on AWS for performing various types of analysis. AWS Batch will set up and provision the necessary compute resources to fulfill your batch requests. There is no need to deploy server clusters as AWS takes care of this for you.”
+
 
 
 [q]
@@ -761,6 +878,8 @@ Amazon EC2
 [correct]
 Amazon EKS
 [explanation]
+Amazon EKS is designed to help you deploy, manage, and scale containerized applications using Kubernetes on AWS.”
+
 
 
 [q]
@@ -773,6 +892,8 @@ Amazon RDS automatically enables encryption of the data in Amazon RDS.
 [correct]
 Amazon RDS is a fully managed database where AWS manages the underlying compute and storage architecture, as well as patching and updates.
 [explanation]
+The primary advantage of using Amazon RDS over installing databases on EC2 is the fact that AWS manages all the compute and storage provisioning, as well as performing all management tasks on the database. This frees you up to focus on your application and the infrastructure components that host the database.”
+
 
 
 [q]
@@ -785,6 +906,8 @@ Snapshots
 [correct]
 Multi-AZ
 [explanation]
+Amazon RDS offers a feature known as Multi-AZ where the primary (master) copy of your database is deployed in one Availability Zone and a secondary (standby) copy is deployed in another Availability Zone. Data is then synchronously replicated from the master copy to the standby copy continuously. If the master copy fails, AWS will promote the standby copy to become the new master and perform a failover.”
+
 
 
 [q]
@@ -797,6 +920,8 @@ Amazon Redshift Migration Utility
 [correct]
 Amazon Database Migration Service (DMS)
 [explanation]
+Amazon offers a Database Migration Service (DMS) that can be used to migrate the data from one database to another. This migration can be performed from your on-premises network to the AWS cloud over a VPN connection or a Direct Connect connection. AWS DMS offers support for both homogeneous migrations, such as from MySQL to MySQL or Oracle to Oracle, as well as heterogenous migrations between engines such as Oracle to Microsoft SQL Server or Amazon Aurora.”
+
 
 
 [q]
@@ -809,6 +934,8 @@ Redshift Streams
 [correct]
 Redshift Spectrum
 [explanation]
+Redshift Spectrum allows you to perform SQL queries against data stored directly on Amazon S3 Buckets. This is particularly useful if, for instance, you store frequently accessed data in Redshift and some infrequently accessed data in Amazon S3.”
+
 
 
 [q]
@@ -821,6 +948,8 @@ Amazon Aurora
 [correct]
 Amazon Aurora
 [explanation]
+Amazon Aurora is an AWS proprietary database that maintains copies of the database placed across a minimum of three Availability Zones. Amazon Aurora is also five times faster than standard MySQL databases and three times faster than standard PostgreSQL databases. It also offers self-healing storage capabilities that can scale up to 128 TB per database instance.”
+
 
 
 [q]
@@ -834,6 +963,8 @@ Amazon Aurora
 [correct]
 Amazon DynamoDB
 [explanation]
+DynamoDB supports both key-value and document data models such as JSON. DynamoDB is a NoSQL database solution that offers a flexible schema and offers single digit millisecond performance at any scale.”
+
 
 
 [q]
@@ -847,4 +978,6 @@ Amazon RDS
 [correct]
 AWS QLDB
 [explanation]
+Amazon QLDB is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority. Amazon QLDB can maintain a history of all data changes.”
+
 
