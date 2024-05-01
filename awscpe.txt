@@ -1,4 +1,174 @@
 
+[q]
+“You are currently performing a manual snapshot of your single instance MySQL Amazon RDS database every 4 hours. Some users have complained that the application that connects to the database experiences a brief outage when the backup process initializes. What can you do to resolve this issue?Configure your Amazon RDS database with Read Replicas.Configure your Amazon RDS database with Multi-AZ.Configure an AWS backup to perform the RDS database backups.Use the DMS service to migrate the MySQL database to Microsoft SQL Server.
+			
+[q]			
+				Your organization is in a healthcare industry based in New York. You are planning on using an in-memory caching engine to alleviate the load on your Amazon RDS database for frequently used queries. Which AWS in-memory caching engine offers Multi-AZ”
+“capabilities, encryption of data, and compliance with the Health Insurance Portability and Accountability Act (HIPAA)?Amazon Elasticache for RedisAmazon Elasticache for MemcachedAmazon CloudFrontAmazon DynamoDB DAX”
+
+[q]
+“Which AWS service offers a fully managed data warehousing capability and enables you to analyze large datasets using standard SQL and Business Intelligence (BI) tools?Amazon RDSAmazon QLDBAmazon RedshiftAmazon Aurora
+				Which of the following services further increase your EC2 instances' costs? (Choose two)Detailed monitoringUse of Elastic Load BalancersS3 buckets that you connect toDynamoDB tables that you querySetting up multiple key pairs”
+
+
+[q]
+“Your developer team needs to deploy an Elastic Load Balancer that will direct traffic to your web servers based on the URL path and over the HTTPS protocol. Which Elastic Load Balancer would you recommend?Network Load BalancerALBGateway Load Balancer”
+Classic Load Balancer
+
+
+[q]
+“Which feature of the Elastic Load Balancer service is suitable for Transmission Control Protocol (TCP), User Datagram Protocol (UDP), and Transport Layer Security (TLS) type traffic and operates at layer 4 of the Open Systems Interconnection (OSI) model?Network Load BalancerALBGateway Load BalancerClassic Load Balancer
+				Which of the following statements is true about Elastic Load Balancers?Elastic Load Balancers act as firewalls to protect the application running on your EC2 instances.Elastic Load Balancers enable you to achieve high availability across multiple Regions by distributing incoming web traffic to targets located in multiple Regions.Elastic Load Balancers enable you to achieve high availability within a single Region by distributing incoming web traffic to targets located in multiple Availability Zones.Elastic Load Balancers enable you to scale horizontally by provisioning or terminating EC2 instances based on the demand of your resources.”
+
+
+[q]
+“Which component of an Elastic Load Balancer do you need to configure to ensure you accept traffic on a designated port and forward that traffic on a specific port to your EC2 instances behind the load balancer?Port forwarderNAT Gateway”
+ListenerEcho
+
+
+[q]
+“You are building a multi-tier architecture with web servers placed in the public subnet and application servers placed in the private subnet of your VPC. Which type of load balancer would you choose to distribute traffic to your application servers?Internet-facingInternal load balancersDynamic load balancersStatic load balancers
+				Which configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that can be launched in your fleet?Auto Scaling groupAuto Scaling Launch ConfigurationAuto Scaling MaxFleet SizeAuto Scaling policy
+				Which AWS service can help you provision only the necessary number of EC2 instances required to meet application demand, thus saving on costs usually associated with overprovisioning resources?Elastic Load BalancerAuto ScalingCost ExplorerEC2 Launcher”
+
+
+[q]
+“Which firewall protection service does the ALB offer to help protect against common web exploits such as cross-site scripting and SQL injection?AWS WAFAWS ShieldAmazon Guard DutyNetwork Access Control Lists (NACLs)
+				Which dynamic scaling policy offered by the Amazon Auto Scaling service can help you launch or terminate EC2 instances in the fleet based on the target value of a specific metric?Target tracking scaling policyStep scaling policySimple scaling policyPredictable scaling policy”
+
+
+[q]
+“You plan to use Amazon CloudWatch to send out alerts whenever the CPU utilization on your production EC2 instances is more than 80% for 15 minutes. Which AWS service can you use to send out this alert notification?”
+“Amazon SESAmazon SNSAmazon SQSAmazon MQ”
+
+
+[q]
+“Which feature of the Amazon SNS service enables you to push notification messages to multiple endpoints in parallel?You can use the SNS Fanout scenario to help you push notifications to multiple endpoints.You can use SNS FIFO topics to help you push notifications to multiple endpoints.You can change the timeout period to ensure that notifications are sent to multiple endpoints.To send out notifications to multiple endpoints, you will need to configure Amazon SQS to integrate with Amazon SNS.
+				Which AWS service enables you to design your application architecture by decoupling its components into distributed systems and facilitating the design and architecture of microservices?Amazon SNSAmazon Simple Queue Service (SQS)Amazon MQAmazon Redshift”
+
+
+[q]
+“You plan to use Amazon SQS to help decouple your application components. Which queue type will help you ensure that the message order from one component to another is preserved?Configure Amazon SQS with a standard queue.”
+“Configure Amazon SQS with a FIFO queue.Configure Amazon SQS with a LIFO queue.Configure Amazon SQS with a DLQ.”
+
+
+[q]
+“You are planning on migrating an application to the cloud. Which message brokering service will enable you to continue to use Apache ActiveMQ and facilitate communications between application components?Amazon SQSAmazon MQAmazon SNSAmazon SES
+				Which AWS service can help you trigger a Lambda function based on an event such as an object being deleted from an Amazon S3 bucket?AWS ECSAWS BatchAWS EventBridgeAmazon CloudTrail
+				Your application architecture for an insurance claim solution has a workflow process that can take up to 30 days to complete and requires human intervention in the form of manual approval processes to follow. Which AWS service would you recommend for architecting the workflow process?Amazon SQSAmazon Step FunctionsAWS CloudFormationAWS Lambda”
+
+[q]
+“You plan to configure a Lambda function that will be used to automatically start and stop EC2 instances at the start and close of the business day, respectively. How can you automate the start and stop of EC2 instances according to a specified schedule?Configure Amazon SNS to send out an alert trigger to the Lambda function.Configure Amazon CloudTrail to trigger the Lambda function at the designated schedule.Configure Amazon CloudWatch Events with a rule to trigger the Lambda function at the designated schedule.Configure the Amazon Scheduler service.
+				You need to run certain SQL queries to analyze data from a streaming source and conduct analysis. Which of the following services can you use to analyze stream data in real time?Amazon SQSAmazon Kinesis Data StreamsAmazon Kinesis AnalyticsAmazon Athena
+				You are required to run ad hoc test queries against weekly reports that are stored in Amazon S3. Which AWS service can you use to query raw data in Amazon S3 using standard SQL?Amazon AthenaAmazon KinesisAmazon RDSAmazon Redshift”
+
+
+[q]
+“Which AWS service can be used to load a massive amount of streaming data into your Redshift data warehousing solution in near real time?Amazon Kinesis Data Streams”
+“Amazon Kinesis FirehoseAmazon Kinesis Video StreamsAmazon Athena”
+
+
+[q]
+“Which AWS service can be used to create and publish interactive BI dashboards that can be embedded into your applications, websites, and portals using Amazon-provided APIs and SDKs?Amazon AthenaAmazon QuickSightAmazon ConfigAmazon Glue
+				Which AWS service offers a serverless Extract, Transform, and Load (ETL) solution that's used to discover and extract data from various sources and perform any cleaning or normalization on data warehouses and data lakes, before loading them into databases?AWS QuickSightAmazon AthenaAmazon GlueAmazon CloudTrail”
+
+
+[q]
+“As part of your migration to the cloud, you need to re-host an application that uses Apache Spark to process vast amounts of data for a big data project. Which service on AWS can you use to help with data transformation and perform ETL jobs such as sort, aggregate, and join on large datasets?AWS QuickSightAmazon EFSAmazon EMR”
+Amazon S3
+
+
+[q]
+“You need to regularly build test environments for new applications currently under development. Which AWS service can you use to automate the infrastructure build of your test environment and thus reduce the time taken to provision the infrastructure required?Amazon Elastic BeanstalkAmazon CloudFormationAWS OpsWorksAWS Systems Manager
+				Which service can be used to orchestrate and configure environments to deploy applications using the Chef and Puppet enterprise tools?Amazon CloudFormationAWS OpsWorksAmazon Elastic BeanstalkAmazon Cloud9
+				Which service enables developers to upload code to AWS and have the necessary infrastructure provisioned and managed to support that application?Amazon Elastic BeanstalkAmazon CloudFormationAmazon Cloud9AWS OpsWorks”
+
+[q]
+“Which of the following environment tiers within the Elastic Beanstalk architecture is designed to support backend operations?Web services tier”
+“Worker tierBackend tierDatabase tier”
+
+
+[q]
+“Which of the following formats are CloudFormation templates written in? (Choose two)YAMLXMLCSVJSONJAVA
+				Which of the following is an example of a custom CloudWatch metric?CPU utilizationDisk read inNetwork bytes inMemory
+				Which feature of CloudWatch can help send you notification alerts via Amazon SNS whenever a particular threshold is breached for a specified period?DashboardsAlarmsLogsEvents”
+
+
+[q]
+“You plan to use CloudWatch Logs to monitor network traffic that enters the AWS environment that's been specifically destined for an EC2 instance. You would like to”
+“record all inbound network traffic on port 80 that was accepted. What service can you configure to help you achieve this requirement?ALB access logsVPC Flow LogsCloudTrail LogsConfig logs”
+
+
+[q]
+“Which AWS service enables you to track user activity and API usage in your AWS account for auditing purposes?AWS ConfigAWS CloudWatchAWS CloudTrailAWS Trusted Advisor
+				Which AWS service can be used to see how resources are interrelated to each other, how they were configured in the past, and view historical changes to those resources over time?AWS Trusted AdvisorAWS Systems ManagerAWS ConfigAWS IAM
+				Which feature of the AWS System Manager service enables you to roll out security patches across EC2 instances and on-premises servers?Patch ManagerMicrosoft WSUSAWS Config ”
+SCCM
+
+
+[q]
+“You are planning on deploying a three-tier application architecture that is comprised of a database backend. Your application has been hardcoded with the database connection strings and secrets such as username and password. The company's security policy dictates that this approach is unacceptable and they would like you to manage the secrets information more securely. What would you recommend?Store the configuration information in the SSM Parameter Store and reference the parameter name from your code to dynamically retrieve the connection information.Store the configuration information in Amazon Redshift and reference the connection details from your code to dynamically retrieve the connection information.Store the configuration information in Amazon S3 and reference the connection details from your code dynamically.Store the configuration information on an EBS volume and reference the connection details from your code dynamically.
+				Which AWS service can be used to manage and resolve incidents that affect their AWS-hosted applications?AWS Systems Manager Incident ManagerAWS Systems Manager Event ManagerAmazon EventBridgeAWS Personal Health Dashboard (PHD)
+				Which AWS service can be used to identify resources that have not been configured by following security best practices?AWS CloudWatchAWS Trusted Advisor”
+ AWS IAMAWS CloudTrail   
+
+
+[q]
+“You are trying to review the AWS Trusted Advisor service to analyze potential cost savings opportunities for various workloads you have deployed on AWS. However, you have noticed that the Cost Optimization category is grayed out and there are no reports on current configuration states. What could be preventing you from viewing the Cost Optimization report?You do not have enough permissions to access the Cost Optimization category on AWS Trusted Advisor.You have not subscribed to either the business or enterprise support plans.You have logged in with an IAM account and only the root user can access pricing and cost information.The AWS account does not have an active debit/credit card associated with it.
+				Which Well-Architected Framework pillar suggests that replacing failed resources is often better than trying to figure out why the failure occurred? Identifying the reason for failure can be done later, but focusing on replacing the failed resource will help you get up and running quickly.Cost OptimizationFault ToleranceReliabilityPerformance
+				Which of the following services can help fulfill the guidelines provided in the performance pillar concerning ensuring low latency access to video content hosted in a single S3 bucket globally?Use AWS CloudFront to cache the video[…]”
+“Use AWS DynamoDB DAX to cache the video content closer to end users.Use Amazon Elasticache to cache the video content closer to end users.Use Amazon Kinesis to cache the video content closer to end users.”
+
+[q]
+“Which pillar of the Well-Architected Framework refers to selecting the appropriate pricing options that allow you to adopt a consumption model for provisioning various resources?Performance pillarReliability pillarFault Tolerance pillarCost Optimization pillar
+				Regarding the AWS Shared Responsibility Model, who is responsible for patching Amazon RDS database instances?AWSCustomerDatabase engine vendor Both the customer and AWS
+				Which AWS service gives customers access to various compliance reports that confirm if the services offered by AWS meet specific requirements and regulatory requirements?AWS CloudTrailAWS Acceptable Usage Policy (AUP)AWS ArtifactsAWS Compliance Programs”
+
+[q]
+“AWS allows customers to run vulnerability scans and perform penetration testing. However, certain types of testing are not permitted. Which of the following actions is the customer prohibited from performing?Brute-force attacks by trying to guess your Amazon RDS database passwords.Running malware detection programs on your EC2 instances.Attempting to perform cross-site scripting or SQL injection tests via your ALB.Performing simulated Distributed Denial of Service (DDoS) attacks.
+				Which AWS service enables you to encrypt data stored in your Amazon S3 buckets with a CMK and offers auditing capabilities?Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3) Server-Side Encryption with CMKs Stored in AWS KMS (SSE-KMS) Server-Side Encryption with Customer-Provided Keys (SSE-C)Client-Side Encryption with Amazon-Managed Keys
+				To meet strict compliance and regulatory requirements, you are required to encrypt the application data stored on your EC2 instances using dedicated FIPS 140-2 Level 3 validated devices. Which AWS service can you use to fulfill this requirement?AWS KMSAWS CloudHSMAWS TPM Hardware ModulesAWS Certificate Manager”
+
+
+[q]
+“Which AWS security solution offers protection against DDoS attacks and features an AWS Shield Response Team (SRT) 24/7 to assist you in handling such attacks?AWS WAFAWS X-Ray”
+“AWS DetectiveAWS Shield Advanced”
+
+
+[q]
+“Which type of firewall solution integrates with Amazon CloudFront and ALBs to offer protection against common web exploits such as cross-site scripting and SQL injection?AWS WAFAWS ShieldAWS X-RayAWS Firewall Manager
+				You are planning lots of data on Amazon S3 and you would like to monitor how your data is accessed, particularly highlighting any sensitive information such as personally identifiable information (PII). Which AWS service can help you meet this requirement?Amazon MacieAWS GuardDutyAWS DetectiveAWS X-Ray
+				You are building a mobile application that will be publicly accessible and you would like to integrate a third-party identity provider for authentication purposes, such as Facebook or Google. Which AWS service can be used to set up identity and access control solutions for your web and mobile applications?AWS CognitoAWS IAMActive DirectoryAWS Certificate Manager”
+
+
+[q]
+“Which AWS service can help detect malicious activities by analyzing data from your CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs?AWS ShieldAWS DetectiveAWS GuardDutyAmazon Macie
+				Which AWS service can help you determine the root cause of security issues by extracting time-based events such as logins, network traffic from Amazon VPC Flow Logs, and data ingested from GuardDuty findings?AWS ShieldAWS WAFAWS DetectiveAmazon Macie
+				You are planning on migrating your on-premises workloads and applications to the cloud. Which AWS service enables you to capture millions of real-time data points related to your IT environment and review recommendations for right sizing and appropriately costing workloads on AWS?AWS Pricing CalculatorAWS Migration EvaluatorAWS Hybrid CalculatorAWS Cost Explorer”
+
+[q]
+“Which EC2 instance pricing model can offer up to a 90% discount off the on-demand price and be used in scenarios where interruptions to your instances will not impact the application workflow?Reserved Instances”
+“Spot InstancesDedicated InstancesDedicated Hosts”
+
+
+[q]
+“Which Amazon S3 storage class enables you to host 48 TB or 96 TB as part of the S3 storage capacity and provides the option to create a maximum of 100 S3 buckets on-premises?Standard storage classStandard One-Zone (IA)GlacierAmazon S3 on Outposts
+				Which type of policy can you create to grant anonymous access to the objects stored in an S3 bucket that can be used to host website assets?IAM policyIAM permission boundariesResource policySNS policy
+				Which AWS service enables you to register new domain names for your corporate business requirements?AWS DNSAWS Route53AWS VPCAmazon Macie”
+
+
+[q]
+“Which AWS service offers image and video analysis that can be used to identify objects, people, text, scenes, and other activities?Amazon RekognitionAmazon Kinesis Video StreamsAmazon PrimeAmazon Athena
+				Which AWS service offers text search and analytics capabilities that can store, analyze, and perform search functions against big data volumes in near real time?Amazon RedshiftAmazon ElastiCacheAmazon ElastisearchAmazon Search
+				You plan to migrate your entire on-premises network to the cloud and have also decided to move away from physical desktops and workstations to a complete VDI solution. Which service on AWS enables you to provision virtual desktops in the cloud, accessible via a web browser?Amazon EC2Amazon LightsailAmazon WorkSpacesAmazon EKS”
+
+
+
+“You have recently launched a new free coupon web application across a fleet of EC2 instances configured in an Auto Scaling group. Traffic has increased dramatically before”
+“the Black Friday sale and you have noticed that your Auto Scaling service is not launching any more EC2 instances, even though the threshold metrics have been crossed in CloudWatch. Your colleague tells you that you may have crossed a quota or limit on the number of EC2 instances you can launch. Which AWS service can offer you a quick look to determine this is the case?Personal Health DashboardAWS Systems ManagerAWS ConfigAWS Trusted Advisor”
+
+
+    
 
 
 [q]
@@ -980,5 +1150,6 @@ Amazon RDS
 AWS QLDB
 [explanation]
 Amazon QLDB is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority. Amazon QLDB can maintain a history of all data changes.
+
 
 
