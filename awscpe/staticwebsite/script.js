@@ -26,11 +26,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuestionSet(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(180); //calling startTimer function
+    startTimer(80); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue =  180;
+let timeValue =  80;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -45,7 +45,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 180; 
+    timeValue = 80; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -145,6 +145,13 @@ function optionSelected(answer){
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
+
+    const que_explanation = document.querySelector(".que_explanation");
+    que_explanation.style.display = "block";
+
+    
+    que_explanation.innerHTML = questions[que_count].explanation
+
     next_btn.classList.add("show"); //show the next button if user selected any option
 }
 
@@ -201,7 +208,9 @@ function startTimerLine(time){
     counterLine = setInterval(timer, 29);
     function timer(){
         time += 1; //upgrading time value with 1
-        time_line.style.width = time + "px"; //increasing width of time_line with px by time value
+        if (time_line !== null) {
+            time_line.style.width = time + "px"; //increasing width of time_line with px by time value    
+        }
         if(time > 549){ //if time value is greater than 549
             clearInterval(counterLine); //clear counterLine
         }

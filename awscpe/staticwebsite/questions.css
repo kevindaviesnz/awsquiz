@@ -185,6 +185,10 @@ section .que_text{
     font-size: 12px;
 }
 
+section .que_explanation {
+    font-size: 9px;
+}
+
 section .option_list{
     padding: 20px 0px;
     display: block;   
