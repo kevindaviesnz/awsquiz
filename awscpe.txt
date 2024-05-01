@@ -1,5 +1,6 @@
 
 
+
 [q]
 Which type of cloud service model is most like an on-premises environment, where you configure virtual infrastructure components
 such as compute, network, and storage services that you can host your applications on?
@@ -8,6 +9,10 @@ Software as a Service (SaaS)
 Platform as a Service (PaaS)
 Infrastructure as a Service (IaaS)
 Function as a Service (FaaS)
+[correct]
+Infrastructure as a Service (IaaS)
+[explanation]
+
 
 [q]
 Your company is looking to move all its applications and services to the cloud but would like to migrate workloads in stages. 
@@ -18,18 +23,22 @@ Private cloud
 Public cloud
 Hybrid cloud
 Multi-cloud
-
-
-Which of the following statements are valid reasons for choosing a specific AWS Region to deploy your applications in? (Choose two)”
-
+[correct]
+Hybrid cloud
+[explanation]
 
 [q]
+Which of the following statements are valid reasons for choosing a specific AWS Region to deploy your applications in? (Choose two)
+[answers]
 Your organization would choose a specific AWS Region that enables you to ensure that your applications are closer to your end users, thereby reducing any latency.”
 If your organization has specific compliance or data residency laws to follow, then your choice of an AWS Region will be dictated by this requirement.
 Your organization would choose a Region closer to its location since your IT staff will need to visit the AWS data centers to set up servers and networking equipment.
 Your organization would choose a Region-based location where your business has an established legal presence. This is because you cannot access other Regions unless you have a legal establishment in that Region.
 Your organization would select an AWS Region that offered higher variable costs but lower upfront costs.
-
+[correct]
+Your organization would choose a specific AWS Region that enables you to ensure that your applications are closer to your end users, thereby reducing any latency.”
+If your organization has specific compliance or data residency laws to follow, then your choice of an AWS Region will be dictated by this requirement.
+[explanation]
 
 [q]
 Which component of the AWS Global Infrastructure enables you to cache content (videos, images, and documents) and offer low-latency 
@@ -39,6 +48,10 @@ AWS Regions
 Availability Zones
 Edge locations
 Local Zones
+[correct]
+Edge locations
+[explanation]
+
 
 [q]
 Which of the following AWS services can help you design a hybrid cloud architecture and enable your on-premises applications to get access 
@@ -48,6 +61,10 @@ Amazon Snowball Edge
 AWS Storage Gateway
 Amazon Elastic Block Store
 Amazon CloudFront
+[correct]
+AWS Storage Gateway
+[explanation]
+
 
 [q]
 You are planning on using AWS services to host an application that is still under development, and you need to decide which AWS support 
@@ -58,6 +75,11 @@ Basic Support plan
 Developer Support plan
 Business Support plan
 Enterprise Support plan
+[correct]
+Developer Support plan
+[explanation]
+
+
 
 [q]
 Which of the following are regarded as global services on AWS? (Choose two)
@@ -67,6 +89,12 @@ Amazon Route53
 Amazon EC
 Amazon EFS
 Amazon RDS
+[correct]
+AWS IAM
+Amazon Route53
+[explanation]
+
+
 
 
 [q]
@@ -76,6 +104,10 @@ The ability to trade capital expenses for variable expenses and thus avoid huge 
 The ability to provision resources just in time for when you need them using tools such as Auto Scaling.
 The ability to deploy your applications across multiple Regions with just a few mouse clicks.
 The ability to focus on experimentation and the development of your applications rather than infrastructure builds, management, and maintenance.
+[correct]
+The ability to deploy your applications across multiple Regions with just a few mouse clicks.
+[explanation]
+
 
 [q]
 Which AWS service can you configure to send out an alert to an email address if your total expenditure crosses a predefined monthly cost?
@@ -84,6 +116,10 @@ Set up a billing alarm in Amazon CloudWatch
 Set up a billing alarm in Amazon CloudTrail
 Set up a billing alarm in Amazon Config
 Set up a billing blarm in Amazon Trusted Advisor
+[correct]
+Set up a billing alarm in Amazon CloudWatch
+[explanation]
+
 
 [q]
 Which of the following resource types is tied to the Availability Zone that it was launched in?
@@ -92,7 +128,10 @@ Elastic Block Store (EBS)
 Elastic File Store (EFS)
 Amazon Route53 Hosted Zones
 Amazon DynamoDB
-			
+[correct]
+Elastic Block Store (EBS)
+[explanation]
+
 			 
 [q]			
 As part of enhancing the security of your AWS account, you need to ensure that all IAM users use complex passwords comprising of 
@@ -103,6 +142,9 @@ Password policies
 Permission boundaries
 Service Control Policies (SCPs)
 Resource policies
+[correct]
+Password policies
+[explanation]
 
 
 [q]
@@ -112,6 +154,9 @@ Implement MFA.
 Implement LastPass.
 Implement AWS WAF.
 Implement AWS Shield.
+[correct]
+Implement MFA.
+[explanation]
 
 
 [q]
@@ -121,6 +166,10 @@ Create a customer-managed IAM policy and attach the same policies to all IAM use
 Create an IAM Group, add IAM users who share the common job function to that group, and apply an IAM policy to the group with the necessary permissions.
 Create an SCP to restrict users who share a common job function for specific permissions.
 Create an IAM role with the necessary permissions and assign the role to all IAM users who share the common job function.
+[correct]
+Create an IAM Group, add IAM users who share the common job function to that group, and apply an IAM policy to the group with the necessary permissions.
+[explanation]
+
 
 [q]
 You have outsourced the development of your application to a third-party provider. This provider will require temporary access to your 
@@ -129,16 +178,24 @@ to use to gain access?
 [answers]
 IAM User
 IAM Group
-IAM roleRoot user
+IAM role
+Root user
+[correct]
+IAM role
+[explanation]
 
 
 [q]
 Which tool on AWS can be used to estimate your monthly costs?
 [answers]
-WS Pricing Calculator
+AWS Pricing Calculator
 AWS TCO Calculator
 AWS Free Tier Calculator
 AWS Monthly Calculator
+[correct]
+AWS Pricing Calculator
+[explanation]
+
 
 
 [q]
@@ -149,7 +206,11 @@ Designate specific tags as cost allocation tags in the AWS Billing and Cost Mana
 Set up an SNS alert for each department.
 Create a billing alarm.
 Configure consolidated billing in AWS Organizations.
-				
+[correct]
+Designate specific tags as cost allocation tags in the AWS Billing and Cost Management Console.
+[explanation]
+
+
 [q]             
 Which AWS tool enables you to view your Reserved Instance (RI) utilization?
 [answers]
@@ -157,7 +218,10 @@ AWS Cost Explorer
 AWS Config
 AWS CloudTrail
 AWS Personal Health Dashboard
-			
+[correct]
+AWS Cost Explorer
+[explanation]
+
 
 [q]		
 Which set of credentials do you need to configure for IAM users who need to access your AWS account via the command-line interface (CLI)?
@@ -166,6 +230,9 @@ IAM username and password
 IAM access key ID and secret access key
 IAM MFA
 IAM key pairs
+[correct]
+IAM access key ID and secret access key
+[explanation]
 
 
 [q]
@@ -177,412 +244,607 @@ Create an IAM user account with a set of access keys and assign the required lev
 Create an IAM user account with a username and password and assign the required level of permissions using an IAM policy. Hardcode the application with the username and password.
 Create an IAM role with the required level of permissions using an IAM policy. Attach the role to the application running on the EC2 instance.
 Create an IAM role with the required level of permissions using an IAM policy. Attach the role to the EC2 instances that will host the application.
+[correct]
+Create an IAM role with the required level of permissions using an IAM policy. Attach the role to the EC2 instances that will host the application.
+[explanation]
+
 
 
 [q]
 Which AWS service enables you to troubleshoot IAM policies by identifying which set of permissions are allowed and which are denied?
+[answers]
 AWS Policy Simulator
 AWS Policy Manager
 AWS CloudTrail
 AWS SCPs
-			
+[correct]
+AWS Policy Simulator
+[explanation]
+
+
 [q]		
 As part of your regular compliance processes, you are required to regularly audit the list of your IAM users and review information such as 
 if they have been configured with passwords and access keys, as well as if MFA has been enabled on those accounts.
- Which AWS IAM service enables you to produce regular reports containing the preceding information?
- IAM Credentials Report
- IAM MFA Report
- AWS CloudWatch
- AWS Config
+Which AWS IAM service enables you to produce regular reports containing the preceding information?
+[answers]
+IAM Credentials Report
+IAM MFA Report
+AWS CloudWatch
+AWS Config
+[correct]
+IAM Credentials Report
+[explanation]
 
 
 [q]
 Which type of AWS policy enables you to define boundaries against what an IAM user or IAM role can be permitted to do in your AWS account?
+[answers]
 IAM policies
 Resource-based policies
 SCPs
 Permission boundaries
+[correct]
+SCPs
+[explanation]
 
 
 [q]
 Which type of AWS policy enables you to control the maximum set of permissions that can be defined for AWS member accounts of an organization?
+[answers]
 IAM policies
 Resource-based policies
 SCPs
 Permission boundaries
+[correct]
+SCPs
+[explanation]
+
+
 
 [q]
 Which of the following Amazon S3 storage classes can help you reduce the cost of storage for objects that are infrequently accessed, and yet still give you instant access when you need it?
+[answers]
 Amazon S3 Standard-IA
 Amazon S3 Glacier
 Amazon S3 Glacier Deep Archive
 Amazon S3 Standard
-			
+[correct]
+Amazon S3 Standard-IA
+[explanation]
+
+
+
 			 
 [q]		
 You are hosting an Amazon S3 bucket that contains important documents, and you want to enhance security whereby IAM users who try to 
 access the objects can only do so from within the corporate office network. How would you configure your S3 bucket to fulfill this 
 requirement?
+[answers]
 Create a resource policy granting the necessary level of access with a condition statement that defines and specifies the corporate office IP block.
 Create a resource policy granting the necessary level of access with a condition statement that specifies your corporate IAM users' accounts.
 Create an SCP granting access with a condition statement that specifies the corporate office IP block.
 Create an Amazon S3 Access Control List (ACL) with a condition statement that specifies your corporate IAM users' accounts.
+[correct]
+Create a resource policy granting the necessary level of access with a condition statement that defines and specifies the corporate office IP block.
+[explanation]
+
 
 
 
 [q]
 Which type of Amazon S3 Storage class is cost-effective where you are unsure of your access patterns for the data contained within the S3 bucket?
+[answers]
 Amazon S3 Standard storage class
 Amazon S3 Standard-IA storage class
 Amazon S3 One-Zone IA
 Amazon S3 Intelligent Tiering
+[correct]
+Amazon S3 Intelligent Tiering
+[explanation]
+
+
 
 [q]
 Your junior colleague accidentally deleted some financial data that was stored in an Amazon S3 bucket. How can you prevent such 
 accidental deletions of data in Amazon S3?
+[answers]
 Do not give junior administrators access to Amazon S3.
 Set up Amazon S3 Versioning on your S3 bucket. 
 Set up Amazon S3 Lifecycle Management.
 Set up Amazon S3 Termination Protection.
+[correct]
+Set up Amazon S3 Versioning on your S3 bucket. 
+[explanation]
+
 
 
 [q]
 Which feature of Amazon S3 enables you to create a secondary copy of your objects in a given S3 bucket that will be stored in a 
 different Region for compliance purposes?
+[answers]
 Amazon S3 Cross-Region Replication (CRR)
 Amazon S3 Same Region Replication
 Amazon S3 Versioning
 Amazon S3 Multi-Copy
+[correct]
+Amazon S3 Cross-Region Replication (CRR)
+[explanation]
+
 
 [q]
 Company policy dictates that objects stored in Amazon S3 must be encrypted at rest. It is also mandated that your choice of encryption 
 should offer an auditing feature that shows when your Customer Master Key (CMK) was used and by whom. Which type of Amazon S3 
 encryption option will you need to configure to fulfill the requirements?
+[answers]
 Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)
-Client-Side EncryptionServer-Side Encryption with KMS keys stored in AWS Key Management Service (SSE-KMS) 
-Bitlocker
+Client-Side Encryption
+Server-Side Encryption with KMS keys stored in AWS Key Management Service (SSE-KMS) Bitlocker
+[correct]
+Server-Side Encryption with KMS keys stored in AWS Key Management Service (SSE-KMS) Bitlocker
+[explanation]
+
 
 
 [q]
 You need to retrieve a small subset of some archive data urgently to resolve a pending investigation. The data is stored in the Amazon 
 S3 Glacier storage class. Which retrieval option can use to access the data urgently?
+[answers]
 Standard retrieval option
 Expedited retrieval option
 Bulk retrieval option
 Power retrieval option
+[correct]
 
 
 [q]
 You have a team of remote workers who need to upload research documents and videos to your Amazon S3 bucket hosted in the us-east-1 Region. 
 You would like to ensure that your remote staff can upload research material with low latency access. What can you do to reduce 
 speed variability for uploads, which are often experienced due to the architecture of the public internet?
+[answers]
 Enable Amazon S3 Transfer Acceleration (S3TA) for your bucket.
 Configure an IPSec site-to-site VPN connection between your remote workers and the VPC in the us-east-1 Region.
 Use the Amazon Storage Gateway service.
 Set up Amazon Express Route.
-
+[correct]
+Enable Amazon S3 Transfer Acceleration (S3TA) for your bucket.
+[explanation]
 
 
 [q]
 You need to transfer large amounts of data from your on-premises network to the Amazon S3 platform. The total data capacity is around 
 400 TB. You have decided to opt for the Amazon Snowball Edge service to complete the transfer. No data compute or processing is required. 
 Which flavor of the Amazon Snowball Edge service would you recommend?
+[answers]
 Snowball Edge Compute Optimized
 Snowball Edge Storage Optimized
 Snowball Edge Data Optimized
 Snowball Edge Function Optimized
+[correct]
+Snowball Edge Storage Optimized
+[explanation]
 
 
 [q]
 You host several Microsoft Windows applications on-premises that need low latency access to large amounts of storage. You would like to 
 use the Amazon Storage Gateway service to host all application-level data. Which gateway option would you recommend?
+[answers]
 Amazon S3 File Gateway
 Amazon FSx File Gateway
 Volume Gateway Cached Mode
 Tape Gateway
+[correct]
+Amazon FSx File Gateway
+[explanation]
+
 
 
 [q]
 Following best practices, you have deployed your application servers within the private subnets of a VPC. However, these servers require 
 internet access to download updates and security patches. Which type of resource can enable you to grant internet access to EC2 instances in private subnets without having to assign public IP addresses to those instances?
+[answers]
 Internet gateway
 NAT gateway
 Subnet
 Route table
+[correct]
+NAT gateway
+[explanation]
 
 
 [q]
 Which of the following statements is true about security groups?
+[answers]
 Security groups are stateful and you need to configure both inbound and the corresponding outbound rules for traffic to flow bidirectionally.
 Security groups are stateless and you do not need to configure both inbound and the corresponding outbound rules for traffic to flow bidirectionally.
 Security groups can be used to explicitly deny inbound traffic from a specific IP address range.
 Security groups are used to limit what actions IAM users that are members of the group can perform.
+[correct]
+Security groups are stateless and you do not need to configure both inbound and the corresponding outbound rules for traffic to flow bidirectionally.
+[explanation]
 
 
 [q]
 Which feature of the AWS VPC service enables you to connect multiple VPCs so that traffic between those VPCs can be sent using private 
 IP address space?
+[answers]
 VPC peering
 VPC Flow Logs
 Subnets
 VPC endpoints
+[correct]
+VPC peering
+[explanation]
 
 
 
 [q]
 Which service enables you to reduce the complexity associated with establishing multiple VPC peering connections?
+[answers]
 AWS Transit Gateway
 AWS VPC Manager
 AWS Direct Connect
 IPSec VPN Tunnel
+[correct]
+AWS Transit Gateway
+[explanation]
 
 
 [q]
 Which AWS service enables you to connect your on-premises network to your AWS account using a dedicated private connection that 
 bypasses the internet altogether?
+[answers]
 IPSec VPN
 Express Route
 Direct Connect
 Snowball
+[correct]
+Direct Connect
+[explanation]
 
 
 [q]
 Which AWS feature can help you establish connectivity between your on-premises network and your AWS VPC using an IPSec tunnel?
+[answers]
 Direct Connect
 Virtual Private Network (VPN)
 AWS Outposts
 Amazon SNS
+[correct]
+Virtual Private Network (VPN)
+[explanation]
 
 
 [q]
 You are about to publish your web application using an Application Load Balancer (ALB) and would like to use a friendly domain name to 
 advertise the site to your users rather than the ALB's DNS name. Which AWS service can you use to configure the alias's name so that 
 when users type in the friendly domain name into the browser, they are directed to the ALB's DNS URL?
+[answers]
 Amazon Route53
 Amazon CloudFront
 Amazon S3
 Amazon Direct Connect
+[correct]
+Amazon Route53
+[explanation]
 
 
 [q]
 Which AWS service enables you to purchase and register new domain names that can be used to publish your website on the internet?
+[answers]
 Route53
 VPC
 RDS
 Elastic Beanstalk
+[correct]
+Route53
+[explanation]
 
 
 [q]
 You have developed a web application that you want to offer redundancy and resilience for. Which feature of the Amazon Route53 service can 
 help you design your web application with a primary site where all users' traffic is directed to, by default, and if the primary site 
 is offline, then users are redirected to a secondary site located in a different Region. 
+[answers]
 Simple routing policy
 Weighted routing policy
 Failover routing policy
 Geolocation routing policy
-
+[correct]
+Failover routing policy
+[explanation]
 
 
 [q]
 You plan to host a new Amazon S3 static website through which you will offer free recipe guides. The site is going to be accessed by users 
 across the globe. The site contains lots of videos and images about the recipes you offer. Which AWS service can help you cache your 
 digital assets locally to where users are located and thus reduce latency when your users access content on your website?
+[answers]
 Amazon Route53
 Amazon VPC
 Amazon CloudFront
 Amazon Cloud9
+[correct]
+Amazon CloudFront
+[explanation]
 
 
 [q]
 You have created an EC2 AMI that contains the base operating system and all necessary corporate settings/configurations. Your colleagues 
 in another Region are trying to launch new EC2 instances but they are unable to access your AMI. What do you need to do so that your 
 colleagues can use the new image?
+[answers]
 Copy the AMI to other Regions.
 Set up a VPC endpoint between the Regions to allow your colleagues to download the AMI.
 Copy the AMI to an S3 bucket.
 Use the Amazon Snowball service to send a copy of the AMI to your colleagues.
+[correct]
+Copy the AMI to other Regions.
+[explanation]
 
 
 [q]
 Which EC2 instance type is designed for floating-point number calculations, graphics processing, or data pattern matching?
+[answers]
 General Purpose
 Memory-Optimized
 Compute Optimized
 Accelerated Computing
+[correct]
+Accelerated Computing
+[explanation]
 
 
 [q]
 You need to deploy a certain third-party application on an EC2 instance where the licensing term is based on a per-CPU core/socket basis.
 Which EC2 pricing option do you need to use for this requirement?
+[answers]
 On-Demand 
 Reserved Instance
 Spot Instance
 Dedicated Host
+[correct]
+Dedicated Host
+[explanation]
 
 
 [q]
 You are currently running a test phase for a new application that is being developed in-house. Your UAT testers will need to access 
 test servers for 3 hours a day, three times a week. The test phase is supposed to last 5 weeks. You cannot afford any interruptions
 to the application while the tests are being run. Which EC2 pricing option will be the most cost-effective?
+[answers]
 On-Demand
 Reserved
 Spot
 Dedicated Host
-				
+[correct]
+On-Demand
+[explanation]
+
 
 [q]                
 Which EBS volume type is designed for critical, I/O-intensive databases and application workloads?
+[answers]
 gp2
 st1
 sc1
 io1
-
+[correct]
+io1
+[explanation]
 
 
 [q]
 Which of the following payment options will help you achieve the maximum discount for your RIs?
+[answers]
 A 1-year commitment with payment made using the Partial Upfront option.
 A 1-year commitment with payment made using the All Upfront option.
 A 1-year commitment with payment made using the No Upfront option.
 A 3-year commitment with payment made using the All Upfront option.
+[correct]
+A 3-year commitment with payment made using the All Upfront option.
+[explanation]
 
 
 [q]
 Which AWS service enables you to quickly deploy a Virtual Private Server (VPS) that comes preconfigured with common application stacks, 
 SSD storage, and fixed IP addresses for a fixed monthly fee based on the configuration of the server?
+[answers]
 Amazon EC2
 Amazon Lightsail
 Amazon ECS
 Amazon ECR
+[correct]
+Amazon Lightsail
+[explanation]
 
 
 [q]
 You are planning on deploying a Docker application on AWS. You wish to deploy your Docker image without having to manage EC2 instances 
 such as provisioning and scaling clusters, or patching and updating virtual servers yourself. 
 Which service enables you to fulfill this requirement?
+[answers]
 Amazon ECS deployed using the EC2 Launch Type
 Amazon ECS deployed using the Fargate Launch Type
 Amazon ECS deployed using ECR
 Amazon ECS deployed with Lambda functions to manage your servers
+[correct]
+Amazon ECS deployed using the Fargate Launch Type
+[explanation]
 
 
 [q]
 Which of the following services is part of the AWS serverless offering that allows you to run code in response to a trigger or event?
+[answers]
 Amazon ECS
 AWS Lambda
 Amazon EC2
 AWS CloudFront
+[correct]
+AWS Lambda
+[explanation]
 
 
 [q]
 Which AWS storage option is designed to offer file sharing capabilities for Windows-aware applications and offers options for integration 
 with Microsoft Active Directory?
+[answers]
 AWS FSx for Lustre
 Amazon FSx for Windows File Server 
 AWS Elastic File System
 AWS instance store volumes
+[correct]
+Amazon FSx for Windows File Server 
+[explanation]
 
 
 [q]
 You are planning on deploying 10 EC2 instances across two Availability Zones that will host the new line of business applications. 
 All the servers will need to share common files and will run the Amazon Linux 2 operating system. Which storage architecture would you 
 recommend to host the shared files for your application servers?
+[answers]
 Amazon Elastic File System (EFS)
 Amazon FSx Lustre
 Amazon S3
 Amazon EBS
+[correct]
+Amazon Elastic File System (EFS)
+[explanation]
 
 
 [q]
 You have just launched a Windows EC2 instance. How can you obtain the Windows local administrator password?
+[answers]
 Raise a support request with Amazon to obtain the password.
 The password is sent to you automatically via email.
 The password is sent to you via an SMS text message to your registered mobile.
 Use the key pair to decrypt the password.
+[correct]
+Use the key pair to decrypt the password.
+[explanation]
 
 
 [q]
 Which AWS service enables you to configure a hybrid solution by extending AWS Infrastructure so that EC2 and EBS services can be hosted 
 in your on-premise data center?
+[answers]
 AWS RDS
 AWS Direct Connect
 AWS Outposts
 AWS Route53
+[correct]
+AWS Outposts
+[explanation]
+
 
 
 [q]
 Your company provides spread betting services. You wish to run an end of day analysis against the day's transaction costs and carry 
 out the necessary market analysis. Which AWS service dynamically provisions the necessary compute services that will scale based on
 the volume and resource requirements of your submitted jobs?
+[answers]
 AWS Batch
 AWS CloudFront
 AWS Lambda
 AWS Blockchain
+[correct]
+AWS Batch
+[explanation]
 
 
 [q]
 Which AWS service can help you deploy, manage, and scale containerized applications using Kubernetes on AWS?
+[answers]
 Amazon ECS
 Amazon EKS
 Amazon MFA
 Amazon EC2
+[correct]
+Amazon EKS
+[explanation]
 
 
 [q]
 Which of the following statements is an example of an advantage of using Amazon RDS over databases installed on EC2 instances?
+[answers]
 Amazon RDS is a fully managed database where AWS manages the underlying compute and storage architecture, as well as patching and updates.
 Amazon RDS grants you access to the operating system, allowing you to fine-tune the database for the operating system it is running.
 Amazon RDS is faster than running the Microsoft SQL Server database on EC2 instances.
 Amazon RDS automatically enables encryption of the data in Amazon RDS.
+[correct]
+Amazon RDS is a fully managed database where AWS manages the underlying compute and storage architecture, as well as patching and updates.
+[explanation]
 
 
 [q]
 Which feature of Amazon RDS enables you to create a standby copy of the database and offer failover capabilities if the master copy fails?
+[answers]
 Read Replicas
 Multi-AZ
 Failover policy
 Snapshots
+[correct]
+Multi-AZ
+[explanation]
 
 
 [q]
 Your company is planning to migrate its on-premises MySQL database to Amazon RDS. Which service will enable you to perform the migration?
+[answers]
 Amazon Server Migration Service (SMS)
 Amazon Database Migration Service (DMS)
 Amazon VM Import Export
 Amazon Redshift Migration Utility
+[correct]
+Amazon Database Migration Service (DMS)
+[explanation]
 
 
 [q]
 Which feature of AWS Redshift allows you to perform SQL queries against data stored directly on Amazon S3 buckets?
+[answers]
 Redshift leader node 
 Redshift Spectrum
 Redshift Copy
 Redshift Streams
+[correct]
+Redshift Spectrum
+[explanation]
 
 
 [q]
 Which Amazon RDS engine offers high resilience with copies of the database placed across a minimum of three Availability Zones?
+[answers]
 MySQL
 PostgreSQL
 Microsoft SQL Server
 Amazon Aurora
+[correct]
+Amazon Aurora
+[explanation]
 
 
 [q]
 Which AWS-managed database service enables you to store data using complex structures with options for nested attributes, such as a JSON-style 
 document?
+[answers]
 Amazon RDS
 Amazon Redshift
 Amazon DynamoDB
 Amazon Aurora
+[correct]
+Amazon DynamoDB
+[explanation]
 
 
 [q]
 Which AWS database service is designed to store sensitive data that is immutable and where the transactional logs are cryptographically 
 verifiable?
+[answers]
 AWS QLDB
 Amazon Neptune
 Amazon Aurora
 Amazon RDS
-
+[correct]
+AWS QLDB
+[explanation]
 
