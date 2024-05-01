@@ -1,0 +1,2166 @@
+{
+    "category": {
+        "S": "awscpe"
+    },
+    "set_name": {
+        "S": "set::1::hard"
+    },
+    "questions": {
+        "L": [
+            {
+                "M": {
+                    "question": {
+                        "S": "Which type of cloud service model is most like an on-premises environment, where you configure virtual infrastructure components\nsuch as compute, network, and storage services that you can host your applications on?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Software as a Service (SaaS)"
+                            },
+                            {
+                                "S": "Platform as a Service (PaaS)"
+                            },
+                            {
+                                "S": "Infrastructure as a Service (IaaS)"
+                            },
+                            {
+                                "S": "Function as a Service (FaaS)"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Infrastructure as a Service (IaaS)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Infrastructure as a Service (IaaS) is a cloud service model that gives you access to virtualized infrastructure components comprising\ncomputing, network, and storage services. This is very similar to hosting your own VMware or Hyper-V virtualized platforms,\nwhere you deploy servers, attach storage volumes, and configure network connectivity services. However, the primary difference is that\nyou do not have access to the underlying hypervisor platform with cloud-hosted IaaS solutions. IaaS offerings give the greatest amount of\ncontrol over how the virtual components of your infrastructure are configured and also require you to take responsibility for managing,\nmaintaining, and enforcing security measures for those components."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your company is looking to move all its applications and services to the cloud but would like to migrate workloads in stages.\nThis would require you to ensure that there is connectivity between the on-premises infrastructure and the applications you deploy on\nAWS for a while. What cloud deployment model would you need to establish?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Private cloud"
+                            },
+                            {
+                                "S": "Public cloud"
+                            },
+                            {
+                                "S": "Hybrid cloud"
+                            },
+                            {
+                                "S": "Multi-cloud"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Hybrid cloud"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Companies who wish to move their entire suite of applications to the cloud would normally carry out a series of migration projects over time.\nDuring this migration phase, connectivity between the on-premises environment and the AWS cloud would be required to facilitate the migration.\nMany companies may also require a more permanent hybrid design architecture. This could be because certain types of applications need to be\nin much closer proximity to the on-premises infrastructure where users are based, such as your corporate office network, ultimately ensuring\nlow-latency access, data residency requirements, or even unique local data processing requirements. AWS offers several services to build hybrid\nclouds from VPN technologies and Direct Connect services to offering on-premises services such as AWS Storage Gateway and AWS Outposts."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following statements are valid reasons for choosing a specific AWS Region to deploy your applications in? (Choose two)"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Your organization would choose a specific AWS Region that enables you to ensure that your applications are closer to your end users, thereby reducing any latency.\u201d"
+                            },
+                            {
+                                "S": "If your organization has specific compliance or data residency laws to follow, then your choice of an AWS Region will be dictated by this requirement."
+                            },
+                            {
+                                "S": "Your organization would choose a Region closer to its location since your IT staff will need to visit the AWS data centers to set up servers and networking equipment."
+                            },
+                            {
+                                "S": "Your organization would choose a Region-based location where your business has an established legal presence. This is because you cannot access other Regions unless you have a legal establishment in that Region."
+                            },
+                            {
+                                "S": "Your organization would select an AWS Region that offered higher variable costs but lower upfront costs."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Your organization would choose a specific AWS Region that enables you to ensure that your applications are closer to your end users, thereby reducing any latency.\u201d"
+                            },
+                            {
+                                "S": "If your organization has specific compliance or data residency laws to follow, then your choice of an AWS Region will be dictated by this requirement."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "There are several reasons why you would choose a specific AWS Region to deploy your applications in, including the need for closer proximity\nto your end users and thus to reduce latency, data residence laws, regulatory requirements, the choice of services available, and costs."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which component of the AWS Global Infrastructure enables you to cache content (videos, images, and documents) and offer low-latency\naccess when your users try to download them?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Regions"
+                            },
+                            {
+                                "S": "Availability Zones"
+                            },
+                            {
+                                "S": "Edge locations"
+                            },
+                            {
+                                "S": "Local Zones"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Edge locations"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Edge locations are AWS infrastructure facilities located across the globe that help cache content for Amazon CloudFront. Any content that is\naccessed from the origin is cached locally at one or more edge locations closer to users to access that content for a particular time to\nlive (TTL). This way, repeated access to the same content is delivered over a low latency connection."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following AWS services can help you design a hybrid cloud architecture and enable your on-premises applications to get access\nto Amazon S3 cloud storage?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Snowball Edge"
+                            },
+                            {
+                                "S": "AWS Storage Gateway"
+                            },
+                            {
+                                "S": "Amazon Elastic Block Store"
+                            },
+                            {
+                                "S": "Amazon CloudFront"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Storage Gateway"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Storage Gateway enables you to build hybrid cloud solutions by giving access to the Amazon S3 and Glacier environments from your\non-premises network. You install and configure the gateway appliance at your on-premises location and can use any one of four gateway types\nto access unlimited storage in the cloud. These gateway types are Amazon S3 File Gateway, Amazon FSx File Gateway, Tape Gateway, and\nVolume Gateway"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are planning on using AWS services to host an application that is still under development, and you need to decide which AWS support\nplan you should subscribe to. You do not need production-level support currently and are happy with a 12-hour response time for any\nsystem-impaired issues. Which is the most cost-effective support plan you should subscribe to?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Basic Support plan"
+                            },
+                            {
+                                "S": "Developer Support plan"
+                            },
+                            {
+                                "S": "Business Support plan"
+                            },
+                            {
+                                "S": "Enterprise Support plan"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Developer Support plan"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The Developer Support plan gives you access to technical support via email and chats only. This support plan is cheaper than the Business\nand Enterprise Support plans and is recommended for experimenting with or testing applications on AWS."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following are regarded as global services on AWS? (Choose two)"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS IAM"
+                            },
+                            {
+                                "S": "Amazon Route53"
+                            },
+                            {
+                                "S": "Amazon EC"
+                            },
+                            {
+                                "S": "Amazon EFS"
+                            },
+                            {
+                                "S": "Amazon RDS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS IAM"
+                            },
+                            {
+                                "S": "Amazon Route53"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Several services are configured from a global perspective on AWS. For example, with IAM, every IAM user in your AWS account\nis unique across the entire AWS Global Infrastructure. The same applies to Amazon Route53, where domain names configured in\nhost zones have a global presence across all Regions on AWS. Another global service on AWS is Amazon CloudFront."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following statements closely relates to the advantage of cloud computing that discusses the ability to go global in minutes?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "The ability to trade capital expenses for variable expenses and thus avoid huge CAPEX."
+                            },
+                            {
+                                "S": "The ability to provision resources just in time for when you need them using tools such as Auto Scaling."
+                            },
+                            {
+                                "S": "The ability to deploy your applications across multiple Regions with just a few mouse clicks."
+                            },
+                            {
+                                "S": "The ability to focus on experimentation and the development of your applications rather than infrastructure builds, management, and maintenance."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "The ability to deploy your applications across multiple Regions with just a few mouse clicks."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "One of the six advantages of cloud computing is the ability to go global in minutes. This is made possible because, as an AWS customer,\nyou have access to all Regions and Availability Zones where you can provision the resources required to host your application\nin a matter of minutes."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can you configure to send out an alert to an email address if your total expenditure crosses a predefined monthly cost?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Set up a billing alarm in Amazon CloudWatch"
+                            },
+                            {
+                                "S": "Set up a billing alarm in Amazon CloudTrail"
+                            },
+                            {
+                                "S": "Set up a billing alarm in Amazon Config"
+                            },
+                            {
+                                "S": "Set up a billing blarm in Amazon Trusted Advisor"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Set up a billing alarm in Amazon CloudWatch"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon CloudWatch enables you to set up alarms that can be triggered when a particular threshold is crossed. You can set up an alarm for\nbilling alerts that monitors when your total spend crosses a specified dollar amount. This alarm can be configured to send out an alert\nto an email address that uses the Amazon SNS service."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following resource types is tied to the Availability Zone that it was launched in?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Elastic Block Store (EBS)"
+                            },
+                            {
+                                "S": "Elastic File Store (EFS)"
+                            },
+                            {
+                                "S": "Amazon Route53 Hosted Zones"
+                            },
+                            {
+                                "S": "Amazon DynamoDB"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Elastic Block Store (EBS)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon EBS is like the virtual hard disks (volumes) that you attach to EC2 instances. They need to be provisioned in the same availability where the EC2 instance has been launched to be attached to that EC2 instance. Furthermore, you cannot attach an EBS volume to an EC2 instance in another Availability Zone. You could take a snapshot of the EBS volume and launch a new volume in another Availability Zone from that snapshot if required.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "As part of enhancing the security of your AWS account, you need to ensure that all IAM users use complex passwords comprising of\nat least one capital letter, a number, a symbol, and a minimum of 9 characters. Which AWS IAM feature can you use to configure\nthese requirements?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Password policies"
+                            },
+                            {
+                                "S": "Permission boundaries"
+                            },
+                            {
+                                "S": "Service Control Policies (SCPs)"
+                            },
+                            {
+                                "S": "Resource policies"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Password policies"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS IAM Password Policies enable you to define custom policies on your AWS account to specify complexity requirements and mandatory rotation periods for your IAM users' passwords. This ensures that IAM user accounts are created with complex, hard-to-crack passwords.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "As a recommended best practice, what additional authentication security measure can you implement for your root user and IAM users?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Implement MFA."
+                            },
+                            {
+                                "S": "Implement LastPass."
+                            },
+                            {
+                                "S": "Implement AWS WAF."
+                            },
+                            {
+                                "S": "Implement AWS Shield."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Implement MFA."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Multi-Factor Authentication (MFA) is a recommended best practice authentication security measure. It requires you to authenticate with a username and password, as well as a security token generated by a physical or virtual device you own. Used together, these factors provide increased security for your AWS account settings and resources.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What is the easiest way to assign permissions to many IAM users who share a common job function?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Create a customer-managed IAM policy and attach the same policies to all IAM users who share a common job function."
+                            },
+                            {
+                                "S": "Create an IAM Group, add IAM users who share the common job function to that group, and apply an IAM policy to the group with the necessary permissions."
+                            },
+                            {
+                                "S": "Create an SCP to restrict users who share a common job function for specific permissions."
+                            },
+                            {
+                                "S": "Create an IAM role with the necessary permissions and assign the role to all IAM users who share the common job function."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Create an IAM Group, add IAM users who share the common job function to that group, and apply an IAM policy to the group with the necessary permissions."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "An IAM Group can be used to club users who share common job functions. You can then assign the necessary permissions to the IAM Group, which will filter down to the IAM users that are members of the group.Where possible, entities that need access to services and resources on AWS ought to be granted access via IAM roles using temporary security credentials. For example, users who need to access resources in another AWS account can be granted permission to assume a role rather than having to create IAM accounts for them in the other account. This is considered best practice and AWS highly recommends this approach.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You have outsourced the development of your application to a third-party provider. This provider will require temporary access to your\nAWS account to set up the necessary infrastructure and deploy the application. What type of identity should you configure for the provider\nto use to gain access?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IAM User"
+                            },
+                            {
+                                "S": "IAM Group"
+                            },
+                            {
+                                "S": "IAM role"
+                            },
+                            {
+                                "S": "Root user"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "IAM role"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "An IAM role enables you to grant external users access to resources in your AWS account using temporary credentials that are managed by the AWS Security Token Service (STS). An IAM role will also have an IAM policy attached to it that specifies the exact set of permissions the role will grant to the external user(s).\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which tool on AWS can be used to estimate your monthly costs?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Pricing Calculator"
+                            },
+                            {
+                                "S": "AWS TCO Calculator"
+                            },
+                            {
+                                "S": "AWS Free Tier Calculator"
+                            },
+                            {
+                                "S": "AWS Monthly Calculator"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Pricing Calculator"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Pricing Calculator can help you estimate the monthly costs of the resources you wish to provision on AWS. In addition to specifying the expected usage for the month, to calculate the cost of the resources, you can provide additional details such as the amount of data transferred in and out of the AWS Region and cross-Region to get a complete estimate.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You need to differentiate the cost of running different workloads in your AWS account by business unit and department. How you can identify\nyour resources, as well as their owners, in the billing reports generated by AWS?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Designate specific tags as cost allocation tags in the AWS Billing and Cost Management Console."
+                            },
+                            {
+                                "S": "Set up an SNS alert for each department."
+                            },
+                            {
+                                "S": "Create a billing alarm."
+                            },
+                            {
+                                "S": "Configure consolidated billing in AWS Organizations."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Designate specific tags as cost allocation tags in the AWS Billing and Cost Management Console."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "You can use cost allocation tags to identify your resource costs on your cost allocation report and track your AWS costs by resources and who owns them. AWS provides two types of cost allocation tags: AWS-generated tags and user-defined tags.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS tool enables you to view your Reserved Instance (RI) utilization?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Cost Explorer"
+                            },
+                            {
+                                "S": "AWS Config"
+                            },
+                            {
+                                "S": "AWS CloudTrail"
+                            },
+                            {
+                                "S": "AWS Personal Health Dashboard"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Cost Explorer"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Cost Explorer enables you to view 12 months of usage and spending data, as well as a forecast of what your future costs will be for the next 12 months. Cost Explorer can also provide information on how much of your RI you have utilized, as well as the savings that have been made from using RIs over on-demand options for EC2 Amazon Redshift, Amazon RDS, and more.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which set of credentials do you need to configure for IAM users who need to access your AWS account via the command-line interface (CLI)?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IAM username and password"
+                            },
+                            {
+                                "S": "IAM access key ID and secret access key"
+                            },
+                            {
+                                "S": "IAM MFA"
+                            },
+                            {
+                                "S": "IAM key pairs"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "IAM access key ID and secret access key"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "To access an AWS account as an IAM user, you need to create a set of access keys, which is a combination of an access key ID and a secret access key. Note these keys are considered long-term access keys. One set of keys is associated with a specific IAM use\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "An application is to be deployed on EC2 instances that will need to access an Amazon S3 bucket to upload any artifacts that are created.\nWhich security option is considered a best practice to grant the application running on the EC2 instances the necessary\npermissions to upload files to the Amazon S3 bucket?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Create an IAM user account with a set of access keys and assign the required level of permissions using an IAM policy. Hardcode the application with the access keys."
+                            },
+                            {
+                                "S": "Create an IAM user account with a username and password and assign the required level of permissions using an IAM policy. Hardcode the application with the username and password."
+                            },
+                            {
+                                "S": "Create an IAM role with the required level of permissions using an IAM policy. Attach the role to the application running on the EC2 instance."
+                            },
+                            {
+                                "S": "Create an IAM role with the required level of permissions using an IAM policy. Attach the role to the EC2 instances that will host the application."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Create an IAM role with the required level of permissions using an IAM policy. Attach the role to the EC2 instances that will host the application."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "You can create an IAM role with the necessary permissions to upload objects to a specific Amazon S3 bucket. You should then deploy your EC2 instances with this role attached (this involves creating an instance profile associated with the role). The IAM role will enable the application running on the EC2 instance to access the Amazon S3 bucket. Using an IAM role, the EC2 instance will obtain temporary credentials from the Security Token Service (STS).\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to troubleshoot IAM policies by identifying which set of permissions are allowed and which are denied?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Policy Simulator"
+                            },
+                            {
+                                "S": "AWS Policy Manager"
+                            },
+                            {
+                                "S": "AWS CloudTrail"
+                            },
+                            {
+                                "S": "AWS SCPs"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Policy Simulator"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Policy Simulator can help you identify which set of policies are allowed and which are denied against specific identities, groups of identities, and IAM roles. You can obtain granular visibility into specific permissions that have been allowed and denied, helping you troubleshoot access issues.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "As part of your regular compliance processes, you are required to regularly audit the list of your IAM users and review information such as\nif they have been configured with passwords and access keys, as well as if MFA has been enabled on those accounts.\nWhich AWS IAM service enables you to produce regular reports containing the preceding information?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IAM Credentials Report"
+                            },
+                            {
+                                "S": "IAM MFA Report"
+                            },
+                            {
+                                "S": "AWS CloudWatch"
+                            },
+                            {
+                                "S": "AWS Config"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "IAM Credentials Report"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The IAM Credentials Report enables you to review IAM user accounts created in your AWS account. You can identify if an IAM user has been configured with a username and password, as well as access keys. You can also identify IAM users that may not have accessed resources in your AWS accounts recently, which may indicate that those accounts may not be required anymore. Regularly deleting unwanted IAM user accounts is part of the security best practice.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which type of AWS policy enables you to define boundaries against what an IAM user or IAM role can be permitted to do in your AWS account?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IAM policies"
+                            },
+                            {
+                                "S": "Resource-based policies"
+                            },
+                            {
+                                "S": "SCPs"
+                            },
+                            {
+                                "S": "Permission boundaries"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Permission boundaries"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Permission boundaries enable you to define the maximum set of permissions that can be granted by an identity-based policy for an IAM user or IAM role.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which type of AWS policy enables you to control the maximum set of permissions that can be defined for AWS member accounts of an organization?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IAM policies"
+                            },
+                            {
+                                "S": "Resource-based policies"
+                            },
+                            {
+                                "S": "SCPs"
+                            },
+                            {
+                                "S": "Permission boundaries"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "SCPs"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "SCPs is a feature of the AWS Organization service that enables you to set the maximum set of permissions that can be defined for member accounts. You can also set policies to prevent the root users of member accounts from removing the membership to an organization management account once the invitation to become a member account has been accepted.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following Amazon S3 storage classes can help you reduce the cost of storage for objects that are infrequently accessed, and yet still give you instant access when you need it?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 Standard-IA"
+                            },
+                            {
+                                "S": "Amazon S3 Glacier"
+                            },
+                            {
+                                "S": "Amazon S3 Glacier Deep Archive"
+                            },
+                            {
+                                "S": "Amazon S3 Standard"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 Standard-IA"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon S3 Standard-IA can be used to store objects that you are not going to frequently access, but at the same time, you have instant access to the data when you need it.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are hosting an Amazon S3 bucket that contains important documents, and you want to enhance security whereby IAM users who try to\naccess the objects can only do so from within the corporate office network. How would you configure your S3 bucket to fulfill this\nrequirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Create a resource policy granting the necessary level of access with a condition statement that defines and specifies the corporate office IP block."
+                            },
+                            {
+                                "S": "Create a resource policy granting the necessary level of access with a condition statement that specifies your corporate IAM users' accounts."
+                            },
+                            {
+                                "S": "Create an SCP granting access with a condition statement that specifies the corporate office IP block."
+                            },
+                            {
+                                "S": "Create an Amazon S3 Access Control List (ACL) with a condition statement that specifies your corporate IAM users' accounts."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Create a resource policy granting the necessary level of access with a condition statement that defines and specifies the corporate office IP block."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "You can create a resource policy with a condition statement that allows you to restrict the application of the policy based on a predefined condition, such as the corporate office network IP block.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which type of Amazon S3 Storage class is cost-effective where you are unsure of your access patterns for the data contained within the S3 bucket?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 Standard storage class"
+                            },
+                            {
+                                "S": "Amazon S3 Standard-IA storage class"
+                            },
+                            {
+                                "S": "Amazon S3 One-Zone IA"
+                            },
+                            {
+                                "S": "Amazon S3 Intelligent Tiering"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 Intelligent Tiering"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon S3 Intelligent Tiering is ideal if you are unsure of what your object access patterns might be. Objects are automatically transitioned across four different tiers, two of which are latency access tiers, which are designed to move objects between frequently accessed and infrequently accessed tiers, while the other two are optional archive access tiers. For the infrequent access tier, if you do not access your objects for 30 days, then it transitions to the Amazon S3 Standard-IA storage class, which is cheaper. If you need to access the same objects again later, they are transitioned back to the Amazon S3 Standard storage class.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your junior colleague accidentally deleted some financial data that was stored in an Amazon S3 bucket. How can you prevent such\naccidental deletions of data in Amazon S3?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Do not give junior administrators access to Amazon S3."
+                            },
+                            {
+                                "S": "Set up Amazon S3 Versioning on your S3 bucket."
+                            },
+                            {
+                                "S": "Set up Amazon S3 Lifecycle Management."
+                            },
+                            {
+                                "S": "Set up Amazon S3 Termination Protection."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Set up Amazon S3 Versioning on your S3 bucket."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "To protect against accidental deletions or overwriting, Amazon S3 Versioning can be enabled. This service ensures that if someone tries to perform a delete request on an object without specifying the version ID, it will not be deleted. Instead, a delete marker will be added and the object will be hidden from view. You can then delete this marker to reenable access to the object. You should also consider setting a bucket policy so that not all users can perform delete requests.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of Amazon S3 enables you to create a secondary copy of your objects in a given S3 bucket that will be stored in a\ndifferent Region for compliance purposes?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 Cross-Region Replication (CRR)"
+                            },
+                            {
+                                "S": "Amazon S3 Same Region Replication"
+                            },
+                            {
+                                "S": "Amazon S3 Versioning"
+                            },
+                            {
+                                "S": "Amazon S3 Multi-Copy"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 Cross-Region Replication (CRR)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon S3 CRR is used to asynchronously copy objects across AWS buckets in different AWS Regions. This feature can be used to fulfill compliance and regulatory requirements, which may require you to store copies of data thousands of kilometers away for Disaster Recovery (DR) purposes.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Company policy dictates that objects stored in Amazon S3 must be encrypted at rest. It is also mandated that your choice of encryption\nshould offer an auditing feature that shows when your Customer Master Key (CMK) was used and by whom. Which type of Amazon S3\nencryption option will you need to configure to fulfill the requirements?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)"
+                            },
+                            {
+                                "S": "Client-Side Encryption"
+                            },
+                            {
+                                "S": "Server-Side Encryption with KMS keys stored in AWS Key Management Service (SSE-KMS) Bitlocker"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Server-Side Encryption with KMS keys stored in AWS Key Management Service (SSE-KMS) Bitlocker"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "With SSE-KMS, you can encrypt your objects in Amazon S3. You can create and manage your CMKs, as well as benefit from the auditing feature, which shows when your CMK was used and by whom. This service integrates with Amazon CloudTrail to offer full auditing features.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You need to retrieve a small subset of some archive data urgently to resolve a pending investigation. The data is stored in the Amazon\nS3 Glacier storage class. Which retrieval option can use to access the data urgently?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Standard retrieval option"
+                            },
+                            {
+                                "S": "Expedited retrieval option"
+                            },
+                            {
+                                "S": "Bulk retrieval option"
+                            },
+                            {
+                                "S": "Power retrieval option"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "If you need urgent access to just a subset of your archives, you can opt for the Expedited retrieval option. Expedited retrievals are made available within 1 to 5 minutes for archives of up to 250 megabytes (MB).\u201d"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You have a team of remote workers who need to upload research documents and videos to your Amazon S3 bucket hosted in the us-east-1 Region.\nYou would like to ensure that your remote staff can upload research material with low latency access. What can you do to reduce\nspeed variability for uploads, which are often experienced due to the architecture of the public internet?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Enable Amazon S3 Transfer Acceleration (S3TA) for your bucket."
+                            },
+                            {
+                                "S": "Configure an IPSec site-to-site VPN connection between your remote workers and the VPC in the us-east-1 Region."
+                            },
+                            {
+                                "S": "Use the Amazon Storage Gateway service."
+                            },
+                            {
+                                "S": "Set up Amazon Express Route."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Enable Amazon S3 Transfer Acceleration (S3TA) for your bucket."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "S3TA reduces this speed variability that is often experienced due to the architecture of the public internet. S3TA routes your uploads via Amazon CloudFront's globally distributed edge locations and AWS backbone networks. This, in turn, gives faster speeds and consistently low latency for your data transfers.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You need to transfer large amounts of data from your on-premises network to the Amazon S3 platform. The total data capacity is around\n400 TB. You have decided to opt for the Amazon Snowball Edge service to complete the transfer. No data compute or processing is required.\nWhich flavor of the Amazon Snowball Edge service would you recommend?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Snowball Edge Compute Optimized"
+                            },
+                            {
+                                "S": "Snowball Edge Storage Optimized"
+                            },
+                            {
+                                "S": "Snowball Edge Data Optimized"
+                            },
+                            {
+                                "S": "Snowball Edge Function Optimized"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Snowball Edge Storage Optimized"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The Amazon Snowball Edge Storage Optimized device offers a larger storage capacity and is ideal for data migration tasks. With 80 TB of HDD and 1 TB of serial advanced technology attachment (SATA) SDD volumes, you can start moving large volumes of data to the cloud. The device also comes with 40 vCPUs and 80 GB of memory.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You host several Microsoft Windows applications on-premises that need low latency access to large amounts of storage. You would like to\nuse the Amazon Storage Gateway service to host all application-level data. Which gateway option would you recommend?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 File Gateway"
+                            },
+                            {
+                                "S": "Amazon FSx File Gateway"
+                            },
+                            {
+                                "S": "Volume Gateway Cached Mode"
+                            },
+                            {
+                                "S": "Tape Gateway"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon FSx File Gateway"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon FSx File Gateway enables you to connect your on-premises Windows applications that need large amounts of storage to the cloud-hosted Amazon FSx service for Windows File Server with low latency connectivity. Amazon FSx File Gateway also\nsupports integration with Active Directory (AD) and the ability to configure access controls using ACLs.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Following best practices, you have deployed your application servers within the private subnets of a VPC. However, these servers require\ninternet access to download updates and security patches. Which type of resource can enable you to grant internet access to EC2 instances in private subnets without having to assign public IP addresses to those instances?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Internet gateway"
+                            },
+                            {
+                                "S": "NAT gateway"
+                            },
+                            {
+                                "S": "Subnet"
+                            },
+                            {
+                                "S": "Route table"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "NAT gateway"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "NAT gateways help relay outbound requests to the internet on behalf of EC2 instances configured to use them. The NAT gateway replaces the source IPv4 address of your EC2 instances with the private IP address of the NAT gateway, thus acting as a proxy. Response traffic is then redirected by the NAT gateway back to the private IP address of the EC2 instance that made the original request.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following statements is true about security groups?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Security groups are stateful and you need to configure both inbound and the corresponding outbound rules for traffic to flow bidirectionally."
+                            },
+                            {
+                                "S": "Security groups are stateless and you do not need to configure both inbound and the corresponding outbound rules for traffic to flow bidirectionally."
+                            },
+                            {
+                                "S": "Security groups can be used to explicitly deny inbound traffic from a specific IP address range."
+                            },
+                            {
+                                "S": "Security groups are used to limit what actions IAM users that are members of the group can perform."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Security groups are stateless and you do not need to configure both inbound and the corresponding outbound rules for traffic to flow bidirectionally."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Security groups are stateful. This means that even if you have not configured any inbound rules, response traffic to any outbound requests will be permitted inbound by the Security Group. Similarly, if you configured any inbound rules, outbound response traffic to any inbound traffic is permitted, without you having to explicitly create those outbound rules.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of the AWS VPC service enables you to connect multiple VPCs so that traffic between those VPCs can be sent using private\nIP address space?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "VPC peering"
+                            },
+                            {
+                                "S": "VPC Flow Logs"
+                            },
+                            {
+                                "S": "Subnets"
+                            },
+                            {
+                                "S": "VPC endpoints"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "VPC peering"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "A VPC peering connection is a private network connection between two VPCs. The service allows you to connect multiple VPCs so that instances in one VPC can access resources in another VPC over a private IP address space.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which service enables you to reduce the complexity associated with establishing multiple VPC peering connections?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Transit Gateway"
+                            },
+                            {
+                                "S": "AWS VPC Manager"
+                            },
+                            {
+                                "S": "AWS Direct Connect"
+                            },
+                            {
+                                "S": "IPSec VPN Tunnel"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Transit Gateway"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The problem with VPC peering, when you're configuring multiple VPC to connect, is that every VPC must establish a one-to-one connection with its peer. This can quickly create complex connections that are difficult to manage. Route tables for each VPC also need to be configured for every peering connection.AWS Transit Gateway allows you to connect your VPCs via the gateway in a hub-and-spoke model, greatly reducing this complexity as each VPC only needs to connect to the Gateway to access other VPCs.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to connect your on-premises network to your AWS account using a dedicated private connection that\nbypasses the internet altogether?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IPSec VPN"
+                            },
+                            {
+                                "S": "Express Route"
+                            },
+                            {
+                                "S": "Direct Connect"
+                            },
+                            {
+                                "S": "Snowball"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Direct Connect"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Direct Connect is a service that enables you to connect your corporate data center to your VPC and the public services offered by AWS, such as Amazon S3, via a dedicated private connection that bypasses the internet altogether. The service enables you to achieve bandwidth connectivity of up to 100 Gbps.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS feature can help you establish connectivity between your on-premises network and your AWS VPC using an IPSec tunnel?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Direct Connect"
+                            },
+                            {
+                                "S": "Virtual Private Network (VPN)"
+                            },
+                            {
+                                "S": "AWS Outposts"
+                            },
+                            {
+                                "S": "Amazon SNS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Virtual Private Network (VPN)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "You can set up a VPN connection between your on-premises network and your VPC. This is a secure encrypted site-to-site tunnel that's established between two endpoints over the public internet. It offers AES 128 or 256-bit IPsec encryption, which means that you can transfer data between the two endpoints securely.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are about to publish your web application using an Application Load Balancer (ALB) and would like to use a friendly domain name to\nadvertise the site to your users rather than the ALB's DNS name. Which AWS service can you use to configure the alias's name so that\nwhen users type in the friendly domain name into the browser, they are directed to the ALB's DNS URL?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Route53"
+                            },
+                            {
+                                "S": "Amazon CloudFront"
+                            },
+                            {
+                                "S": "Amazon S3"
+                            },
+                            {
+                                "S": "Amazon Direct Connect"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Route53"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Route53 can help you create alias records so that when a user types in a corporate domain-friendly name into the browser, it will direct th\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to purchase and register new domain names that can be used to publish your website on the internet?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Route53"
+                            },
+                            {
+                                "S": "VPC"
+                            },
+                            {
+                                "S": "RDS"
+                            },
+                            {
+                                "S": "Elastic Beanstalk"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Route53"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Route 53 offers domain name registration. You can purchase and manage domain names such as example.com and Amazon Route 53 will automatically configure the DNS settings for your domains.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You have developed a web application that you want to offer redundancy and resilience for. Which feature of the Amazon Route53 service can\nhelp you design your web application with a primary site where all users' traffic is directed to, by default, and if the primary site\nis offline, then users are redirected to a secondary site located in a different Region."
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Simple routing policy"
+                            },
+                            {
+                                "S": "Weighted routing policy"
+                            },
+                            {
+                                "S": "Failover routing policy"
+                            },
+                            {
+                                "S": "Geolocation routing policy"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Failover routing policy"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "To offer high availability of your web application, you can host two copies of your resources ideally across different Regions. One set of resources will be designated as your primary resource and the other as a secondary resource. If the primary resource is offline, then users' requests are redirected to the secondary resource.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You plan to host a new Amazon S3 static website through which you will offer free recipe guides. The site is going to be accessed by users\nacross the globe. The site contains lots of videos and images about the recipes you offer. Which AWS service can help you cache your\ndigital assets locally to where users are located and thus reduce latency when your users access content on your website?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Route53"
+                            },
+                            {
+                                "S": "Amazon VPC"
+                            },
+                            {
+                                "S": "Amazon CloudFront"
+                            },
+                            {
+                                "S": "Amazon Cloud9"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon CloudFront"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon CloudFront is a Content Delivery Network (CDN) that helps you distribute your static and dynamic content globally over low latency connections. The service caches content at edge locations closer to where your users are accessing the website.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You have created an EC2 AMI that contains the base operating system and all necessary corporate settings/configurations. Your colleagues\nin another Region are trying to launch new EC2 instances but they are unable to access your AMI. What do you need to do so that your\ncolleagues can use the new image?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Copy the AMI to other Regions."
+                            },
+                            {
+                                "S": "Set up a VPC endpoint between the Regions to allow your colleagues to download the AMI."
+                            },
+                            {
+                                "S": "Copy the AMI to an S3 bucket."
+                            },
+                            {
+                                "S": "Use the Amazon Snowball service to send a copy of the AMI to your colleagues."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Copy the AMI to other Regions."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "To launch an EC2 instance with a custom AMI that you have built in another Region, you need to ensure that you copy the AMI to that Region.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which EC2 instance type is designed for floating-point number calculations, graphics processing, or data pattern matching?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "General Purpose"
+                            },
+                            {
+                                "S": "Memory-Optimized"
+                            },
+                            {
+                                "S": "Compute Optimized"
+                            },
+                            {
+                                "S": "Accelerated Computing"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Accelerated Computing"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Accelerated Computing EC2 instance types are designed with hardware accelerators, or co-processors, to perform complex functions. They are best for processing complex graphics, number crunching, and machine learning.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You need to deploy a certain third-party application on an EC2 instance where the licensing term is based on a per-CPU core/socket basis.\nWhich EC2 pricing option do you need to use for this requirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "On-Demand"
+                            },
+                            {
+                                "S": "Reserved Instance"
+                            },
+                            {
+                                "S": "Spot Instance"
+                            },
+                            {
+                                "S": "Dedicated Host"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Dedicated Host"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "A Dedicated Host is a physical host dedicated for your use alone and gives you additional control and management capability over how instances are placed on a physical server. In addition, dedicated hosts can help address certain third-party licensing terms that are based on a per-CPU core/socket basis.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are currently running a test phase for a new application that is being developed in-house. Your UAT testers will need to access\ntest servers for 3 hours a day, three times a week. The test phase is supposed to last 5 weeks. You cannot afford any interruptions\nto the application while the tests are being run. Which EC2 pricing option will be the most cost-effective?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "On-Demand"
+                            },
+                            {
+                                "S": "Reserved"
+                            },
+                            {
+                                "S": "Spot"
+                            },
+                            {
+                                "S": "Dedicated Host"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "On-Demand"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "On-Demand is ideal for users who need the flexibility to consume compute resources when required and without any long-term commitment. They are ideal for test/dev environments or for applications that have short spiky or unpredictable workloads.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which EBS volume type is designed for critical, I/O-intensive databases and application workloads?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "gp2"
+                            },
+                            {
+                                "S": "st1"
+                            },
+                            {
+                                "S": "sc1"
+                            },
+                            {
+                                "S": "io1"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "io1"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Provisioned IOPS SSDs offering high-performance EBS storage is ideal for critical, I/O-intensive databases and application workloads.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following payment options will help you achieve the maximum discount for your RIs?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A 1-year commitment with payment made using the Partial Upfront option."
+                            },
+                            {
+                                "S": "A 1-year commitment with payment made using the All Upfront option."
+                            },
+                            {
+                                "S": "A 1-year commitment with payment made using the No Upfront option."
+                            },
+                            {
+                                "S": "A 3-year commitment with payment made using the All Upfront option."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A 3-year commitment with payment made using the All Upfront option."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Using an All Upfront payment option for your RIs means paying for the entire term of the RI upfront at the beginning of the contract. You do not get a monthly/hourly bill and you benefit from the maximum available discount. Furthermore, a 3-year commitment will offer a bigger discount than a 1-year one.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to quickly deploy a Virtual Private Server (VPS) that comes preconfigured with common application stacks,\nSSD storage, and fixed IP addresses for a fixed monthly fee based on the configuration of the server?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon EC2"
+                            },
+                            {
+                                "S": "Amazon Lightsail"
+                            },
+                            {
+                                "S": "Amazon ECS"
+                            },
+                            {
+                                "S": "Amazon ECR"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Lightsail"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Lightsail is a VPS solution that comes pre-configured with common application stacks such as WordPress, Drupal, Plesk, LAMP, and your chosen operating system. You choose the size of the server and it comes preconfigured with SSD storage, an IP address, and more. The best part about Lightsail is that you have a fixed monthly fee based on the instance type and the associated operating system and applications that have been deployed.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are planning on deploying a Docker application on AWS. You wish to deploy your Docker image without having to manage EC2 instances\nsuch as provisioning and scaling clusters, or patching and updating virtual servers yourself.\nWhich service enables you to fulfill this requirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon ECS deployed using the EC2 Launch Type"
+                            },
+                            {
+                                "S": "Amazon ECS deployed using the Fargate Launch Type"
+                            },
+                            {
+                                "S": "Amazon ECS deployed using ECR"
+                            },
+                            {
+                                "S": "Amazon ECS deployed with Lambda functions to manage your servers"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon ECS deployed using the Fargate Launch Type"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The ECS Fargate Launch Type enables you to set up your ECS environment without having to spin up EC2 instances, provision and scale clusters, or patch and update virtual servers yourself. AWS will manage how the ECS tasks are placed on the cluster, scale them as required, and fully manage the entire environment for you.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following services is part of the AWS serverless offering that allows you to run code in response to a trigger or event?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon ECS"
+                            },
+                            {
+                                "S": "AWS Lambda"
+                            },
+                            {
+                                "S": "Amazon EC2"
+                            },
+                            {
+                                "S": "AWS CloudFront"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Lambda"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Lambda is a serverless offering from AWS that allows you to run code and perform some tasks. Amazon Lambda is known as a Function as a Service (FaaS) solution that can be used to build an entirely serverless architecture comprised of storage, databases, and network capabilities where you do not manage any underlying servers.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS storage option is designed to offer file sharing capabilities for Windows-aware applications and offers options for integration\nwith Microsoft Active Directory?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS FSx for Lustre"
+                            },
+                            {
+                                "S": "Amazon FSx for Windows File Server"
+                            },
+                            {
+                                "S": "AWS Elastic File System"
+                            },
+                            {
+                                "S": "AWS instance store volumes"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon FSx for Windows File Server"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Microsoft Windows-aware applications that need to share files can easily use FSx for Windows File Share, which offers support for the SMB protocol and Windows NTFS, AD integration, and Distributed File System (DFS).\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are planning on deploying 10 EC2 instances across two Availability Zones that will host the new line of business applications.\nAll the servers will need to share common files and will run the Amazon Linux 2 operating system. Which storage architecture would you\nrecommend to host the shared files for your application servers?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastic File System (EFS)"
+                            },
+                            {
+                                "S": "Amazon FSx Lustre"
+                            },
+                            {
+                                "S": "Amazon S3"
+                            },
+                            {
+                                "S": "Amazon EBS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastic File System (EFS)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon EFS can be used by Linux-based EC2 instances as a centralized file storage solution. This is particularly useful when you have applications deployed across multiple EC2 instances that need to share common files. Amazon EFS can also be accessed from on-premises servers over a VPN or Direct Connect service.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You have just launched a Windows EC2 instance. How can you obtain the Windows local administrator password?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Raise a support request with Amazon to obtain the password."
+                            },
+                            {
+                                "S": "The password is sent to you automatically via email."
+                            },
+                            {
+                                "S": "The password is sent to you via an SMS text message to your registered mobile."
+                            },
+                            {
+                                "S": "Use the key pair to decrypt the password."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Use the key pair to decrypt the password."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "When you launch a server (Windows or Linux), you must configure it to be associated with a key pair. This is an encrypted key where you will be able to use your private key to log in to Linux-based servers or decrypt the Windows administrator password using the AWS Management Console.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to configure a hybrid solution by extending AWS Infrastructure so that EC2 and EBS services can be hosted\nin your on-premise data center?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS RDS"
+                            },
+                            {
+                                "S": "AWS Direct Connect"
+                            },
+                            {
+                                "S": "AWS Outposts"
+                            },
+                            {
+                                "S": "AWS Route53"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Outposts"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Outposts is ideal when you want to run AWS resources with very low latency connections to your on-premises application or if you require local data processing due to any compliance and regulatory requirements. You can get AWS Outposts delivered to\nyour local on-premises location as a 42U rack and can scale from 1 rack to 96 racks to create pools of compute and storage capacity.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your company provides spread betting services. You wish to run an end of day analysis against the day's transaction costs and carry\nout the necessary market analysis. Which AWS service dynamically provisions the necessary compute services that will scale based on\nthe volume and resource requirements of your submitted jobs?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Batch"
+                            },
+                            {
+                                "S": "AWS CloudFront"
+                            },
+                            {
+                                "S": "AWS Lambda"
+                            },
+                            {
+                                "S": "AWS Blockchain"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Batch"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Batch can be used to run thousands of batch computing jobs on AWS for performing various types of analysis. AWS Batch will set up and provision the necessary compute resources to fulfill your batch requests. There is no need to deploy server clusters as AWS takes care of this for you.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can help you deploy, manage, and scale containerized applications using Kubernetes on AWS?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon ECS"
+                            },
+                            {
+                                "S": "Amazon EKS"
+                            },
+                            {
+                                "S": "Amazon MFA"
+                            },
+                            {
+                                "S": "Amazon EC2"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon EKS"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon EKS is designed to help you deploy, manage, and scale containerized applications using Kubernetes on AWS.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following statements is an example of an advantage of using Amazon RDS over databases installed on EC2 instances?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon RDS is a fully managed database where AWS manages the underlying compute and storage architecture, as well as patching and updates."
+                            },
+                            {
+                                "S": "Amazon RDS grants you access to the operating system, allowing you to fine-tune the database for the operating system it is running."
+                            },
+                            {
+                                "S": "Amazon RDS is faster than running the Microsoft SQL Server database on EC2 instances."
+                            },
+                            {
+                                "S": "Amazon RDS automatically enables encryption of the data in Amazon RDS."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon RDS is a fully managed database where AWS manages the underlying compute and storage architecture, as well as patching and updates."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The primary advantage of using Amazon RDS over installing databases on EC2 is the fact that AWS manages all the compute and storage provisioning, as well as performing all management tasks on the database. This frees you up to focus on your application and the infrastructure components that host the database.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of Amazon RDS enables you to create a standby copy of the database and offer failover capabilities if the master copy fails?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Read Replicas"
+                            },
+                            {
+                                "S": "Multi-AZ"
+                            },
+                            {
+                                "S": "Failover policy"
+                            },
+                            {
+                                "S": "Snapshots"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Multi-AZ"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon RDS offers a feature known as Multi-AZ where the primary (master) copy of your database is deployed in one Availability Zone and a secondary (standby) copy is deployed in another Availability Zone. Data is then synchronously replicated from the master copy to the standby copy continuously. If the master copy fails, AWS will promote the standby copy to become the new master and perform a failover.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your company is planning to migrate its on-premises MySQL database to Amazon RDS. Which service will enable you to perform the migration?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Server Migration Service (SMS)"
+                            },
+                            {
+                                "S": "Amazon Database Migration Service (DMS)"
+                            },
+                            {
+                                "S": "Amazon VM Import Export"
+                            },
+                            {
+                                "S": "Amazon Redshift Migration Utility"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Database Migration Service (DMS)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon offers a Database Migration Service (DMS) that can be used to migrate the data from one database to another. This migration can be performed from your on-premises network to the AWS cloud over a VPN connection or a Direct Connect connection. AWS DMS offers support for both homogeneous migrations, such as from MySQL to MySQL or Oracle to Oracle, as well as heterogenous migrations between engines such as Oracle to Microsoft SQL Server or Amazon Aurora.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of AWS Redshift allows you to perform SQL queries against data stored directly on Amazon S3 buckets?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Redshift leader node"
+                            },
+                            {
+                                "S": "Redshift Spectrum"
+                            },
+                            {
+                                "S": "Redshift Copy"
+                            },
+                            {
+                                "S": "Redshift Streams"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Redshift Spectrum"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Redshift Spectrum allows you to perform SQL queries against data stored directly on Amazon S3 Buckets. This is particularly useful if, for instance, you store frequently accessed data in Redshift and some infrequently accessed data in Amazon S3.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which Amazon RDS engine offers high resilience with copies of the database placed across a minimum of three Availability Zones?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "MySQL"
+                            },
+                            {
+                                "S": "PostgreSQL"
+                            },
+                            {
+                                "S": "Microsoft SQL Server"
+                            },
+                            {
+                                "S": "Amazon Aurora"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Aurora"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Aurora is an AWS proprietary database that maintains copies of the database placed across a minimum of three Availability Zones. Amazon Aurora is also five times faster than standard MySQL databases and three times faster than standard PostgreSQL databases. It also offers self-healing storage capabilities that can scale up to 128 TB per database instance.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS-managed database service enables you to store data using complex structures with options for nested attributes, such as a JSON-style\ndocument?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon RDS"
+                            },
+                            {
+                                "S": "Amazon Redshift"
+                            },
+                            {
+                                "S": "Amazon DynamoDB"
+                            },
+                            {
+                                "S": "Amazon Aurora"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon DynamoDB"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "DynamoDB supports both key-value and document data models such as JSON. DynamoDB is a NoSQL database solution that offers a flexible schema and offers single digit millisecond performance at any scale.\u201d"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS database service is designed to store sensitive data that is immutable and where the transactional logs are cryptographically\nverifiable?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS QLDB"
+                            },
+                            {
+                                "S": "Amazon Neptune"
+                            },
+                            {
+                                "S": "Amazon Aurora"
+                            },
+                            {
+                                "S": "Amazon RDS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS QLDB"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon QLDB is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority. Amazon QLDB can maintain a history of all data changes.\u201d"
+                    }
+                }
+            }
+        ]
+    }
+}

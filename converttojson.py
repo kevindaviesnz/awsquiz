@@ -10,6 +10,7 @@ def convert_to_dynamodb_json(input_file, output_file):
     in_question = False
     in_answers = False
     in_correct = False
+    in_explanation = False
 
     for line in lines:
         line = line.strip()
@@ -17,23 +18,32 @@ def convert_to_dynamodb_json(input_file, output_file):
             in_question = True
             in_answers = False
             in_correct = False
+            in_explanation = False
             if current_question:
                 questions.append(current_question)
-            current_question = {"question": "", "answers": [], "correct_answer": []}
+            current_question = {"question": "", "answers": [], "correct_answer": [], "explanation":""}
         elif line.startswith("[answers]"):
             in_question = False
             in_answers = True
-            in_correct = False
+            in_correct = False            
         elif line.startswith("[correct]"):
             in_question = False
             in_answers = False
-            in_correct = True
+            in_correct = True 
+            in_explanation = False           
+        elif line.startswith("[explanation]"):
+            in_question = False
+            in_answers = False
+            in_correct = False
+            in_explanation = True
         elif in_question:
             current_question["question"] += line + "\n"
         elif in_answers and line:
             current_question["answers"].append(line)
         elif in_correct and line:
             current_question["correct_answer"].append(line)
+        elif in_explanation and line:
+            current_question["explanation"] += line + "\n"
 
     # Append the last question
     if current_question:
@@ -50,7 +60,8 @@ def convert_to_dynamodb_json(input_file, output_file):
             "M": {
                 "question": {"S": question["question"].strip()},
                 "answers": {"L": [{"S": answer} for answer in question["answers"]]},
-                "correct_answer": {"L": [{"S": ans} for ans in question.get("correct_answer", [])]}  # Ensure correct_answer is added
+                "correct_answer": {"L": [{"S": ans} for ans in question.get("correct_answer", [])]},  # Ensure correct_answer is added
+                "explanation": {"S": question["explanation"].strip()},
             }
         })
 
