@@ -10,6 +10,2060 @@
             {
                 "M": {
                     "question": {
+                        "S": "You are currently performing a manual snapshot of your single instance MySQL Amazon RDS database every 4 hours. Some users have complained that the application that connects to the database experiences a brief outage when the backup process initializes. What can you do to resolve this issue?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Configure your Amazon RDS database with Read Replicas."
+                            },
+                            {
+                                "S": "Configure your Amazon RDS database with Multi-AZ."
+                            },
+                            {
+                                "S": "Configure an AWS backup to perform the RDS database backups."
+                            },
+                            {
+                                "S": "Use the DMS service to migrate the MySQL database to Microsoft SQL Server."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Configure your Amazon RDS database with Multi-AZ."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "In scenarios where you have a single RDS database instance deployed, your users are likely to experience a brief I/O suspension when your backup process initializes. By configuring your Amazon RDS database with Multi-AZ, the backup is taken from the standby copy of the database instead of the master. This will ensure that users do not experience any brief outages when trying to access the database."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your organization is in a healthcare industry based in New York. You are planning on using an in-memory caching engine to alleviate the load on your Amazon RDS database for frequently used queries. Which AWS in-memory caching engine offers Multi-AZ\ncapabilities, encryption of data, and compliance with the Health Insurance Portability and Accountability Act (HIPAA)?\nAmazon Elasticache for Redis\nAmazon Elasticache for Memcached\nAmazon CloudFront\nAmazon DynamoDB DAX"
+                    },
+                    "answers": {
+                        "L": []
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Elasticache for Redis"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Elasticache for Redis is designed for complex data types, offers Multi-AZ capabilities, encryption of data, and compliance with FedRAMP, HIPAA, PCI-DSS, as well as high availability and automatic failover options."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service offers a fully managed data warehousing capability and enables you to analyze large datasets using standard SQL and Business Intelligence (BI) tools?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon RDS"
+                            },
+                            {
+                                "S": "Amazon QLDB"
+                            },
+                            {
+                                "S": "Amazon Redshift"
+                            },
+                            {
+                                "S": "Amazon Aurora"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Redshift"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Redshift is AWS's data warehousing solution that is designed for analytics and is optimized for scanning many rows of data for one or multiple columns. Instead of organizing data as rows, Redshift transparently organizes data by columns. You can use standard SQL to query the database and use it with your existing BI tools."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following services further increase your EC2 instances' costs? (Choose two)"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Detailed monitoring"
+                            },
+                            {
+                                "S": "Use of Elastic Load Balancers"
+                            },
+                            {
+                                "S": "S3 buckets that you connect to DynamoDB tables that you query"
+                            },
+                            {
+                                "S": "Setting up multiple key pairs"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Detailed monitoring"
+                            },
+                            {
+                                "S": "Use of Elastic Load Balancers"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Detailed monitoring and use of Elastic Load Balancers will increase your EC2 instances' costs. This is because Elastic Load Balancers are not part of the free tier and you are charged based on each hour or partial hour that a load balancer is running and the number of Load Balancer Capacity Units (LCUs) used per hour. Furthermore, whereas basic monitoring is offered free of charge, detailed monitoring is a chargeable service."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your developer team needs to deploy an Elastic Load Balancer that will direct traffic to your web servers based on the URL path and over the HTTPS protocol. Which Elastic Load Balancer would you recommend?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Network Load Balancer"
+                            },
+                            {
+                                "S": "ALB"
+                            },
+                            {
+                                "S": "Gateway Load Balancer"
+                            },
+                            {
+                                "S": "Classic Load Balancer"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "ALB"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "ALBs are designed to distribute traffic at the application layer (using HTTP and HTTPS). Furthermore, with ALBs, you can have multiple target groups, allowing you to define complex routing rules based on the different application components. You can configure path-based routing, host-based routing, and much more. You can also configure Lambda functions as targets for your load balancer."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of the Elastic Load Balancer service is suitable for Transmission Control Protocol (TCP), User Datagram Protocol (UDP), and Transport Layer Security (TLS) type traffic and operates at layer 4 of the Open Systems Interconnection (OSI) model?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Network Load Balancer"
+                            },
+                            {
+                                "S": "ALB"
+                            },
+                            {
+                                "S": "Gateway Load Balancer"
+                            },
+                            {
+                                "S": "Classic Load Balancer"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Network Load Balancer"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Network Load Balancers are designed to operate at the fourth layer of the OSI model and can handle millions of requests per second. Network Load Balancers are designed for load balancing both TCP and UDP traffic and maintaining ultra-low latencies."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following statements is true about Elastic Load Balancers?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Elastic Load Balancers act as firewalls to protect the application running on your EC2 instances."
+                            },
+                            {
+                                "S": "Elastic Load Balancers enable you to achieve high availability across multiple Regions by distributing incoming web traffic to targets located in multiple Regions."
+                            },
+                            {
+                                "S": "Elastic Load Balancers enable you to achieve high availability within a single Region by distributing incoming web traffic to targets located in multiple Availability Zones."
+                            },
+                            {
+                                "S": "Elastic Load Balancers enable you to scale horizontally by provisioning or terminating EC2 instances based on the demand of your resources."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Elastic Load Balancers enable you to achieve high availability within a single Region by distributing incoming web traffic to targets located in multiple Availability Zones."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Using a load balancer, you can direct incoming traffic to multiple registered EC2 instances across multiple Availability Zones within a given Region. This enables you to offer high\navailability in case any of the EC2 instances fails or even if an entire Availability Zone goes offline."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which component of an Elastic Load Balancer do you need to configure to ensure you accept traffic on a designated port and forward that traffic on a specific port to your EC2 instances behind the load balancer?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Port forwarder"
+                            },
+                            {
+                                "S": "NAT Gateway"
+                            },
+                            {
+                                "S": "Listener"
+                            },
+                            {
+                                "S": "Echo"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Listener"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "You need to configure listeners to specific ports that you will accept incoming traffic on and the ports you will use to forward traffic to the EC2 instances."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are building a multi-tier architecture with web servers placed in the public subnet and application servers placed in the private subnet of your VPC. Which type of load balancer would you choose to distribute traffic to your application servers?Internet-facingInternal load balancersDynamic load balancersStatic load balancers\nWhich configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that can be launched in your fleet?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Internet-facing"
+                            },
+                            {
+                                "S": "Internal load balancers"
+                            },
+                            {
+                                "S": "Dynamic load balancers"
+                            },
+                            {
+                                "S": "Static load balancers"
+                            },
+                            {
+                                "S": "Auto Scaling group"
+                            },
+                            {
+                                "S": "Auto Scaling Launch Configuration"
+                            },
+                            {
+                                "S": "Auto Scaling MaxFleet Size"
+                            },
+                            {
+                                "S": "Auto Scaling policy"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Internal load balancers"
+                            },
+                            {
+                                "S": "Auto Scaling group"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The nodes of an internal load balancer only have private IP addresses and allow communication between the web layer and the internal application layer. The DNS name of an internal load balancer can be publicly resolved to the private IP addresses of the nodes. Therefore, internal load balancers can only route requests from clients with access to the VPC for the load balancer.\nWhich configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that\ncan be launched in your fleet?\nWhen configuring your Auto Scaling group, you can define the minimum and maximum size of your group. You can also choose to keep the size of the group to an initial size that does not expand the group size but ensures that you always have the exact number of EC2 instances running."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can help you provision only the necessary number of EC2 instances required to meet application demand, thus saving on costs usually associated with overprovisioning resources?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Elastic Load Balancer"
+                            },
+                            {
+                                "S": "Auto Scaling"
+                            },
+                            {
+                                "S": "Cost Explorer"
+                            },
+                            {
+                                "S": "EC2 Launcher"
+                            },
+                            {
+                                "S": "Personal Health Dashboard"
+                            },
+                            {
+                                "S": "AWS Systems Manager"
+                            },
+                            {
+                                "S": "AWS Config"
+                            },
+                            {
+                                "S": "AWS Trusted Advisor"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Auto Scaling"
+                            },
+                            {
+                                "S": "AWS Trusted Advisor"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Auto Scaling can help you provision new EC2 instances based on CloudWatch metrics that change according to the load on your instances. Similarly, when demand drops, you can configure Auto Scaling to terminate unwanted resources and thus save on costs.\nYou have recently launched a new free coupon web application across a fleet of EC2 instances configured in an Auto Scaling group. Traffic has increased dramatically before\nthe Black Friday sale and you have noticed that your Auto Scaling service is not launching any more EC2 instances, even though the threshold metrics have been crossed in CloudWatch. Your colleague tells you that you may have crossed a quota or limit on the number of EC2 instances you can launch. Which AWS service can offer you a quick look to determine this is the case?\nAWS Trusted Advisor is an online tool that can offer guidance on AWS infrastructure, improve security and performance, reduce costs, and monitor service quotas. The service quota (service limits) category of Trusted Advisor can notify you if you use more than 80% of a service quota for a specific service. You can then follow recommendations to delete resources or request a quota increase."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which firewall protection service does the ALB offer to help protect against common web exploits such as cross-site scripting and SQL injection?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS WAF"
+                            },
+                            {
+                                "S": "AWS Shield"
+                            },
+                            {
+                                "S": "Amazon Guard Duty"
+                            },
+                            {
+                                "S": "Network Access Control Lists (NACLs)"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS WAF"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The AWS ALB service provides integration with Web Application Firewall (WAF), which helps protect against common web exploits such as SQL injection and cross-site scripting."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which dynamic scaling policy offered by the Amazon Auto Scaling service can help you launch or terminate EC2 instances in the fleet based on the target value of a specific metric?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Target tracking scaling policy"
+                            },
+                            {
+                                "S": "Step scaling policy"
+                            },
+                            {
+                                "S": "Simple scaling policy"
+                            },
+                            {
+                                "S": "Predictable scaling policy"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Target tracking scaling policy"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "With the target tracking scaling policy, Auto Scaling will launch or terminate EC2 instances in the fleet based on the target value of a specific metric. The target tracking policy tracks the metric value and attempts to ensure the correct number of EC2 instances are running to meet that target value."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You plan to use Amazon CloudWatch to send out alerts whenever the CPU utilization on your production EC2 instances is more than 80% for 15 minutes. Which AWS service can you use to send out this alert notification?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon SES"
+                            },
+                            {
+                                "S": "Amazon SNS"
+                            },
+                            {
+                                "S": "Amazon SQS"
+                            },
+                            {
+                                "S": "Amazon MQ"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon SNS"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Simple Notification Service (SNS) is a push-based messaging and notification system that can be used to allow one application component to send messages to another application component or directly to end users. So, Amazon SNS can be used to send out alerts when a particular CloudWatch metric crosses a threshold for a period and triggers an alarm."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of the Amazon SNS service enables you to push notification messages to multiple endpoints in parallel?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "You can use the SNS Fanout scenario to help you push notifications to multiple endpoints."
+                            },
+                            {
+                                "S": "You can use SNS FIFO topics to help you push notifications to multiple endpoints."
+                            },
+                            {
+                                "S": "You can change the timeout period to ensure that notifications are sent to multiple endpoints."
+                            },
+                            {
+                                "S": "To send out notifications to multiple endpoints, you will need to configure Amazon SQS to integrate with Amazon SNS."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "You can use the SNS Fanout scenario to help you push notifications to multiple endpoints."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The Fanout scenario enables you to publish messages to an SNS topic for parallel asynchronous processing. You send the notifications to supported endpoints such as Kinesis Data Firehose delivery streams, Amazon SQS queues, HTTP(S) endpoints, and Lambda functions."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to design your application architecture by decoupling its components into distributed systems and facilitating the design and architecture of microservices?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon SNS"
+                            },
+                            {
+                                "S": "Amazon Simple Queue Service (SQS)"
+                            },
+                            {
+                                "S": "Amazon MQ"
+                            },
+                            {
+                                "S": "Amazon Redshift"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Simple Queue Service (SQS)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon SQS is a fully managed message queuing solution that enables you to decouple your application components into distributed systems and facilitates the design and architecture of microservices. A queueing system such as Amazon SQS can help different components of your application work independently. Queues can hold messages in the form of requests/tasks until capacity is available."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You plan to use Amazon SQS to help decouple your application components. Which queue type will help you ensure that the message order from one component to another is preserved?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Configure Amazon SQS with a standard queue."
+                            },
+                            {
+                                "S": "Configure Amazon SQS with a FIFO queue."
+                            },
+                            {
+                                "S": "Configure Amazon SQS with a LIFO queue."
+                            },
+                            {
+                                "S": "Configure Amazon SQS with a DLQ."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Configure Amazon SQS with a FIFO queue."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "FIFO stands for First-In-First-Out and its queues are designed to preserve the order of your messages, as well as ensure only one-time delivery with no duplicates.\nWith FIFO queues, you can get a throughput at a rate of 300 transactions per second. If you use batching, you can get up to 3,000 transactions per second, per API method (SendMessageBatch, ReceiveMessage, or DeleteMessageBatch)."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are planning on migrating an application to the cloud. Which message brokering service will enable you to continue to use Apache ActiveMQ and facilitate communications between application components?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon SQS"
+                            },
+                            {
+                                "S": "Amazon MQ"
+                            },
+                            {
+                                "S": "Amazon SNS"
+                            },
+                            {
+                                "S": "Amazon SES"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon MQ"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon recommends using Amazon MQ for migrating applications from existing message brokers where compatibility with APIs such as JMS or protocols such as AMQP 0-9-1, AMQP 1.0, MQTT, OpenWire, and STOMP are required."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can help you trigger a Lambda function based on an event such as an object being deleted from an Amazon S3 bucket?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS ECS"
+                            },
+                            {
+                                "S": "AWS Batch"
+                            },
+                            {
+                                "S": "AWS EventBridge"
+                            },
+                            {
+                                "S": "Amazon CloudTrail"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS EventBridge"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon EventBridge is a serverless event bus service that allows you to stream real-time events from your applications to support targets such as Lambda functions, which can then be triggered to take some form of action. In the preceding example, EventBridge can trigger a Lambda function if someone tries to delete an object in your S3 bucket and some action can be taken in response to the event."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Your application architecture for an insurance claim solution has a workflow process that can take up to 30 days to complete and requires human intervention in the form of manual approval processes to follow. Which AWS service would you recommend for architecting the workflow process?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon SQS"
+                            },
+                            {
+                                "S": "Amazon Step Functions"
+                            },
+                            {
+                                "S": "AWS CloudFormation"
+                            },
+                            {
+                                "S": "AWS Lambda"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Step Functions"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Step Functions enables you to define these workflows as a series of state machines that contain states that make up the workflow. These states make decisions based on input, perform some action, and produce an output to other states. Step Functions also allow you to integrate human interaction, particularly where manual intervention is required, and can run for up to 1 year."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You plan to configure a Lambda function that will be used to automatically start and stop EC2 instances at the start and close of the business day, respectively. How can you automate the start and stop of EC2 instances according to a specified schedule?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Configure Amazon SNS to send out an alert trigger to the Lambda function."
+                            },
+                            {
+                                "S": "Configure Amazon CloudTrail to trigger the Lambda function at the designated schedule."
+                            },
+                            {
+                                "S": "Configure Amazon CloudWatch Events with a rule to trigger the Lambda function at the designated schedule."
+                            },
+                            {
+                                "S": "Configure the Amazon Scheduler service."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Configure Amazon CloudWatch Events with a rule to trigger the Lambda function at the designated schedule."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "You can configure CloudWatch Events with a rule to trigger a Lambda function at a defined schedule. You would need to create the Lambda function and then, in the rule settings for CloudWatch events, specify the Lambda function as a target to be triggered at the designated schedule."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You need to run certain SQL queries to analyze data from a streaming source and conduct analysis. Which of the following services can you use to analyze stream data in real time?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon SQS"
+                            },
+                            {
+                                "S": "Amazon Kinesis Data Streams"
+                            },
+                            {
+                                "S": "Amazon Kinesis Analytics"
+                            },
+                            {
+                                "S": "Amazon Athena"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Kinesis Analytics"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Kinesis Data Analytics lets you query and analyze stream data in real time. You can use standard programming and database query languages such as Java, Python, and SQL to query streaming data as it is being ingested."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are required to run ad hoc test queries against weekly reports that are stored in Amazon S3. Which AWS service can you use to query raw data in Amazon S3 using standard SQL?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Athena"
+                            },
+                            {
+                                "S": "Amazon Kinesis"
+                            },
+                            {
+                                "S": "Amazon RDS"
+                            },
+                            {
+                                "S": "Amazon Redshift"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Athena"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Athena is an interactive query service that can be used to analyze data in Amazon S3 using standard SQL. To set up the service, you need to specify the source S3 bucket and define a schema."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can be used to load a massive amount of streaming data into your Redshift data warehousing solution in near real time?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Kinesis Data Streams"
+                            },
+                            {
+                                "S": "Amazon Kinesis Firehose"
+                            },
+                            {
+                                "S": "Amazon Kinesis Video Streams"
+                            },
+                            {
+                                "S": "Amazon Athena"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Kinesis Firehose"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Kinesis Firehose is designed to capture, transform, and deliver streaming data to several AWS services, including Amazon S3 and Redshift in near real time. The service can also batch, compress, transform, and encrypt your data streams, thereby reducing storage usage and increasing security."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can be used to create and publish interactive BI dashboards that can be embedded into your applications, websites, and portals using Amazon-provided APIs and SDKs?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Athena"
+                            },
+                            {
+                                "S": "Amazon QuickSight"
+                            },
+                            {
+                                "S": "Amazon Config"
+                            },
+                            {
+                                "S": "Amazon Glue"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon QuickSight"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon QuickSight is a serverless Business Intelligence (BI) service that can help you build interactive dashboards and embedded visualizations into your applications and web portals."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service offers a serverless Extract, Transform, and Load (ETL) solution that's used to discover and extract data from various sources and perform any cleaning or normalization on data warehouses and data lakes, before loading them into databases?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS QuickSight"
+                            },
+                            {
+                                "S": "Amazon Athena"
+                            },
+                            {
+                                "S": "Amazon Glue"
+                            },
+                            {
+                                "S": "Amazon CloudTrail"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Glue"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Glue is a fully managed ETL service that makes it easy for customers to prepare and load their data for analytics."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "As part of your migration to the cloud, you need to re-host an application that uses Apache Spark to process vast amounts of data for a big data project. Which service on AWS can you use to help with data transformation and perform ETL jobs such as sort, aggregate, and join on large datasets?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS QuickSight"
+                            },
+                            {
+                                "S": "Amazon EFS"
+                            },
+                            {
+                                "S": "Amazon EMR"
+                            },
+                            {
+                                "S": "Amazon S3"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon EMR"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon EMR is a managed Hadoop framework that allows you to process vast amounts of big data. You can use open source tools such as Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You need to regularly build test environments for new applications currently under development. Which AWS service can you use to automate the infrastructure build of your test environment and thus reduce the time taken to provision the infrastructure required?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastic Beanstalk"
+                            },
+                            {
+                                "S": "Amazon CloudFormation"
+                            },
+                            {
+                                "S": "AWS OpsWorks"
+                            },
+                            {
+                                "S": "AWS Systems Manager"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon CloudFormation"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon CloudFormation is a solution that can help you design, build, and deploy your infrastructure using code. You can create templates that use a declarative approach to instruct CloudFormation to build a precise infrastructure repeatedly, as required, by your testing team. CloudFormation templates can also be configured to accept input parameters for environment-specific configurations and variations required in the build."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which service can be used to orchestrate and configure environments to deploy applications using the Chef and Puppet enterprise tools?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon CloudFormation"
+                            },
+                            {
+                                "S": "AWS OpsWorks"
+                            },
+                            {
+                                "S": "Amazon Elastic Beanstalk"
+                            },
+                            {
+                                "S": "Amazon Cloud9"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS OpsWorks"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS OpsWorks is a configuration management and orchestration service that enables you to provision resources such as servers both in the cloud and on-premises using Chef and Puppet. With OpsWorks, you can define service layers for your application stack such as the database layer, load balancer layer, and more."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which service enables developers to upload code to AWS and have the necessary infrastructure provisioned and managed to support that application?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastic Beanstalk"
+                            },
+                            {
+                                "S": "Amazon CloudFormation"
+                            },
+                            {
+                                "S": "Amazon Cloud9"
+                            },
+                            {
+                                "S": "AWS OpsWorks"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastic Beanstalk"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Elastic Beanstalk is a service that enables you to deploy your application without having to manually configure the underlying infrastructure that will support the application. You upload your code in a supported language and environment and AWS will provision the underlying infrastructure, such as the compute, storage, and network components, to support the application. Amazon ElasticBeanstalk will also enable you to specify how the underlying infrastructure components will be deployed \u2013 for example, you can specify the EC2 instance type and size that is deployed or enforce that a set minimum number of EC2 instances are deployed as part of an Auto Scaling group."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following environment tiers within the Elastic Beanstalk architecture is designed to support backend operations"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Web services tier"
+                            },
+                            {
+                                "S": "Worker tier"
+                            },
+                            {
+                                "S": "Backend tier"
+                            },
+                            {
+                                "S": "Database tier"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Worker tier"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "In a multi-tier application architecture, backend operations such as application, middleware, or database operations are performed by the worker tier of your Elastic Beanstalk configuration. AWS Elastic Beanstalk will also provision an Amazon SQS queue to facilitate communication between the web services tier and the worker tier."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following formats are CloudFormation templates written in? (Choose two)\nYAML\nXML\nCSV\nJSON\nJAVA"
+                    },
+                    "answers": {
+                        "L": []
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "YAML"
+                            },
+                            {
+                                "S": "XML"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "CloudFormation templates can be written in both JSON and YAML format. These are declarative markup languages that can help CloudFormaton provision infrastructure in your AWS account."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following is an example of a custom CloudWatch metric?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "CPU utilization"
+                            },
+                            {
+                                "S": "Disk read in"
+                            },
+                            {
+                                "S": "Network bytes in"
+                            },
+                            {
+                                "S": "Memory"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Memory"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Memory is a custom metric because memory metrics are at the OS level and cannot be monitored by default. To ingest custom metrics, you need to use the CloudWatch agent or the PutMetricData API action to publish them to CloudWatch."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of CloudWatch can help send you notification alerts via Amazon SNS whenever a particular threshold is breached for a specified period?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Dashboards"
+                            },
+                            {
+                                "S": "Alarms"
+                            },
+                            {
+                                "S": "Logs"
+                            },
+                            {
+                                "S": "Events"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Alarms"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "You can configure CloudWatch alarms to monitor a given resource metric, such as the average CPU utilization of an EC2 instance. If the metric crosses a specific threshold for a specified period, then the alarm can be triggered to take a certain action. The alarm only triggers if the threshold has been breached for a specified period."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You plan to use CloudWatch Logs to monitor network traffic that enters the AWS environment that's been specifically destined for an EC2 instance. You would like to\nrecord all inbound network traffic on port 80 that was accepted. What service can you configure to help you achieve this requirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "ALB access logs"
+                            },
+                            {
+                                "S": "VPC Flow Logs"
+                            },
+                            {
+                                "S": "CloudTrail Logs"
+                            },
+                            {
+                                "S": "Config logs"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "VPC Flow Logs"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "VPC Flow Logs can capture information about the IP traffic going to and from network interfaces in your VPC. You can configure VPC Flow Logs to capture all traffic to the VPC, a specific subnet, or a specific network interface of an EC2 instance."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to track user activity and API usage in your AWS account for auditing purposes?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Config"
+                            },
+                            {
+                                "S": "AWS CloudWatch"
+                            },
+                            {
+                                "S": "AWS CloudTrail"
+                            },
+                            {
+                                "S": "AWS Trusted Advisor"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS CloudTrail"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS CloudTrail stores event history from within the CloudTrail dashboard for every activity that occurs in your AWS account. You can create trails to store specific management events or data events and if you require more than 90 days' worth of event history."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can be used to see how resources are interrelated to each other, how they were configured in the past, and view historical changes to those resources over time?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Trusted Advisor"
+                            },
+                            {
+                                "S": "AWS Systems Manager"
+                            },
+                            {
+                                "S": "AWS Config"
+                            },
+                            {
+                                "S": "AWS IAM"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Config"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Config is a service that allows you to gain visibility into how your AWS resources are configured and deployed in your AWS account. This includes configuration information, as well as changes to those configurations over time. You can also use AWS Config to enforce specific configurations rules and ensure that you follow internal guidelines that fulfill compliance requirements."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which feature of the AWS System Manager service enables you to roll out security patches across EC2 instances and on-premises servers?\nPatch Manager\nMicrosoft WSUS\nAWS Config\nSCCM"
+                    },
+                    "answers": {
+                        "L": []
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Patch Manager"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Systems Manager's Patch Manager enables you to automatically patch your EC2 instances that are comprised of security and application updates. Note that updates for applications on Windows servers are limited to those released by Microsoft."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": ""
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Store the configuration information in the SSM Parameter Store and reference the parameter name from your code to dynamically retrieve the connection information."
+                            },
+                            {
+                                "S": "Store the configuration information in Amazon Redshift and reference the connection details from your code to dynamically retrieve the connection information."
+                            },
+                            {
+                                "S": "Store the configuration information in Amazon S3 and reference the connection details from your code dynamically."
+                            },
+                            {
+                                "S": "Store the configuration information on an EBS volume and reference the connection details from your code dynamically."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Store the configuration information in the SSM Parameter Store and reference the parameter name from your code to dynamically retrieve the connection information."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Systems Manager's Parameter Store enables you to provide sensitive information such as passwords and database strings as parameter values. These values can be stored or encrypted, and your application can be configured to securely retrieve these values as they are needed from the Parameter Store."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can be used to manage and resolve incidents that affect their AWS-hosted applications?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Systems Manager Incident Manager"
+                            },
+                            {
+                                "S": "AWS Systems Manager Event Manager"
+                            },
+                            {
+                                "S": "Amazon EventBridge"
+                            },
+                            {
+                                "S": "AWS Personal Health Dashboard (PHD)"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Systems Manager Incident Manager"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The AWS Systems Manager Incident Manager service offers a management console to track all your incidents and notify responders of the impact, identify data that can help with troubleshooting, and help you get services back up and running."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service can be used to identify resources that have not been configured by following security best practices?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS CloudWatch"
+                            },
+                            {
+                                "S": "AWS Trusted Advisor"
+                            },
+                            {
+                                "S": "AWS IAM"
+                            },
+                            {
+                                "S": "AWS CloudTrail"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Trusted Advisor"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Trusted Advisor analyzes your resources and how they have been configured and compares those configurations against security practices to identify opportunities to save money, improve system availability and performance, or address security concerns."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are trying to review the AWS Trusted Advisor service to analyze potential cost savings opportunities for various workloads you have deployed on AWS. However, you have noticed that the Cost Optimization category is grayed out and there are no reports on current configuration states. What could be preventing you from viewing the Cost Optimization report?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "You do not have enough permissions to access the Cost Optimization category on AWS Trusted Advisor."
+                            },
+                            {
+                                "S": "You have not subscribed to either the business or enterprise support plans."
+                            },
+                            {
+                                "S": "You have logged in with an IAM account and only the root user can access pricing and cost information."
+                            },
+                            {
+                                "S": "The AWS account does not have an active debit/credit card associated with it."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "You have not subscribed to either the business or enterprise support plans."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The AWS Trusted Advisor service offers different levels of checks based on the AWS support plan that you have subscribed to. To access the full range of checks across all categories, you must be subscribed to either the Business or Enterprise Support plan. With either of these plans, you can also use Amazon CloudWatch Events to monitor the status of Trusted Advisor checks."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which Well-Architected Framework pillar suggests that replacing failed resources is often better than trying to figure out why the failure occurred?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Identifying the reason for failure can be done later, but focusing on replacing the failed resource will help you get up and running quickly."
+                            },
+                            {
+                                "S": "Cost Optimization"
+                            },
+                            {
+                                "S": "Fault Tolerance"
+                            },
+                            {
+                                "S": "Reliability"
+                            },
+                            {
+                                "S": "Performance"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Reliability"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The Reliability pillar also focuses on how quickly you can recover from failure based on your architectural design. This is because failures are bound to happen and your architecture must be able to recover from these failures swiftly. One key concept that you should also consider is that replacing failed resources is often better than trying to figure out why the failure occurred and then attempting to resolve the issue that caused the failure."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which of the following services can help fulfill the guidelines provided in the performance pillar concerning ensuring low latency access to video content hosted in a single S3 bucket globally?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Use AWS CloudFront to cache the video cache the video content closer to end users."
+                            },
+                            {
+                                "S": "Use AWS DynamoDB DAX to cache the video content closer to end users."
+                            },
+                            {
+                                "S": "Use Amazon Elasticache to cache the video content closer to end users."
+                            },
+                            {
+                                "S": "Use Amazon Kinesis to cache the video content closer to end users."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Use AWS CloudFront to cache the video cache the video content closer to end users."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "When architecting solutions for the cloud, you must select the resource types and sizes based on your performance needs, while monitoring your resources consistently to ensure you maintain those levels of performance as per demand. Amazon CloudFront can help you improve performance by reducing the latency associated with accessing large amounts of content across the globe. It does this by caching content locally at edge locations as they are being accessed."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which pillar of the Well-Architected Framework refers to selecting the appropriate pricing options that allow you to adopt a consumption model for provisioning various resources?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Performance pillar"
+                            },
+                            {
+                                "S": "Reliability pillar"
+                            },
+                            {
+                                "S": "Fault Tolerance pillar"
+                            },
+                            {
+                                "S": "Cost Optimization pillar"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Cost Optimization pillar"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The Cost Optimization pillar focuses on ensuring that you architect and build solutions in a manner that avoids unnecessary costs. At the same time, you want to be able to ensure that your applications are highly performant, reliable, operationally efficient, and secure. To achieve cost optimization, you should understand your spending patterns and analyze where the money is going."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Regarding the AWS Shared Responsibility Model, who is responsible for patching Amazon RDS database instances?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Customer"
+                            },
+                            {
+                                "S": "Database engine vendor"
+                            },
+                            {
+                                "S": "Both the customer and AWS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Customer"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon RDS is a managed database service. The customer can provision databases and select the instance type and size to power the database. However, the customer cannot manage the instance itself as this is taken care of by AWS, which includes patching and installing database updates. In contrast, patching EC2 instances is the customer's responsibility as EC2 is not a fully managed service."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service gives customers access to various compliance reports that confirm if the services offered by AWS meet specific requirements and regulatory requirements?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS CloudTrail"
+                            },
+                            {
+                                "S": "AWS Acceptable Usage Policy (AUP)"
+                            },
+                            {
+                                "S": "AWS Artifacts"
+                            },
+                            {
+                                "S": "AWS Compliance Programs"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Artifacts"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Compliance reports and agreements are available via a portal on AWS known as AWS Artifact. These reports include AWS Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across different Regions."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "AWS allows customers to run vulnerability scans and perform penetration testing. However, certain types of testing are not permitted. Which of the following actions is the customer prohibited from performing?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Brute-force attacks by trying to guess your Amazon RDS database passwords."
+                            },
+                            {
+                                "S": "Running malware detection programs on your EC2 instances."
+                            },
+                            {
+                                "S": "Attempting to perform cross-site scripting or SQL injection tests via your ALB."
+                            },
+                            {
+                                "S": "Performing simulated Distributed Denial of Service (DDoS) attacks."
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Performing simulated Distributed Denial of Service (DDoS) attacks."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "As a customer, you need to follow the service policy for penetration testing, which includes permitted services and prohibited activities. Such prohibited activities are Denial of Service (DoS), DDoS, simulated DoS, and simulated DDoS."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service enables you to encrypt data stored in your Amazon S3 buckets with a CMK and offers auditing capabilities?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)"
+                            },
+                            {
+                                "S": "Server-Side Encryption with CMKs Stored in AWS KMS (SSE-KMS)"
+                            },
+                            {
+                                "S": "Server-Side Encryption with Customer-Provided Keys (SSE-C)"
+                            },
+                            {
+                                "S": "Client-Side Encryption with Amazon-Managed Keys"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Server-Side Encryption with CMKs Stored in AWS KMS (SSE-KMS)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "With SSE-KMS, you create and manage CMKs, and you use these keys to encrypt data keys and your data. SS3-KMS offers additional features such as auditing capabilities and integrates with CloudTrail."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "To meet strict compliance and regulatory requirements, you are required to encrypt the application data stored on your EC2 instances using dedicated FIPS 140-2 Level 3 validated devices. Which AWS service can you use to fulfill this requirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS KMS"
+                            },
+                            {
+                                "S": "AWS CloudHSM"
+                            },
+                            {
+                                "S": "AWS TPM Hardware Modules"
+                            },
+                            {
+                                "S": "AWS Certificate Manager"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS CloudHSM"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS CloudHSM is a dedicated Hardware Security Module (HSM) that allows you to generate and manage your encryption keys in the cloud. You are provided with dedicated FIPS 140-2 Level 3 validated HSM devices, placed in your VPC, that are fully managed for you by AWS."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "52. Which AWS security solution offers protection against DDoS attacks and features an AWS Shield Response Team (SRT) 24/7 to assist you in handling such attacks?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS WAF"
+                            },
+                            {
+                                "S": "FAWS X-Ray"
+                            },
+                            {
+                                "S": "AWS Detective"
+                            },
+                            {
+                                "S": "AWS Shield Advanced"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Shield Advanced"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS Shield is a fully managed service offering protection against DDoS attacks. AWS Shield Advanced offers additional protection against attacks on your EC2 instances, ELBs, CloudFront, Global Accelerator, and Route53 resources. The service also offers a dedicated AWS Shield Response Team (SRT) 24/7 to assist you in handling such attacks."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "53. Which type of firewall solution integrates with Amazon CloudFront and ALBs to offer protection against common web exploits such as cross-site scripting and SQL injection?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS WAF"
+                            },
+                            {
+                                "S": "AWS Shield"
+                            },
+                            {
+                                "S": "AWS X-Ray"
+                            },
+                            {
+                                "S": "AWS Firewall Manager"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS WAF"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS WAF can help protect applications at layer 7 of the OSI model, which helps you monitor and protect traffic over HTTP and HTTPS. This allows you to protect your content from common web exploits, such as SQL injection and cross-site scripting."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "54. You are planning lots of data on Amazon S3 and you would like to monitor how your data is accessed, particularly highlighting any sensitive information such as personally identifiable information (PII). Which AWS service can help you meet this requirement?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Macie"
+                            },
+                            {
+                                "S": "AWS GuardDuty"
+                            },
+                            {
+                                "S": "AWS Detective"
+                            },
+                            {
+                                "S": "AWS X-Ray"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Macie"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Macie uses machine learning and pattern matching techniques to detect and alert on any sensitive data, such as PII, stored in Amazon S3."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "55. ou are building a mobile application that will be publicly accessible and you would like to integrate a third-party identity provider for authentication purposes, such as Facebook or Google. Which AWS service can be used to set up identity and access control solutions for your web and mobile applications?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Cognito"
+                            },
+                            {
+                                "S": "AWS IAM"
+                            },
+                            {
+                                "S": "Active Directory"
+                            },
+                            {
+                                "S": "AWS Certificate Manager"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Cognito"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Cognito enables you to set up identity and access control solutions for your web and mobile applications using standards such as OAuth 2.0, SAML 2.0, and OpenID Connect. With Amazon Cognito, you can create user pools and identity pools."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "56. Which AWS service can help detect malicious activities by analyzing data from your CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Shield"
+                            },
+                            {
+                                "S": "AWS Detective"
+                            },
+                            {
+                                "S": "AWS GuardDuty"
+                            },
+                            {
+                                "S": "Amazon Macie"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS GuardDuty"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "AWS GuardDuty is a threat detection service that can analyze and detect malicious activity against your AWS accounts and application workloads. The service can detect the use of exposed credentials, any communication with malicious IP addresses and domains, as well as irregular activities carried out in your AWS account."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "57 .Which AWS service can help you determine the root cause of security issues by extracting time-based events such as logins, network traffic from Amazon VPC Flow Logs, and data ingested from GuardDuty findings?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS Shield"
+                            },
+                            {
+                                "S": "AWS WAF"
+                            },
+                            {
+                                "S": "AWS Detective"
+                            },
+                            {
+                                "S": "Amazon Macie"
+                            },
+                            {
+                                "S": "AWS Pricing Calculator"
+                            },
+                            {
+                                "S": "AWS Migration Evaluator"
+                            },
+                            {
+                                "S": "AWS Hybrid Calculator"
+                            },
+                            {
+                                "S": "AWS Cost Explorer"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Detective"
+                            },
+                            {
+                                "S": "AWS Migration Evaluator"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Detective can extract time-based events such as logins, network traffic from AWS CloudTrail and Amazon VPC Flow Logs, as well as ingest your GuardDuty findings to determine the root cause of those security findings.\n58. You are planning on migrating your on-premises workloads and applications to the cloud. Which AWS service enables you to capture millions of real-time data points related to your IT environment and review recommendations for right sizing and appropriately costing workloads on AWS?\nWith the Migration Evaluator service, you can use the AWS Application Discovery service, the TSO Logic agentless collector, or third-party tools to discover and gain insights into your current compute, storage, and total cost of ownership. The agentless collector tool can analyze any on-premises resources that just require read-only access to your VMware, Hyper-V, Windows, Linux, Active Directory, and SQL Server infrastructure."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "59. Which EC2 instance pricing model can offer up to a 90% discount off the on-demand price and be used in scenarios where interruptions to your instances will not impact the application workflow?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Reserved Instances"
+                            },
+                            {
+                                "S": "Spot Instances"
+                            },
+                            {
+                                "S": "Dedicated Instances"
+                            },
+                            {
+                                "S": "Dedicated Hosts"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Spot Instances"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Spot EC2 instances are ideal for applications that are fault-tolerant, scalable, or flexible, and where your application can tolerate interruptions. Spot Instances can save you up to 90% on On-Demand prices and there is no upfront commitment."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "60. Which Amazon S3 storage class enables you to host 48 TB or 96 TB as part of the S3 storage capacity and provides the option to create a maximum of 100 S3 buckets on-premises?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Standard storage class"
+                            },
+                            {
+                                "S": "Standard One-Zone (IA)"
+                            },
+                            {
+                                "S": "Glacier"
+                            },
+                            {
+                                "S": "Amazon S3 on Outposts"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon S3 on Outposts"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon S3 on Outposts offers durability and redundancy by storing data across multiple devices and servers hosted on your outposts. It is ideal for low-latency access, while also enabling you to meet strict data residency requirements."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "61. Which type of policy can you create to grant anonymous access to the objects stored in an S3 bucket that can be used to host website assets?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "IAM policy"
+                            },
+                            {
+                                "S": "IAM permission boundaries"
+                            },
+                            {
+                                "S": "Resource policy"
+                            },
+                            {
+                                "S": "SNS policy"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Resource policy"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Resource policies are designed to enable access to resources such as objects in an Amazon S3 bucket. This policy enables you to identify a principal that you grant access to. With resource-based policies, you can configure the principal as a wildcard (*), which denotes anyone, and enables you to grant anonymous access."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "62. Which AWS service enables you to register new domain names for your corporate business requirements?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "AWS DNS"
+                            },
+                            {
+                                "S": "AWS Route53"
+                            },
+                            {
+                                "S": "AWS VPC"
+                            },
+                            {
+                                "S": "Amazon Macie"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": []
+                    },
+                    "explanation": {
+                        "S": "Amazon Route53 offers complete domain name registration services. When you choose a name to register, you do so under a top-level domain (TLD) such as .com, .co.uk, .org, or .net. If the name of choice under a particular TLD is not available, you could try a different TLD"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "63. Which AWS service offers image and video analysis that can be used to identify objects, people, text, scenes, and other activities?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Rekognition"
+                            },
+                            {
+                                "S": "Amazon Kinesis Video Streams"
+                            },
+                            {
+                                "S": "Amazon Prime"
+                            },
+                            {
+                                "S": "Amazon Athena"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Rekognition"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Rekognition is a service that uses machine learning to identify objects, people, text, scenes, and activities in images and videos, as well as to detect any inappropriate\ncontent. Amazon Rekognition can be used for various application solutions such as identifying people, or sensitive data such as PII in images and videos."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "64. Which AWS service offers text search and analytics capabilities that can store, analyze, and perform search functions against big data volumes in near real time?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Redshift"
+                            },
+                            {
+                                "S": "Amazon ElastiCache"
+                            },
+                            {
+                                "S": "Amazon Elastisearch"
+                            },
+                            {
+                                "S": "Amazon Search"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Elastisearch"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Elasticsearch is an open source full-text search and analytics engine that can analyze all types of data such as textual, numerical, geospatial, structured, and unstructured data. Amazon Elasticsearch offers integration with Kibana, which is a data visualization tool, and Logstash, which is an open source, server-side data processing pipeline."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "65. You plan to migrate your entire on-premises network to the cloud and have also decided to move away from physical desktops and workstations to a complete VDI solution. Which service on AWS enables you to provision virtual desktops in the cloud, accessible via a web browser?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon EC2"
+                            },
+                            {
+                                "S": "Amazon Lightsail"
+                            },
+                            {
+                                "S": "Amazon WorkSpaces"
+                            },
+                            {
+                                "S": "Amazon EKS"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon WorkSpaces"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon WorkSpaces is an end user computing service that enables you to deploy virtual Linux and Windows desktops in the cloud. AWS manages these virtual desktops, including security patching and managing the operating system. With Amazon WorkSpaces, you can consider migrating away from your on-premises desktop infrastructure to a Virtual Desktop Infrastructure (VDI) solution."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
                         "S": "Which type of cloud service model is most like an on-premises environment, where you configure virtual infrastructure components\nsuch as compute, network, and storage services that you can host your applications on?"
                     },
                     "answers": {
@@ -2163,4 +4217,4 @@
             }
         ]
     }
-}
+} 

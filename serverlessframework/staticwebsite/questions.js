@@ -21,7 +21,7 @@ async function fetchQuestions() {
   console.log(json["questions"]);
   
   // Map questions to get the expected format
-  questions = json["questions"].map((question_set, i) => {
+  questions = json["questions"].slice(0,65).map((question_set, i) => {
     return {
       "numb": i + 1,
       "question": question_set["question"],
