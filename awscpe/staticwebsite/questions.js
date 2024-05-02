@@ -19,7 +19,6 @@ async function fetchQuestions() {
   const response = await fetch(uri);
   const json = await response.json();
   json.questions.sort(() => Math.random() - 0.5);
-  console.log(json["questions"]);
   
   // Map questions to get the expected format
   questions = json["questions"].slice(0,65).map((question_set, i) => {
@@ -32,6 +31,8 @@ async function fetchQuestions() {
 
     }
   })
+
+  console.log("Got " + questions.length + " questions");
 
   // Here we create a closure, call it immediately, and return it as a function.
   showQuestionSet = ((qs) => {
