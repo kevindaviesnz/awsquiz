@@ -14,6 +14,7 @@ In scenarios where you have a single RDS database instance deployed, your users 
 [q]			
 Your organization is in a healthcare industry based in New York. You are planning on using an in-memory caching engine to alleviate the load on your Amazon RDS database for frequently used queries. Which AWS in-memory caching engine offers Multi-AZ
 capabilities, encryption of data, and compliance with the Health Insurance Portability and Accountability Act (HIPAA)?
+[answers]
 Amazon Elasticache for Redis
 Amazon Elasticache for Memcached
 Amazon CloudFront
@@ -104,9 +105,7 @@ Listener
 You need to configure listeners to specific ports that you will accept incoming traffic on and the ports you will use to forward traffic to the EC2 instances.
 
 [q]
-You are building a multi-tier architecture with web servers placed in the public subnet and application servers placed in the private subnet of your VPC. Which type of load balancer would you choose to distribute traffic to your application servers?Internet-facingInternal load balancersDynamic load balancersStatic load balancers
-Which configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that can be launched in your fleet?
-[answers]    
+You are building a multi-tier architecture with web servers placed in the public subnet and application servers placed in the private subnet of your VPC. Which type of load balancer would you choose to distribute traffic to your application servers?
 Internet-facing
 Internal load balancers
 Dynamic load balancers
@@ -116,6 +115,7 @@ Internal load balancers
 [explanation]
 The nodes of an internal load balancer only have private IP addresses and allow communication between the web layer and the internal application layer. The DNS name of an internal load balancer can be publicly resolved to the private IP addresses of the nodes. Therefore, internal load balancers can only route requests from clients with access to the VPC for the load balancer.
 
+[q]
 Which configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that 
 can be launched in your fleet?
 [answers]
@@ -143,7 +143,7 @@ Auto Scaling
 Amazon Auto Scaling can help you provision new EC2 instances based on CloudWatch metrics that change according to the load on your instances. Similarly, when demand drops, you can configure Auto Scaling to terminate unwanted resources and thus save on costs.
 
 
-
+[q]
 You have recently launched a new free coupon web application across a fleet of EC2 instances configured in an Auto Scaling group. Traffic has increased dramatically before
 the Black Friday sale and you have noticed that your Auto Scaling service is not launching any more EC2 instances, even though the threshold metrics have been crossed in CloudWatch. Your colleague tells you that you may have crossed a quota or limit on the number of EC2 instances you can launch. Which AWS service can offer you a quick look to determine this is the case?
 [answers]
@@ -451,6 +451,7 @@ In a multi-tier application architecture, backend operations such as application
 
 [q]
 Which of the following formats are CloudFormation templates written in? (Choose two)
+[answers]
 YAML
 XML
 CSV
@@ -551,7 +552,8 @@ AWS Systems Manager's Patch Manager enables you to automatically patch your EC2 
 
 
 
-[q] You are planning on deploying a three-tier application architecture that is comprised of a database backend. Your application has been hardcoded with the database connection strings and secrets such as username and password. The company's security policy dictates that this approach is unacceptable and they would like you to manage the secrets information more securely. What would you recommend?
+[q] 
+You are planning on deploying a three-tier application architecture that is comprised of a database backend. Your application has been hardcoded with the database connection strings and secrets such as username and password. The company's security policy dictates that this approach is unacceptable and they would like you to manage the secrets information more securely. What would you recommend?
 [answers]
 Store the configuration information in the SSM Parameter Store and reference the parameter name from your code to dynamically retrieve the connection information.
 Store the configuration information in Amazon Redshift and reference the connection details from your code to dynamically retrieve the connection information.
@@ -780,7 +782,7 @@ Amazon Cognito enables you to set up identity and access control solutions for y
 
 
 [q]
-56. Which AWS service can help detect malicious activities by analyzing data from your CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs
+Which AWS service can help detect malicious activities by analyzing data from your CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs
 [answers]
 AWS Shield
 AWS Detective
@@ -807,8 +809,8 @@ Amazon Detective can extract time-based events such as logins, network traffic f
 
 
 
-
-58. You are planning on migrating your on-premises workloads and applications to the cloud. Which AWS service enables you to capture millions of real-time data points related to your IT environment and review recommendations for right sizing and appropriately costing workloads on AWS?
+[q]
+You are planning on migrating your on-premises workloads and applications to the cloud. Which AWS service enables you to capture millions of real-time data points related to your IT environment and review recommendations for right sizing and appropriately costing workloads on AWS?
 [answers]
 AWS Pricing Calculator
 AWS Migration Evaluator
@@ -822,7 +824,7 @@ With the Migration Evaluator service, you can use the AWS Application Discovery 
 
 
 [q]
-59. Which EC2 instance pricing model can offer up to a 90% discount off the on-demand price and be used in scenarios where interruptions to your instances will not impact the application workflow?
+Which EC2 instance pricing model can offer up to a 90% discount off the on-demand price and be used in scenarios where interruptions to your instances will not impact the application workflow?
 [answers]
 Reserved Instances
 Spot Instances
@@ -836,7 +838,7 @@ Spot EC2 instances are ideal for applications that are fault-tolerant, scalable,
 
 
 [q]
-60. Which Amazon S3 storage class enables you to host 48 TB or 96 TB as part of the S3 storage capacity and provides the option to create a maximum of 100 S3 buckets on-premises?
+Which Amazon S3 storage class enables you to host 48 TB or 96 TB as part of the S3 storage capacity and provides the option to create a maximum of 100 S3 buckets on-premises?
 [answers]
 Standard storage class
 Standard One-Zone (IA)
@@ -851,7 +853,7 @@ Amazon S3 on Outposts offers durability and redundancy by storing data across mu
 
 
 [q]
-61. Which type of policy can you create to grant anonymous access to the objects stored in an S3 bucket that can be used to host website assets?
+Which type of policy can you create to grant anonymous access to the objects stored in an S3 bucket that can be used to host website assets?
 [answers]    
 IAM policy
 IAM permission boundaries
@@ -866,7 +868,7 @@ Resource policies are designed to enable access to resources such as objects in 
 
 
 [q]    
-62. Which AWS service enables you to register new domain names for your corporate business requirements?
+Which AWS service enables you to register new domain names for your corporate business requirements?
 [answers]    
 AWS DNS
 AWS Route53
@@ -881,7 +883,7 @@ Amazon Route53 offers complete domain name registration services. When you choos
 
 
 [q]
-63. Which AWS service offers image and video analysis that can be used to identify objects, people, text, scenes, and other activities?
+Which AWS service offers image and video analysis that can be used to identify objects, people, text, scenes, and other activities?
 [answers]
 Amazon Rekognition
 Amazon Kinesis Video Streams
@@ -898,7 +900,7 @@ content. Amazon Rekognition can be used for various application solutions such a
 
 
 [q]
-64. Which AWS service offers text search and analytics capabilities that can store, analyze, and perform search functions against big data volumes in near real time?
+Which AWS service offers text search and analytics capabilities that can store, analyze, and perform search functions against big data volumes in near real time?
 [answers]
 Amazon Redshift
 Amazon ElastiCache
@@ -912,7 +914,7 @@ Elasticsearch is an open source full-text search and analytics engine that can a
 
 
 [q]
-65. You plan to migrate your entire on-premises network to the cloud and have also decided to move away from physical desktops and workstations to a complete VDI solution. Which service on AWS enables you to provision virtual desktops in the cloud, accessible via a web browser?
+You plan to migrate your entire on-premises network to the cloud and have also decided to move away from physical desktops and workstations to a complete VDI solution. Which service on AWS enables you to provision virtual desktops in the cloud, accessible via a web browser?
 [answers]
 Amazon EC2
 Amazon Lightsail
@@ -1188,7 +1190,7 @@ IAM key pairs
 [correct]
 IAM access key ID and secret access key
 [explanation]
-To access an AWS account as an IAM user, you need to create a set of access keys, which is a combination of an access key ID and a secret access key. Note these keys are considered long-term access keys. One set of keys is associated with a specific IAM use
+To access an AWS account as an IAM user, you need to create a set of access keys, which is a combination of an access key ID and a secret access key. Note these keys are considered long-term access keys. One set of keys is associated with a specific IAM user
 
 
 
@@ -1529,9 +1531,7 @@ Amazon Direct Connect
 [correct]
 Amazon Route53
 [explanation]
-Amazon Route53 can help you create alias records so that when a user types in a corporate domain-friendly name into the browser, it will direct th
-
-
+Amazon Route53 can help you create alias records so that when a user types in a corporate domain-friendly name into the browser, it will direct the traffic to an AWS service, such as an ALB, giving access to the web application.
 
 [q]
 Which AWS service enables you to purchase and register new domain names that can be used to publish your website on the internet?

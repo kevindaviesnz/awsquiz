@@ -1,9 +1,9 @@
 {
     "category": {
-        "S": "awscpe"
+        "S": "aws"
     },
     "set_name": {
-        "S": "set::1::hard"
+        "S": "set::1::easy"
     },
     "questions": {
         "L": [
@@ -43,10 +43,23 @@
             {
                 "M": {
                     "question": {
-                        "S": "Your organization is in a healthcare industry based in New York. You are planning on using an in-memory caching engine to alleviate the load on your Amazon RDS database for frequently used queries. Which AWS in-memory caching engine offers Multi-AZ\ncapabilities, encryption of data, and compliance with the Health Insurance Portability and Accountability Act (HIPAA)?\nAmazon Elasticache for Redis\nAmazon Elasticache for Memcached\nAmazon CloudFront\nAmazon DynamoDB DAX"
+                        "S": "Your organization is in a healthcare industry based in New York. You are planning on using an in-memory caching engine to alleviate the load on your Amazon RDS database for frequently used queries. Which AWS in-memory caching engine offers Multi-AZ\ncapabilities, encryption of data, and compliance with the Health Insurance Portability and Accountability Act (HIPAA)?"
                     },
                     "answers": {
-                        "L": []
+                        "L": [
+                            {
+                                "S": "Amazon Elasticache for Redis"
+                            },
+                            {
+                                "S": "Amazon Elasticache for Memcached"
+                            },
+                            {
+                                "S": "Amazon CloudFront"
+                            },
+                            {
+                                "S": "Amazon DynamoDB DAX"
+                            }
+                        ]
                     },
                     "correct_answer": {
                         "L": [
@@ -264,22 +277,30 @@
             {
                 "M": {
                     "question": {
-                        "S": "You are building a multi-tier architecture with web servers placed in the public subnet and application servers placed in the private subnet of your VPC. Which type of load balancer would you choose to distribute traffic to your application servers?Internet-facingInternal load balancersDynamic load balancersStatic load balancers\nWhich configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that can be launched in your fleet?"
+                        "S": "You are building a multi-tier architecture with web servers placed in the public subnet and application servers placed in the private subnet of your VPC. Which type of load balancer would you choose to distribute traffic to your application servers?\nInternet-facing\nInternal load balancers\nDynamic load balancers\nStatic load balancers"
+                    },
+                    "answers": {
+                        "L": []
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Internal load balancers"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The nodes of an internal load balancer only have private IP addresses and allow communication between the web layer and the internal application layer. The DNS name of an internal load balancer can be publicly resolved to the private IP addresses of the nodes. Therefore, internal load balancers can only route requests from clients with access to the VPC for the load balancer."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that\ncan be launched in your fleet?"
                     },
                     "answers": {
                         "L": [
-                            {
-                                "S": "Internet-facing"
-                            },
-                            {
-                                "S": "Internal load balancers"
-                            },
-                            {
-                                "S": "Dynamic load balancers"
-                            },
-                            {
-                                "S": "Static load balancers"
-                            },
                             {
                                 "S": "Auto Scaling group"
                             },
@@ -297,15 +318,12 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "Internal load balancers"
-                            },
-                            {
                                 "S": "Auto Scaling group"
                             }
                         ]
                     },
                     "explanation": {
-                        "S": "The nodes of an internal load balancer only have private IP addresses and allow communication between the web layer and the internal application layer. The DNS name of an internal load balancer can be publicly resolved to the private IP addresses of the nodes. Therefore, internal load balancers can only route requests from clients with access to the VPC for the load balancer.\nWhich configuration feature of the AWS Auto Scaling service enables you to define a maximum number of EC2 instances that\ncan be launched in your fleet?\nWhen configuring your Auto Scaling group, you can define the minimum and maximum size of your group. You can also choose to keep the size of the group to an initial size that does not expand the group size but ensures that you always have the exact number of EC2 instances running."
+                        "S": "When configuring your Auto Scaling group, you can define the minimum and maximum size of your group. You can also choose to keep the size of the group to an initial size that does not expand the group size but ensures that you always have the exact number of EC2 instances running."
                     }
                 }
             },
@@ -327,7 +345,28 @@
                             },
                             {
                                 "S": "EC2 Launcher"
-                            },
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Auto Scaling"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Auto Scaling can help you provision new EC2 instances based on CloudWatch metrics that change according to the load on your instances. Similarly, when demand drops, you can configure Auto Scaling to terminate unwanted resources and thus save on costs."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You have recently launched a new free coupon web application across a fleet of EC2 instances configured in an Auto Scaling group. Traffic has increased dramatically before\nthe Black Friday sale and you have noticed that your Auto Scaling service is not launching any more EC2 instances, even though the threshold metrics have been crossed in CloudWatch. Your colleague tells you that you may have crossed a quota or limit on the number of EC2 instances you can launch. Which AWS service can offer you a quick look to determine this is the case?"
+                    },
+                    "answers": {
+                        "L": [
                             {
                                 "S": "Personal Health Dashboard"
                             },
@@ -345,15 +384,12 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "Auto Scaling"
-                            },
-                            {
                                 "S": "AWS Trusted Advisor"
                             }
                         ]
                     },
                     "explanation": {
-                        "S": "Amazon Auto Scaling can help you provision new EC2 instances based on CloudWatch metrics that change according to the load on your instances. Similarly, when demand drops, you can configure Auto Scaling to terminate unwanted resources and thus save on costs.\nYou have recently launched a new free coupon web application across a fleet of EC2 instances configured in an Auto Scaling group. Traffic has increased dramatically before\nthe Black Friday sale and you have noticed that your Auto Scaling service is not launching any more EC2 instances, even though the threshold metrics have been crossed in CloudWatch. Your colleague tells you that you may have crossed a quota or limit on the number of EC2 instances you can launch. Which AWS service can offer you a quick look to determine this is the case?\nAWS Trusted Advisor is an online tool that can offer guidance on AWS infrastructure, improve security and performance, reduce costs, and monitor service quotas. The service quota (service limits) category of Trusted Advisor can notify you if you use more than 80% of a service quota for a specific service. You can then follow recommendations to delete resources or request a quota increase."
+                        "S": "AWS Trusted Advisor is an online tool that can offer guidance on AWS infrastructure, improve security and performance, reduce costs, and monitor service quotas. The service quota (service limits) category of Trusted Advisor can notify you if you use more than 80% of a service quota for a specific service. You can then follow recommendations to delete resources or request a quota increase."
                     }
                 }
             },
@@ -1020,10 +1056,26 @@
             {
                 "M": {
                     "question": {
-                        "S": "Which of the following formats are CloudFormation templates written in? (Choose two)\nYAML\nXML\nCSV\nJSON\nJAVA"
+                        "S": "Which of the following formats are CloudFormation templates written in? (Choose two)"
                     },
                     "answers": {
-                        "L": []
+                        "L": [
+                            {
+                                "S": "YAML"
+                            },
+                            {
+                                "S": "XML"
+                            },
+                            {
+                                "S": "CSV"
+                            },
+                            {
+                                "S": "JSON"
+                            },
+                            {
+                                "S": "JAVA"
+                            }
+                        ]
                     },
                     "correct_answer": {
                         "L": [
@@ -1228,7 +1280,7 @@
             {
                 "M": {
                     "question": {
-                        "S": ""
+                        "S": "You are planning on deploying a three-tier application architecture that is comprised of a database backend. Your application has been hardcoded with the database connection strings and secrets such as username and password. The company's security policy dictates that this approach is unacceptable and they would like you to manage the secrets information more securely. What would you recommend?"
                     },
                     "answers": {
                         "L": [
@@ -1756,7 +1808,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "56. Which AWS service can help detect malicious activities by analyzing data from your CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs"
+                        "S": "Which AWS service can help detect malicious activities by analyzing data from your CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs"
                     },
                     "answers": {
                         "L": [
@@ -1804,7 +1856,28 @@
                             },
                             {
                                 "S": "Amazon Macie"
-                            },
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "AWS Detective"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Detective can extract time-based events such as logins, network traffic from AWS CloudTrail and Amazon VPC Flow Logs, as well as ingest your GuardDuty findings to determine the root cause of those security findings."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are planning on migrating your on-premises workloads and applications to the cloud. Which AWS service enables you to capture millions of real-time data points related to your IT environment and review recommendations for right sizing and appropriately costing workloads on AWS?"
+                    },
+                    "answers": {
+                        "L": [
                             {
                                 "S": "AWS Pricing Calculator"
                             },
@@ -1822,22 +1895,19 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "AWS Detective"
-                            },
-                            {
                                 "S": "AWS Migration Evaluator"
                             }
                         ]
                     },
                     "explanation": {
-                        "S": "Amazon Detective can extract time-based events such as logins, network traffic from AWS CloudTrail and Amazon VPC Flow Logs, as well as ingest your GuardDuty findings to determine the root cause of those security findings.\n58. You are planning on migrating your on-premises workloads and applications to the cloud. Which AWS service enables you to capture millions of real-time data points related to your IT environment and review recommendations for right sizing and appropriately costing workloads on AWS?\nWith the Migration Evaluator service, you can use the AWS Application Discovery service, the TSO Logic agentless collector, or third-party tools to discover and gain insights into your current compute, storage, and total cost of ownership. The agentless collector tool can analyze any on-premises resources that just require read-only access to your VMware, Hyper-V, Windows, Linux, Active Directory, and SQL Server infrastructure."
+                        "S": "With the Migration Evaluator service, you can use the AWS Application Discovery service, the TSO Logic agentless collector, or third-party tools to discover and gain insights into your current compute, storage, and total cost of ownership. The agentless collector tool can analyze any on-premises resources that just require read-only access to your VMware, Hyper-V, Windows, Linux, Active Directory, and SQL Server infrastructure."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "59. Which EC2 instance pricing model can offer up to a 90% discount off the on-demand price and be used in scenarios where interruptions to your instances will not impact the application workflow?"
+                        "S": "Which EC2 instance pricing model can offer up to a 90% discount off the on-demand price and be used in scenarios where interruptions to your instances will not impact the application workflow?"
                     },
                     "answers": {
                         "L": [
@@ -1870,7 +1940,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "60. Which Amazon S3 storage class enables you to host 48 TB or 96 TB as part of the S3 storage capacity and provides the option to create a maximum of 100 S3 buckets on-premises?"
+                        "S": "Which Amazon S3 storage class enables you to host 48 TB or 96 TB as part of the S3 storage capacity and provides the option to create a maximum of 100 S3 buckets on-premises?"
                     },
                     "answers": {
                         "L": [
@@ -1903,7 +1973,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "61. Which type of policy can you create to grant anonymous access to the objects stored in an S3 bucket that can be used to host website assets?"
+                        "S": "Which type of policy can you create to grant anonymous access to the objects stored in an S3 bucket that can be used to host website assets?"
                     },
                     "answers": {
                         "L": [
@@ -1936,7 +2006,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "62. Which AWS service enables you to register new domain names for your corporate business requirements?"
+                        "S": "Which AWS service enables you to register new domain names for your corporate business requirements?"
                     },
                     "answers": {
                         "L": [
@@ -1965,7 +2035,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "63. Which AWS service offers image and video analysis that can be used to identify objects, people, text, scenes, and other activities?"
+                        "S": "Which AWS service offers image and video analysis that can be used to identify objects, people, text, scenes, and other activities?"
                     },
                     "answers": {
                         "L": [
@@ -1998,7 +2068,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "64. Which AWS service offers text search and analytics capabilities that can store, analyze, and perform search functions against big data volumes in near real time?"
+                        "S": "Which AWS service offers text search and analytics capabilities that can store, analyze, and perform search functions against big data volumes in near real time?"
                     },
                     "answers": {
                         "L": [
@@ -2031,7 +2101,7 @@
             {
                 "M": {
                     "question": {
-                        "S": "65. You plan to migrate your entire on-premises network to the cloud and have also decided to move away from physical desktops and workstations to a complete VDI solution. Which service on AWS enables you to provision virtual desktops in the cloud, accessible via a web browser?"
+                        "S": "You plan to migrate your entire on-premises network to the cloud and have also decided to move away from physical desktops and workstations to a complete VDI solution. Which service on AWS enables you to provision virtual desktops in the cloud, accessible via a web browser?"
                     },
                     "answers": {
                         "L": [
@@ -2663,7 +2733,7 @@
                         ]
                     },
                     "explanation": {
-                        "S": "To access an AWS account as an IAM user, you need to create a set of access keys, which is a combination of an access key ID and a secret access key. Note these keys are considered long-term access keys. One set of keys is associated with a specific IAM use"
+                        "S": "To access an AWS account as an IAM user, you need to create a set of access keys, which is a combination of an access key ID and a secret access key. Note these keys are considered long-term access keys. One set of keys is associated with a specific IAM user"
                     }
                 }
             },
@@ -3386,7 +3456,7 @@
                         ]
                     },
                     "explanation": {
-                        "S": "Amazon Route53 can help you create alias records so that when a user types in a corporate domain-friendly name into the browser, it will direct th"
+                        "S": "Amazon Route53 can help you create alias records so that when a user types in a corporate domain-friendly name into the browser, it will direct the traffic to an AWS service, such as an ALB, giving access to the web application."
                     }
                 }
             },
@@ -4217,4 +4287,4 @@
             }
         ]
     }
-} 
+}
