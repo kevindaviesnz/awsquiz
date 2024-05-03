@@ -1,9 +1,9 @@
 {
     "category": {
-        "S": "aws"
+        "S": "awscpe"
     },
     "set_name": {
-        "S": "set::1::easy"
+        "S": "set::1::hard"
     },
     "questions": {
         "L": [
