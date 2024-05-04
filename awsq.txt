@@ -2100,7 +2100,8 @@ D. Amazon Kinesis Firehose
 [correct]
 A. Amazon Elasticsearch
 [explanation]
-Amazon Elasticsearch is a fully managed service that enables you to index all types of content, offers integration with Kibana for visualization and analytics, and helps you build data visualization tools to analyze large datasets. It is commonly used for log and event analytics, full-text search, and real-time application monitoring.
+Amazon Elasticsearch Service (Amazon ES) is the AWS service that provides a fully managed, scalable, and serverless analytics service that allows you to analyze and visualize large volumes of log data in real-time. Amazon ES is based on the open-source Elasticsearch and Kibana software stack, providing a distributed search and analytics engine for processing and exploring log data and other time-series data at scale. With Amazon ES, you can ingest log data from various sources such as AWS CloudWatch Logs, Amazon Kinesis Data Firehose, and Amazon S3, and index and analyze the data using Elasticsearch's powerful query language and analytics capabilities. Amazon ES integrates with other AWS services such as Amazon S3, Amazon Kinesis Data Firehose, and AWS Identity and Access Management (IAM) to provide a comprehensive analytics solution for monitoring, troubleshooting, and optimizing the performance of your applications and infrastructure in real-time.
+Elasticsearch is a distributed search and analytics engine built on Apache Lucene. Since its release in 2010, Elasticsearch has quickly become the most popular search engine and is commonly used for log analytics, full-text search, security intelligence, business analytics, and operational intelligence use cases.
 
 [q]
 You store several network log files (in CSV format) in an Amazon S3 bucket. You have been asked to analyze the contents of a specific file for possible malicious attacks. Which AWS service can help you analyze raw data in Amazon S3 and perform the necessary ad hoc analysis?
@@ -2212,6 +2213,8 @@ D. AWS NACL
 A. AWS WAF
 [explanation]
 AWS WAF (Web Application Firewall) is the AWS security tool used to protect web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources. WAF allows you to define customizable web security rules and conditions that control access to your web applications and APIs. By inspecting incoming web requests and filtering out malicious traffic, AWS WAF helps mitigate threats such as SQL injection, cross-site scripting (XSS), and other common web vulnerabilities, enhancing the security posture of your applications.
+AWS WAF is a web application firewall that lets you monitor and manage web requests that are forwarded to protected AWS resources. With AWS WAF, you can protect resources such as Amazon CloudFront distributions, Amazon API Gateway REST APIs, Application Load Balancers, and AWS AppSync GraphQL APIs. You can use AWS WAF to inspect web requests for matches to conditions that you specify, such as the IP address that the requests originate from, the value of a specific request component, or the rate at which requests are being sent. AWS WAF can manage matching requests in a variety of ways, including counting them, blocking or allowing them, or sending challenges like CAPTCHA puzzles to the client user or browser.
+
 
 [q]
 Which AWS service uses machine learning to classify sensitive information stored in your Amazon S3 buckets and monitor access patterns for anomalies that indicate risks or suspicious behavior, such as large quantities of source code being downloaded?
@@ -2223,7 +2226,12 @@ D. AWS WAF
 [correct]
 A. Amazon Macie
 [explanation]
-Amazon Macie is the AWS service that uses machine learning to classify sensitive information stored in your Amazon S3 buckets and monitor access patterns for anomalies that indicate risks or suspicious behavior. Macie automatically discovers, classifies, and protects sensitive data such as personally identifiable information (PII), intellectual property, and financial data stored in S3. By analyzing access patterns and detecting anomalies, Macie helps organizations identify and mitigate risks associated with data exposure and unauthorized access, enhancing data security and compliance.
+Amazon Macie is a fully managed data security and data privacy service provided by Amazon Web Services (AWS). It uses machine learning and pattern matching 
+techniques to automatically discover, classify, and protect sensitive data stored in AWS environments. Macie helps organizations identify and protect sensitive 
+data such as personally identifiable information (PII), intellectual property (IP), and financial data, reducing the risk of data breaches, compliance violations, 
+and unauthorized access. Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables 
+automated protection against those risks.
+Amazon Macie is a data security service that uses machine learning (ML) and pattern matching to discover and help protect your sensitive data.
 
 [q]
 Which AWS service enables companies looking to migrate to the AWS cloud to obtain copies of various compliance documents such as ISO certifications, PCI, and SOC reports?
@@ -3108,7 +3116,9 @@ D. AWS NACL
 [correct]
 A. AWS WAF
 [explanation]
-AWS WAF (Web Application Firewall) is the AWS security tool that can protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources. WAF enables you to create custom rules that control which traffic to allow or block to your web applications by inspecting incoming requests and applying rules based on IP addresses, HTTP headers, URI strings, and other request attributes. With WAF, you can protect your applications from common threats such as SQL injection, cross-site scripting (XSS), and distributed denial of service (DDoS) attacks, ensuring the security and integrity of your web traffic and preventing unauthorized access or abuse of your web resources.
+AWS WAF (Web Application Firewall) is the AWS security tool used to protect web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources. WAF allows you to define customizable web security rules and conditions that control access to your web applications and APIs. By inspecting incoming web requests and filtering out malicious traffic, AWS WAF helps mitigate threats such as SQL injection, cross-site scripting (XSS), and other common web vulnerabilities, enhancing the security posture of your applications.
+AWS WAF is a web application firewall that lets you monitor and manage web requests that are forwarded to protected AWS resources. With AWS WAF, you can protect resources such as Amazon CloudFront distributions, Amazon API Gateway REST APIs, Application Load Balancers, and AWS AppSync GraphQL APIs. You can use AWS WAF to inspect web requests for matches to conditions that you specify, such as the IP address that the requests originate from, the value of a specific request component, or the rate at which requests are being sent. AWS WAF can manage matching requests in a variety of ways, including counting them, blocking or allowing them, or sending challenges like CAPTCHA puzzles to the client user or browser.
+
 
 [q]
 Which AWS service uses machine learning to classify sensitive information stored in your Amazon S3 buckets and monitor access patterns for anomalies that indicate risks or suspicious behavior, such as large quantities of source code being downloaded?
@@ -3120,7 +3130,12 @@ D. AWS WAF
 [correct]
 A. Amazon Macie
 [explanation]
-Amazon Macie is the AWS service that uses machine learning to classify sensitive information stored in your Amazon S3 buckets and monitor access patterns for anomalies that indicate risks or suspicious behavior, such as large quantities of source code being downloaded. Macie automatically identifies and classifies sensitive data such as personally identifiable information (PII), intellectual property (IP), and financial data, providing you with visibility into the data stored in your S3 buckets and helping you enforce data security policies and compliance requirements. Macie also continuously monitors access to your S3 buckets, detecting unusual activity and potential threats, and alerting you to security risks or unauthorized access attempts, enabling you to take timely action to protect your sensitive data and prevent data breaches.
+Amazon Macie is a fully managed data security and data privacy service provided by Amazon Web Services (AWS). It uses machine learning and pattern matching 
+techniques to automatically discover, classify, and protect sensitive data stored in AWS environments. Macie helps organizations identify and protect sensitive 
+data such as personally identifiable information (PII), intellectual property (IP), and financial data, reducing the risk of data breaches, compliance violations, 
+and unauthorized access. Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables 
+automated protection against those risks.
+Amazon Macie is a data security service that uses machine learning (ML) and pattern matching to discover and help protect your sensitive data.
 
 [q]
 Which AWS service enables companies looking to migrate to the AWS cloud to obtain copies of various compliance documents such as ISO certifications, PCI, and SOC reports?
@@ -3666,7 +3681,7 @@ Amazon Elasticsearch Service
 Amazon Elasticsearch Service
 [explanation]
 Amazon Elasticsearch Service (Amazon ES) is the AWS service that provides a fully managed, scalable, and serverless analytics service that allows you to analyze and visualize large volumes of log data in real-time. Amazon ES is based on the open-source Elasticsearch and Kibana software stack, providing a distributed search and analytics engine for processing and exploring log data and other time-series data at scale. With Amazon ES, you can ingest log data from various sources such as AWS CloudWatch Logs, Amazon Kinesis Data Firehose, and Amazon S3, and index and analyze the data using Elasticsearch's powerful query language and analytics capabilities. Amazon ES integrates with other AWS services such as Amazon S3, Amazon Kinesis Data Firehose, and AWS Identity and Access Management (IAM) to provide a comprehensive analytics solution for monitoring, troubleshooting, and optimizing the performance of your applications and infrastructure in real-time.
-
+Elasticsearch is a distributed search and analytics engine built on Apache Lucene. Since its release in 2010, Elasticsearch has quickly become the most popular search engine and is commonly used for log analytics, full-text search, security intelligence, business analytics, and operational intelligence use cases.
 
 
 
@@ -3684,6 +3699,9 @@ D. AWS NACL
 [correct]
 A. AWS WAF
 [explanation]
+AWS WAF (Web Application Firewall) is the AWS security tool used to protect web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources. WAF allows you to define customizable web security rules and conditions that control access to your web applications and APIs. By inspecting incoming web requests and filtering out malicious traffic, AWS WAF helps mitigate threats such as SQL injection, cross-site scripting (XSS), and other common web vulnerabilities, enhancing the security posture of your applications.
+AWS WAF is a web application firewall that lets you monitor and manage web requests that are forwarded to protected AWS resources. With AWS WAF, you can protect resources such as Amazon CloudFront distributions, Amazon API Gateway REST APIs, Application Load Balancers, and AWS AppSync GraphQL APIs. You can use AWS WAF to inspect web requests for matches to conditions that you specify, such as the IP address that the requests originate from, the value of a specific request component, or the rate at which requests are being sent. AWS WAF can manage matching requests in a variety of ways, including counting them, blocking or allowing them, or sending challenges like CAPTCHA puzzles to the client user or browser.
+
 
 
 
@@ -3700,6 +3718,12 @@ D. AWS WAF
 [correct]
 A. Amazon Macie
 [explanation]
+Amazon Macie is a fully managed data security and data privacy service provided by Amazon Web Services (AWS). It uses machine learning and pattern matching 
+techniques to automatically discover, classify, and protect sensitive data stored in AWS environments. Macie helps organizations identify and protect sensitive 
+data such as personally identifiable information (PII), intellectual property (IP), and financial data, reducing the risk of data breaches, compliance violations, 
+and unauthorized access. Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables 
+automated protection against those risks.
+Amazon Macie is a data security service that uses machine learning (ML) and pattern matching to discover and help protect your sensitive data.
 
 
 
@@ -3715,7 +3739,12 @@ D. AWS security reports
 [correct]
 A. AWS Artifact
 [explanation]
+AWS Artifact is the AWS service that enables companies to obtain copies of various compliance documents such as ISO certifications, PCI (Payment Card Industry) reports, and SOC (Service Organization Control) reports. AWS Artifact provides on-demand access to AWS compliance reports and other relevant documents, helping organizations assess the security and compliance posture of AWS services and infrastructure. Through AWS Artifact, customers can download compliance reports, attestations, and certifications to support their compliance efforts and regulatory requirements. This service simplifies the process of obtaining compliance documentation, allowing customers to focus on their migration to the AWS cloud with confidence in the security and compliance standards maintained by AWS.
+AWS Artifact, available in the console, is a self-service audit artifact retrieval portal that provides our customers with on-demand access to AWS’ compliance documentation and AWS agreements.
 
+You can use AWS Artifact Reports to download AWS security and compliance documents, such as AWS ISO certifications, Payment Card Industry (PCI), and System and Organization Control (SOC) reports.
+
+You can use AWS Artifact Agreements to review, accept, and track the status of AWS agreements such as the Business Associate Addendum (BAA).
 
 
 [q]
@@ -3730,8 +3759,8 @@ D. BitLocker
 [correct]
 B. AWS CloudHSM
 [explanation]
-
-
+Out of the choices presented, only AWS CloudHSM (B) offers FIPS 140-2 Level 3 validated HSM devices for creating and managing your encryption keys. This functionality directly addresses the requirement for strict compliance. 
+AWS CloudHSM is a cryptographic service for creating and maintaining hardware security modules (HSMs) in your AWS environment. HSMs are computing devices that process cryptographic operations and provide secure storage for cryptographic keys. You can use AWS CloudHSM to offload SSL/TLS processing for web servers, protect private keys linked to an issuing certificate authority (CA), or enable Transparent Data Encryption (TDE) for Oracle databases.
 
 
 
@@ -3750,5 +3779,6 @@ techniques to automatically discover, classify, and protect sensitive data store
 data such as personally identifiable information (PII), intellectual property (IP), and financial data, reducing the risk of data breaches, compliance violations, 
 and unauthorized access. Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables 
 automated protection against those risks.
+Amazon Macie is a data security service that uses machine learning (ML) and pattern matching to discover and help protect your sensitive data.
 
 <pricing 2 montsh.png>
