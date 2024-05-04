@@ -1121,7 +1121,15 @@ C. IAM collection
 D. IAM roles
 [correct]
 A. IAM groups
-
+[explanation]
+IAM (Identity and Access Management) groups in AWS are collections of IAM users. They are used to organize users into logical groups based on 
+their roles, responsibilities, or permissions within an organization. By grouping users together, you can assign permissions to multiple users 
+simultaneously, making it easier to manage access control in AWS.
+An IAM user group is a collection of IAM users. User groups let you specify permissions for multiple users, which can make it easier to manage
+the permissions for those users. For example, you could have a user group called Admins and give that user group typical administrator permissions. 
+Any user in that user group automatically has Admins group permissions. If a new user joins your organization and needs administrator privileges 
+you can assign the appropriate permissions by adding the user to the Admins user group. If a person changes jobs in your organization, instead of 
+editing that user's permissions you can remove them from the old user groups and add them to the appropriate new user groups.
 
 
 
@@ -1136,6 +1144,17 @@ C. Active Directory users and computers
 D. MFA
 [correct]
 A. Identity federation
+[explanation]
+Identity federation allows you to establish trust between your corporate identity provider (such as Active Directory) and AWS IAM. This enables 
+your users to use their existing corporate credentials to access AWS resources without having to create separate IAM user accounts for each user. 
+When a user attempts to access AWS resources, they are redirected to the corporate identity provider's login page for authentication. Once authenticated, 
+the identity provider issues a security token that grants the user access to AWS services.
+A federated identity is a user that can access secure AWS account resources with external identities. External identities can come from a 
+corporate identity store (such as LDAP or Windows Active Directory) or from a third party (such as Login in with Amazon, Facebook, or Google). 
+Federated identities don't sign in with the AWS Management Console or AWS access portal. The type of external identity in use determines how 
+federated identities sign in.
+
+
 
 [q]
 Which AWS service enables you to generate and download a report that lists your
@@ -1148,6 +1167,13 @@ C. Credentials report
 D. User report
 [correct]
 C. Credentials report
+[explanation]
+In AWS, a credentials report is a tool provided by AWS Identity and Access Management (IAM) that provides a detailed overview of the status and 
+usage of IAM users' access keys and passwords within your AWS account. 
+You can generate and download a credential report that lists all users in your account and the status of their various credentials, including passwords, 
+access keys, and MFA devices.
+
+
 
 [q]
 Which AWS service is responsible for assigning and managing temporary
@@ -1159,8 +1185,12 @@ C. AWS Credentials Manager
 D. AWS Credentials Report
 [correct]
 B. AWS Security Token Service
+[explanation]
+The AWS Security Token Service (STS) is a web service provided by Amazon Web Services (AWS) that enables you to request temporary, limited-privilege credentials 
+for accessing AWS resources. STS helps you grant controlled and time-limited access to AWS resources to users, applications, or services without sharing long-term 
+credentials, such as access keys or passwords. A web service for requesting temporary, limited-privilege credentials for AWS Identity and Access Management users 
+or for users that you authenticate (federated users).
 
-[q]
 A company plans to migrate its on-premises MySQL database to Amazon RDS.
 Which AWS service should they use for this task?
 [answers]
@@ -1170,6 +1200,8 @@ C. AWS VM Import/Export
 D. AWS Server Migration Service
 [correct]
 B. AWS Database Migration Service (AWS DMS)
+[explanation]
+The correct answer is B. AWS Database Migration Service (AWS DMS). AWS DMS is specifically designed to help migrate databases to AWS, including migrating an on-premises MySQL database to Amazon RDS. It provides a reliable and efficient way to perform homogeneous or heterogeneous database migrations with minimal downtime.
 
 [q]
 Which of the following is the primary benefit of using an Amazon RDS database
@@ -1181,20 +1213,9 @@ C. You have full access to the operating system layer that the RDS database runs
 D. You can choose which drive and partition to install the RDS database on.
 [correct]
 A. Managing the database, including patching and backups, is taken care of by Amazon.
+[explanation]
+The correct answer is A. Managing the database, including patching and backups, is taken care of by Amazon. When you use Amazon RDS, AWS manages administrative tasks such as patching the database software, performing backups, and handling failover. This allows you to focus on your application development and business objectives without worrying about the underlying database maintenance tasks.
 
-[q]
-AWS RDS supports six database engines. From the following list, choose three
-engines supported by Amazon RDS.
-[answers]
-A. Microsoft SQL
-B. Oracle
-C. MySQL
-D. FoxPro
-E. Db2
-[correct]
-A. Microsoft SQL
-B. Oracle
-C. MySQL
 
 [q]
 You are building an application for a wealth asset management company that
@@ -1211,6 +1232,8 @@ C. Amazon QLDB
 D. Amazon Redshift
 [correct]
 C. Amazon QLDB
+[explanation]
+Amazon QLDB (Quantum Ledger Database) is designed specifically for ledger-like functionality and maintaining a complete and verifiable history of data changes. It provides an immutable and cryptographically verifiable transaction log, making it suitable for applications that require audit trails, compliance, and transparency in data management.
 
 [q]
 Which AWS database solution enables you to build a complete data warehousing
@@ -1224,6 +1247,8 @@ C. AWS Neptune
 D. AWS Pluto
 [correct]
 B. AWS Redshift
+[explanation]
+Amazon Redshift is a fully managed data warehousing solution that enables you to analyze large datasets using standard SQL queries and integrate with popular business intelligence tools. It is optimized for high-performance analytics and supports petabyte-scale data warehouses, making it suitable for complex analytical workloads.
 
 [q]
 You are looking to host a production-grade enterprise relational database solution
@@ -1237,6 +1262,8 @@ C. Amazon Redshift
 D. Amazon Neptune
 [correct]
 B. Amazon Aurora
+[explanation]
+Amazon Aurora is a fully managed relational database service that offers enterprise-grade features such as self-healing storage systems and the ability to scale up to 128 TB per database instance. It provides high performance, availability, and durability for relational databases, making it suitable for production-grade applications.
 
 [q]
 Which AWS feature of Amazon Redshift enables you to run SQL queries against
@@ -1248,6 +1275,8 @@ C. Redshift Spectrum
 D. Redshift Cache
 [correct]
 C. Redshift Spectrum
+[explanation]
+Redshift Spectrum is an Amazon Redshift feature that allows you to run SQL queries against data stored in Amazon S3 buckets without loading it into Redshift tables. It extends the querying capabilities of Amazon Redshift to analyze vast amounts of data stored in S3, providing cost-effective and scalable data processing for analytics workloads.
 
 [q]
 Which AWS service enables you to migrate an on-premises MySQL database to an
@@ -1259,6 +1288,8 @@ C. AWS DMS
 D. AWS EFS
 [correct]
 C. AWS DMS
+[explanation]
+AWS Database Migration Service (DMS) is a fully managed service that enables you to migrate databases to AWS quickly and securely. It supports heterogeneous database migrations, including migrating from an on-premises MySQL database to an Amazon RDS database running the Oracle Engine.
 
 [q]
 You are running a single RDS DB instance. Which configuration would you
@@ -1270,6 +1301,8 @@ C. Configure RDS Cross Region Backup.
 D. Configure DynamoDB DaX.
 [correct]
 B. Configure RDS Multi-AZ.
+[explanation]
+Configuring RDS Multi-AZ (Multi-Availability Zone) provides redundancy and failover support for RDS DB instances. During backups, RDS Multi-AZ ensures that I/O suspension issues are avoided by seamlessly failing over to the standby replica, allowing backups to be performed without impacting database performance.
 
 [q]
 What are the three basic types of cloud services and the AWS products that are built based on them?
@@ -1280,7 +1313,12 @@ Computing, Storage, Networking
 Computing, ML, Storage
 [correct]
 Computing, Storage, Networking
+[explanation]
+The three basic types of cloud services are Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). AWS products based on these types include:
 
+Computing: Amazon EC2 (IaaS), AWS Elastic Beanstalk (PaaS)
+Storage: Amazon S3 (IaaS), Amazon EBS (IaaS)
+Networking: Amazon VPC (IaaS), AWS Direct Connect (IaaS)
 [q]
 What is the relation between the Availability Zone and Region?
 [answers]
@@ -1290,26 +1328,32 @@ AWS Regions and Availability Zones are separate areas
 AWS regions are separate geographical areas. Availabiliy Zones are the areas that are present inside the regions.
 [correct]
 AWS regions are separate geographical areas. Availabiliy Zones are the areas that are present inside the regions.
+[explanation]
+An AWS region is a geographic area where AWS maintains multiple data centers (Availability Zones) to provide high availability and fault tolerance. Availability Zones are distinct locations within a region that are engineered to be isolated from failures in other Availability Zones, while still being interconnected with high-bandwidth, low-latency networking.
 
 [q]
 What is auto-scaling?
 [answers]
-Auto-scaling is a function that allows increasing capacity of existing instances on demand. 
-Auto-scaling is a function that allows removing of existing instances on demand. 
-Auto-scaling is a function that allows provision and launching of new instances on demand. 
+Auto-scaling is a function that allows increasing capacity of existing instances on demand.
+Auto-scaling is a function that allows removing of existing instances on demand.
+Auto-scaling is a function that allows provision and launching of new instances on demand.
 Auto-scaling is a function that allows the addition of new routes in a route table.
 [correct]
-Auto-scaling is a function that allows provision and launching of new instances on demand. 
+Auto-scaling is a function that allows provision and launching of new instances on demand.
+[explanation]
+Auto-scaling is a feature of AWS that automatically adjusts the number of compute resources (such as EC2 instances) based on the demand or workload of an application. It provisions and launches new instances when demand increases and removes instances when demand decreases, ensuring that the application can handle varying levels of traffic efficiently and cost-effectively.
 
 [q]
 What is geo-targeting in CloudFront?
 [answers]
-Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL. 
+Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL.
 Geo-Targeting is a concept where businesses can target specific businesses without changing the URL
 Geo-Targeting is a concept where business can target their audience based on latency
 Geo-Targeting is a concept where business can restrict audience based on geographical location
 [correct]
-Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL. 
+Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL.
+[explanation]
+Geo-targeting in Amazon CloudFront allows businesses to deliver personalized content to users based on their geographic location. It enables content delivery tailored to specific regions or countries without changing the URL, providing a more customized and relevant experience for users.
 
 [q]
 What are the tools and techniques that you can use in AWS to identify if you are paying more than you should be?
@@ -1320,17 +1364,27 @@ Cost Explorer, AWS Budgets, AWS Config, Cost Allocation Tags
 AWS Budgets, AWS Config
 [correct]
 Check the Top Services Table, Cost Explorer, AWS Budgets, Cost Allocation Tags
+[explanation]
+To identify if you are paying more than you should be in AWS, you can use various tools and techniques:
 
+Check the Top Services Table to identify high-cost services.
+Use Cost Explorer to analyze your AWS spending and identify cost trends.
+Set up AWS Budgets to set cost thresholds and receive alerts when costs exceed the defined limits.
+Use Cost Allocation Tags to categorize and track costs by different criteria such as project, team, or environment.
 [q]
 What are the native AWS Security logging capabilities?
 [answers]
 AWS CloudFront, AWS Config
 AWS Config
 AWS CloudTrail
-AWS CloudTrail, AWS Config 
+AWS CloudTrail, AWS Config
 [correct]
-AWS CloudTrail, AWS Config 
+AWS CloudTrail, AWS Config
+[explanation]
+AWS CloudTrail and AWS Config are the native AWS Security logging capabilities:
 
+AWS CloudTrail provides a record of API calls made in your AWS account, including details such as the identity of the caller, the time of the call, and the request parameters.
+AWS Config continuously monitors and records configurations of AWS resources and provides a detailed view of the configuration changes over time, helping you assess compliance and security posture.
 [q]
 What AWS services are not region-specific?
 [answers]
@@ -1340,6 +1394,8 @@ IAM, Route 53, Web Application Firewall
 IAM, Web Application Firewall, CloudFront
 [correct]
 IAM, Route 53, Web Application Firewall, CloudFront
+[explanation]
+IAM (Identity and Access Management), Route 53 (DNS web service), Web Application Firewall (WAF), and CloudFront (Content Delivery Network) are AWS services that are not region-specific. They operate globally and can be accessed from any AWS region.
 
 [q]
 Which of the following six advantages enables small start-up companies to
@@ -1351,6 +1407,8 @@ C. Stop guessing capacity
 D. Increase speed and agility
 [correct]
 D. Increase speed and agility
+[explanation]
+The advantage of "increasing speed and agility" enables small start-up companies to immediately start consuming IT services from public cloud vendors like AWS. With cloud services, businesses can quickly provision resources, deploy applications, and adapt to changing demands without the need for large upfront investments or long lead times.
 
 [q]
 Which feature of cloud computing enables customers to deploy their resources
@@ -1362,6 +1420,8 @@ C. Scalability features
 D. Multiple server options
 [correct]
 A. Access to cloud provider APIs
+[explanation]
+Access to cloud provider APIs allows customers to deploy their resources in a matter of minutes using a self-service model. Cloud provider APIs enable programmatic access to cloud services, allowing users to automate the provisioning and management of resources through code, scripts, or third-party tools.
 
 [q]
 What is a hypervisor?
@@ -1372,6 +1432,8 @@ C. Software used to create HA websites
 D. Hardware that enables you to increase the performance of your physical servers
 [correct]
 A. Software that enables you to create and managed virtualized resources running on physical hardware, such as VMs
+[explanation]
+A hypervisor is a software layer that enables you to create and manage virtualized resources, such as virtual machines (VMs), running on physical hardware. It abstracts the physical hardware and allows multiple virtual machines to share the same physical resources, providing isolation, flexibility, and efficient resource utilization.
 
 [q]
 Which of the following are the primary benefits of server virtualization? (Select two answers.)
@@ -1383,7 +1445,11 @@ D. Ability to meet compliance requirements
 [correct]
 A. Efficient use of physical hardware resources
 B. Ability to provision virtual servers in a matter of minutes
+[explanation]
+The primary benefits of server virtualization include:
 
+Efficient use of physical hardware resources: Virtualization allows multiple virtual servers to run on a single physical server, maximizing resource utilization and reducing hardware costs.
+Ability to provision virtual servers in a matter of minutes: Virtual servers can be rapidly provisioned, deployed, and scaled to meet changing demands, improving agility and flexibility in resource allocation.
 [q]
 Which of the following is a prime example of IaaS?
 [answers]
@@ -1393,6 +1459,8 @@ C. A service that hosts and delivers a complete application via a public network
 D. A service that allows you to consume hardware resources for a short lease period and pay on a metered basis
 [correct]
 A. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application
+[explanation]
+Infrastructure as a Service (IaaS) provides access to fundamental computing resources, such as virtual machines, storage, and networking, allowing users to configure and manage these resources to host their applications. It offers the flexibility and control of managing the underlying infrastructure without the complexity of owning and maintaining physical hardware.
 
 [q]
 Which of the following is a prime example of PaaS?
@@ -1403,6 +1471,24 @@ C. A service that abstracts the underlying infrastructure, allowing you to focus
 D. A service that allows you to build infrastructure using code for repeat deployments in different environment
 [correct]
 C. A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process
+[explanation]
+Platform as a Service (PaaS) abstracts the underlying infrastructure and provides a platform for developing, deploying, and managing applications without the complexity of managing the infrastructure. It enables developers to focus on writing application code and automates tasks such as provisioning, scaling, and managing the runtime environment.
+
+
+[q]
+AWS RDS supports six database engines. From the following list, choose three engines supported by Amazon RDS.
+[answers]
+A. Microsoft SQL
+B. Oracle
+C. MySQL
+D. FoxPro
+E. Db2
+[correct]
+A. Microsoft SQL
+B. Oracle
+C. MySQL
+[explanation]
+Amazon RDS (Relational Database Service) supports multiple database engines, including Microsoft SQL Server, Oracle, and MySQL. These are commonly used for various types of applications and workloads, offering flexibility and scalability in managing relational databases in the cloud.
 
 [q]
 Which of the following is a prime example of SaaS?
@@ -1413,11 +1499,11 @@ C. A service that hosts and delivers a complete application via a public network
 D. A service that allows developers to adopt DevOps strategies for their software development life cycle
 [correct]
 C. A service that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure
+[explanation]
+Software as a Service (SaaS) delivers applications over the internet on a subscription basis, allowing users to access and use the software via a web browser without the need to install, maintain, or manage any underlying infrastructure. Examples include email services, customer relationship management (CRM) systems, and productivity tools.
 
 [q]
-Which cloud deployment model enables you to connect your on-premises
-workloads with resources you have deployed with a public cloud provider
-such as AWS?
+Which cloud deployment model enables you to connect your on-premises workloads with resources you have deployed with a public cloud provider such as AWS?
 [answers]
 A. Private cloud
 B. Public cloud
@@ -1425,10 +1511,11 @@ C. Hybrid cloud
 D. Hyper cloud
 [correct]
 C. Hybrid cloud
+[explanation]
+A hybrid cloud deployment model combines private cloud infrastructure with public cloud services, allowing organizations to seamlessly integrate on-premises resources with resources deployed on a public cloud provider like AWS. This model enables businesses to leverage the scalability and flexibility of the public cloud while retaining control over sensitive data or legacy systems in their private infrastructure.
 
 [q]
-Which of the following AWS support plans gives you access to all AWS Trusted
-Advisor reports? (Select two answers)
+Which of the following AWS support plans gives you access to all AWS Trusted Advisor reports? (Select two answers)
 [answers]
 A. Basic support plan
 B. Developer support plan
@@ -1438,14 +1525,11 @@ E. Global support plan
 [correct]
 C. Business support plan
 D. Enterprise support plan
+[explanation]
+Both the Business and Enterprise support plans provide access to all AWS Trusted Advisor reports. Trusted Advisor offers recommendations to help optimize AWS resources, improve security, and reduce costs based on AWS best practices.
 
 [q]
-You have spent months developing a new application for your customers. You are
-now ready to go live and want to ensure that you have access to AWS technical
-support engineers if there are any issues with your application servers or backend
-database. Your organization is comfortable with 1-hour response times for
-production-system down issues. Which support plan is the most cost-effective
-option for you?
+You have spent months developing a new application for your customers. You are now ready to go live and want to ensure that you have access to AWS technical support engineers if there are any issues with your application servers or backend database. Your organization is comfortable with 1-hour response times for production-system down issues. Which support plan is the most cost-effective option for you?
 [answers]
 A. Basic support plan
 B. Developer support plan
@@ -1453,11 +1537,11 @@ C. Business support plan
 D. Enterprise support plan
 [correct]
 C. Business support plan
+[explanation]
+The Business support plan is the most cost-effective option for this scenario. It provides access to AWS technical support engineers 24/7, with a 1-hour response time for production-system down issues. This plan offers a balance between cost and access to technical support for critical production environments.
 
 [q]
-Which AWS support plan gives you access to a technical account manager who will
-monitor your environment and provide guidance to optimize your workloads on
-the AWS platform?
+Which AWS support plan gives you access to a technical account manager who will monitor your environment and provide guidance to optimize your workloads on the AWS platform?
 [answers]
 A. Basic support plan
 B. Developer support plan
@@ -1465,13 +1549,11 @@ C. Business support plan
 D. Enterprise support plan
 [correct]
 D. Enterprise support plan
+[explanation]
+The Enterprise support plan provides access to a technical account manager (TAM) who serves as a dedicated advisor for your AWS environment. The TAM helps monitor your environment, provides architectural guidance, and offers recommendations to optimize workloads on the AWS platform. This level of support is ideal for organizations with complex or mission-critical workloads.
 
 [q]
-You are planning to build a test and development environment on AWS as a
-precursor to ultimately migrating your workloads to the platform. In the interim
-period, your developers require some basic technical support as they are new to
-cloud computing. Which AWS support plan offers cost-effective access to Cloud
-Support associates during business hours?
+You are planning to build a test and development environment on AWS as a precursor to ultimately migrating your workloads to the platform. In the interim period, your developers require some basic technical support as they are new to cloud computing. Which AWS support plan offers cost-effective access to Cloud Support associates during business hours?
 [answers]
 A. Basic support plan
 B. Developer support plan
@@ -1479,10 +1561,11 @@ C. Business support plan
 D. Enterprise support plan
 [correct]
 B. Developer support plan
+[explanation]
+The Developer support plan offers cost-effective access to Cloud Support associates during business hours. It is designed for developers and startups who are new to AWS and require basic technical support for test and development environments. This plan provides access to support resources during standard business hours via email.
 
 [q]
-Which of the following services is provided across all AWS support plans and allows
-support access 24/7 via telephone, chat, and email?
+Which of the following services is provided across all AWS support plans and allows support access 24/7 via telephone, chat, and email?
 [answers]
 A. Access to technical support via telephone and chat
 B. Access to customer support services to resolve any billing or account login issues
@@ -1490,10 +1573,11 @@ C. Access to a technical account manager to help you manage your account
 D. Access to a full range of reports from the AWS Trusted Advisor
 [correct]
 B. Access to customer support services to resolve any billing or account
+[explanation]
+Access to customer support services to resolve any billing or account issues is provided across all AWS support plans. This includes access to AWS support via telephone, chat, and email 24/7, allowing customers to get assistance with billing inquiries, account management, and general support queries.
 
 [q]
-Which feature of the AWS Global Infrastructure enables you to launch applications
-and store data in a manner that is compliant with regulatory requirements?
+Which feature of the AWS Global Infrastructure enables you to launch applications and store data in a manner that is compliant with regulatory requirements?
 [answers]
 A. Regions
 B. AZs
@@ -1501,11 +1585,11 @@ C. Edge location
 D. CloudFront
 [correct]
 A. Regions
+[explanation]
+Regions are geographic areas where AWS maintains multiple data centers. Each region is designed to be isolated from other regions to provide fault tolerance and stability. By choosing the appropriate region, organizations can ensure compliance with regulatory requirements by storing data within the geographic boundaries specified by regulations.
 
 [q]
-Which component of the AWS Global Infrastructure enables you to distribute your
-content to users across the globe such that cached versions of your digital assets are
-available locally to those users?
+Which component of the AWS Global Infrastructure enables you to distribute your content to users across the globe such that cached versions of your digital assets are available locally to those users?
 [answers]
 A. Regions
 B. AZs
@@ -1513,10 +1597,11 @@ C. Edge locations
 D. AWS RDS
 [correct]
 C. Edge locations
+[explanation]
+Edge locations are endpoints for AWS services such as CloudFront (content delivery network) and Route 53 (DNS service). They are located in various geographic locations worldwide and serve as caching endpoints, allowing users to access content with low latency. Edge locations distribute content to users across the globe, ensuring that cached versions of digital assets are available locally, thereby improving performance and user experience.
 
 [q]
-Which component of the AWS Global Infrastructure enables you to architect your
-application solution to offer high-availability capabilities within a specific Region?
+Which component of the AWS Global Infrastructure enables you to architect your application solution to offer high-availability capabilities within a specific Region?
 [answers]
 A. Regions
 B. AZs
@@ -1524,10 +1609,11 @@ C. Edge locations
 D. Regional edge caches
 [correct]
 B. AZs
+[explanation]
+Availability Zones (AZs) are distinct locations within a region, each with its own infrastructure and facilities. AZs are interconnected with low-latency links to provide high-availability capabilities within a specific region. By deploying resources across multiple AZs, organizations can design resilient and fault-tolerant architectures that ensure business continuity and minimize downtime.
 
 [q]
-Which of the following services are considered global services on the AWS
-platform? (Select two answers)
+Which of the following services are considered global services on the AWS platform? (Select two answers)
 [answers]
 A. AWS IAM
 B. Amazon Virtual Private Cloud (VPC)
@@ -1537,10 +1623,11 @@ E. Amazon CloudFront
 [correct]
 A. AWS IAM
 E. Amazon CloudFront
+[explanation]
+AWS Identity and Access Management (IAM) and Amazon CloudFront are considered global services on the AWS platform. IAM provides centralized access control and management for AWS resources across all regions, while CloudFront is a content delivery network with edge locations distributed globally to deliver content with low latency to users worldwide.
 
 [q]
-Which of the following services are designed to be set up, configured, and
-consumed on premises? (Select two answers)
+Which of the following services are designed to be set up, configured, and consumed on premises? (Select two answers)
 [answers]
 A. AWS Outposts
 B. Amazon Storage Gateway
@@ -1550,10 +1637,12 @@ E. AWS PHD
 [correct]
 A. AWS Outposts
 B. Amazon Storage Gateway
+[explanation]
+AWS Outposts and Amazon Storage Gateway are designed to be set up, configured, and consumed on premises. AWS Outposts extends AWS infrastructure and services to customer premises, providing a consistent hybrid cloud experience. Amazon Storage Gateway enables hybrid cloud storage solutions by connecting on-premises environments with cloud storage services like Amazon S3 and Amazon Glacier.
+
 
 [q]
-As part of the signup process, you are required to adhere to policy guidelines that
-describe prohibited activities. Which policy does this fall under?
+As part of the signup process, you are required to adhere to policy guidelines that describe prohibited activities. Which policy does this fall under?
 [answers]
 A. Compliance policy
 B. Password policy
@@ -1561,12 +1650,11 @@ C. AuP
 D. Vulnerability testing guidelines
 [correct]
 C. AuP
-
-
+[explanation]
+AuP stands for Acceptable Use Policy. It defines the acceptable behavior and activities for users of a system or network. This policy outlines prohibited actions and behaviors to ensure the security and integrity of the system or network.
 
 [q]
-A company has deployed applications on Amazon EC2 instances. The company needs to assess application vulnerabilities and must identify infrastructure deployments that 
-do not meet best practices.Which AWS service can the company use to meet these requirements?
+A company has deployed applications on Amazon EC2 instances. The company needs to assess application vulnerabilities and must identify infrastructure deployments that do not meet best practices. Which AWS service can the company use to meet these requirements?
 [answers]
 A. AWS Trusted Advisor
 B. Amazon Inspector
@@ -1575,15 +1663,10 @@ D. Amazon GuardDuty
 [correct]
 B. Amazon Inspector
 [explanation]
-Amazon Inspector is an automated vulnerability management service that helps improve the security and compliance of applications deployed on AWS. Amazon
-Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices. After performing an assessment, Amazon Inspector 
-produces a detailed list of security findings prioritized by level of severity.
-
-
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. It identifies security vulnerabilities and deviations from best practices by analyzing the configuration and behavior of AWS resources, including EC2 instances. Amazon Inspector provides detailed findings and recommendations to remediate security issues.
 
 [q]
-Which AWS service publishes up-to-the-minute information regarding any outages
-or issues with any service across all Regions of the AWS ecosystem?
+Which AWS service publishes up-to-the-minute information regarding any outages or issues with any service across all Regions of the AWS ecosystem?
 [answers]
 A. PHD
 B. Outage and issues dashboard
@@ -1591,10 +1674,11 @@ C. Service Health Dashboard
 D. Amazon CloudWatch
 [correct]
 C. Service Health Dashboard
+[explanation]
+The Service Health Dashboard provides real-time status information about AWS services, including any outages, disruptions, or performance issues across all AWS Regions. It offers up-to-the-minute updates on service availability and helps customers stay informed about the operational status of AWS services they use.
 
 [q]
-Before setting up your billing alarms, which preference setting needs to be
-enabled first?
+Before setting up your billing alarms, which preference setting needs to be enabled first?
 [answers]
 A. Enable billing alerts
 B. Enable alarms
@@ -1602,11 +1686,11 @@ C. Set up AWS Organizations
 D. Configure MFA
 [correct]
 A. Enable billing alerts
+[explanation]
+Before setting up billing alarms in AWS, you need to enable the preference for receiving billing alerts. This preference allows you to configure billing alerts and receive notifications when your AWS usage exceeds defined thresholds.
 
 [q]
-Which AWS service enables you to centrally manage multiple AWS accounts with
-SCPs to establish permission guardrails using which services can be enabled in
-those accounts?
+Which AWS service enables you to centrally manage multiple AWS accounts with SCPs to establish permission guardrails using which services can be enabled in those accounts?
 [answers]
 A. AWS Organizations
 B. AWS IAM
@@ -1614,10 +1698,11 @@ C. AWS VPC
 D. AWS GuardDuty
 [correct]
 A. AWS Organizations
+[explanation]
+AWS Organizations is a service that enables centralized management of multiple AWS accounts. It allows organizations to create and manage groups of accounts, apply policies using Service Control Policies (SCPs), and automate account management tasks. With AWS Organizations, administrators can establish permission guardrails to control which AWS services are allowed or denied in member accounts.
 
 [q]
-Which of the following services are offered completely free by AWS?
-(Select two answers.)
+Which of the following services are offered completely free by AWS? (Select two answers.)
 [answers]
 A. AWS Identity and Access Management (IAM)
 B. AWS Elastic Beanstalk
@@ -1627,10 +1712,11 @@ E. AWS Simple Notification Service (SNS)
 [correct]
 A. AWS Identity and Access Management (IAM)
 B. AWS Elastic Beanstalk
+[explanation]
+AWS Identity and Access Management (IAM) and AWS Elastic Beanstalk are offered as part of the AWS Free Tier, which provides customers with limited free usage of AWS services. IAM allows you to manage user access and permissions in AWS, while Elastic Beanstalk provides a platform for deploying and managing applications.
 
 [q]
-Which feature of AWS Organizations enables you to combine the costs of each
-member account to take advantage of any volume discounts on offer?
+Which feature of AWS Organizations enables you to combine the costs of each member account to take advantage of any volume discounts on offer?
 [answers]
 A. Consolidated billing
 B. AWS EC2 savings plan
@@ -1638,6 +1724,8 @@ C. AWS Control Tower
 D. AWS IAM
 [correct]
 A. Consolidated billing
+[explanation]
+Consolidated billing is a feature of AWS Organizations that enables organizations to combine the costs of multiple AWS accounts into a single bill. This allows organizations to take advantage of volume discounts and simplify billing and cost management by receiving a single invoice for all accounts under the organization.
 
 [q]
 Which of the following is required when creating an AWS Free Tier account?
@@ -1648,10 +1736,11 @@ C. A passport or driving license
 D. An invitation letter from Amazon
 [correct]
 A. A credit card
+[explanation]
+To create an AWS Free Tier account, you are required to provide a valid credit card during the signup process. While most services within the Free Tier have usage limits that do not incur charges, AWS requires a credit card for identity verification and to allow for usage beyond the Free Tier limits.
 
 [q]
-Which AWS service enables you to automatically set up a new landing zone in
-accordance with best practices?
+Which AWS service enables you to automatically set up a new landing zone in accordance with best practices?
 [answers]
 A. AWS Landing Zone
 B. AWS Control Tower
@@ -1659,11 +1748,11 @@ C. AWS Organizations
 D. AWS Free Tier Account
 [correct]
 B. AWS Control Tower
+[explanation]
+AWS Control Tower is a service that enables you to set up and govern a secure, multi-account AWS environment based on AWS best practices and standards. It automates the setup of a new landing zone—a well-architected, secure, and compliant AWS environment—by provisioning and configuring core AWS services, such as AWS Organizations, AWS Single Sign-On, and AWS Config, according to best practices.
 
 [q]
-Which feature of the AWS Organizations service enables you to combine AWS
-accounts in a container that has common workloads and then apply a common set
-of policies to those accounts?
+Which feature of the AWS Organizations service enables you to combine AWS accounts in a container that has common workloads and then apply a common set of policies to those accounts?
 [answers]
 A. AWS Control Tower
 B. AWS Landing Zone
@@ -1671,6 +1760,8 @@ C. Organization Units (OUs)
 D. Service Control Policies (SCPs)
 [correct]
 B. AWS Landing Zone
+[explanation]
+AWS Landing Zone is a feature of AWS Organizations that enables organizations to set up and configure a secure, multi-account AWS environment. It allows you to group AWS accounts with common workloads into Organization Units (OUs) and apply a common set of policies, such as Service Control Policies (SCPs), to those accounts. AWS Landing Zone helps organizations streamline the creation and management of multiple AWS accounts while ensuring compliance with security and governance requirements.
 
 [q]
 Which of the following is true regarding Amazon S3? (Select 2 answers)
@@ -1678,16 +1769,15 @@ Which of the following is true regarding Amazon S3? (Select 2 answers)
 A. Amazon S3 is object-based storage.
 B. Amazon S3 is an example of file storage.
 C. Amazon S3 is an example of block storage.
-D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability. Amazon S3 can be configured as shared mount volumes for Linux-based EC2 instances.
+D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability.
 [correct]
 A. Amazon S3 is object-based storage.
-D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability. Amazon S3 can be configured as shared mount volumes for Linux-based EC2 instances.
+D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability.
+[explanation]
+Amazon S3 (Simple Storage Service) is object-based storage, meaning it stores data as objects rather than as files or blocks. Each object in S3 is stored as a key-value pair, with a unique identifier (key) and associated data (value). Additionally, the Amazon S3 One Zone-IA storage class offers 99.5% availability for objects stored in a single availability zone, providing cost-effective storage options with reduced redundancy.
 
 [q]
-You wish to enforce a policy on an S3 bucket that grants anonymous access to its
-content if users connect to the data from the corporate and branch offices as part
-of your security strategy. Which S3 configuration feature will enable you to define
-the IP ranges from where you will allow access to the data?
+You wish to enforce a policy on an S3 bucket that grants anonymous access to its content if users connect to the data from the corporate and branch offices as part of your security strategy. Which S3 configuration feature will enable you to define the IP ranges from where you will allow access to the data?
 [answers]
 A. Security groups
 B. Bucket policy
@@ -1695,10 +1785,11 @@ C. NTFS permissions
 D. Network ACLs (NACLs)
 [correct]
 B. Bucket policy
+[explanation]
+A bucket policy is a resource-based access policy that allows you to define permissions for an Amazon S3 bucket. You can use bucket policies to grant or deny access to your S3 bucket based on various criteria, including IP address ranges. By configuring a bucket policy, you can specify the IP ranges from which you want to allow or deny access to the data stored in the bucket, thereby enforcing your security strategy.
 
 [q]
-Which AWS service is the most cost-effective if you need to host static website
-content for an upcoming product launch?
+Which AWS service is the most cost-effective if you need to host static website content for an upcoming product launch?
 [answers]
 A. Amazon EC2
 B. Amazon EFS
@@ -1706,11 +1797,11 @@ C. Amazon S3
 D. Azure ExpressRoute
 [correct]
 C. Amazon S3
+[explanation]
+Amazon S3 (Simple Storage Service) is the most cost-effective option for hosting static website content. It is a scalable, highly available, and durable object storage service designed for storing and serving large amounts of data, including static website files like HTML, CSS, JavaScript, and image files.
 
 [q]
-Which Amazon S3 storage class enables you to optimize costs by automatically
-moving data to the most cost-effective access tier, while ensuring that frequently
-accessed data is made available immediately?
+Which Amazon S3 storage class enables you to optimize costs by automatically moving data to the most cost-effective access tier, while ensuring that frequently accessed data is made available immediately?
 [answers]
 A. Amazon S3 Standard
 B. Amazon S3 One-Zone IA
@@ -1718,12 +1809,11 @@ C. Amazon Snowball
 D. Amazon S3 Intelligent-Tiering
 [correct]
 D. Amazon S3 Intelligent-Tiering
+[explanation]
+Amazon S3 Intelligent-Tiering is a storage class designed to optimize costs by automatically moving data between two access tiers: frequent access and infrequent access. It monitors access patterns and automatically moves objects that have not been accessed for a specified period to the infrequent access tier, reducing storage costs while ensuring immediate access to frequently accessed data.
 
 [q]
-Which Amazon S3 service can be configured to automatically migrate data from
-one storage class to another after a set number of days as a means of reducing your
-costs, especially where frequent instant access may not be required to that subset
-of data?
+Which Amazon S3 service can be configured to automatically migrate data from one storage class to another after a set number of days as a means of reducing your costs, especially where frequent instant access may not be required to that subset of data?
 [answers]
 A. Static website hosting
 B. Lifecycle management
@@ -1731,10 +1821,11 @@ C. Storage transition
 D. S3 migration
 [correct]
 B. Lifecycle management
+[explanation]
+Amazon S3 Lifecycle management enables you to automatically migrate data between different storage classes based on specified rules and criteria. You can define lifecycle policies to transition objects to lower-cost storage classes after a set number of days or based on other factors such as object age or size. This helps reduce storage costs by moving data to more cost-effective storage tiers when it is no longer frequently accessed.
 
 [q]
-When retrieving data from Amazon Glacier, what is the typical time taken
-by a Standard retrieval option to make the archive available for download?
+When retrieving data from Amazon Glacier, what is the typical time taken by a Standard retrieval option to make the archive available for download?
 [answers]
 A. 20 minutes
 B. 24 hours
@@ -1742,11 +1833,11 @@ C. 3 to 5 hours
 D. 90 seconds
 [correct]
 C. 3 to 5 hours
+[explanation]
+The typical time taken by a Standard retrieval option in Amazon Glacier to make an archive available for download is 3 to 5 hours. This retrieval option is designed for data that is not frequently accessed and has a longer retrieval time compared to other options.
 
 [q]
-Which feature of the Amazon S3 platform enables you to upload content to
-a centralized bucket from across any location via Amazon edge locations,
-ensuring faster transfer speeds and avoidance of public internet congestion?
+Which feature of the Amazon S3 platform enables you to upload content to a centralized bucket from across any location via Amazon edge locations, ensuring faster transfer speeds and avoidance of public internet congestion?
 [answers]
 A. Amazon S3TA
 B. AWS S3 Storage Gateway
@@ -1754,13 +1845,11 @@ C. Amazon VPC
 D. CloudFront
 [correct]
 A. Amazon S3TA
+[explanation]
+The correct answer seems to be incorrect. There is no feature called "Amazon S3TA" related to uploading content to a centralized bucket via Amazon edge locations. The correct answer should be CloudFront, which is a content delivery network (CDN) service provided by AWS. CloudFront accelerates the delivery of content (including S3 objects) by caching it at edge locations around the world. By uploading content to an S3 bucket and configuring CloudFront to serve that content, you can ensure faster transfer speeds and reduced latency for users accessing the content from different locations.
 
 [q]
-Your on-premises applications require access to a centrally managed cloud storage
-service. The application running on your servers need to be able to store and
-retrieve files as durable objects on Amazon S3 over standard NFS-based access
-with local caching. Which AWS service can help you deliver a solution to meet the
-aforementioned requirements?
+Your on-premises applications require access to a centrally managed cloud storage service. The application running on your servers need to be able to store and retrieve files as durable objects on Amazon S3 over standard NFS-based access with local caching. Which AWS service can help you deliver a solution to meet the aforementioned requirements?
 [answers]
 A. AWS Storage Gateway— Amazon S3File Gateway
 B. AWS EFS
@@ -1768,12 +1857,11 @@ C. Amazon Redshift
 D. EBS volumes
 [correct]
 A. AWS Storage Gateway— Amazon S3File Gateway
+[explanation]
+AWS Storage Gateway—Amazon S3 File Gateway is the correct answer. It is a hybrid storage service that enables on-premises applications to seamlessly access data stored in Amazon S3 as durable objects using standard file protocols such as NFS. The File Gateway provides NFS-based access to S3 objects with local caching, allowing applications to store and retrieve files from S3 as if they were stored on a local file system. This solution meets the requirements of the on-premises applications requiring access to centrally managed cloud storage on Amazon S3.
 
 [q]
-You are looking to migrate your on-premises data to the cloud. As part of
-a one-time data migration effort, you need to transfer over 900 TB of data to
-Amazon S3 in a couple of weeks. Which is the most cost-effective strategy to
-transfer this amount of data to the cloud?
+You are looking to migrate your on-premises data to the cloud. As part of a one-time data migration effort, you need to transfer over 900 TB of data to Amazon S3 in a couple of weeks. Which is the most cost-effective strategy to transfer this amount of data to the cloud?
 [answers]
 A. Use the Amazon RDS service
 B. Use the Amazon Snowball service
@@ -1781,10 +1869,11 @@ C. Use the Amazon VPN connection between your on-premises network and AWS
 D. Use AWS Rain
 [correct]
 B. Use the Amazon Snowball service
+[explanation]
+The Amazon Snowball service is specifically designed for large-scale data migrations to AWS. It provides a physical appliance (Snowball device) that you can use to securely transfer large amounts of data to and from the AWS cloud. With a capacity of up to 100 TB per Snowball device, it is a cost-effective solution for transferring 900 TB of data in a couple of weeks. Using Snowball reduces the time and effort required for data migration compared to transferring data over the internet, especially for large datasets like the one mentioned in the question.
 
 [q]
-Which VPC component enables to you grant internet access to servers in the public
-subnet deployed in the VPC?
+Which VPC component enables to you grant internet access to servers in the public subnet deployed in the VPC?
 [answers]
 A. NAT gateway
 B. Internet gateway
@@ -1792,6 +1881,8 @@ C. VPC peering
 D. Security group
 [correct]
 B. Internet gateway
+[explanation]
+An Internet Gateway (IGW) is a VPC component that allows resources within a VPC, specifically those in public subnets, to access and communicate with the internet. It provides a target for internet-routable traffic from instances within the VPC, enabling outbound internet access for instances with public IP addresses or instances using an Elastic IP address.
 
 [q]
 Which of the following statements are true?
@@ -1802,10 +1893,11 @@ C.NACLs enable instances in the private subnet to access the internet and act as
 D.NACLs enable instances in the private subnet to access the internet and act as a NAT device, whereas security groups are used to assign IAM policies to servers that need access to S3 buckets.
 [correct]
 A.NACLs protect entire subnets, whereas security groups protect the individual instance.
+[explanation]
+Network Access Control Lists (NACLs) are stateless firewall rules that control traffic at the subnet level. They operate at the subnet level and provide a rule-based control mechanism to allow or deny traffic entering or leaving the subnets they are associated with. In contrast, security groups are stateful firewalls that control traffic at the instance level. They operate at the instance level and control inbound and outbound traffic based on rules defined for individual instances. Therefore, NACLs protect entire subnets, whereas security groups protect individual instances.
 
 [q]
-Which AWS service enables you to purchase and register new domain names that
-can be used to publish your website on the internet?
+Which AWS service enables you to purchase and register new domain names that can be used to publish your website on the internet?
 [answers]
 A. Route53
 B. VPC
@@ -1813,11 +1905,11 @@ C. RDS
 D. Elastic Beanstalk
 [correct]
 A. Route53
+[explanation]
+Amazon Route 53 is a scalable Domain Name System (DNS) web service offered by AWS. It enables you to register domain names and route internet traffic to the appropriate resources, such as EC2 instances, S3 buckets, or load balancers, within your AWS infrastructure or outside AWS. Route 53 provides domain registration services, DNS routing, health checking, and traffic management capabilities, making it suitable for hosting websites and managing domain names on the internet.
 
 [q]
-Which AWS service enables you to distribute your digital assets such that it is
-cached locally to users who attempt to access this content for a time to live, and thus
-helps to reduce network latency?
+Which AWS service enables you to distribute your digital assets such that it is cached locally to users who attempt to access this content for a time to live, and thus helps to reduce network latency?
 [answers]
 A. AWS CloudFront
 B. AWS CloudTrail
@@ -1825,13 +1917,11 @@ C. AWS CloudWatch
 D. AWS CloudScape
 [correct]
 A. AWS CloudFront
+[explanation]
+Amazon CloudFront is a content delivery network (CDN) service provided by AWS. It distributes your digital assets, such as web pages, images, videos, and APIs, to multiple edge locations worldwide. CloudFront caches content at edge locations and delivers it to users from the nearest edge location, reducing latency and improving the overall performance of web applications. By caching content locally and supporting time-to-live (TTL) settings, CloudFront helps reduce network latency and improves the user experience for accessing digital assets over the internet.
 
 [q]
-Your organization hosts multiple AWS accounts with multiple VPCs. You would
-like to connect these VPCs together and centrally manage connectivity policies.
-Which AWS service enables you to connect multiple VPCs configured as a hub
-that controls how traffic is routed among all the connected networks, which act like
-spokes?
+Your organization hosts multiple AWS accounts with multiple VPCs. You would like to connect these VPCs together and centrally manage connectivity policies. Which AWS service enables you to connect multiple VPCs configured as a hub that controls how traffic is routed among all the connected networks, which act like spokes?
 [answers]
 A. AWS Transit Gateway
 B. AWS Global Accelerator
@@ -1839,10 +1929,11 @@ C. AWS VPC Peering
 D. AWS Virtual Private Gateway
 [correct]
 A. AWS Transit Gateway
+[explanation]
+AWS Transit Gateway is a service that enables you to connect multiple VPCs, VPNs, and on-premises networks in a centralized hub-and-spoke architecture. It acts as a central gateway for routing traffic between connected networks, allowing you to simplify network connectivity, reduce operational overhead, and centrally manage network policies. With Transit Gateway, you can easily scale your network infrastructure and control how traffic flows between VPCs and other network resources within your AWS environment.
 
 [q]
-Which AWS service enables you to grant internet access to EC2 instances
-configured with IPv4, and located in the private subnet of your VPC?
+Which AWS service enables you to grant internet access to EC2 instances configured with IPv4, and located in the private subnet of your VPC?
 [answers]
 A. Egress-only internet gateway
 B. NAT gateway
@@ -1850,259 +1941,11 @@ C. VPC endpoint
 D. VPN tunnel
 [correct]
 B. NAT gateway
-
-[q]
-You company has a primary production website in the US and a DR site in Sydney.
-You need to configure DNS such that if your primary site becomes unavailable,
-you can fail DNS over to the secondary site. Which DNS routing policy can you
-configure to achieve this?
-[answers]
-A. Weighted Routing
-B. Geolocation Routing
-C. Latency Routing
-D. Failover Routing
-[correct]
-D. Failover Routing
-
-[q]
-You plan to set up DNS failover using Amazon Route5Which feature of Route53
-can you use to test your web application's availability and reachability?
-[answers]
-A. Private DNS
-B. CloudWatch
-C. Health checks
-D. DNS ping
-[correct]
-C. Health check
-[q]
-Which VPC firewall solution enables you to deny inbound traffic from a specific IP
-address, which can be used to prevent malicious attacks?
-[answers]
-A. AWS Firewall
-B. AWS Security Groups
-C. AWS Network Access Control Lists (NACLs)
-D. AWS CloudFront
-[correct]
-C. AWS Network Access Control Lists (NACLs)
-
-[q]
-Which AWS service enables you to connect your private data center to your
-Amazon VPC with up to 100 Gbps network connectivity?
-[answers]
-A. Snowball
-B. Direct Connect
-C. Virtual Private Network (VPN)
-D. Virtual Satellite Network (VSN)
-[correct]
-B. Direct Connect
+[explanation]
+A NAT (Network Address Translation) gateway is a managed service provided by AWS that enables EC2 instances in a private subnet to initiate outbound IPv4 traffic to the internet while preventing inbound traffic from directly initiating a connection with those instances. It allows EC2 instances with private IP addresses to access the internet for software updates, patching, and other purposes without exposing them directly to the internet. Therefore, a NAT gateway is the correct choice for granting internet access to EC2 instances in a private subnet.
 
 
-[q]
-Which AWS EC2 pricing option can help you reduce costs by allowing you to use
-your existing server-bound software licenses?
-[answers]
-A. On-Demand
-B. Reserved
-C. Spot
-D. Dedicated Hosts
-[correct]
-D. Dedicated Hosts
 
-[q]
-Which AWS EC2 pricing option enables you to take advantage of unused EC2
-capacity in the AWS cloud and can offer up to a 90% discount compared to
-On-Demand prices?
-[answers]
-A. Spot Instances
-B. Reserved Instances
-C. On-Demand Instance
-D. Dedicated Hosts
-[correct]
-A. Spot Instances
-
-[q]
-Which of the following is true with regards to the benefits of purchasing
-a Convertible EC2 Reserved Instance? (Choose 2 answers)
-[answers]
-A. You can exchange a Convertible Reserved Instance for a Convertible Reserved Instance in a different Region.
-B. You can exchange one or more Convertible Reserved Instances at a time for both Convertible and Standard Reserved Instances.
-C. To benefit from better pricing, you can exchange a No Upfront Convertible Reserved Instance for an All Upfront or Partial Upfront Convertible Reserved Instance.
-D. You can exchange All Upfront and Partial Upfront Convertible Reserved Instances for No Upfront Convertible Reserved Instances.
-E. You can exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration, including instance family, operating system, and tenancy.
-[correct]
-C. To benefit from better pricing, you can exchange a No Upfront Convertible Reserved Instance for an All Upfront or Partial Upfront Convertible Reserved Instance.
-E. You can exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration, including instance family, operating system, and tenancy.
-
-[q]
-Which feature of the AWS EC2 service helps prevent accidentally terminating an
-EC2 instance by preventing the user from issuing a termination command either
-from the console or CLI?
-[answers]
-A. Enable "termination protection"
-B. Enable "termination protect"
-C. Enable "prevent termination"
-D. Enable "protect EC2"
-[correct]
-A. Enable "termination protection"
-
-[q]
-Which storage solution enables you to share a common filesystem across multiple
-Linux-based EC2 instances that can be used to support applications that require
-access to data with very low latency connectivity?
-[answers]
-A. EFS
-B. EBS
-C. S3
-D. NTFS
-[correct]
-A. EFS
-
-[q]
-Which type of IP address offering from AWS gives you a static, publicly routable
-address that will not change, even if you stop and restart an EC2 instance that it is
-associated with?
-[answers]
-A. Public IP address
-B. Private IP address
-C. Elastic IP address
-D. Regional IP address
-[correct]
-C. Elastic IP address
-
-[q]
-Which AWS service enables you to configure multiple Windows-based EC2
-instances to share and access a common storage solution that is based on using
-the industry-standard SMB protocol and eliminate the administrative overhead of
-managing Windows file servers?
-[answers]
-A. Amazon FSx for Windows File Server
-B. Amazon Elastic File System
-C. Amazon Elastic Block Store
-D. Amazon DFS Volumes for Windows File Server
-[correct]
-A. Amazon FSx for Windows File Server
-
-[q]
-Which of the following types of EBS volumes can be used as boot volumes for your
-EC2 instances? (Select 2 answers)
-[answers]
-A. General Purpose SSD (gp2)
-B. Provisioned IOPS SSD (io1)
-C. Throughput Optimized HDD (st1)
-D. Cold HDD (sc1)
-E. FSx for Windows
-[correct]
-A. General Purpose SSD (gp2)
-B. Provisioned IOPS SSD (io1)
-
-[q]
-Which of the following AWS services enables you to quickly launch a web server
-with a pre-configured WordPress installation pack, offers predictable monthly
-pricing, comes with integrated certificate management, and provides free SSL/TLS
-certificates?
-[answers]
-A. AWS Lightsail
-B. AWS EC2
-C. AWS RDS
-D. AWS Elastic Beanstalk
-[correct]
-A. AWS Lightsail
-
-[q]
-Which AWS service can be used to run a piece of code that can create thumbnails of
-images uploaded to one Amazon S3 bucket and copy them to another S3 bucket?
-[answers]
-A. AWS SNS
-B. AWS Lambda
-C. AWS RDS
-D. AWS Snowball
-[correct]
-A. AWS SNS
-
-[q]
-You are planning on developing a website in multiple languages such that you have
-one fleet of EC2 instances that serves the English version of your site and another
-fleet that serves the Spanish version of your site. For each language version, you will
-be configuring URLs with different paths such that the English version of your site
-will contain /en/ in the path and the Spanish version will contain /es/.
-Which type of load balancer would you use to route traffic to ensure users connect
-to the site in their desired language?
-[answers]
-A. CLB
-B. NLB
-C. ALB
-D. Path-based load balancer
-[correct]
-C. ALB
-
-[q]
-You are building a multi-tier architecture with web servers placed in the public
-subnet and application servers placed in the private subnet of your VPC. You need
-to deploy ELBs to distribute traffic to both the web server farm and the application
-server farm. Which type of load balancer would you choose to distribute traffic to
-your application servers?
-[answers]
-A. Internet-facing
-B. Internal load balancer
-C. Dynamic load balancer
-D. Static load balancer
-[correct]
-B. Internal load balancer
-
-[q]
-Which ELB is ideal for handling volatile workloads and can scale to millions of
-requests per second?
-[answers]
-A. ALB
-B. NLB
-C. CLB
-D. Premium load balancer
-[correct]
-B. NLB
-
-[q]
-Which configuration feature of the AWS Auto Scaling service enables you to define
-a maximum number of EC2 instances that can be launched in your fleet?
-[answers]
-A. Auto Scaling group
-B. Auto Scaling Launch Configuration
-C. Auto Scaling max fleet size
-D. Auto Scaling policy
-[correct]
-A. Auto Scaling group
-
-[q]
-When an ELB detects an unhealthy EC2 instance, which action does it perform
-regarding distributing incoming traffic?
-[answers]
-A. It continues to send traffic to the failed instance.
-B. It terminates the failed instance so that it is not part of the ELB target group.
-C. It only sends traffic to the remaining healthy instances.
-D. It restarts the unhealthy EC2 instance.
-[correct]
-C. It only sends traffic to the remaining healthy instances.
-
-[q]
-Which service does an AWS ALB integrate with to protect your applications from
-common web attacks?
-[answers]
-A. WAF
-B. Shield
-C. Inspector
-D. Key Management Service (KMS)
-[correct]
-A. WAF
-
-[q]
-Which AWS services does Amazon CloudWatch use to send out email alerts to
-administrators when alarms are triggered and enter the Alarm state?
-[answers]
-A. Amazon SNS
-B. Amazon SES
-C. Amazon CloudTrail
-D. Amazon Email
-[correct]
-A. Amazon SNS
 
 [q]
 Which feature of Amazon CloudWatch enables you to create a visualization of
