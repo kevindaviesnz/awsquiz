@@ -34,6 +34,9 @@
                                 "S": "Interface VPC endpoint"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "An interface VPC endpoint in AWS is a type of VPC (Virtual Private Cloud) endpoint that allows you to privately connect your VPC to supported AWS services\nwithout requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. You can create an interface VPC endpoint to connect\nto services powered by AWS PrivateLink, including many AWS services."
                     }
                 }
             },
@@ -64,13 +67,16 @@
                                 "S": "Amazon S3 STANDARD Infrequent Access (IA)"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "S3 STANDARD IA is designed for data that is accessed less frequently but still requires rapid access when needed. It offers the same high durability, availability, and scalability as the S3 STANDARD storage class but at a lower cost."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "The CFO of the company has inquired why there is a sudden increase in the cost of using Amazon Simple Storage Service (Amazon S3). Another department has noted that there is HTTP 503 slowdown response for any PUT or DELETE requests.\n\nWhat could be the issue?"
+                        "S": "funding for a second power grid, but must show data that shows that the cost reductions and how that translates to increased consumption time windows.\nThis data needs to be kept for a minimum of 10 years in case of audit or by inquiry of a government agency. The power company wants to engage the\ncommunity and gain their support, as their individual and communal power consumption is reflected in the data.\n\nThe CFO of the company has inquired why there is a sudden increase in the cost of using Amazon Simple Storage Service (Amazon S3). Another department\nhas noted that there is HTTP 503 slowdown response for any PUT or DELETE requests.\n\nWhat could be the issue?"
                     },
                     "answers": {
                         "L": [
@@ -94,13 +100,16 @@
                                 "S": "Versioning has been enabled"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Enabling versioning adds some overhead to PUT and DELETE requests because each operation must account for managing multiple versions of an object."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "The AWS Storage Gateway has encountered a failure, which is causing read and write operations to fail. Upon inspection, you determined that the cache disk is still accessible and usable.\n\nWhat step should be taken to reconfigure the gateway and resume functionality quickly?"
+                        "S": "The AWS Storage Gateway has encountered a failure, which is causing read and write operations to fail. Upon inspection, you determined that the\ncache disk is still accessible and usable.\n\nWhat step should be taken to reconfigure the gateway and resume functionality quickly?"
                     },
                     "answers": {
                         "L": [
@@ -115,7 +124,28 @@
                             },
                             {
                                 "S": "Create a new gateway"
-                            },
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Reconnect the gateway"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Reconnecting the gateway is the quickest way to resolve the issue."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "A federal contractor located in Seattle is expanding their cloud presence to Germany, which has strict rules on data that originated in Germany\nleaving the region, known as data sovereignty. They know that they will auditors auditing both regions. Which services would be considered\nglobal for this customer? (Select THREE)"
+                    },
+                    "answers": {
+                        "L": [
                             {
                                 "S": "Amazon Route 53"
                             },
@@ -136,12 +166,6 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "Reconnect the gateway"
-                            },
-                            {
-                                "S": "A federal contractor located in Seattle is expanding their cloud presence to Germany, which has strict rules on data that originated in Germany leaving the region, known as data sovereignty. They know that they will auditors auditing both regions. Which services would be considered global for this customer? (Select THREE)"
-                            },
-                            {
                                 "S": "Amazon Route 53"
                             },
                             {
@@ -151,13 +175,16 @@
                                 "S": "Amazon CloudFront"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Route53, IAM, and CloudFront, are all global services."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A company has a three-tier web application that is deployed on AWS. The web servers are deployed in a public subnet in a VPC. The application servers and the database servers are deployed in private subnets in the same VPC. The company has deployed a third-party virtual firewall appliance from AWS Marketplace in an inspection VPC. The appliance is configured with an IP interface that can accept IP packets.\n\nA solutions architect needs to integrate the web application with the appliance to inspect all traffic to the application before the traffic reaches the web server.\n\nWhich solution will these requirement with the LEAST operational overhead?"
+                        "S": "A company has a three-tier web application that is deployed on AWS. The web servers are deployed in a public subnet in a VPC. The application servers\nand the database servers are deployed in private subnets in the same VPC. The company has deployed a third-party virtual firewall appliance from\nAWS Marketplace in an inspection VPC. The appliance is configured with an IP interface that can accept IP packets.\n\nA solutions architect needs to integrate the web application with the appliance to inspect all traffic to the application before the traffic reaches\nthe web server.\n\nWhich solution will these requirement with the LEAST operational overhead?"
                     },
                     "answers": {
                         "L": [
@@ -181,13 +208,16 @@
                                 "S": "Deploy a Gatway Load Balancer in the inspection VPC. Create a Load Balancer endpoint to receive the incoming packets and forward the packets to the appliance."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "A Gateway Load Balancer (GWLB) in AWS is a managed network load balancer service that helps distribute incoming internet traffic across multiple\ntargets within your Amazon Virtual Private Cloud (VPC). It operates at the network (Layer 3) level of the OSI model, making it suitable for routing traffic to a\nwide range of network-based services. Gateway Load Balancer helps you easily deploy, scale, and manage your third-party virtual appliances. It gives you one gateway\nfor distributing traffic across multiple virtual appliances while scaling them up or down, based on demand. A Load Balancer Endpoint in AWS refers to the\nnetwork interface that represents a load balancer within a Virtual Private Cloud (VPC). It serves as the entry point for incoming traffic from clients and routes\nthat traffic to the appropriate target instances or services based on configured rules. A Gateway Load Balancer endpoint is a VPC endpoint that provides private\nconnectivity between virtual appliances in the service provider VPC, and application servers in the service consumer VPC. The Gateway Load Balancer is deployed\nin the same VPC as that of the virtual appliances. These appliances are registered as a target group of the Gateway Load Balancer."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A local hospital is preparing for an audit and needs to show that they are in compliance with HIPAA requirements. This includes security, data lifecycle management, and compliance. They have experienced probems in the past with an employee that has accessed patient records that were not relevant to their immediate job tasks. The CEO of the hospital wants to ensure that mitigation to this issue has been resovled and has had the SysOps team employ various AWS monitoring and security services.\n\nThe SysOps Department manager has decided to use tags to classify log groups with Amazon CloudWatch Logs. The CFO sees tagging as an added benefit that will help them obtain a detailed view of the costs accross the hospital.\n\nWhich statements describe a tage restriction? (Select THREE)"
+                        "S": "A local hospital is preparing for an audit and needs to show that they are in compliance with HIPAA requirements. This includes security, data lifecycle management, and compliance. They have experienced probems in the past with an employee that has accessed patient records that were not relevant to their immediate job tasks. The CEO of the hospital wants to ensure that mitigation to this issue has been resovled and has had the SysOps team employ various AWS monitoring and security services.\n\nThe SysOps Department manager has decided to use tags to classify log groups with Amazon CloudWatch Logs. The CFO sees tagging as an added benefit that will help them obtain a detailed view of the costs accross the hospital.\n\nWhich statements describe a tag restriction? (Select THREE)"
                     },
                     "answers": {
                         "L": [
@@ -220,6 +250,9 @@
                                 "S": "Keys and values are case-sensitive in a tag"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Tag values have a maximum length of 256 Unicode characters, tag keys have a length between 1 and 128 Unicode characters, and both keys and values are case sensitive."
                     }
                 }
             },
@@ -250,13 +283,16 @@
                                 "S": ".gz"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS CloudTrail log files are stored in .gz format."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A local hospital is preparing for an audit and needs to show that they are in compliance with HIPAA requirements. This includes security, data lifecycle management, and compliance. They have experienced probems in the past with an employee that has accessed patient records that were not relevant to their immediate job tasks. The CEO of the hospital wants to ensure that mitigation to this issue has been resovled and has had the SysOps team employ various AWS monitoring and security services.\n\nThe Support Engineer has been notified that AWS Config is not aggregatin data from an organization within the hospital. After investigation, it is found that AWS Config cannot access the organiation's details because of an invalid AWS Identity and Access Management (IAM) role.\n\nWhat corrective step should be taken based on this issue?"
+                        "S": "A local hospital is preparing for an audit and needs to show that they are in compliance with HIPAA requirements. This includes security, data lifecycle management, and compliance. They have experienced probems in the past with an employee that has accessed patient records that were not relevant to their immediate job tasks. The CEO of the hospital wants to ensure that mitigation to this issue has been resovled and has had the SysOps team employ various AWS monitoring and security services.\n\nThe Support Engineer has been notified that AWS Config is not aggregating data from an organization within the hospital. After investigation, it is found that AWS Config\ncannot access the organiation's details because of an invalid AWS Identity and Access Management (IAM) role.\n\nWhat corrective step should be taken based on this issue?"
                     },
                     "answers": {
                         "L": [
@@ -280,6 +316,9 @@
                                 "S": "Select or create a valid IAM role"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Overall, selecting or creating a valid IAM role is the best corrective step because it directly addresses the issue, leverages IAM's access management capabilities,\nprovides scalability and configurability, and aligns with AWS security best practices."
                     }
                 }
             },
@@ -310,6 +349,9 @@
                                 "S": "Amazon RDS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Amazon RDS (Relational Database Service) is a managed database service provided by Amazon Web Services (AWS) that makes it easy to set up, operate, and scale relational\ndatabases in the cloud. With Amazon RDS, you can deploy and manage popular relational database engines such as MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB\nwithout the need to manually provision and manage the underlying infrastructure."
                     }
                 }
             },
@@ -327,7 +369,7 @@
                                 "S": "Amazon Virtual Private Cloud (Amazon VPC) flow logs"
                             },
                             {
-                                "S": "Network ACLSs"
+                                "S": "Network ACLS"
                             },
                             {
                                 "S": "Amazon CloudWatch"
@@ -346,6 +388,9 @@
                                 "S": "Network ACLS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "In AWS, Security Groups are virtual firewalls that control inbound and outbound traffic to and from AWS resources, such as EC2 instances, RDS instances,\nand Elastic Load Balancers (ELB). They act as a first line of defense for your AWS infrastructure by allowing you to define rules that specify the type of\ntraffic allowed or denied based on protocol, port, and IP address ranges. A security group controls the traffic that is allowed to reach and leave the\nresources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic\nfor the instance. In AWS, Network Access Control Lists (NACLs) are an additional layer of security for controlling traffic in and out of subnets within a\nVirtual Private Cloud (VPC). While Security Groups act as stateful firewalls at the instance level, NACLs operate at the subnet level and provide stateless\ntraffic filtering. A network access control list (ACL) allows or denies specific inbound or outbound traffic at the subnet level. You can use the default\nnetwork ACL for your VPC, or you can create a custom network ACL for your VPC with rules that are similar to the rules for your security groups in order to\nadd an additional layer of security to your VPC."
                     }
                 }
             },
@@ -357,7 +402,7 @@
                     "answers": {
                         "L": [
                             {
-                                "S": "AWS Identityand Access Management (IAM)"
+                                "S": "AWS Identity and Access Management (IAM)"
                             },
                             {
                                 "S": "AWS CloudTrail"
@@ -376,13 +421,16 @@
                                 "S": "AWS CloudTrail"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS CloudTrail provides visibility into the AWS API activity within your account, enabling you to track changes, detect security incidents, and maintain compliance\nwith regulatory requirements. AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account.\nActions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface,\nand AWS SDKs and APIs."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A hospital recently deployed a RESTful API with Amazon API Gateway and AWS Lambda. The hospital uses API Gateway and Lambda to upload reports that are in\nPDF format and JPEG format. The hospitalneed to modify the Lambda code to identify protected health information (PHI) in the reports.\n\nWhich solution will meet those requirement with the LEAST operational overhead?"
+                        "S": "A hospital recently deployed a RESTful API with Amazon API Gateway and AWS Lambda. The hospital uses API Gateway and Lambda to upload reports that are in\nPDF format and JPEG format. The hospital needs to modify the Lambda code to identify protected health information (PHI) in the reports.\n\nWhich solution will meet those requirement with the LEAST operational overhead?"
                     },
                     "answers": {
                         "L": [
@@ -393,7 +441,7 @@
                                 "S": "Use Amazon Textract to extract the text from the reports. Use Amazon SageMaker to identifythe PHI from the extracted text."
                             },
                             {
-                                "S": "Use Amazon Textract to extract the text from the repoorts. Use Amazon Comprehend Medical to identify the PHI from the extracted text."
+                                "S": "Use Amazon Textract to extract the text from the reports. Use Amazon Comprehend Medical to identify the PHI from the extracted text."
                             },
                             {
                                 "S": "Use Amazon Rekognition to extract the text from the reports. Use Amazon Comprehend Medical to identify the PHI from the extracted text."
@@ -406,6 +454,9 @@
                                 "S": "Use Amazon Textract to extract the text from the repoorts. Use Amazon Comprehend Medical to identify the PHI from the extracted text."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Textract is a fully managed machine learning service provided by Amazon Web Services (AWS) that makes it easy to extract text and data\nfrom scanned documents. Textract seamlessly integrates with other AWS services such as Amazon S3, Amazon DynamoDB, Amazon Aurora, Amazon Redshift, and Amazon\nComprehend. AWS Comprehend Medical is a natural language processing (NLP) service provided by Amazon Web Services (AWS) that is designed specifically for analyzing\nunstructured medical text. Amazon Comprehend Medical is a HIPAA-eligible natural language processing (NLP) service that uses machine learning that has been\npre-trained to understand and extract health data from medical text, such as prescriptions, procedures, or diagnoses."
                     }
                 }
             },
@@ -417,22 +468,13 @@
                     "answers": {
                         "L": [
                             {
-                                "S": "Turn on S3 Transfer Acceleration on the destinatoin S3 bucket. Use multipart uploads to directly upload site data to the destination"
+                                "S": "Turn on S3 Transfer Acceleration on the destination S3 bucket. Use multipart uploads to directly upload site data to the destination S3 bucket."
                             },
                             {
-                                "S": "S3 bucket."
+                                "S": "Upload the data from each site to an S3 bucket in the closest Region. Use S3 Cross-Region Replication to copy objects to the destination S3 bucket. Then remove the data from the origin S3 bucket."
                             },
                             {
-                                "S": "Upload the data from each site to an S3 bucket in the closest Region. Use S3 Cross-Region Replication to copy objects to the destination"
-                            },
-                            {
-                                "S": "S3 bucket. Then remove the data from the origin S3 bucket."
-                            },
-                            {
-                                "S": "Schedule AWS Snowball Edge Storage Optimized device jobs dailty to transfer data from each site to the closest Region. Use S3 Cross-Region"
-                            },
-                            {
-                                "S": "Replicatoin to copy objects to the destination bucket."
+                                "S": "Schedule AWS Snowball Edge Storage Optimized device jobs dailty to transfer data from each site to the closest Region. Use S3 Cross-Region Replication to copy objects to the destination bucket."
                             },
                             {
                                 "S": "Upload the data from each site to an Amazon EC2 instance in the closest Region. Store the data in an Amazon Block Store (Amazon EBS) volume."
@@ -445,19 +487,19 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "Turn on S3 Transfer Acceleration on the destinatoin S3 bucket. Use multipart uploads to directly upload site data to the destination"
-                            },
-                            {
-                                "S": "S3 bucket."
+                                "S": "Turn on S3 Transfer Acceleration on the destination S3 bucket. Use multipart uploads to directly upload site data to the destination S3 bucket."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Amazon S3 Transfer Acceleration is a feature provided by Amazon Web Services (AWS) that enables fast, easy, and secure transfers of files to and from Amazon\nSimple Storage Service (Amazon S3) buckets over long distances. It utilizes the AWS global network of edge locations and optimized network paths to accelerate data\ntransfers, resulting in reduced latency and improved upload and download speeds.S3 Transfer Acceleration (S3TA) reduces the variability in Internet routing,\ncongestion and speeds that can affect transfers, and logically shortens the distance to S3 for remote applications. S3TA improves transfer performance by routing\ntraffic through Amazon CloudFront\u2019s globally distributed Edge Locations and over AWS backbone networks, and by using network protocol optimizations."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A solutions architect is developing a VPC architecture that includes multipart subnets. The architecture will host applications that use\nAmazon EC2 instances and Amazon RDS DB intances. The architecture consists of six subnets in two Availability Zones. Each Availability\nZone inclueds a public subnet, a private subnet, and a dedicated subnet for databases. Only Ec2 instances that run in the private\nsubnets can have access to the RDS databases.\n\nWhich solutoin will meet these requirements?"
+                        "S": "A solutions architect is developing a VPC architecture that includes multipart subnets. The architecture will host applications that use\nAmazon EC2 instances and Amazon RDS DB intances. The architecture consists of six subnets in two Availability Zones. Each Availability\nZone includes a public subnet, a private subnet, and a dedicated subnet for databases. Only EC2 instances that run in the private\nsubnets can have access to the RDS databases.\n\nWhich solution will meet these requirements?"
                     },
                     "answers": {
                         "L": [
@@ -478,9 +520,12 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "Create a security group that allows inbound traffic from the security group that is assigned to instances in the pricate subnets. Attach the security group to the DB instances."
+                                "S": "Create a security group that allows inbound traffic from the security group that is assigned to instances in the private subnets. Attach the security group to the DB instances."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Security groups control what outbound and inbound traffic is allowed and work on the instance level."
                     }
                 }
             },
@@ -511,6 +556,9 @@
                                 "S": "Create an S3 bucket lifecycle policy to move files from S3 Standard to S3 Standard-Infrequent Access (S3 Standard-IA) 30 days from object creation. Delete the files 4 years after object creation."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "An Amazon S3 lifecycle policy is a set of rules that define actions to be taken on objects stored in an S3 bucket over their lifecycle. These rules automate the\nmanagement of objects by transitioning them between different storage classes or deleting them altogether based on specified criteria such as age, size,\nor object tags. To manage your objects so that they are stored cost effectively throughout their lifecycle, create an Amazon S3 Lifecycle configuration. An Amazon S3\nLifecycle configuration is a set of rules that define actions that Amazon S3 applies to a group of objects. There are two types of actions: transition actions and expiration\nactions."
                     }
                 }
             },
@@ -541,13 +589,16 @@
                                 "S": "Create an Amazon CloudFront distribution that has the S3 bucket and the ALB as origins. Configure Route 53 to route traffic to the CloudFront distribution."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "An Application Load Balancer (ALB) is a load balancing service provided by Amazon Web Services (AWS) that distributes incoming application traffic across multiple targets,\nsuch as EC2 instances, containers, IP addresses, and Lambda functions, within one or more Availability Zones. ALB operates at the application layer (Layer 7) of the\nOSI model and offers advanced features for routing, security, and monitoring of HTTP and HTTPS traffic. A load balancer serves as the single point of contact for clients. The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones. This increases the availability of your application. You add one or more listeners to your load balancer.\nA listener checks for connection requests from clients, using the protocol and port that you configure. The rules that you define for a listener determine how the load balancer routes requests to its registered targets. Each rule consists of a priority, one or more actions, and one or more conditions. When the conditions for a rule are met, then its actions are performed. You must define a default rule for each listener, and you can optionally define additional rules.\nEach target group routes requests to one or more registered targets, such as EC2 instances, using the protocol and port number that you specify. You can register a target with multiple target groups. You can configure health checks on a per target group basis. Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A company plans to use an Amazon Snowball Edge device to transfer files to the AWS Cloud.\n\nWhich activites related to a Snowball Edge device are available to the company at no cost?"
+                        "S": "A company plans to use an Amazon Snowball Edge device to transfer files to the AWS Cloud.\n\nWhich activities related to a Snowball Edge device are available to the company at no cost?"
                     },
                     "answers": {
                         "L": [
@@ -571,6 +622,9 @@
                                 "S": "The transfer of data from the Snowball Edge appliance into Amazon S3."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Activities related to a Snowball Edige device include Snowball Edge Device Delivery, Use of Snowball Edge for Data Transfer, Device Usage for local\nCompute and Storage, Data Transfer Acceleration and Data Encryption. Data transfer IN to Amazon S3 is $0.00 per GB (except for small files as explained below).\nData transfer OUT of Amazon S3 is priced by region."
                     }
                 }
             },
@@ -601,6 +655,9 @@
                                 "S": "Configure DynamoDB point-in-time recovery. For RPO recovery, restore to the desired point in time."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "In AWS, point-in-time recovery (PITR) is a feature offered by various AWS services, such as Amazon RDS (Relational Database Service) and Amazon DynamoDB,\nthat allows you to restore your data to a specific point in time, typically before an accidental deletion, corruption, or data loss event occurred. Amazon\nDynamoDB point-in-time recovery (PITR) provides automatic backups of your DynamoDB table data. In AWS, Recovery Time Objective (RTO) refers to the targeted duration\nwithin which a business aims to restore its IT services, systems, or applications after a disruption or disaster occurs. RTO stands for Recovery Time Objective and is\na measure of how quickly after an outage an application must be available again. RPO, or Recovery Point Objective, refers to how much data loss your application can tolerate.\nAnother way to think about RPO is how old can the data be when this application is recovered? With both RTO and RPO, the targets are measured in hours, minutes,\nor seconds, with lower numbers representing less downtime or less data loss. Within the context of a Business Continuity Plan, applications having similar RTO targets\nare grouped together in Tiers, with Tier 0 having the lowest RTO."
                     }
                 }
             },
@@ -631,6 +688,9 @@
                                 "S": "Access to DynamoDB tables."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "In Amazon Web Services (AWS), access to DynamoDB tables is considered the responsibility of the customer because AWS operates on a shared responsibility model.\nUnder the shared responsibility model:\nAWS Responsibility: AWS is responsible for the security of the cloud infrastructure, which includes the physical security of data centers, network security, and the security of managed services such as DynamoDB. AWS ensures that its services are designed and operated in a secure manner, with features like data encryption, network isolation, and access controls built into the services.\nCustomer Responsibility: Customers are responsible for the security of their data and applications running on AWS services. This includes managing access controls, implementing encryption, monitoring for security threats, and enforcing compliance with regulatory requirements."
                     }
                 }
             },
@@ -661,6 +721,9 @@
                                 "S": "Governance"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Governance within the AWS CAF encompasses the establishment of policies, procedures, and controls that ensure effective and compliant use of AWS services.\nIt includes defining and enforcing guidelines for resource provisioning, access control, data protection, compliance monitoring, and risk management.\nGovernance helps organizations maintain accountability, transparency, and consistency in their cloud adoption efforts, ensuring that cloud resources are\naligned with business objectives and regulatory requirements.\nThe AWS Cloud Adoption Framework (AWS CAF) leverages AWS experience and best practices to help you digitally transform and accelerate your business outcomes\nthrough innovative use of AWS. AWS CAF identifies specific organizational capabilities that underpin successful cloud transformations. These capabilities\nprovide best practice guidance that helps you improve your cloud readiness. AWS CAF groups its capabilities in six perspectives:\nBusiness, People, Governance, Platform, Security, and Operations. Each perspective comprises a set of capabilities that functionally related stakeholders own or\nmanage in the cloud transformation journey. Use the AWS CAF to identify and prioritize transformation opportunities, evaluate and improve your cloud readiness,\nand iteratively evolve your transformation roadmap.\nBusiness\nThe Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes. Common stakeholders include chief executive officer (CEO), chief financial officer (CFO), chief operations officer (COO), chief information officer (CIO), and chief technology officer (CTO).\nPeople\nThe People perspective serves as a bridge between technology and business, accelerating the cloud journey to help organizations more rapidly evolve to a culture of continuous growth, learning, and where change becomes business-as-normal, with focus on culture, organizational structure, leadership, and workforce. Common stakeholders include CIO, COO, CTO, cloud director, and cross-functional and enterprise-wide leaders.\nGovernance\nThe Governance perspective helps you orchestrate your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks. Common stakeholders include chief transformation officer, CIO, CTO, CFO, chief data officer (CDO), and chief risk officer (CRO).\nPlatform\nThe Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions. Common stakeholders include CTO, technology leaders, architects, and engineers.\nSecurity\nThe Security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads. Common stakeholders include chief information security officer (CISO), chief compliance officer (CCO), internal audit leaders, and security architects and engineers.\nOperations\nThe Operations perspective helps ensure that your cloud services are delivered at a level that meets the needs of your business. Common stakeholders include infrastructure and operations leaders, site reliability engineers, and information technology service managers."
                     }
                 }
             },
@@ -691,6 +754,9 @@
                                 "S": "AWS Cloud Development Kit (AWS CDK)"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "The AWS Cloud Development Kit (CDK) is an open-source software development framework provided by Amazon Web Services (AWS) that enables developers to define\ncloud infrastructure using familiar programming languages such as TypeScript, JavaScript, Python, Java, and C#.\nAWS CDK allows developers to define cloud resources and infrastructure as code (IaC) using programming constructs such as classes, objects, and methods.\nAWS Cloud Development Kit (AWS CDK) accelerates cloud development using common programming languages to model your applications."
                     }
                 }
             },
@@ -721,6 +787,9 @@
                                 "S": "AWS Security Token Service (AWS STS)"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "The AWS Security Token Service (STS) is a web service provided by Amazon Web Services (AWS) that enables you to request temporary, limited-privilege credentials\nfor accessing AWS resources. STS helps you grant controlled and time-limited access to AWS resources to users, applications, or services without sharing long-term\ncredentials, such as access keys or passwords. A web service for requesting temporary, limited-privilege credentials for AWS Identity and Access Management users\nor for users that you authenticate (federated users)."
                     }
                 }
             },
@@ -757,6 +826,9 @@
                                 "S": "Configure the security group for the database tier to allow inbound traffic on port 1433 from the security goup for the web tier"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Allowing inbound traffic on port 443 for the web tier from 0.0.0.0/0 ensures that external users can securely access the web application over HTTPS.\nRestricting inbound traffic on port 1433 for the database tier to the security group associated with the web tier limits access to the database to\nonly instances within the same application stack, reducing the risk of unauthorized access from other sources."
                     }
                 }
             },
@@ -784,9 +856,15 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "Store the database credentials as a secret in AWS Secrets Manager. Turn on automatic rotation for the secret. Attach the required permission to the EC2 role to grant access to the secret."
+                                "S": "Store the database credentials as a secret in AWS Secrets Manager. Turn on automatic rotation for the secret. Attach the required permission to the EC2 role to grant"
+                            },
+                            {
+                                "S": "access to the secret."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Secrets Manager is a fully managed service provided by Amazon Web Services (AWS) that helps you securely store, manage, and retrieve sensitive information\nsuch as passwords, API keys, database credentials, and other secrets. It enables you to centralize and automate the management of secrets across your AWS infrastructure\nand applications. AWS Secrets Manager helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets\nthroughout their lifecycles. Many AWS services store and use secrets in Secrets Manager."
                     }
                 }
             },
@@ -817,6 +895,9 @@
                                 "S": "Use AWS Secrets Manager. Turn on automatic rotation."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Secrets Manager is a fully managed service provided by Amazon Web Services (AWS) that helps you securely store, manage, and retrieve sensitive information\nsuch as passwords, API keys, database credentials, and other secrets. It enables you to centralize and automate the management of secrets across your AWS infrastructure\nand applications. AWS Secrets Manager helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets\nthroughout their lifecycles. Many AWS services store and use secrets in Secrets Manager."
                     }
                 }
             },
@@ -847,6 +928,9 @@
                                 "S": "AWS Secrets Manager"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Secrets Manager is a fully managed service provided by Amazon Web Services (AWS) that helps you securely store, manage, and retrieve sensitive information\nsuch as passwords, API keys, database credentials, and other secrets. It enables you to centralize and automate the management of secrets across your AWS infrastructure\nand applications. AWS Secrets Manager helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets\nthroughout their lifecycles. Many AWS services store and use secrets in Secrets Manager."
                     }
                 }
             },
@@ -877,6 +961,9 @@
                                 "S": "Create an IAM role that grants access to the S3 bucket. Attach the role to the EC2 instances."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "An IAM (Identity and Access Management) role is an AWS entity that defines a set of permissions for making AWS service requests. Unlike IAM users, which\nrepresent individual AWS accounts, roles are used to delegate permissions to entities such as IAM users, AWS services, or external identities\n(such as users authenticated through an external identity provider). An IAM role is an IAM identity that you can create in your account that has specific permissions.\nAn IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. However,\ninstead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it. Also, a role does not have standard long-term\ncredentials such as a password or access keys associated with it. Instead, when you assume a role, it provides you with temporary security credentials for\nour role session."
                     }
                 }
             },
@@ -913,6 +1000,9 @@
                                 "S": "AWS Compute Optimizer"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Cost Explorer is a tool provided by Amazon Web Services (AWS) that allows users to visualize, analyze, and manage their AWS usage and costs.\nIt provides insights into your AWS spending patterns, helps identify cost drivers, and enables you to optimize your AWS resource usage to control\nand reduce costs effectively. AWS Cost Explorer is a tool that enables you to view and analyze your costs and usage. You can explore your usage and\ncosts using the main graph, the Cost Explorer cost and usage reports, or the Cost Explorer RI reports. You can view data for up to the last 13 months,\nforecast how much you're likely to spend for the next 12 months, and get recommendations for what Reserved Instances to purchase. You can use\nCost Explorer to identify areas that need further inquiry and see trends that you can use to understand your costs.\nAWS Compute Optimizer is a service provided by Amazon Web Services (AWS) that helps you optimize the performance and cost of your Amazon EC2\ninstances and Auto Scaling groups. It uses machine learning algorithms to analyze historical usage data and recommend instance types and sizes\nthat best match your workload requirements while minimizing costs.\nAWS Compute Optimizer is a service that analyzes your AWS resources' configuration and utilization metrics to provide you with rightsizing\nrecommendations. It reports whether your resources are optimal, and generates optimization recommendations to reduce the cost and improve\nthe performance of your workloads. Compute Optimizer also provides graphs showing recent utilization metric history data, as well as\nprojected utilization for recommendations, which you can use to evaluate which recommendation provides the best price-performance trade-off.\nThe analysis and visualization of your usage patterns can help you decide when to move or resize your running resources, and still meet your\nperformance and capacity requirements."
                     }
                 }
             },
@@ -949,6 +1039,9 @@
                                 "S": "Improving sercurity by proactively monitoring the AWS environment"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Trusted Advisor is a service provided by Amazon Web Services (AWS) that offers real-time guidance to help you optimize your AWS infrastructure,\nimprove performance, increase security, and reduce costs. Trusted Advisor analyzes your AWS environment and provides recommendations based on\nbest practices and AWS expertise, helping you optimize resource utilization, enhance reliability, and maximize the value of your AWS investment.\nAWS Trusted Advisor helps you optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. Trusted Advisor\ncontinuously evaluates your AWS environment using best practice checks across the categories of cost optimization, performance, resilience, security,\noperational excellence, and service limits, and recommend actions to remediate any deviations from best practices."
                     }
                 }
             },
@@ -977,8 +1070,29 @@
                         "L": [
                             {
                                 "S": "Maintain high availability at the database layer."
+                            },
+                            {
+                                "S": "<explanation goes here>"
+                            },
+                            {
+                                "S": "When running a NoSQL database on Amazon EC2 instances, AWS is responsible for providing the underlying infrastructure and services to ensure high"
+                            },
+                            {
+                                "S": "availability of the database. This includes managing the physical hardware, network infrastructure, and virtualization layer that hosts the"
+                            },
+                            {
+                                "S": "EC2 instances running the NoSQL database. AWS offers features and services such as Auto Scaling, Amazon RDS (Relational Database Service),"
+                            },
+                            {
+                                "S": "Amazon DynamoDB (a fully managed NoSQL database service), and Multi-Availability Zone (Multi-AZ) deployments to maintain high availability"
+                            },
+                            {
+                                "S": "and fault tolerance at the database layer."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1015,13 +1129,16 @@
                                 "S": "Saving plans"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Reserved Instances (RIs) are a purchasing option provided by Amazon Web Services (AWS) that allow customers to reserve capacity in the AWS cloud for\na specific duration in exchange for a significant discount compared to On-Demand instance pricing. RIs provide a way to reduce the overall cost of\nrunning EC2 instances, RDS databases, and other AWS resources by committing to a predefined usage term. Reserved Instances provide you with\nsignificant savings on your Amazon EC2 costs compared to On-Demand Instance pricing. Reserved Instances are not physical instances, but rather\na billing discount applied to the use of On-Demand Instances in your account. These On-Demand Instances must match certain attributes, such as\ninstance type and Region, in order to benefit from the billing discount.\nAWS Savings Plans are a flexible pricing model offered by Amazon Web Services (AWS) that provide significant savings on AWS usage costs in\nexchange for a commitment to a consistent amount of usage (measured in dollars per hour) for a 1-year or 3-year term. Savings Plans offer a\nsimpler and more flexible alternative to Reserved Instances (RIs) and provide automatic savings on eligible EC2 instances, Lambda functions, and\nFargate usage, regardless of instance family, size, region, operating system, or tenancy.\nSavings Plans is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a one- or\nthree-year hourly spend commitment. AWS offers three types of Savings Plans: Compute Savings Plans, EC2 Instance Savings Plans, and\nAmazon SageMaker Savings Plans.\nAWS recommends Savings Plans over Reserved Instances. Saving Plans are the easiest and most flexible way to save money on your AWS compute costs\nand offer lower prices (up to 72% off On-Demand pricing), just like Reserved Instances. However, Savings Plans are different to Reserved Instances.\nWith Reserved Instances, you make a commitment to a specific instance configuration, whereas with Savings Plans, you have the flexibility to use\nthe instance configurations that best meet your needs."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A company is running a popular social media website. The website gives users the ability to upload images to share with other users. The copany wants to make sure\nthat the images do not contain inappropriate content. The company needs a solution that minimises development effort.\n\nWhat should a solutions architect do to meets these requirements?"
+                        "S": "A company is running a popular social media website. The website gives users the ability to upload images to share with other users. The company wants to make sure\nthat the images do not contain inappropriate content. The company needs a solution that minimises development effort.\n\nWhat should a solutions architect do to meets these requirements?"
                     },
                     "answers": {
                         "L": [
@@ -1045,13 +1162,16 @@
                                 "S": "Use Amazon Rekognition to detect inappropriate content. Use human review for low-confidence predictions."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Rekognition is a cloud-based service provided by Amazon Web Services (AWS) that offers advanced image and video analysis capabilities\nusing machine learning algorithms. It enables developers to easily add powerful visual analysis features to their applications without\nrequiring expertise in machine learning or computer vision.\nAmazon Rekognition is a cloud-based image and video analysis service that makes it easy to add advanced computer vision capabilities to your\napplications. The service is powered by proven deep learning technology and it requires no machine learning expertise to use."
                     }
                 }
             },
             {
                 "M": {
                     "question": {
-                        "S": "A company wants to migrate its on-premises relational databases to the AWS cloud. The company wants to use infrastructure as close to its current geographical location\nas possible.\n\nWhich AWS service or resource should the company use to select its Amazon RDS deployment area?"
+                        "S": "A company wants to migrate its on-premises relational databases to the AWS cloud. The company wants to use infrastructure as close to its current\ngeographical location as possible.\n\nWhich AWS service or resource should the company use to select its Amazon RDS deployment area?"
                     },
                     "answers": {
                         "L": [
@@ -1075,6 +1195,9 @@
                                 "S": "AWS Regions"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Regions are physical locations around the world where Amazon Web Services (AWS) operates data centers and provides cloud services. Each AWS Region\nis a separate geographic area that consists of multiple Availability Zones, which are isolated data centers within the same Region.\nAmazon cloud computing resources are hosted in multiple locations world-wide. These locations are composed of AWS Regions, Availability Zones, and\nLocal Zones. Each AWS Region is a separate geographic area. Each AWS Region has multiple, isolated locations known as Availability Zones."
                     }
                 }
             },
@@ -1105,6 +1228,9 @@
                                 "S": "AWS Pricing Calculator"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "The AWS Pricing Calculator is a web-based tool provided by Amazon Web Services (AWS) that allows users to estimate the cost of using AWS services based on\ntheir specific usage patterns and requirements. AWS Pricing Calculator is a free web-based planning tool that you can use to create cost estimates for using AWS services. You can use AWS Pricing Calculator for the following use cases:\nModel your solutions before building them,\nExplore AWS service price points,\nReview the calculations behind your estimates,\nPlan your AWS spend,\nFind cost saving opportunities"
                     }
                 }
             },
@@ -1135,6 +1261,9 @@
                                 "S": "1"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Only one IGW can be attached to an Amazon VPC at any one time."
                     }
                 }
             },
@@ -1165,6 +1294,9 @@
                                 "S": "A main route table is created by default."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "By default, when you create a new VPC, a main route table is automatically created and associated with the VPC.\nThe main route table controls the routing for traffic within the VPC, directing traffic between subnets and to and from the internet gateway\n(if one is attached).\nThe main route table initially contains a default local route for communication within the VPC.\nSubnets within the VPC inherit the main route table by default, but you can also create custom route tables and associate them with\nspecific subnets if needed."
                     }
                 }
             },
@@ -1195,6 +1327,9 @@
                                 "S": "AWS Availability Zones"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Availability Zones (AZs) are isolated data centers within a specific AWS Region. They are physically separate from each other but are\nconnected through low-latency links. AWS CloudFront leverages AWS Availability Zones within each AWS Region to distribute and cache content closer\nto end-users.\nContent is cached at edge locations, which are connected to multiple Availability Zones within the Region.\nBy caching content at edge locations distributed across multiple Availability Zones, CloudFront ensures high availability and resilience to failures.\nIn the event of a failure in one Availability Zone, CloudFront automatically routes traffic to other Availability Zones to maintain service availability."
                     }
                 }
             },
@@ -1219,6 +1354,9 @@
                                 "S": "False"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Private subnets do not have direct access to the internet."
                     }
                 }
             },
@@ -1230,7 +1368,7 @@
                     "answers": {
                         "L": [
                             {
-                                "S": "Network addresss translation (NAT) Gateway"
+                                "S": "Network address translation (NAT) Gateway"
                             },
                             {
                                 "S": "Security groups"
@@ -1245,12 +1383,15 @@
                                 "S": "[answer]"
                             },
                             {
-                                "S": "Network addresss translation (NAT) Gateway"
+                                "S": "Network address translation (NAT) Gateway"
                             }
                         ]
                     },
                     "correct_answer": {
                         "L": []
+                    },
+                    "explanation": {
+                        "S": "A Network Address Translation (NAT) Gateway is a managed AWS service that enables instances in a private subnet within an Amazon Virtual Private Cloud\n(VPC) to initiate outbound internet traffic while preventing inbound traffic from reaching those instances. NAT Gateway allows instances in\nprivate subnets to access the internet for software updates, patches, and other necessary tasks without exposing them directly to the public internet.\nA NAT gateway is a Network Address Translation (NAT) service. You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances."
                     }
                 }
             },
@@ -1281,6 +1422,9 @@
                                 "S": "/28"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "The minimum size a subnet in a VPC is /28."
                     }
                 }
             },
@@ -1305,6 +1449,9 @@
                                 "S": "True"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Within a region you can create multiple VPCs and have complete control of the network configuration for each VPC."
                     }
                 }
             },
@@ -1335,6 +1482,9 @@
                                 "S": "A. AWS Budgets"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Budgets is a service provided by Amazon Web Services (AWS) that allows users to set custom budgets to track their AWS usage and costs.\nIt provides cost and usage visibility, alerts, and forecasts to help customers manage and optimize their AWS spending.\nYou can use AWS Budgets to track and take action on your AWS costs and usage. You can use AWS Budgets to monitor your aggregate utilization and\ncoverage metrics for your Reserved Instances (RIs) or Savings Plans."
                     }
                 }
             },
@@ -1365,6 +1515,9 @@
                                 "S": "A. AWS Cost Explorer"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Cost Explorer is a tool provided by Amazon Web Services (AWS) that allows users to visualize, analyze, and manage their AWS usage and costs.\nIt provides insights into your AWS spending patterns, helps identify cost drivers, and enables you to optimize your AWS resource usage to control\nand reduce costs effectively. AWS Cost Explorer is a tool that enables you to view and analyze your costs and usage. You can explore your usage and\ncosts using the main graph, the Cost Explorer cost and usage reports, or the Cost Explorer RI reports. You can view data for up to the last 13 months,\nforecast how much you're likely to spend for the next 12 months, and get recommendations for what Reserved Instances to purchase. You can use\nCost Explorer to identify areas that need further inquiry and see trends that you can use to understand your costs."
                     }
                 }
             },
@@ -1395,6 +1548,9 @@
                                 "S": "A. Cost allocation tags"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Cost allocation tags in AWS are key-value pairs that customers can assign to AWS resources to track and categorize their spending for billing and\ncost management purposes. These tags enable customers to allocate costs to specific cost centers, projects, departments, or business units within\ntheir organization, providing granular visibility into their AWS spending and facilitating chargeback, showback, and cost allocation processes.\nUser-defined tags are tags that you define, create, and apply to resources. After you have created and applied the user-defined tags, you can activate\nby using the Billing and Cost Management console for cost allocation tracking. Cost allocation tags appear on the console after you've enabled\nCost Explorer, Budgets, AWS Cost and Usage Reports, or legacy reports. After you activate the AWS services, they appear on your cost allocation report.\nYou can then use the tags on your cost allocation report to track your AWS costs."
                     }
                 }
             },
@@ -1425,6 +1581,9 @@
                                 "S": "C. AWS Cost Explorer"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Cost Explorer is a tool provided by Amazon Web Services (AWS) that allows users to visualize, analyze, and manage their AWS usage and costs.\nIt provides insights into your AWS spending patterns, helps identify cost drivers, and enables you to optimize your AWS resource usage to control\nand reduce costs effectively. AWS Cost Explorer is a tool that enables you to view and analyze your costs and usage. You can explore your usage and\ncosts using the main graph, the Cost Explorer cost and usage reports, or the Cost Explorer RI reports. You can view data for up to the last 13 months,\nforecast how much you're likely to spend for the next 12 months, and get recommendations for what Reserved Instances to purchase. You can use\nCost Explorer to identify areas that need further inquiry and see trends that you can use to understand your costs."
                     }
                 }
             },
@@ -1455,6 +1614,9 @@
                                 "S": "B. AWS Pricing Calculator"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "The AWS Pricing Calculator is a web-based tool provided by Amazon Web Services (AWS) that allows users to estimate the cost of using AWS services based on\ntheir specific usage patterns and requirements. AWS Pricing Calculator is a free web-based planning tool that you can use to create cost estimates for using AWS services. You can use AWS Pricing Calculator for the following use cases:\nModel your solutions before building them,\nExplore AWS service price points,\nReview the calculations behind your estimates,\nPlan your AWS spend,\nFind cost saving opportunities"
                     }
                 }
             },
@@ -1491,6 +1653,9 @@
                                 "S": "B. Configure your IAM password policy with complexity rules."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Configuring the IAM password policy with complexity rules ensures that passwords set by users meet certain criteria, such as minimum length,\ninclusion of special characters, numbers, uppercase letters, etc.\nEnforcing password complexity rules helps strengthen the overall security posture of the AWS account by encouraging users to create strong,\ndifficult-to-guess passwords. This reduces the likelihood of unauthorized access due to password guessing or brute-force attacks."
                     }
                 }
             },
@@ -1521,6 +1686,9 @@
                                 "S": "B. Access key IDs and secret access keys"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "Access key IDs and secret access keys are used by the AWS CLI to authenticate requests to AWS services.\nThe access key ID is a unique identifier that identifies the IAM user or role, while the secret access key is a secret value that is used to sign\nrequests made to AWS services.\nBy configuring the AWS CLI with access key IDs and secret access keys, the developer can securely authenticate their requests to the AWS account\nwithout needing to enter their IAM username and password interactively."
                     }
                 }
             },
@@ -1551,6 +1719,9 @@
                                 "S": "A. IAM policy simulator"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "The IAM Policy Simulator is a tool provided by Amazon Web Services (AWS) that allows users to simulate the effects of IAM (Identity and Access Management)\npolicies before applying them to their AWS resources. It helps users understand the permissions granted or denied by IAM policies and evaluate the\nimpact of policy changes on access control.\nWith the IAM policy simulator, you can test and troubleshoot identity-based policies and IAM permissions boundaries."
                     }
                 }
             },
@@ -1581,6 +1752,9 @@
                                 "S": "B. IAM role"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "An IAM (Identity and Access Management) role is an AWS entity that defines a set of permissions for making AWS service requests. Unlike IAM users, which\nrepresent individual AWS accounts, roles are used to delegate permissions to entities such as IAM users, AWS services, or external identities\n(such as users authenticated through an external identity provider). An IAM role is an IAM identity that you can create in your account that has specific permissions.\nAn IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. However,\ninstead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it. Also, a role does not have standard long-term\ncredentials such as a password or access keys associated with it. Instead, when you assume a role, it provides you with temporary security credentials for\nour role session."
                     }
                 }
             },
@@ -1611,6 +1785,9 @@
                                 "S": "A. JSON"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "IAM policy documents are written in JSON format."
                     }
                 }
             },
@@ -1632,7 +1809,28 @@
                             },
                             {
                                 "S": "D. Follow the GDPR principle."
-                            },
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "A. Follow the principle of least privilege."
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "The principle of least privilege is a security best practice that advocates granting users only the permissions they need to perform their intended tasks, and nothing more.\nBy following the principle of least privilege, you minimize the potential impact of security breaches and reduce the risk of unauthorized access or misuse of resources.\nAssigning minimal permissions limits the scope of potential security vulnerabilities and helps maintain a secure and well-controlled environment.\nFollowing the principle of least privilege aligns with security best practices and helps organizations adhere to security compliance standards and regulations, such as those outlined by regulatory frameworks like HIPAA, PCI DSS, and GDPR.\nIn contrast, granting excessive or unnecessary privileges (the principle of most privilege) increases the attack surface and introduces unnecessary risks to the environment."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which IAM service enables you to effectively manage users by creating a collection\nof them based on their job function and assigning them permissions according to\ntheir roles to the entire collective?"
+                    },
+                    "answers": {
+                        "L": [
                             {
                                 "S": "A. IAM groups"
                             },
@@ -1650,21 +1848,12 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "A. Follow the principle of least privilege."
-                            },
-                            {
-                                "S": "Which IAM service enables you to effectively manage users by creating a collection"
-                            },
-                            {
-                                "S": "of them based on their job function and assigning them permissions according to"
-                            },
-                            {
-                                "S": "their roles to the entire collective?"
-                            },
-                            {
                                 "S": "A. IAM groups"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1695,6 +1884,9 @@
                                 "S": "A. Identity federation"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1725,6 +1917,9 @@
                                 "S": "C. Credentials report"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1755,6 +1950,9 @@
                                 "S": "B. AWS Security Token Service"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1785,6 +1983,9 @@
                                 "S": "B. AWS Database Migration Service (AWS DMS)"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1815,6 +2016,9 @@
                                 "S": "A. Managing the database, including patching and backups, is taken care of by Amazon."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1854,6 +2058,9 @@
                                 "S": "C. MySQL"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1884,6 +2091,9 @@
                                 "S": "C. Amazon QLDB"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1914,6 +2124,9 @@
                                 "S": "B. AWS Redshift"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1944,6 +2157,9 @@
                                 "S": "B. Amazon Aurora"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -1974,6 +2190,9 @@
                                 "S": "C. Redshift Spectrum"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2004,6 +2223,9 @@
                                 "S": "C. AWS DMS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2034,6 +2256,9 @@
                                 "S": "B. Configure RDS Multi-AZ."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2064,6 +2289,9 @@
                                 "S": "Computing, Storage, Networking"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2094,6 +2322,9 @@
                                 "S": "AWS regions are separate geographical areas. Availabiliy Zones are the areas that are present inside the regions."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2124,6 +2355,9 @@
                                 "S": "Auto-scaling is a function that allows provision and launching of new instances on demand."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2154,6 +2388,9 @@
                                 "S": "Geo-Targeting is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2184,6 +2421,9 @@
                                 "S": "Check the Top Services Table, Cost Explorer, AWS Budgets, Cost Allocation Tags"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2214,6 +2454,9 @@
                                 "S": "AWS CloudTrail, AWS Config"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2244,6 +2487,9 @@
                                 "S": "IAM, Route 53, Web Application Firewall, CloudFront"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2274,6 +2520,9 @@
                                 "S": "D. Increase speed and agility"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2304,6 +2553,9 @@
                                 "S": "A. Access to cloud provider APIs"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2334,6 +2586,9 @@
                                 "S": "A. Software that enables you to create and managed virtualized resources running on physical hardware, such as VMs"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2367,6 +2622,9 @@
                                 "S": "B. Ability to provision virtual servers in a matter of minutes"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2397,6 +2655,9 @@
                                 "S": "A. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2427,6 +2688,9 @@
                                 "S": "C. A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2457,6 +2721,9 @@
                                 "S": "C. A service that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2487,6 +2754,9 @@
                                 "S": "C. Hybrid cloud"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2523,6 +2793,9 @@
                                 "S": "D. Enterprise support plan"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2553,6 +2826,9 @@
                                 "S": "C. Business support plan"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2583,6 +2859,9 @@
                                 "S": "D. Enterprise support plan"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2613,6 +2892,9 @@
                                 "S": "B. Developer support plan"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2643,6 +2925,9 @@
                                 "S": "B. Access to customer support services to resolve any billing or account"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2673,6 +2958,9 @@
                                 "S": "A. Regions"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2703,6 +2991,9 @@
                                 "S": "C. Edge locations"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2733,6 +3024,9 @@
                                 "S": "B. AZs"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2769,6 +3063,9 @@
                                 "S": "E. Amazon CloudFront"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2805,6 +3102,9 @@
                                 "S": "B. Amazon Storage Gateway"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2835,6 +3135,42 @@
                                 "S": "C. AuP"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "A company has deployed applications on Amazon EC2 instances. The company needs to assess application vulnerabilities and must identify infrastructure deployments that\ndo not meet best practices.Which AWS service can the company use to meet these requirements?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A. AWS Trusted Advisor"
+                            },
+                            {
+                                "S": "B. Amazon Inspector"
+                            },
+                            {
+                                "S": "C. AWS Config"
+                            },
+                            {
+                                "S": "D. Amazon GuardDuty"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "B. Amazon Inspector"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Inspector is an automated vulnerability management service that helps improve the security and compliance of applications deployed on AWS. Amazon\nInspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices. After performing an assessment, Amazon Inspector\nproduces a detailed list of security findings prioritized by level of severity."
                     }
                 }
             },
@@ -2865,6 +3201,9 @@
                                 "S": "C. Service Health Dashboard"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2895,6 +3234,9 @@
                                 "S": "A. Enable billing alerts"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2925,6 +3267,9 @@
                                 "S": "A. AWS Organizations"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2961,6 +3306,9 @@
                                 "S": "B. AWS Elastic Beanstalk"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -2991,6 +3339,9 @@
                                 "S": "A. Consolidated billing"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3021,6 +3372,9 @@
                                 "S": "A. A credit card"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3051,6 +3405,9 @@
                                 "S": "B. AWS Control Tower"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3081,6 +3438,9 @@
                                 "S": "B. AWS Landing Zone"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3114,6 +3474,9 @@
                                 "S": "D. The Amazon S3 One Zone-IA storage class offers 99.5% of availability. Amazon S3 can be configured as shared mount volumes for Linux-based EC2 instances."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3144,6 +3507,9 @@
                                 "S": "B. Bucket policy"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3174,6 +3540,9 @@
                                 "S": "C. Amazon S3"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3204,6 +3573,9 @@
                                 "S": "D. Amazon S3 Intelligent-Tiering"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3234,6 +3606,9 @@
                                 "S": "B. Lifecycle management"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3264,6 +3639,9 @@
                                 "S": "C. 3 to 5 hours"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3294,6 +3672,9 @@
                                 "S": "A. Amazon S3TA"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3324,6 +3705,9 @@
                                 "S": "A. AWS Storage Gateway\u2014 Amazon S3File Gateway"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3354,6 +3738,9 @@
                                 "S": "B. Use the Amazon Snowball service"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3384,6 +3771,9 @@
                                 "S": "B. Internet gateway"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3414,6 +3804,9 @@
                                 "S": "A.NACLs protect entire subnets, whereas security groups protect the individual instance."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3444,6 +3837,9 @@
                                 "S": "A. Route53"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3474,6 +3870,9 @@
                                 "S": "A. AWS CloudFront"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3504,6 +3903,9 @@
                                 "S": "A. AWS Transit Gateway"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3534,6 +3936,9 @@
                                 "S": "B. NAT gateway"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3564,6 +3969,9 @@
                                 "S": "D. Failover Routing"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3591,9 +3999,12 @@
                     "correct_answer": {
                         "L": [
                             {
-                                "S": "C. Health checks"
+                                "S": "C. Health check"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3624,6 +4035,9 @@
                                 "S": "C. AWS Network Access Control Lists (NACLs)"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3654,6 +4068,9 @@
                                 "S": "B. Direct Connect"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3684,6 +4101,9 @@
                                 "S": "D. Dedicated Hosts"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3714,6 +4134,9 @@
                                 "S": "A. Spot Instances"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3750,6 +4173,9 @@
                                 "S": "E. You can exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration, including instance family, operating system, and tenancy."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3780,6 +4206,9 @@
                                 "S": "A. Enable \"termination protection\""
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3810,6 +4239,9 @@
                                 "S": "A. EFS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3840,6 +4272,9 @@
                                 "S": "C. Elastic IP address"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3870,6 +4305,9 @@
                                 "S": "A. Amazon FSx for Windows File Server"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3906,6 +4344,9 @@
                                 "S": "B. Provisioned IOPS SSD (io1)"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3936,6 +4377,9 @@
                                 "S": "A. AWS Lightsail"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3966,6 +4410,9 @@
                                 "S": "A. AWS SNS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -3996,6 +4443,9 @@
                                 "S": "C. ALB"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4026,6 +4476,9 @@
                                 "S": "B. Internal load balancer"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4056,6 +4509,9 @@
                                 "S": "B. NLB"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4086,6 +4542,9 @@
                                 "S": "A. Auto Scaling group"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4116,6 +4575,9 @@
                                 "S": "C. It only sends traffic to the remaining healthy instances."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4146,6 +4608,9 @@
                                 "S": "A. WAF"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4176,6 +4641,9 @@
                                 "S": "A. Amazon SNS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4206,6 +4674,9 @@
                                 "S": "D. CloudWatch dashboards"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4236,6 +4707,9 @@
                                 "S": "B. Amazon SNS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4266,6 +4740,9 @@
                                 "S": "C. Fanout scenario"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4296,6 +4773,9 @@
                                 "S": "A. SQS standard queue"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4326,6 +4806,9 @@
                                 "S": "A. Amazon SQS"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4356,6 +4839,9 @@
                                 "S": "B. SQS power queue"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4386,6 +4872,9 @@
                                 "S": "C. Amazon EventBridge"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4416,6 +4905,9 @@
                                 "S": "A. Amazon Step Functions"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4446,6 +4938,9 @@
                                 "S": "D. Amazon SWF"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4476,6 +4971,9 @@
                                 "S": "B. Amazon Kinesis Firehose"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4506,6 +5004,9 @@
                                 "S": "B. Amazon Kinesis Data Analytics"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4542,6 +5043,9 @@
                                 "S": "E. Amazon Rekognition"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4572,6 +5076,9 @@
                                 "S": "A. Amazon Elasticsearch"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4602,6 +5109,9 @@
                                 "S": "C. Amazon Athena"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4632,6 +5142,9 @@
                                 "S": "A. AWS Glue"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4662,6 +5175,9 @@
                                 "S": "C. AWS QuickSight"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4692,6 +5208,9 @@
                                 "S": "C. AWS Elastic Beanstalk"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4722,6 +5241,9 @@
                                 "S": "B. AWS CloudFormation"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4758,6 +5280,9 @@
                                 "S": "B. YAML"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4788,6 +5313,9 @@
                                 "S": "C. Amazon OpsWorks"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4818,6 +5346,9 @@
                                 "S": "B. Worker environment tier"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4848,6 +5379,9 @@
                                 "S": "B. Change sets"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4878,6 +5412,9 @@
                                 "S": "A. AWS CloudTrail"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4908,6 +5445,9 @@
                                 "S": "A. AWS Config"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4938,6 +5478,9 @@
                                 "S": "A. Amazon CloudWatch"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4968,6 +5511,9 @@
                                 "S": "B. AWS Trusted Advisor"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -4998,6 +5544,9 @@
                                 "S": "A. Session Manager"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5034,6 +5583,9 @@
                                 "S": "B. Configure NACL to only allow inbound ports 80 and 443 to Linux web servers from the internet."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5064,6 +5616,9 @@
                                 "S": "B. AWS Shield"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": "AWS Shield is a managed Distributed Denial of Service (DDoS) protection service provided by Amazon Web Services (AWS). It helps protect your web applications running on\nAWS from the harmful effects of DDoS attacks by continuously monitoring your traffic patterns and automatically mitigating DDoS attacks in real-time."
                     }
                 }
             },
@@ -5094,6 +5649,9 @@
                                 "S": "A. AWS WAF"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5124,6 +5682,9 @@
                                 "S": "A. Amazon Macie"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5154,6 +5715,9 @@
                                 "S": "A. AWS Artifact"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5184,6 +5748,9 @@
                                 "S": "B. AWS CloudHSM"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5214,6 +5781,9 @@
                                 "S": "Yes. Utilizing VPC makes it possible (Virtual Private Cloud)."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5241,6 +5811,9 @@
                                 "S": "Availability zones are geographically separate locations. Regions may have one or more availability zones."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5271,6 +5844,9 @@
                                 "S": "No, standby instances are launched in different availability zones than the primary"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5301,6 +5877,9 @@
                                 "S": "Create a larger RDS instance type"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5331,6 +5910,9 @@
                                 "S": "Point-in-time backups of EC2 instances, block storage drives, and databases."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5361,6 +5943,9 @@
                                 "S": "100"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5391,6 +5976,9 @@
                                 "S": "5"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5421,6 +6009,9 @@
                                 "S": "On-demand Instance, Spot Instance, Reserved Instance"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5451,6 +6042,9 @@
                                 "S": "Enable the DNS hostname resolution, so that the problem resolves itself."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5481,6 +6075,9 @@
                                 "S": "Use AWS VPN CloudHub."
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5511,6 +6108,9 @@
                                 "S": "200"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5541,6 +6141,9 @@
                                 "S": "Application Load Balancer, Network Load Balancer, Classic Load Balancer"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5565,6 +6168,9 @@
                                 "S": "Yes"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5595,6 +6201,9 @@
                                 "S": "Amazon DynamoDB"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5625,6 +6234,9 @@
                                 "S": "Amazon CloudWatch"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5655,6 +6267,9 @@
                                 "S": "Amazon Cognito"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5685,6 +6300,9 @@
                                 "S": "AWS Macie"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5715,6 +6333,9 @@
                                 "S": "AWS IAM"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5745,6 +6366,9 @@
                                 "S": "Amazon VPC"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5775,6 +6399,9 @@
                                 "S": "Amazon Relational Database Service"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5805,6 +6432,9 @@
                                 "S": "Amazon Mechanical Turk"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5835,6 +6465,9 @@
                                 "S": "Amazon Elastic Container Service"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5865,6 +6498,9 @@
                                 "S": "AWS Lambda"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5895,6 +6531,9 @@
                                 "S": "Amazon Simple Queue Service"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5925,6 +6564,9 @@
                                 "S": "Amazon Chime"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
                     }
                 }
             },
@@ -5955,6 +6597,207 @@
                                 "S": "AWS Batch"
                             }
                         ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which statement describes an elastic network interface?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "A virtual network interface that you can attach to an instance in an Amazon Virtual Private Cloud (VPC)"
+                            },
+                            {
+                                "S": "Enables the creation of a private connection between your Amazon Virtual Private Cloud (Amazon VPC) without requiring access over the internet or through a network address translation (NAT) instance"
+                            },
+                            {
+                                "S": "A static IPv4 address designed for dynamic cloud computing"
+                            },
+                            {
+                                "S": "An Amazon managed resource designed to operate like a network address translation (NAT) instance, but is simple to manager and is highly available within an Availability Zone"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Enables the creation of a private connection between your Amazon Virtual Private Cloud (Amazon VPC) without requiring access over the internet or through a network address translation (NAT) instance"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "What defined a subnet?"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Classless Inter-Domain Routing (CIDR) block"
+                            },
+                            {
+                                "S": "Instance"
+                            },
+                            {
+                                "S": "Availability Zones"
+                            },
+                            {
+                                "S": "Route table"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Classless Inter-Domain Routing (CIDR) block"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "You are a solutions architect who works for a large retails company that is migrating its existing infrastructure to AWS. You recommend they use\na custom Amazon Virtual Private Cloud (Amazon VPC). They will need a public subnet for their web servers and a private subnet for their\ndatabases. They require webs servers and database servers to be highly available, with a minimum of two web servers and two database servers each.\n\nHow many subnets should you have to maintain high availability? Select the best answer"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "4"
+                            },
+                            {
+                                "S": "2"
+                            },
+                            {
+                                "S": "3"
+                            },
+                            {
+                                "S": "1"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "4"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS networking service enables a company to create a virtual network within AWS? Select the best answer."
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Virtual Private Cloud (Amazon VPC)"
+                            },
+                            {
+                                "S": "AWS Direct Connect"
+                            },
+                            {
+                                "S": "Amazon Route 53"
+                            },
+                            {
+                                "S": "AWS Config"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Virtual Private Cloud (Amazon VPC)"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "A company has a test AWS environment. A company is planning on testing an application within AWS. The application testing can be interrupted\nand does not need to run continuously.\n\nWhich Amazon EC2 purchasing option will these requirements MOST cost-effectively"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "On-Demand Instances"
+                            },
+                            {
+                                "S": "Dedicated Instances"
+                            },
+                            {
+                                "S": "Spot Instances"
+                            },
+                            {
+                                "S": "Reserved Instances"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Spot Instances"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": ""
+                    }
+                }
+            },
+            {
+                "M": {
+                    "question": {
+                        "S": "Which AWS service gives users the ability to discover and protect sensitive data that is stored in Amazon S3 buckets"
+                    },
+                    "answers": {
+                        "L": [
+                            {
+                                "S": "Amazon Macie"
+                            },
+                            {
+                                "S": "Amazon Detective"
+                            },
+                            {
+                                "S": "Amazon GuardDuty"
+                            },
+                            {
+                                "S": "AWS IAM Access Analyzer"
+                            }
+                        ]
+                    },
+                    "correct_answer": {
+                        "L": [
+                            {
+                                "S": "Amazon Macie"
+                            }
+                        ]
+                    },
+                    "explanation": {
+                        "S": "Amazon Macie is a fully managed data security and data privacy service provided by Amazon Web Services (AWS). It uses machine learning and pattern matching\ntechniques to automatically discover, classify, and protect sensitive data stored in AWS environments. Macie helps organizations identify and protect sensitive\ndata such as personally identifiable information (PII), intellectual property (IP), and financial data, reducing the risk of data breaches, compliance violations,\nand unauthorized access. Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables\nautomated protection against those risks.\n<pricing 2 montsh.png>"
                     }
                 }
             }
