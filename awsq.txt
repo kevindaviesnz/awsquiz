@@ -1488,7 +1488,8 @@ A. Microsoft SQL
 B. Oracle
 C. MySQL
 [explanation]
-Amazon RDS (Relational Database Service) supports multiple database engines, including Microsoft SQL Server, Oracle, and MySQL. These are commonly used for various types of applications and workloads, offering flexibility and scalability in managing relational databases in the cloud.
+Amazon Relational Database Service (Amazon RDS) is the AWS service that provides a fully managed, scalable, and serverless relational database service that is compatible with MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server. RDS automates common administrative tasks such as provisioning, patching, backup, recovery, and scaling, allowing you to focus on building and optimizing your database applications without managing the underlying infrastructure. With RDS, you can deploy highly available and fault-tolerant database instances with just a few clicks, choose from multiple database engines and versions to meet your application requirements, and scale your database resources dynamically based on demand. RDS provides features such as automated backups, point-in-time recovery, read replicas, and security enhancements, enabling you to build secure, reliable, and scalable relational databases in the AWS cloud.
+Amazon RDS is an easy to manage relational database service optimized for total cost of ownership. It is simple to set up, operate, and scale with demand. Amazon RDS automates the undifferentiated database management tasks, such as provisioning, configuring, backups, and patching. Amazon RDS enables customers to create a new database in minutes, and offers flexibility to customize databases to meet their needs across 8 engines and 2 deployment options.
 
 [q]
 Which of the following is a prime example of SaaS?
@@ -2002,7 +2003,9 @@ D. Amazon Step Functions
 [correct]
 A. Amazon SQS
 [explanation]
-Amazon Simple Queue Service (SQS) is designed to help you build decoupled application architectures by providing a scalable and fully managed message queuing service. Incoming web requests can be held in an SQS queue until a backend application retrieves and processes them, enabling asynchronous and reliable message-based communication between components of your application.
+Amazon Simple Queue Service (Amazon SQS) is the AWS service that provides a fully managed, scalable, and serverless real-time messaging service that allows you to send and receive messages between distributed applications or microservices. SQS decouples the components of a distributed system by enabling asynchronous communication between producers and consumers, allowing you to build scalable and fault-tolerant architectures that can handle varying workloads and traffic patterns. With SQS, you can create queues to store messages sent by producers and consume messages from queues using worker processes or event-driven functions, ensuring reliable and timely message delivery without the need to provision or manage messaging infrastructure. SQS provides features such as message deduplication, message retention, and message visibility timeouts, enabling you to build robust and scalable messaging workflows in the cloud.
+Amazon Simple Queue Service (Amazon SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications. Amazon SQS moves data between distributed application components and helps you decouple these components.
+
 
 [q]
 You are required to configure an SQS queue for your application where the order of messages needs to be preserved for the application to function correctly. Which type of queue do you need to configure?
@@ -2113,7 +2116,9 @@ D. Amazon Data Pipeline
 [correct]
 C. Amazon Athena
 [explanation]
-Amazon Athena is a serverless query service that enables you to analyze raw data stored in Amazon S3 using standard SQL queries. You can perform ad hoc analysis on CSV files in S3 without having to set up or manage any infrastructure, making it well-suited for scenarios like analyzing network log files for possible malicious attacks.
+Amazon Athena is the AWS service that provides a fully managed, scalable, and serverless data lake storage and analytics service that allows you to store, analyze, and query large volumes of structured and unstructured data. Athena enables you to query data directly from Amazon S3 using standard SQL syntax and open file formats such as CSV, JSON, Parquet, and ORC, without the need to load or transform the data into a separate database or analytics platform. With Athena, you can run ad-hoc queries, interactive analysis, and complex aggregations on data stored in S3, and generate insights and reports using popular BI (Business Intelligence) and visualization tools such as Tableau, Amazon QuickSight, and Jupyter notebooks. Athena provides features such as schema discovery, partition pruning, and query federation, enabling you to analyze data at scale and derive actionable insights from your data lake with minimal setup and management overhead.
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to setup or manage, and you pay only for the queries you run. To get started, simply point to your data in S3, define the schema, and start querying using standard SQL.
+
 
 [q]
 Which AWS service can be used to perform serverless ETL functions to discover, prepare, enrich, clean, and transform your data from various sources for analysis?
@@ -2138,7 +2143,9 @@ D. AWS Outposts
 [correct]
 A. AWS Config
 [explanation]
-AWS Config is the appropriate service for assessing, auditing, and evaluating change configurations of your AWS resources. It continuously monitors and records configurations changes to AWS resources and allows you to assess the overall compliance of your environment with predefined or custom rules. By analyzing configuration history and change notifications, AWS Config helps you identify whether a change was the cause of an incident, enabling you to maintain a secure and compliant infrastructure.
+AWS Config is the AWS service that can be used to assess, audit, and evaluate change configurations of your AWS resources, enabling you to identify whether a change was the cause of an incident. AWS Config continuously monitors and records configuration changes to your AWS resources, providing you with a detailed inventory of your AWS environment and a history of configuration changes over time. By analyzing this configuration data, you can assess the impact of changes, audit resource configurations for compliance with policies and best practices, and troubleshoot operational issues by identifying the root cause of configuration changes that may have caused incidents or outages.
+AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time.
+
 
 [q]
 Which AWS service can be used to monitor your company's fleet of EC2 instances, allowing you to identify performance issues related to CPU utilization or memory consumption?
@@ -2162,7 +2169,13 @@ D. AWS Budgets
 [correct]
 B. AWS Trusted Advisor
 [explanation]
-AWS Trusted Advisor is the service that helps you identify potential unused resources and optimize your AWS environment for cost savings. It analyzes your AWS usage and provides recommendations across various categories, including cost optimization, performance, security, and fault tolerance. Trusted Advisor can identify resources such as Elastic IP addresses that are not attached to running instances, allowing you to reclaim and optimize your resource usage to reduce costs.
+AWS Trusted Advisor is a service provided by Amazon Web Services (AWS) that offers real-time guidance to help you optimize your AWS infrastructure, 
+improve performance, increase security, and reduce costs. Trusted Advisor analyzes your AWS environment and provides recommendations based on 
+best practices and AWS expertise, helping you optimize resource utilization, enhance reliability, and maximize the value of your AWS investment.
+AWS Trusted Advisor helps you optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. Trusted Advisor
+continuously evaluates your AWS environment using best practice checks across the categories of cost optimization, performance, resilience, security, 
+operational excellence, and service limits, and recommend actions to remediate any deviations from best practices.
+
 
 [q]
 Which capability of the AWS Systems Manager service enables you to remotely connect to your Linux EC2 instances without having to use bastion hosts in your VPC?
@@ -2174,6 +2187,8 @@ D. Incident Manager
 [correct]
 A. Session Manager
 [explanation]
+AWS Systems Manager's Session Manager is the capability that enables you to remotely connect to your Linux EC2 instances without having to use bastion hosts in your VPC. Session Manager provides secure and auditable remote shell access to your EC2 instances using the AWS Management Console or the AWS CLI, eliminating the need to open inbound SSH ports or manage SSH keys. With Session Manager, you can establish encrypted sessions to your instances using IAM roles and policies, centrally control access with fine-grained permissions, and audit session activity with detailed logging and recording capabilities. Session Manager simplifies remote management of EC2 instances, enhancing security and compliance by reducing the attack surface and minimizing exposure to potential security risks associated with traditional SSH access.
+Session Manager is a fully managed AWS Systems Manager capability that lets you manage your EC2 instances, on-premises instances, and virtual machines (VMs) through an interactive one-click browser-based shell or through the AWS CLI.
 Session Manager is the capability of the AWS Systems Manager service that enables you to remotely connect to your Linux EC2 instances without the need for bastion hosts in your VPC. It provides secure and auditable shell access to instances using the AWS Management Console or the AWS CLI, eliminating the need to manage SSH keys or open inbound ports in security groups. With Session Manager, you can securely access and manage your EC2 instances from anywhere, enhancing operational efficiency and security.
 
 [q]
@@ -2200,6 +2215,8 @@ D. Amazon Macie
 [correct]
 B. AWS Shield
 [explanation]
+AWS Shield is the AWS service that protects your virtual network and resources from common Distributed Denial of Service (DDoS) attacks. AWS Shield provides always-on detection and automatic inline mitigation of DDoS attacks, protecting your web applications and APIs running on AWS from the harmful effects of volumetric, state-exhaustion, and application-layer attacks. Shield Standard is included at no extra cost with all AWS accounts and provides protection against the most common infrastructure layer (Layer 3 and 4) DDoS attacks. Shield Advanced is a paid service that offers enhanced DDoS protection, including advanced threat intelligence, proactive mitigation controls, and access to DDoS response team (DRT) experts, enabling you to defend against sophisticated and large-scale DDoS attacks and maintain the availability and performance of your applications on AWS.
+AWS Shield Standard and AWS Shield Advanced provide protections against Distributed Denial of Service (DDoS) attacks for AWS resources at the network and transport layers (layer 3 and 4) and the application layer (layer 7). A DDoS attack is an attack in which multiple compromised systems try to flood a target with traffic. A DDoS attack can prevent legitimate end users from accessing the target services and can cause the target to crash due to overwhelming traffic volume.
 AWS Shield is the managed Distributed Denial of Service (DDoS) protection service provided by Amazon Web Services (AWS). It helps protect your web applications running on AWS from the harmful effects of DDoS attacks by continuously monitoring your traffic patterns and automatically mitigating DDoS attacks in real-time. AWS Shield Standard provides protection against most common DDoS attacks at no additional cost, while AWS Shield Advanced offers enhanced protection and additional DDoS mitigation capabilities for an additional fee.
 
 [q]
@@ -2244,6 +2261,12 @@ D. AWS security reports
 A. AWS Artifact
 [explanation]
 AWS Artifact is the service that enables companies looking to migrate to the AWS cloud to obtain copies of various compliance documents such as ISO certifications, PCI, and SOC reports. AWS Artifact provides on-demand access to AWS compliance reports and certifications, helping organizations assess the security and compliance of the AWS cloud platform and meet regulatory requirements. Through AWS Artifact, customers can download compliance reports, agreements, and other documents necessary for their auditing and compliance processes.
+AWS Artifact is the AWS service that enables companies to obtain copies of various compliance documents such as ISO certifications, PCI (Payment Card Industry) reports, and SOC (Service Organization Control) reports. AWS Artifact provides on-demand access to AWS compliance reports and other relevant documents, helping organizations assess the security and compliance posture of AWS services and infrastructure. Through AWS Artifact, customers can download compliance reports, attestations, and certifications to support their compliance efforts and regulatory requirements. This service simplifies the process of obtaining compliance documentation, allowing customers to focus on their migration to the AWS cloud with confidence in the security and compliance standards maintained by AWS.
+AWS Artifact, available in the console, is a self-service audit artifact retrieval portal that provides our customers with on-demand access to AWS’ compliance documentation and AWS agreements.
+
+You can use AWS Artifact Reports to download AWS security and compliance documents, such as AWS ISO certifications, Payment Card Industry (PCI), and System and Organization Control (SOC) reports.
+
+You can use AWS Artifact Agreements to review, accept, and track the status of AWS agreements such as the Business Associate Addendum (BAA).
 
 [q]
 To fulfill strict compliance requirements, you need to create and manage your encryption keys using FIPS 140-2 Level 3-validated HSM devices. Which type of encryption service would you recommend?
@@ -2256,6 +2279,7 @@ D. BitLocker
 B. AWS CloudHSM
 [explanation]
 For fulfilling strict compliance requirements and managing encryption keys using FIPS 140-2 Level 3-validated HSM (Hardware Security Module) devices, AWS CloudHSM is the recommended encryption service. CloudHSM provides dedicated hardware security modules in the AWS cloud for secure key storage and cryptographic operations. By using CloudHSM, you can maintain full control over your encryption keys and comply with stringent regulatory requirements for key management and cryptographic operations.
+AWS CloudHSM is a cryptographic service for creating and maintaining hardware security modules (HSMs) in your AWS environment. HSMs are computing devices that process cryptographic operations and provide secure storage for cryptographic keys. You can use AWS CloudHSM to offload SSL/TLS processing for web servers, protect private keys linked to an issuing certificate authority (CA), or enable Transparent Data Encryption (TDE) for Oracle databases.
 
 [q]
 With specified private IP addresses, can an Amazon Elastic Compute Cloud (EC2) instance be launched? If so, which Amazon service makes it possible?
@@ -2421,6 +2445,8 @@ Amazon DynamoDB
 Amazon DynamoDB
 [explanation]
 For game development requiring single-digit millisecond latency, Amazon DynamoDB is the recommended database service. DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services (AWS) that offers low-latency performance at any scale. It provides single-digit millisecond latency for read and write operations, making it suitable for real-time applications, gaming, and high-traffic websites. DynamoDB's fully managed and serverless architecture allows you to focus on building your game logic without worrying about database management tasks such as provisioning, scaling, or maintenance.
+Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
 
 [q]
 Which AWS service provides scalable, durable, and highly available storage for data archiving, backup, and long-term retention at a low cost per gigabyte?
@@ -2492,7 +2518,9 @@ D. Amazon EMR
 [correct]
 A. Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that provides a fully managed, highly scalable, and distributed streaming data platform for ingesting, processing, and analyzing real-time data streams from various sources. Kinesis allows you to collect and process large volumes of streaming data in real-time, enabling use cases such as real-time analytics, log and event data collection, and application monitoring. With Kinesis, you can ingest data from sources such as IoT devices, website clickstreams, social media feeds, and application logs, and process it using services like Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics. Kinesis provides durability, scalability, and low-latency processing for streaming data applications, making it suitable for building real-time data-driven applications and insights.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
+
 
 [q]
 Which AWS service allows you to deploy and manage containerized applications at scale using Kubernetes?
@@ -2516,7 +2544,9 @@ D. Amazon QuickSight
 [correct]
 B. Amazon Athena
 [explanation]
-Amazon Athena is the AWS service that allows you to analyze and query data stored in Amazon S3 using standard SQL without managing infrastructure or servers. Athena is a serverless interactive query service that enables you to run ad-hoc SQL queries directly against data stored in S3, including structured, semi-structured, and unstructured data formats. With Athena, you can analyze large datasets stored in S3 without the need for complex ETL processes or data warehouse setups, reducing time-to-insight and operational overhead. Athena supports a wide range of SQL functions, data types, and query optimization techniques, making it suitable for interactive analysis, reporting, and data exploration tasks.
+Amazon Athena is the AWS service that provides a fully managed, scalable, and serverless data lake storage and analytics service that allows you to store, analyze, and query large volumes of structured and unstructured data. Athena enables you to query data directly from Amazon S3 using standard SQL syntax and open file formats such as CSV, JSON, Parquet, and ORC, without the need to load or transform the data into a separate database or analytics platform. With Athena, you can run ad-hoc queries, interactive analysis, and complex aggregations on data stored in S3, and generate insights and reports using popular BI (Business Intelligence) and visualization tools such as Tableau, Amazon QuickSight, and Jupyter notebooks. Athena provides features such as schema discovery, partition pruning, and query federation, enabling you to analyze data at scale and derive actionable insights from your data lake with minimal setup and management overhead.
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to setup or manage, and you pay only for the queries you run. To get started, simply point to your data in S3, define the schema, and start querying using standard SQL.
+
 
 [q]
 Which AWS service provides fully managed, petabyte-scale data warehousing solution that allows you to analyze large datasets using standard SQL and your existing BI tools?
@@ -2540,7 +2570,8 @@ D. Amazon Neptune
 [correct]
 A. Amazon RDS
 [explanation]
-Amazon RDS (Relational Database Service) is the AWS service that provides fully managed, scalable, and serverless relational database service that supports MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB database engines. RDS automates common database administration tasks such as provisioning, patching, backup, recovery, and scaling, allowing you to focus on building applications rather than managing databases. With RDS, you can deploy, operate, and scale relational databases in the cloud with high availability, durability, and performance. RDS offers features such as automated backups, multi-AZ replication, encryption, and monitoring, making it suitable for a wide range of database workloads and applications.
+Amazon Relational Database Service (Amazon RDS) is the AWS service that provides a fully managed, scalable, and serverless relational database service that is compatible with MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server. RDS automates common administrative tasks such as provisioning, patching, backup, recovery, and scaling, allowing you to focus on building and optimizing your database applications without managing the underlying infrastructure. With RDS, you can deploy highly available and fault-tolerant database instances with just a few clicks, choose from multiple database engines and versions to meet your application requirements, and scale your database resources dynamically based on demand. RDS provides features such as automated backups, point-in-time recovery, read replicas, and security enhancements, enabling you to build secure, reliable, and scalable relational databases in the AWS cloud.
+Amazon RDS is an easy to manage relational database service optimized for total cost of ownership. It is simple to set up, operate, and scale with demand. Amazon RDS automates the undifferentiated database management tasks, such as provisioning, configuring, backups, and patching. Amazon RDS enables customers to create a new database in minutes, and offers flexibility to customize databases to meet their needs across 8 engines and 2 deployment options.
 
 [q]
 Which AWS service provides fully managed, fast, reliable, and scalable time-series database service for IoT and operational applications that require low-latency data ingestion and high-performance querying?
@@ -2600,7 +2631,11 @@ D. AWS CloudHSM
 [correct]
 C. AWS Secrets Manager
 [explanation]
-AWS Secrets Manager is the AWS service that allows you to securely store, manage, and rotate credentials, such as database passwords, API keys, and OAuth tokens, centrally. Secrets Manager helps you protect sensitive information by encrypting secrets at rest and in transit, and it provides fine-grained access controls and audit logging capabilities. With Secrets Manager, you can easily rotate credentials automatically according to custom schedules or manually in response to security incidents, ensuring that your applications and services always have up-to-date credentials without exposing them in plaintext. Secrets Manager integrates with other AWS services such as RDS, Redshift, and Lambda, allowing you to securely retrieve and manage secrets in your applications and infrastructure.
+AWS Secrets Manager is a fully managed service provided by Amazon Web Services (AWS) that helps you securely store, manage, and retrieve sensitive information 
+such as passwords, API keys, database credentials, and other secrets. It enables you to centralize and automate the management of secrets across your AWS infrastructure 
+and applications. AWS Secrets Manager helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets 
+throughout their lifecycles. Many AWS services store and use secrets in Secrets Manager.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data warehousing solution that allows you to analyze large datasets using standard SQL and your existing BI tools?
@@ -2613,6 +2648,7 @@ D. Amazon QuickSight
 A. Amazon Redshift
 [explanation]
 Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehousing solution that allows you to analyze large datasets using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models?
@@ -2625,6 +2661,8 @@ D. Amazon DocumentDB
 B. Amazon DynamoDB
 [explanation]
 Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 Which AWS service allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet?
@@ -2636,7 +2674,9 @@ D. Amazon Rekognition
 [correct]
 A. Amazon Sagemaker
 [explanation]
-Amazon SageMaker is the AWS service that allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet. SageMaker provides a fully managed platform for end-to-end machine learning workflows, including data labeling, model training, hyperparameter tuning, and inference deployment. With SageMaker, you can quickly build and experiment with machine learning models using Jupyter notebooks, train models efficiently on distributed infrastructure, and deploy models as scalable and cost-effective endpoints for real-time or batch predictions. SageMaker supports a wide range of use cases, from computer vision and natural language processing to time series forecasting and reinforcement learning, enabling you to drive innovation and value with machine learning.
+Amazon SageMaker is the AWS service that can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is a cloud based machine-learning platform that allows the creation, training, and deployment by developers of machine-learning models on the cloud. It can be used to deploy ML models on embedded systems and edge-devices.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks?
@@ -2649,6 +2689,8 @@ D. Amazon EMR
 D. Amazon EMR
 [explanation]
 Amazon EMR (Elastic MapReduce) is the AWS service that provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks. EMR allows you to quickly and cost-effectively process and analyze vast amounts of data across distributed computing clusters, leveraging popular big data tools and frameworks. With EMR, you can run petabyte-scale analytics, machine learning, and ETL (extract, transform, load) jobs on diverse datasets stored in Amazon S3, HDFS, or other data sources, and you can dynamically scale clusters up or down based on workload demand. EMR integrates with other AWS services such as S3, DynamoDB, and Glue, enabling you to build scalable and resilient data lake architectures for analytics and business intelligence applications.
+Amazon EMR (previously called Amazon Elastic MapReduce) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark , on AWS to process and analyze vast amounts of data.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics?
@@ -2660,7 +2702,9 @@ D. Amazon QuickSight
 [correct]
 A. Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics. Kinesis allows you to ingest, process, and analyze streaming data in real-time, enabling use cases such as real-time analytics, log and event data processing, and application monitoring. With Kinesis, you can collect data from sources such as IoT devices, website clickstreams, social media feeds, and application logs, and process it using services like Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics. Kinesis provides durability, scalability, and low-latency processing for streaming data applications, making it suitable for building real-time data-driven applications and insights.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools?
@@ -2673,18 +2717,9 @@ D. Amazon Athena
 C. Amazon Redshift
 [explanation]
 Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
 
-[q]
-Which AWS service provides fully managed, scalable, and serverless data warehousing solution that allows you to analyze large datasets using standard SQL and your existing BI tools?
-[answers]
-A. Amazon RDS
-B. Amazon Athena
-C. Amazon EMR
-D. Amazon Redshift
-[correct]
-D. Amazon Redshift
-[explanation]
-Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehousing solution that allows you to analyze large datasets using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models?
@@ -2696,7 +2731,9 @@ D. Amazon DocumentDB
 [correct]
 B. Amazon DynamoDB
 [explanation]
-Amazon DynamoDB is the AWS service that provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 Which AWS service allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet?
@@ -2708,7 +2745,9 @@ D. Amazon Rekognition
 [correct]
 A. Amazon Sagemaker
 [explanation]
-Amazon SageMaker is the AWS service that allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet. SageMaker provides a fully managed platform for end-to-end machine learning workflows, including data labeling, model training, hyperparameter tuning, and inference deployment. With SageMaker, you can quickly build and experiment with machine learning models using Jupyter notebooks, train models efficiently on distributed infrastructure, and deploy models as scalable and cost-effective endpoints for real-time or batch predictions. SageMaker supports a wide range of use cases, from computer vision and natural language processing to time series forecasting and reinforcement learning, enabling you to drive innovation and value with machine learning.
+Amazon SageMaker is the AWS service that can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is a cloud based machine-learning platform that allows the creation, training, and deployment by developers of machine-learning models on the cloud. It can be used to deploy ML models on embedded systems and edge-devices.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks?
@@ -2721,6 +2760,8 @@ D. Amazon EMR
 D. Amazon EMR
 [explanation]
 Amazon EMR (Elastic MapReduce) is the AWS service that provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks. EMR allows you to quickly and cost-effectively process and analyze vast amounts of data across distributed computing clusters, leveraging popular big data tools and frameworks. With EMR, you can run petabyte-scale analytics, machine learning, and ETL (extract, transform, load) jobs on diverse datasets stored in Amazon S3, HDFS, or other data sources, and you can dynamically scale clusters up or down based on workload demand. EMR integrates with other AWS services such as S3, DynamoDB, and Glue, enabling you to build scalable and resilient data lake architectures for analytics and business intelligence applications.
+Amazon EMR (previously called Amazon Elastic MapReduce) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark , on AWS to process and analyze vast amounts of data.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics?
@@ -2732,7 +2773,9 @@ D. Amazon QuickSight
 [correct]
 A. Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics. Kinesis allows you to ingest, process, and analyze streaming data in real-time, enabling use cases such as real-time analytics, log and event data processing, and application monitoring. With Kinesis, you can collect data from sources such as IoT devices, website clickstreams, social media feeds, and application logs, and process it using services like Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics. Kinesis provides durability, scalability, and low-latency processing for streaming data applications, making it suitable for building real-time data-driven applications and insights.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools?
@@ -2745,6 +2788,8 @@ D. Amazon Athena
 C. Amazon Redshift
 [explanation]
 Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models?
@@ -2756,7 +2801,9 @@ D. Amazon DocumentDB
 [correct]
 B. Amazon DynamoDB
 [explanation]
-Amazon DynamoDB is the AWS service that provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 Which AWS service allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet?
@@ -2768,7 +2815,9 @@ D. Amazon Rekognition
 [correct]
 A. Amazon Sagemaker
 [explanation]
-Amazon SageMaker is the AWS service that allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet. SageMaker provides a fully managed platform for end-to-end machine learning workflows, including data labeling, model training, hyperparameter tuning, and inference deployment. With SageMaker, you can quickly build and experiment with machine learning models using Jupyter notebooks, train models efficiently on distributed infrastructure, and deploy models as scalable and cost-effective endpoints for real-time or batch predictions. SageMaker supports a wide range of use cases, from computer vision and natural language processing to time series forecasting and reinforcement learning, enabling you to drive innovation and value with machine learning.
+Amazon SageMaker is the AWS service that can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is a cloud based machine-learning platform that allows the creation, training, and deployment by developers of machine-learning models on the cloud. It can be used to deploy ML models on embedded systems and edge-devices.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks?
@@ -2781,6 +2830,8 @@ D. Amazon EMR
 D. Amazon EMR
 [explanation]
 Amazon EMR (Elastic MapReduce) is the AWS service that provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks. EMR allows you to quickly and cost-effectively process and analyze vast amounts of data across distributed computing clusters, leveraging popular big data tools and frameworks. With EMR, you can run petabyte-scale analytics, machine learning, and ETL (extract, transform, load) jobs on diverse datasets stored in Amazon S3, HDFS, or other data sources, and you can dynamically scale clusters up or down based on workload demand. EMR integrates with other AWS services such as S3, DynamoDB, and Glue, enabling you to build scalable and resilient data lake architectures for analytics and business intelligence applications.
+Amazon EMR (previously called Amazon Elastic MapReduce) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark , on AWS to process and analyze vast amounts of data.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics?
@@ -2792,7 +2843,9 @@ D. Amazon QuickSight
 [correct]
 A. Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics. Kinesis allows you to ingest, process, and analyze streaming data in real-time, enabling use cases such as real-time analytics, log and event data processing, and application monitoring. With Kinesis, you can collect data from sources such as IoT devices, website clickstreams, social media feeds, and application logs, and process it using services like Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics. Kinesis provides durability, scalability, and low-latency processing for streaming data applications, making it suitable for building real-time data-driven applications and insights.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools?
@@ -2805,6 +2858,8 @@ D. Amazon Athena
 C. Amazon Redshift
 [explanation]
 Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models?
@@ -2816,7 +2871,9 @@ D. Amazon DocumentDB
 [correct]
 B. Amazon DynamoDB
 [explanation]
-Amazon DynamoDB is the AWS service that provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 Which AWS service allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet?
@@ -2828,7 +2885,9 @@ D. Amazon Rekognition
 [correct]
 A. Amazon Sagemaker
 [explanation]
-Amazon SageMaker is the AWS service that allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet. SageMaker provides a fully managed platform for end-to-end machine learning workflows, including data labeling, model training, hyperparameter tuning, and inference deployment. With SageMaker, you can quickly build and experiment with machine learning models using Jupyter notebooks, train models efficiently on distributed infrastructure, and deploy models as scalable and cost-effective endpoints for real-time or batch predictions. SageMaker supports a wide range of use cases, from computer vision and natural language processing to time series forecasting and reinforcement learning, enabling you to drive innovation and value with machine learning.
+Amazon SageMaker is the AWS service that can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is a cloud based machine-learning platform that allows the creation, training, and deployment by developers of machine-learning models on the cloud. It can be used to deploy ML models on embedded systems and edge-devices.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks?
@@ -2841,6 +2900,8 @@ D. Amazon EMR
 D. Amazon EMR
 [explanation]
 Amazon EMR (Elastic MapReduce) is the AWS service that provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks. EMR allows you to quickly and cost-effectively process and analyze vast amounts of data across distributed computing clusters, leveraging popular big data tools and frameworks. With EMR, you can run petabyte-scale analytics, machine learning, and ETL (extract, transform, load) jobs on diverse datasets stored in Amazon S3, HDFS, or other data sources, and you can dynamically scale clusters up or down based on workload demand. EMR integrates with other AWS services such as S3, DynamoDB, and Glue, enabling you to build scalable and resilient data lake architectures for analytics and business intelligence applications.
+Amazon EMR (previously called Amazon Elastic MapReduce) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark , on AWS to process and analyze vast amounts of data.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics?
@@ -2852,7 +2913,9 @@ D. Amazon QuickSight
 [correct]
 A. Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics. Kinesis allows you to ingest, process, and analyze streaming data in real-time, enabling use cases such as real-time analytics, log and event data processing, and application monitoring. With Kinesis, you can collect data from sources such as IoT devices, website clickstreams, social media feeds, and application logs, and process it using services like Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics. Kinesis provides durability, scalability, and low-latency processing for streaming data applications, making it suitable for building real-time data-driven applications and insights.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools?
@@ -2865,6 +2928,8 @@ D. Amazon Athena
 C. Amazon Redshift
 [explanation]
 Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models?
@@ -2876,7 +2941,9 @@ D. Amazon DocumentDB
 [correct]
 B. Amazon DynamoDB
 [explanation]
-Amazon DynamoDB is the AWS service that provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 Which AWS service allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet?
@@ -2888,7 +2955,9 @@ D. Amazon Rekognition
 [correct]
 A. Amazon Sagemaker
 [explanation]
-Amazon SageMaker is the AWS service that allows you to build, train, and deploy machine learning models at scale using familiar frameworks such as TensorFlow, PyTorch, and Apache MXNet. SageMaker provides a fully managed platform for end-to-end machine learning workflows, including data labeling, model training, hyperparameter tuning, and inference deployment. With SageMaker, you can quickly build and experiment with machine learning models using Jupyter notebooks, train models efficiently on distributed infrastructure, and deploy models as scalable and cost-effective endpoints for real-time or batch predictions. SageMaker supports a wide range of use cases, from computer vision and natural language processing to time series forecasting and reinforcement learning, enabling you to drive innovation and value with machine learning.
+Amazon SageMaker is the AWS service that can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is a cloud based machine-learning platform that allows the creation, training, and deployment by developers of machine-learning models on the cloud. It can be used to deploy ML models on embedded systems and edge-devices.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks?
@@ -2901,6 +2970,8 @@ D. Amazon EMR
 D. Amazon EMR
 [explanation]
 Amazon EMR (Elastic MapReduce) is the AWS service that provides fully managed, scalable, and serverless data lakes for analytics workloads using Apache Hadoop, Apache Spark, and other big data frameworks. EMR allows you to quickly and cost-effectively process and analyze vast amounts of data across distributed computing clusters, leveraging popular big data tools and frameworks. With EMR, you can run petabyte-scale analytics, machine learning, and ETL (extract, transform, load) jobs on diverse datasets stored in Amazon S3, HDFS, or other data sources, and you can dynamically scale clusters up or down based on workload demand. EMR integrates with other AWS services such as S3, DynamoDB, and Glue, enabling you to build scalable and resilient data lake architectures for analytics and business intelligence applications.
+Amazon EMR (previously called Amazon Elastic MapReduce) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark , on AWS to process and analyze vast amounts of data.
+
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics?
@@ -2912,7 +2983,8 @@ D. Amazon QuickSight
 [correct]
 A. Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that provides fully managed, scalable, and serverless stream processing for real-time data streaming and analytics. Kinesis allows you to ingest, process, and analyze streaming data in real-time, enabling use cases such as real-time analytics, log and event data processing, and application monitoring. With Kinesis, you can collect data from sources such as IoT devices, website clickstreams, social media feeds, and application logs, and process it using services like Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics. Kinesis provides durability, scalability, and low-latency processing for streaming data applications, making it suitable for building real-time data-driven applications and insights.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools?
@@ -2925,13 +2997,7 @@ D. Amazon Athena
 C. Amazon Redshift
 [explanation]
 Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
-
-[q]
-Which AWS service provides fully managed, scalable, and serverless NoSQL database service
-
-
-
-
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
 
 
 [q]
@@ -2946,7 +3012,8 @@ D. AWS Outposts
 [correct]
 A. AWS Config
 [explanation]
-<explanation to go here>
+AWS Config is the AWS service that can be used to assess, audit, and evaluate change configurations of your AWS resources, enabling you to identify whether a change was the cause of an incident. AWS Config continuously monitors and records configuration changes to your AWS resources, providing you with a detailed inventory of your AWS environment and a history of configuration changes over time. By analyzing this configuration data, you can assess the impact of changes, audit resource configurations for compliance with policies and best practices, and troubleshoot operational issues by identifying the root cause of configuration changes that may have caused incidents or outages.
+AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time.
 
 [q]
 Which AWS service can be used to monitor your company's fleet of EC2 instances,
@@ -2960,7 +3027,7 @@ D. AWS CloudTrail
 [correct]
 A. Amazon CloudWatch
 [explanation]
-<explanation to go here>
+Amazon CloudWatch is the AWS service that allows you to collect, process, and analyze log data generated by your applications and infrastructure in real-time. CloudWatch provides centralized logging and monitoring capabilities for AWS resources, allowing you to capture, store, and analyze logs from EC2 instances, Lambda functions, containers, and other services. With CloudWatch Logs, you can monitor application and system logs, set up alarms, create custom metrics, and troubleshoot issues in your environment. CloudWatch Logs Insights enables interactive log analysis and querying using a powerful query language, making it easy to gain insights into log data and identify patterns or anomalies in real-time.
 
 
 [q]
@@ -2975,7 +3042,12 @@ D. AWS Budgets
 [correct]
 B. AWS Trusted Advisor
 [explanation]
-<explanation to go here>
+AWS Trusted Advisor is a service provided by Amazon Web Services (AWS) that offers real-time guidance to help you optimize your AWS infrastructure, 
+improve performance, increase security, and reduce costs. Trusted Advisor analyzes your AWS environment and provides recommendations based on 
+best practices and AWS expertise, helping you optimize resource utilization, enhance reliability, and maximize the value of your AWS investment.
+AWS Trusted Advisor helps you optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. Trusted Advisor
+continuously evaluates your AWS environment using best practice checks across the categories of cost optimization, performance, resilience, security, 
+operational excellence, and service limits, and recommend actions to remediate any deviations from best practices.
 
 
 [q]
@@ -2990,7 +3062,10 @@ D. Incident Manager
 [correct]
 A. Session Manager
 [explanation]
-<explanation to go here>
+AWS Systems Manager's Session Manager is the capability that enables you to remotely connect to your Linux EC2 instances without having to use bastion hosts in your VPC. Session Manager provides secure and auditable remote shell access to your EC2 instances using the AWS Management Console or the AWS CLI, eliminating the need to open inbound SSH ports or manage SSH keys. With Session Manager, you can establish encrypted sessions to your instances using IAM roles and policies, centrally control access with fine-grained permissions, and audit session activity with detailed logging and recording capabilities. Session Manager simplifies remote management of EC2 instances, enhancing security and compliance by reducing the attack surface and minimizing exposure to potential security risks associated with traditional SSH access.
+Session Manager is a fully managed AWS Systems Manager capability that lets you manage your EC2 instances, on-premises instances, and virtual machines (VMs) through an interactive one-click browser-based shell or through the AWS CLI.
+Session Manager is the capability of the AWS Systems Manager service that enables you to remotely connect to your Linux EC2 instances without the need for bastion hosts in your VPC. It provides secure and auditable shell access to instances using the AWS Management Console or the AWS CLI, eliminating the need to manage SSH keys or open inbound ports in security groups. With Session Manager, you can securely access and manage your EC2 instances from anywhere, enhancing operational efficiency and security.
+
 
 [q]
 Which of the following is part of the customers' responsibility regarding the Shared
@@ -3018,6 +3093,9 @@ B. AWS Shield
 [explanation]
 AWS Shield is a managed Distributed Denial of Service (DDoS) protection service provided by Amazon Web Services (AWS). It helps protect your web applications running on 
 AWS from the harmful effects of DDoS attacks by continuously monitoring your traffic patterns and automatically mitigating DDoS attacks in real-time.
+AWS Shield is the AWS service that protects your virtual network and resources from common Distributed Denial of Service (DDoS) attacks. AWS Shield provides always-on detection and automatic inline mitigation of DDoS attacks, protecting your web applications and APIs running on AWS from the harmful effects of volumetric, state-exhaustion, and application-layer attacks. Shield Standard is included at no extra cost with all AWS accounts and provides protection against the most common infrastructure layer (Layer 3 and 4) DDoS attacks. Shield Advanced is a paid service that offers enhanced DDoS protection, including advanced threat intelligence, proactive mitigation controls, and access to DDoS response team (DRT) experts, enabling you to defend against sophisticated and large-scale DDoS attacks and maintain the availability and performance of your applications on AWS.
+AWS Shield Standard and AWS Shield Advanced provide protections against Distributed Denial of Service (DDoS) attacks for AWS resources at the network and transport layers (layer 3 and 4) and the application layer (layer 7). A DDoS attack is an attack in which multiple compromised systems try to flood a target with traffic. A DDoS attack can prevent legitimate end users from accessing the target services and can cause the target to crash due to overwhelming traffic volume.
+
 
 
 [q]
@@ -3030,7 +3108,9 @@ D. Amazon DocumentDB
 [correct]
 B. Amazon DynamoDB
 [explanation]
-Amazon DynamoDB is the AWS service that provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 As part of implementing change management, which AWS service can be used to assess, audit, and evaluate change configurations of your AWS resources, enabling you to identify whether a change was the cause of an incident?
@@ -3043,6 +3123,8 @@ D. AWS Outposts
 A. AWS Config
 [explanation]
 AWS Config is the AWS service that can be used to assess, audit, and evaluate change configurations of your AWS resources, enabling you to identify whether a change was the cause of an incident. AWS Config continuously monitors and records configuration changes to your AWS resources, providing you with a detailed inventory of your AWS environment and a history of configuration changes over time. By analyzing this configuration data, you can assess the impact of changes, audit resource configurations for compliance with policies and best practices, and troubleshoot operational issues by identifying the root cause of configuration changes that may have caused incidents or outages.
+AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time.
+
 
 [q]
 Which AWS service can be used to monitor your company's fleet of EC2 instances, which can be used to identify performance issues related to CPU utilization or memory consumptions?
@@ -3066,7 +3148,14 @@ D. AWS Budgets
 [correct]
 B. AWS Trusted Advisor
 [explanation]
-AWS Trusted Advisor is the AWS service that helps you identify potential unused resources, such as Elastic IP addresses, that are not attached to a running instance and thus highlight opportunities to save on costs. Trusted Advisor provides real-time guidance to help you optimize your AWS environment for cost, performance, security, and fault tolerance, analyzing your AWS usage and configurations to identify inefficiencies, security vulnerabilities, and cost optimization opportunities. Trusted Advisor checks for best practices across five categories: cost optimization, performance, security, fault tolerance, and service limits, providing actionable recommendations to help you improve the efficiency, security, and reliability of your AWS infrastructure.
+AWS Trusted Advisor is a service provided by Amazon Web Services (AWS) that offers real-time guidance to help you optimize your AWS infrastructure, 
+improve performance, increase security, and reduce costs. Trusted Advisor analyzes your AWS environment and provides recommendations based on 
+best practices and AWS expertise, helping you optimize resource utilization, enhance reliability, and maximize the value of your AWS investment.
+AWS Trusted Advisor helps you optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. Trusted Advisor
+continuously evaluates your AWS environment using best practice checks across the categories of cost optimization, performance, resilience, security, 
+operational excellence, and service limits, and recommend actions to remediate any deviations from best practices.
+
+
 
 [q]
 Which capability of the AWS Systems Manager service enables you to remotely connect to your Linux EC2 instances without having to use bastion hosts in your VPC?
@@ -3079,6 +3168,10 @@ D. Incident Manager
 A. Session Manager
 [explanation]
 AWS Systems Manager's Session Manager is the capability that enables you to remotely connect to your Linux EC2 instances without having to use bastion hosts in your VPC. Session Manager provides secure and auditable remote shell access to your EC2 instances using the AWS Management Console or the AWS CLI, eliminating the need to open inbound SSH ports or manage SSH keys. With Session Manager, you can establish encrypted sessions to your instances using IAM roles and policies, centrally control access with fine-grained permissions, and audit session activity with detailed logging and recording capabilities. Session Manager simplifies remote management of EC2 instances, enhancing security and compliance by reducing the attack surface and minimizing exposure to potential security risks associated with traditional SSH access.
+Session Manager is a fully managed AWS Systems Manager capability that lets you manage your EC2 instances, on-premises instances, and virtual machines (VMs) through an interactive one-click browser-based shell or through the AWS CLI.
+Session Manager is the capability of the AWS Systems Manager service that enables you to remotely connect to your Linux EC2 instances without the need for bastion hosts in your VPC. It provides secure and auditable shell access to instances using the AWS Management Console or the AWS CLI, eliminating the need to manage SSH keys or open inbound ports in security groups. With Session Manager, you can securely access and manage your EC2 instances from anywhere, enhancing operational efficiency and security.
+
+
 
 [q]
 Which of the following is part of the customers' responsibility regarding the Shared Security Model? (Choose 2.)
@@ -3105,6 +3198,11 @@ D. Amazon Macie
 B. AWS Shield
 [explanation]
 AWS Shield is the AWS service that protects your virtual network and resources from common Distributed Denial of Service (DDoS) attacks. AWS Shield provides always-on detection and automatic inline mitigation of DDoS attacks, protecting your web applications and APIs running on AWS from the harmful effects of volumetric, state-exhaustion, and application-layer attacks. Shield Standard is included at no extra cost with all AWS accounts and provides protection against the most common infrastructure layer (Layer 3 and 4) DDoS attacks. Shield Advanced is a paid service that offers enhanced DDoS protection, including advanced threat intelligence, proactive mitigation controls, and access to DDoS response team (DRT) experts, enabling you to defend against sophisticated and large-scale DDoS attacks and maintain the availability and performance of your applications on AWS.
+AWS Shield Standard and AWS Shield Advanced provide protections against Distributed Denial of Service (DDoS) attacks for AWS resources at the network and transport layers (layer 3 and 4) and the application layer (layer 7). A DDoS attack is an attack in which multiple compromised systems try to flood a target with traffic. A DDoS attack can prevent legitimate end users from accessing the target services and can cause the target to crash due to overwhelming traffic volume.
+AWS Shield is a managed Distributed Denial of Service (DDoS) protection service provided by Amazon Web Services (AWS). It helps protect your web applications running on 
+AWS from the harmful effects of DDoS attacks by continuously monitoring your traffic patterns and automatically mitigating DDoS attacks in real-time.
+
+
 
 [q]
 Which AWS Security tools can protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources?
@@ -3148,6 +3246,13 @@ D. AWS security reports
 A. AWS Artifact
 [explanation]
 AWS Artifact is the AWS service that enables companies looking to migrate to the AWS cloud to obtain copies of various compliance documents such as ISO certifications, PCI, and SOC reports. Artifact provides on-demand access to AWS compliance reports and certifications, including detailed audit reports, attestation questionnaires, and third-party assessment reports from AWS auditors and independent auditors. By accessing AWS Artifact, customers can download compliance documentation and use it to assess the security and compliance posture of AWS services, evaluate their alignment with regulatory requirements and industry standards, and support their own compliance initiatives and audits. AWS Artifact helps customers streamline compliance processes, reduce audit overhead, and accelerate their journey to the cloud by providing access to the information and resources they need to demonstrate the security and reliability of AWS services.
+AWS Artifact is the AWS service that enables companies to obtain copies of various compliance documents such as ISO certifications, PCI (Payment Card Industry) reports, and SOC (Service Organization Control) reports. AWS Artifact provides on-demand access to AWS compliance reports and other relevant documents, helping organizations assess the security and compliance posture of AWS services and infrastructure. Through AWS Artifact, customers can download compliance reports, attestations, and certifications to support their compliance efforts and regulatory requirements. This service simplifies the process of obtaining compliance documentation, allowing customers to focus on their migration to the AWS cloud with confidence in the security and compliance standards maintained by AWS.
+AWS Artifact, available in the console, is a self-service audit artifact retrieval portal that provides our customers with on-demand access to AWS’ compliance documentation and AWS agreements.
+
+You can use AWS Artifact Reports to download AWS security and compliance documents, such as AWS ISO certifications, Payment Card Industry (PCI), and System and Organization Control (SOC) reports.
+
+You can use AWS Artifact Agreements to review, accept, and track the status of AWS agreements such as the Business Associate Addendum (BAA).
+
 
 [q]
 To fulfill strict compliance requirements, you need to create and manage your encryption keys using FIPS 140-2 Level 3-validated HSM devices. Which type of encryption service would you recommend?
@@ -3160,6 +3265,7 @@ D. BitLocker
 B. AWS CloudHSM
 [explanation]
 AWS CloudHSM is the type of encryption service recommended for fulfilling strict compliance requirements that mandate the creation and management of encryption keys using FIPS 140-2 Level 3-validated Hardware Security Module (HSM) devices. CloudHSM provides dedicated, single-tenant HSM appliances in the AWS cloud, offering secure and scalable key management and cryptographic operations for sensitive data and critical workloads. With CloudHSM, you can generate and store encryption keys in hardware-based secure storage, ensuring the confidentiality, integrity, and availability of your cryptographic keys and protecting them from unauthorized access or tampering. CloudHSM integrates with AWS Key Management Service (KMS) to enable customers to use HSM-protected keys for encryption and decryption operations, providing a high-assurance solution for protecting data in transit and at rest in compliance with industry standards and regulatory requirements.
+AWS CloudHSM is a cryptographic service for creating and maintaining hardware security modules (HSMs) in your AWS environment. HSMs are computing devices that process cryptographic operations and provide secure storage for cryptographic keys. You can use AWS CloudHSM to offload SSL/TLS processing for web servers, protect private keys linked to an issuing certificate authority (CA), or enable Transparent Data Encryption (TDE) for Oracle databases.
 
 [q]
 With specified private IP addresses, can an Amazon Elastic Compute Cloud (EC2) instance be launched? If so, which Amazon service makes it possible?
@@ -3196,6 +3302,7 @@ No, standby instances are launched in different availability zones than the prim
 [explanation]
 In AWS RDS (Relational Database Service), standby instances, such as replicas for high availability or read replicas for scaling, are typically launched in different availability zones than the primary instance. This design ensures fault tolerance and resilience by distributing the database workload across multiple availability zones within the same AWS region. By launching standby instances in separate availability zones, RDS provides automatic failover capabilities, allowing the system to quickly recover from failures or outages affecting the primary instance and maintain continuous availability and data durability for your database applications.
 
+
 [q]
 How would you address a situation in which the relational database engine frequently collapses when traffic to your RDS instances increases, given that the RDS instance replica is not promoted as the master instance?
 [answers]
@@ -3208,6 +3315,7 @@ Create a larger RDS instance type
 [explanation]
 In a situation where the relational database engine frequently collapses due to increased traffic to your RDS instances and the RDS instance replica is not promoted as the master instance, one possible solution is to create a larger RDS instance type. By increasing the instance size, you can allocate more CPU, memory, and storage resources to the database engine, improving its capacity and performance under higher loads. This approach allows you to scale vertically by upgrading to a larger instance type with greater computational power and memory capacity, addressing the resource constraints and bottlenecks that may be causing the database engine to collapse. Additionally, you may also consider optimizing your database configuration, query performance, and indexing strategies to further enhance the scalability and efficiency of your RDS instances, ensuring they can handle increased traffic and workload demands effectively.
 
+
 [q]
 Define Snapshots in Amazon Lightsail?
 [answers]
@@ -3219,6 +3327,8 @@ Point-in-time backups of EC2 instances, and block storage drives
 Point-in-time backups of EC2 instances, block storage drives, and databases.
 [explanation]
 In Amazon Lightsail, snapshots refer to point-in-time backups of EC2 instances, block storage drives, and databases. Snapshots capture the state of your resources at a specific moment in time, allowing you to create restore points for your instances, volumes, and databases that you can use to recover data or restore to a previous configuration in case of accidental deletion, data corruption, or other unforeseen events. With snapshots, you can easily back up your Lightsail resources, replicate them across different regions, and create new instances or volumes from snapshots to quickly recover from failures or migrate your workloads between environments. Snapshots provide a convenient and reliable way to protect your data and ensure business continuity in the event of disruptions or disasters.
+Amazon Lightsail is a virtual private server (VPS) provider and is the easiest way to get started with AWS for developers, small businesses, students, and other users who need a solution to build and host their applications on cloud. Lightsail provides developers compute, storage, and networking capacity and capabilities to deploy and manage websites and web applications in the cloud. Lightsail includes everything you need to launch your project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management etc. – for a low, predictable monthly price.
+
 
 [q]
 How many S3 buckets can be created?
@@ -3282,6 +3392,7 @@ Provides access to on-premises applications from the AWS cloud
 Provides private, high-speed connectivity between your data center and AWS
 [explanation]
 The primary benefit of AWS Direct Connect is that it provides private, high-speed connectivity between your data center or corporate network and AWS (Amazon Web Services) cloud services. Direct Connect establishes dedicated network connections between your on-premises environment and AWS, bypassing the public internet and providing a more consistent and reliable network experience with lower latency and higher throughput compared to internet-based connections. With Direct Connect, you can establish private connections to AWS services such as Amazon EC2 instances, Amazon S3 storage, and Amazon VPC networks, enabling you to extend your on-premises infrastructure to the cloud and build hybrid cloud architectures that combine the scalability and flexibility of AWS with the control and security of your private data center or corporate network.
+AWS Direct Connect is a networking service that provides an alternative to using the internet to connect to AWS. Using AWS Direct Connect, data that would have previously been transported over the internet is delivered through a private network connection between your facilities and AWS.
 
 [q]
 What AWS service can be used to optimize the delivery of static and dynamic web content to users around the world with low latency and high transfer speeds?
@@ -3306,6 +3417,8 @@ Amazon Redshift
 Amazon MSK
 [explanation]
 Amazon Managed Streaming for Apache Kafka (Amazon MSK) is the AWS service that provides a fully managed service for running Apache Kafka. MSK makes it easy to build and run applications that process streaming data using Apache Kafka, a popular open-source distributed streaming platform. With MSK, you can create and manage Kafka clusters in the AWS cloud without the need to provision or manage servers, storage, or networking infrastructure, allowing you to focus on building and scaling your streaming applications. MSK provides features such as automated cluster provisioning, data replication and durability, integration with AWS security and monitoring services, and compatibility with Apache Kafka APIs and ecosystem tools, enabling you to deploy reliable and scalable Kafka clusters for real-time data processing and analytics use cases in the cloud.
+Amazon Managed Streaming for Apache Kafka (Amazon MSK) is a fully managed service that enables you to build and run applications that use Apache Kafka to process streaming data. Amazon MSK provides the control-plane operations, such as those for creating, updating, and deleting clusters.
+
 
 [q]
 Which AWS service can be used to deploy containerized applications at scale, manage container orchestration, and automate container lifecycle management tasks?
@@ -3317,7 +3430,9 @@ Amazon S3
 [correct]
 Amazon ECS
 [explanation]
-Amazon Elastic Container Service (Amazon ECS) is the AWS service that can be used to deploy containerized applications at scale, manage container orchestration, and automate container lifecycle management tasks. ECS is a fully managed container orchestration service that allows you to run Docker containers in the cloud without having to manage the underlying infrastructure. With ECS, you can define and deploy containerized applications using task definitions and services, scale your applications automatically based on demand, and integrate with other AWS services such as Amazon EC2, Amazon ECR, and AWS Fargate to build flexible and scalable container-based architectures. ECS provides features such as service discovery, load balancing, auto scaling, and monitoring, enabling you to streamline the deployment and management of containerized workloads and focus on building and running your applications in the cloud.
+Amazon Elastic Container Service (Amazon ECS) is the AWS service that can be used to create, deploy, and manage containerized applications at scale using Docker containers. ECS provides a fully managed container orchestration service that allows you to run, stop, and manage containers on a cluster of EC2 instances or AWS Fargate serverless compute resources, without the need to install, operate, or scale the underlying infrastructure. With ECS, you can define and manage containerized workloads using task definitions and services, launch and scale containers automatically based on resource requirements and demand, and integrate with other AWS services such as Amazon ECR, AWS Fargate, and AWS CloudFormation to automate the deployment and management of containerized applications. ECS supports both stateless and stateful applications, provides features such as service discovery and load balancing, and integrates with popular container management tools and frameworks such as Docker Compose and Kubernetes.
+Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. As a fully managed service, Amazon ECS comes with AWS configuration and operational best practices built-in. It's integrated with both AWS and third-party tools, such as Amazon Elastic Container Registry and Docker. This integration makes it easier for teams to focus on building the applications, not the environment. You can run and scale your container workloads across AWS Regions in the cloud, and on-premises, without the complexity of managing a control plane.
+
 
 [q]
 Which AWS service enables you to easily collect, process, and analyze streaming data from various sources, such as IoT devices, clickstreams, and application logs, in real-time?
@@ -3329,7 +3444,8 @@ Amazon RDS
 [correct]
 Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that enables you to easily collect, process, and analyze streaming data from various sources, such as IoT devices, clickstreams, and application logs, in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
 
 [q]
 Which AWS service provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models?
@@ -3341,7 +3457,9 @@ Amazon DocumentDB
 [correct]
 Amazon DynamoDB
 [explanation]
-Amazon DynamoDB is the AWS service that provides fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 As part of implementing change management, which AWS service can be used to assess, audit, and evaluate change configurations of your AWS resources, enabling you to identify whether a change was the cause of an incident?
@@ -3354,6 +3472,8 @@ AWS Outposts
 AWS Config
 [explanation]
 AWS Config is the AWS service that can be used to assess, audit, and evaluate change configurations of your AWS resources, enabling you to identify whether a change was the cause of an incident. AWS Config continuously monitors and records configuration changes to your AWS resources, providing you with a detailed inventory of your AWS environment and a history of configuration changes over time. By analyzing this configuration data, you can assess the impact of changes, audit resource configurations for compliance with policies and best practices, and troubleshoot operational issues by identifying the root cause of configuration changes that may have caused incidents or outages.
+AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time.
+
 
 [q]
 Which AWS service can be used to monitor your company's fleet of EC2 instances, detect performance and operational issues in real-time, and automate the execution of corrective actions based on predefined rules and thresholds?
@@ -3377,7 +3497,8 @@ Amazon Athena
 [correct]
 Amazon Redshift
 [explanation]
-Amazon Redshift is the AWS service that provides a fully managed, petabyte-scale data warehousing service that allows you to analyze large volumes of data using SQL queries and business intelligence tools. Redshift is optimized for high-performance, columnar storage and parallel query execution, enabling you to run complex analytical queries against vast datasets with low latency and high throughput. With Redshift, you can easily provision and scale clusters of instances to meet your performance and capacity requirements, load data from various sources using standard ETL (Extract, Transform, Load) tools, and integrate with popular BI (Business Intelligence) and analytics platforms such as Tableau, Power BI, and Amazon QuickSight to gain insights from your data and make data-driven decisions at scale.
+Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
 
 [q]
 Which AWS service can be used to create, manage, and deploy certificates for use with other AWS services, such as Amazon CloudFront, Amazon API Gateway, and Elastic Load Balancing?
@@ -3390,6 +3511,8 @@ AWS Config
 Amazon Certificate Manager
 [explanation]
 Amazon Certificate Manager (ACM) is the AWS service that can be used to create, manage, and deploy certificates for use with other AWS services, such as Amazon CloudFront, Amazon API Gateway, and Elastic Load Balancing. ACM provides a fully managed solution for provisioning and renewing SSL/TLS certificates for securing the communication between your applications and AWS services or between different components of your distributed systems. With ACM, you can request public or private SSL/TLS certificates at no additional cost, automatically validate domain ownership and configure certificate settings, and deploy certificates to AWS resources such as load balancers, web servers, and APIs with just a few clicks. ACM helps you simplify and automate the management of certificates, ensuring the security and privacy of your data and applications in transit across the AWS cloud.
+AWS Certificate Manager (ACM) is a managed service that you can use to provision, manage, and deploy public and private TLS certificates for use with Amazon Web Services (AWS) and your internal connected resources. 
+
 
 [q]
 Which AWS service can be used to create, manage, and rotate encryption keys to encrypt data at rest and control access to AWS services and resources?
@@ -3402,6 +3525,8 @@ AWS Secrets Manager
 AWS KMS
 [explanation]
 AWS Key Management Service (KMS) is the AWS service that can be used to create, manage, and rotate encryption keys to encrypt data at rest and control access to AWS services and resources. KMS provides a centralized key management infrastructure that allows you to generate, store, and protect encryption keys used to encrypt and decrypt your data stored in AWS services such as Amazon S3, Amazon EBS, Amazon RDS, and Amazon Redshift. With KMS, you can create and manage customer master keys (CMKs), define key policies and permissions, and audit key usage to ensure compliance with security and regulatory requirements. KMS integrates with other AWS services to provide seamless encryption and decryption capabilities, allowing you to protect sensitive data and maintain full control over your encryption keys throughout their lifecycle.
+AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the cryptographic keys that are used to protect your data. AWS KMS uses hardware security modules (HSM) to protect and validate your AWS KMS keys under the FIPS 140-2 Cryptographic Module Validation Program. China (Beijing) and China (Ningxia) Regions do not support the FIPS 140-2 Cryptographic Module Validation Program.
+
 
 [q]
 Which AWS service can be used to automatically scale resources in response to changes in demand or traffic patterns, ensuring optimal performance and cost efficiency?
@@ -3414,6 +3539,8 @@ AWS Auto Scaling
 AWS Auto Scaling
 [explanation]
 AWS Auto Scaling is the AWS service that can be used to automatically scale resources in response to changes in demand or traffic patterns, ensuring optimal performance and cost efficiency. Auto Scaling helps you maintain application availability and responsiveness by dynamically adjusting the capacity of your AWS resources, such as EC2 instances, ECS tasks, and DynamoDB tables, based on predefined scaling policies and health checks. With Auto Scaling, you can configure scaling policies to scale your resources in or out automatically in response to changes in workload metrics, such as CPU utilization, network traffic, or queue length, and use predictive scaling to anticipate changes in demand and scale proactively to meet anticipated traffic peaks or troughs. Auto Scaling helps you optimize resource utilization, improve application performance, and reduce costs by ensuring that you have the right amount of capacity available at all times to handle your workload efficiently.
+AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. Using AWS Auto Scaling, it’s easy to setup application scaling for multiple resources across multiple services in minutes. 
+
 
 [q]
 Which AWS service can be used to monitor the performance and availability of your AWS resources and applications, collect and analyze log data, and generate actionable insights and alarms?
@@ -3426,6 +3553,8 @@ AWS Config
 Amazon CloudWatch
 [explanation]
 Amazon CloudWatch is the AWS service that can be used to monitor the performance and availability of your AWS resources and applications, collect and analyze log data, and generate actionable insights and alarms. CloudWatch provides a comprehensive monitoring and observability solution for monitoring your infrastructure, applications, and services in the AWS cloud, allowing you to gain visibility into the health, performance, and operational status of your environment in real-time. With CloudWatch, you can monitor metrics, set up alarms and notifications, create dashboards and visualizations, and troubleshoot issues using logs and traces, enabling you to optimize resource utilization, detect and respond to incidents, and ensure the reliability and performance of your AWS workloads.
+
+
 
 [q]
 What are the three key components of AWS Lambda?
@@ -3442,6 +3571,8 @@ The three key components of AWS Lambda are:
 Function: A Lambda function is a piece of code that performs a specific task or operation in response to events triggered by AWS services or custom applications. Functions are written in supported programming languages such as Node.js, Python, Java, and Go, and can be uploaded to Lambda as deployment packages or container images.
 Event Sources: Event sources are AWS services or external applications that generate events that trigger the execution of Lambda functions. Common event sources include Amazon S3, Amazon DynamoDB, Amazon SNS, Amazon Kinesis, and AWS CloudWatch Events.
 Execution Environment: The execution environment of Lambda refers to the runtime environment in which Lambda functions are executed. Lambda manages the execution environment and provides the underlying infrastructure required to run functions at scale, including managing compute resources, monitoring function execution, and logging output and errors.
+
+
 [q]
 What is AWS IAM used for?
 [answers]
@@ -3454,6 +3585,7 @@ Control access to AWS resources and services
 [explanation]
 AWS Identity and Access Management (IAM) is used to control access to AWS resources and services. IAM enables you to manage users, groups, roles, and permissions, allowing you to securely control who can access specific AWS resources and perform actions within your AWS environment. With IAM, you can create and manage user identities, assign permissions to users and groups using policies, and establish trust relationships with external identities such as federated users and identity providers. IAM provides fine-grained access control mechanisms, multi-factor authentication, and integration with other AWS services to help you enforce security best practices, meet compliance requirements, and protect your AWS resources and data from unauthorized access and misuse.
 
+
 [q]
 Which AWS service can be used to securely store and manage sensitive information such as passwords, API keys, and database credentials, and rotate them automatically to enhance security?
 [answers]
@@ -3464,7 +3596,12 @@ AWS Secrets Manager
 [correct]
 AWS Secrets Manager
 [explanation]
-AWS Secrets Manager is the AWS service that can be used to securely store and manage sensitive information such as passwords, API keys, and database credentials, and rotate them automatically to enhance security. Secrets Manager helps you protect your secrets and credentials by providing a centralized and secure storage solution with fine-grained access controls and encryption at rest and in transit. With Secrets Manager, you can securely store secrets as key-value pairs, retrieve secrets programmatically using AWS SDKs or CLI commands, and rotate secrets automatically on a schedule or in response to events such as API calls or resource creation. Secrets Manager integrates with other AWS services such as Amazon RDS, Amazon Redshift, and AWS Lambda to help you automate the management of secrets and ensure that your applications and services can securely access the resources they need without exposing sensitive information or credentials.
+AWS Secrets Manager is a fully managed service provided by Amazon Web Services (AWS) that helps you securely store, manage, and retrieve sensitive information 
+such as passwords, API keys, database credentials, and other secrets. It enables you to centralize and automate the management of secrets across your AWS infrastructure 
+and applications. AWS Secrets Manager helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets 
+throughout their lifecycles. Many AWS services store and use secrets in Secrets Manager.
+
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless relational database service that supports multiple database engines such as MySQL, PostgreSQL, Oracle, and SQL Server?
@@ -3476,7 +3613,8 @@ Amazon Aurora
 [correct]
 Amazon RDS
 [explanation]
-Amazon Relational Database Service (Amazon RDS) is the AWS service that provides a fully managed, scalable, and serverless relational database service that supports multiple database engines such as MySQL, PostgreSQL, Oracle, and SQL Server. RDS automates common administrative tasks such as provisioning, patching, backup, recovery, and scaling, allowing you to focus on building and optimizing your database applications without managing the underlying infrastructure. With RDS, you can deploy highly available and fault-tolerant database instances with just a few clicks, choose from multiple database engines and versions to meet your application requirements, and scale your database resources dynamically based on demand. RDS provides features such as automated backups, point-in-time recovery, read replicas, and security enhancements, enabling you to build secure, reliable, and scalable relational databases in the AWS cloud.
+Amazon Relational Database Service (Amazon RDS) is the AWS service that provides a fully managed, scalable, and serverless relational database service that is compatible with MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server. RDS automates common administrative tasks such as provisioning, patching, backup, recovery, and scaling, allowing you to focus on building and optimizing your database applications without managing the underlying infrastructure. With RDS, you can deploy highly available and fault-tolerant database instances with just a few clicks, choose from multiple database engines and versions to meet your application requirements, and scale your database resources dynamically based on demand. RDS provides features such as automated backups, point-in-time recovery, read replicas, and security enhancements, enabling you to build secure, reliable, and scalable relational databases in the AWS cloud.
+Amazon RDS is an easy to manage relational database service optimized for total cost of ownership. It is simple to set up, operate, and scale with demand. Amazon RDS automates the undifferentiated database management tasks, such as provisioning, configuring, backups, and patching. Amazon RDS enables customers to create a new database in minutes, and offers flexibility to customize databases to meet their needs across 8 engines and 2 deployment options.
 
 [q]
 Which AWS service can be used to build, train, and deploy machine learning models at scale, using built-in algorithms and frameworks, or custom models created using popular libraries such as TensorFlow and PyTorch?
@@ -3488,7 +3626,9 @@ Amazon Comprehend
 [correct]
 Amazon SageMaker
 [explanation]
-Amazon SageMaker is the AWS service that can be used to build, train, and deploy machine learning models at scale, using built-in algorithms and frameworks, or custom models created using popular libraries such as TensorFlow and PyTorch. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is the AWS service that can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is a cloud based machine-learning platform that allows the creation, training, and deployment by developers of machine-learning models on the cloud. It can be used to deploy ML models on embedded systems and edge-devices.
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless file storage service that allows you to store and access files and data in the cloud using standard file protocols such as NFS and SMB?
@@ -3501,6 +3641,9 @@ Amazon FSx
 Amazon EFS
 [explanation]
 Amazon Elastic File System (Amazon EFS) is the AWS service that provides a fully managed, scalable, and serverless file storage service that allows you to store and access files and data in the cloud using standard file protocols such as NFS (Network File System) and SMB (Server Message Block). EFS offers simple, scalable, and elastic file storage for Linux and Windows workloads, providing a file system interface that can scale automatically to petabyte-scale capacity without provisioning or managing storage infrastructure. With EFS, you can create and mount file systems on EC2 instances or on-premises servers, share files across multiple instances and containers, and access data concurrently from thousands of clients with low latency and high throughput. EFS provides features such as lifecycle management, data encryption, and integration with AWS services such as AWS Backup and AWS IAM, enabling you to build scalable and resilient file-based applications in the AWS cloud.
+Amazon Elastic File System (Amazon EFS) provides serverless, fully elastic file storage so that you can share file data without provisioning or managing storage capacity and performance. Amazon EFS is built to scale on demand to petabytes without disrupting applications, growing and shrinking automatically as you add and remove files. Because Amazon EFS has a simple web services interface, you can create and configure file systems quickly and easily. The service manages all the file storage infrastructure for you, meaning that you can avoid the complexity of deploying, patching, and maintaining complex file system configurations.
+
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models?
@@ -3513,6 +3656,8 @@ Amazon DocumentDB
 Amazon DynamoDB
 [explanation]
 Amazon DynamoDB is the AWS service that provides a fully managed, scalable, and serverless NoSQL database service that supports document, key-value, and wide-column data models. DynamoDB is designed for low-latency, high-throughput applications that require seamless scalability and high availability. It offers features such as automatic scaling, multi-region replication, and built-in security, making it suitable for a wide range of use cases, including web and mobile applications, gaming, IoT, and ad tech. DynamoDB's flexible data model and performance characteristics allow you to store and retrieve data with single-digit millisecond latency at any scale, from megabytes to petabytes, without managing servers or infrastructure.
+Amazon DynamoDB is a serverless, NoSQL database service that enables you to develop modern applications at any scale. As a serverless database, you only pay for what you use and DynamoDB scales to zero, has no cold starts, no version upgrades, no maintenance windows, no patching, and no downtime maintenance. DynamoDB offers a broad set of security controls and compliance standards. For globally distributed applications, DynamoDB global tables is a multi-Region, multi-active database with a 99.999% availability SLA and increased resilience. DynamoDB reliability is supported with managed backups, point-in-time recovery, and more. With DynamoDB streams, you can build serverless event-driven applications.
+
 
 [q]
 Which AWS service can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms?
@@ -3525,6 +3670,8 @@ Amazon Transcribe
 Amazon SageMaker
 [explanation]
 Amazon SageMaker is the AWS service that can be used to build, train, and deploy custom machine learning models using large-scale datasets and distributed training algorithms. SageMaker provides a fully managed platform for developing end-to-end machine learning workflows, from data preparation and feature engineering to model training and deployment, without the need to provision or manage infrastructure. With SageMaker, you can access pre-built algorithms and models optimized for common machine learning tasks, experiment with different model architectures and hyperparameters using SageMaker Notebooks, and deploy trained models to production with just a few clicks. SageMaker provides features such as automatic model tuning, model hosting, and model monitoring, enabling you to accelerate the development and deployment of machine learning applications and derive actionable insights from your data.
+Amazon SageMaker is a cloud based machine-learning platform that allows the creation, training, and deployment by developers of machine-learning models on the cloud. It can be used to deploy ML models on embedded systems and edge-devices.
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless real-time messaging service that allows you to send and receive messages between distributed applications or microservices?
@@ -3537,6 +3684,9 @@ Amazon Kinesis
 Amazon SQS
 [explanation]
 Amazon Simple Queue Service (Amazon SQS) is the AWS service that provides a fully managed, scalable, and serverless real-time messaging service that allows you to send and receive messages between distributed applications or microservices. SQS decouples the components of a distributed system by enabling asynchronous communication between producers and consumers, allowing you to build scalable and fault-tolerant architectures that can handle varying workloads and traffic patterns. With SQS, you can create queues to store messages sent by producers and consume messages from queues using worker processes or event-driven functions, ensuring reliable and timely message delivery without the need to provision or manage messaging infrastructure. SQS provides features such as message deduplication, message retention, and message visibility timeouts, enabling you to build robust and scalable messaging workflows in the cloud.
+Amazon Simple Queue Service (Amazon SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications. Amazon SQS moves data between distributed application components and helps you decouple these components.
+
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless data streaming service that allows you to capture, process, and analyze real-time data streams from various sources?
@@ -3548,7 +3698,8 @@ Amazon MQ
 [correct]
 Amazon Kinesis
 [explanation]
-Amazon Kinesis is the AWS service that provides a fully managed, scalable, and serverless data streaming service that allows you to capture, process, and analyze real-time data streams from various sources. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless data warehousing service that allows you to analyze large volumes of data using SQL queries and business intelligence tools?
@@ -3560,7 +3711,9 @@ Amazon Athena
 [correct]
 Amazon Redshift
 [explanation]
-Amazon Redshift is the AWS service that provides a fully managed, scalable, and serverless data warehousing service that allows you to analyze large volumes of data using SQL queries and business intelligence tools. Redshift is optimized for high-performance, columnar storage and parallel query execution, enabling you to run complex analytical queries against vast datasets with low latency and high throughput. With Redshift, you can easily provision and scale clusters of instances to meet your performance and capacity requirements, load data from various sources using standard ETL (Extract, Transform, Load) tools, and integrate with popular BI (Business Intelligence) and analytics platforms such as Tableau, Power BI, and Amazon QuickSight to gain insights from your data and make data-driven decisions at scale.
+Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
+
 
 [q]
 Which AWS service can be used to analyze text data and extract insights such as sentiment analysis, entity recognition, and language detection from unstructured text?
@@ -3573,6 +3726,8 @@ Amazon Textract
 Amazon Comprehend
 [explanation]
 Amazon Comprehend is the AWS service that can be used to analyze text data and extract insights such as sentiment analysis, entity recognition, and language detection from unstructured text. Comprehend uses machine learning algorithms to identify key information and relationships in text data, enabling you to analyze and understand the meaning of documents, articles, emails, social media posts, and other text-based content. With Comprehend, you can perform tasks such as sentiment analysis to determine the emotional tone of text, entity recognition to identify entities such as people, organizations, and locations mentioned in text, and language detection to identify the language of text and translate it into other languages. Comprehend provides pre-trained models for common natural language processing (NLP) tasks and allows you to customize models using custom data and vocabulary to meet your specific requirements.
+Amazon Comprehend is a natural-language processing (NLP) service that uses machine learning to uncover valuable insights and connections in text.
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless data integration service that allows you to move data between various AWS services and on-premises data sources?
@@ -3585,6 +3740,8 @@ Amazon Data Pipeline
 Amazon Glue
 [explanation]
 Amazon Glue is the AWS service that provides a fully managed, scalable, and serverless data integration service that allows you to move data between various AWS services and on-premises data sources. Glue simplifies the process of building and managing data integration workflows by providing capabilities such as data cataloging, ETL (Extract, Transform, Load) job authoring, and schema discovery, enabling you to automate the movement and transformation of data without writing complex code or managing infrastructure. With Glue, you can create and manage a centralized metadata repository to store and catalog metadata information about your data assets, discover and explore data using visual tools and SQL queries, and create ETL jobs to extract, transform, and load data into data lakes, data warehouses, and analytical databases. Glue integrates with other AWS services such as Amazon S3, Amazon Redshift, and Amazon RDS to provide a comprehensive data integration solution for building scalable and reliable data pipelines in the cloud.
+AWS Glue is a serverless data integration service that makes it easier to discover, prepare, move, and integrate data from multiple sources for analytics, machine learning (ML), and application development.
+
 
 [q]
 Which AWS service can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time?
@@ -3597,6 +3754,8 @@ Amazon MQ
 Amazon Kinesis
 [explanation]
 Amazon Kinesis is the AWS service that can be used to capture and store real-time streaming data from IoT devices, mobile applications, and web services, and process and analyze the data in real-time. Kinesis provides a set of services for ingesting, storing, processing, and analyzing streaming data at scale, allowing you to build real-time applications and analytics solutions that respond quickly to changes in your data and generate actionable insights in milliseconds. With Kinesis, you can use services such as Kinesis Data Streams, Kinesis Data Firehose, and Kinesis Data Analytics to capture, process, and analyze streaming data from millions of sources simultaneously, and integrate with other AWS services such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service to store, query, and visualize the results of your real-time data processing workflows.
+Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale.
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless relational database service that is compatible with MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server?
@@ -3609,6 +3768,8 @@ Amazon Aurora
 Amazon RDS
 [explanation]
 Amazon Relational Database Service (Amazon RDS) is the AWS service that provides a fully managed, scalable, and serverless relational database service that is compatible with MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server. RDS automates common administrative tasks such as provisioning, patching, backup, recovery, and scaling, allowing you to focus on building and optimizing your database applications without managing the underlying infrastructure. With RDS, you can deploy highly available and fault-tolerant database instances with just a few clicks, choose from multiple database engines and versions to meet your application requirements, and scale your database resources dynamically based on demand. RDS provides features such as automated backups, point-in-time recovery, read replicas, and security enhancements, enabling you to build secure, reliable, and scalable relational databases in the AWS cloud.
+Amazon RDS is an easy to manage relational database service optimized for total cost of ownership. It is simple to set up, operate, and scale with demand. Amazon RDS automates the undifferentiated database management tasks, such as provisioning, configuring, backups, and patching. Amazon RDS enables customers to create a new database in minutes, and offers flexibility to customize databases to meet their needs across 8 engines and 2 deployment options.
+
 
 [q]
 Which AWS service can be used to create, deploy, and manage containerized applications at scale using Docker containers?
@@ -3621,6 +3782,8 @@ Amazon Fargate
 Amazon ECS
 [explanation]
 Amazon Elastic Container Service (Amazon ECS) is the AWS service that can be used to create, deploy, and manage containerized applications at scale using Docker containers. ECS provides a fully managed container orchestration service that allows you to run, stop, and manage containers on a cluster of EC2 instances or AWS Fargate serverless compute resources, without the need to install, operate, or scale the underlying infrastructure. With ECS, you can define and manage containerized workloads using task definitions and services, launch and scale containers automatically based on resource requirements and demand, and integrate with other AWS services such as Amazon ECR, AWS Fargate, and AWS CloudFormation to automate the deployment and management of containerized applications. ECS supports both stateless and stateful applications, provides features such as service discovery and load balancing, and integrates with popular container management tools and frameworks such as Docker Compose and Kubernetes.
+Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. As a fully managed service, Amazon ECS comes with AWS configuration and operational best practices built-in. It's integrated with both AWS and third-party tools, such as Amazon Elastic Container Registry and Docker. This integration makes it easier for teams to focus on building the applications, not the environment. You can run and scale your container workloads across AWS Regions in the cloud, and on-premises, without the complexity of managing a control plane.
+
 
 [q]
 Which AWS service can be used to build, train, and deploy conversational AI chatbots that can interact with users via text or voice?
@@ -3633,6 +3796,8 @@ Amazon Lex
 Amazon Lex
 [explanation]
 Amazon Lex is the AWS service that can be used to build, train, and deploy conversational AI chatbots that can interact with users via text or voice. Lex provides a fully managed platform for building natural language understanding (NLU) models and integrating them with conversational interfaces such as web chatbots, mobile apps, and voice-enabled devices. With Lex, you can create chatbots that can understand and respond to natural language input from users, interpret user intents and entities, and fulfill user requests by invoking backend services or performing actions in real-time. Lex supports automatic speech recognition (ASR) and natural language understanding (NLU) for processing both text and speech input, provides pre-built models for common use cases such as customer support and virtual assistants, and integrates with other AWS services such as Amazon Lambda, Amazon Connect, and Amazon Cognito to provide a complete solution for building conversational AI applications.
+Amazon Lex is an AWS service for building conversational interfaces for applications using voice and text. With Amazon Lex, the same conversational engine that powers Amazon Alexa is now available to any developer, enabling you to build sophisticated, natural language chatbots into your new and existing applications. Amazon Lex provides the deep functionality and flexibility of natural language understanding (NLU) and automatic speech recognition (ASR) so you can build highly engaging user experiences with lifelike, conversational interactions, and create new categories of products.
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless data lake storage and analytics service that allows you to store, analyze, and query large volumes of structured and unstructured data?
@@ -3645,6 +3810,8 @@ Amazon Glue
 Amazon Athena
 [explanation]
 Amazon Athena is the AWS service that provides a fully managed, scalable, and serverless data lake storage and analytics service that allows you to store, analyze, and query large volumes of structured and unstructured data. Athena enables you to query data directly from Amazon S3 using standard SQL syntax and open file formats such as CSV, JSON, Parquet, and ORC, without the need to load or transform the data into a separate database or analytics platform. With Athena, you can run ad-hoc queries, interactive analysis, and complex aggregations on data stored in S3, and generate insights and reports using popular BI (Business Intelligence) and visualization tools such as Tableau, Amazon QuickSight, and Jupyter notebooks. Athena provides features such as schema discovery, partition pruning, and query federation, enabling you to analyze data at scale and derive actionable insights from your data lake with minimal setup and management overhead.
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to setup or manage, and you pay only for the queries you run. To get started, simply point to your data in S3, define the schema, and start querying using standard SQL.
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless messaging service that allows you to publish and subscribe to messages from distributed applications or microservices?
@@ -3657,6 +3824,8 @@ Amazon Kinesis
 Amazon SNS
 [explanation]
 Amazon Simple Notification Service (Amazon SNS) is the AWS service that provides a fully managed, scalable, and serverless messaging service that allows you to publish and subscribe to messages from distributed applications or microservices. SNS enables you to decouple the components of a distributed system by providing reliable and scalable communication between producers and consumers, allowing you to send notifications, alerts, and event-driven messages to multiple subscribers simultaneously. With SNS, you can publish messages to topics and deliver them to subscribers using various protocols such as HTTP, HTTPS, email, SMS, and mobile push notifications, ensuring that messages are delivered reliably and securely across different channels and endpoints. SNS provides features such as message filtering, message attributes, and message encryption, enabling you to build flexible and resilient messaging workflows in the cloud.
+Amazon Simple Notification Service (Amazon SNS) is a managed service that provides message delivery from publishers to subscribers (also known as producers and consumers). Publishers communicate asynchronously with subscribers by sending messages to a topic, which is a logical access point and communication channel. Clients can subscribe to the SNS topic and receive published messages using a supported endpoint type, such as Amazon Data Firehose, Amazon SQS, AWS Lambda, HTTP, email, mobile push notifications, and mobile text messages (SMS).
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless data warehouse service that allows you to analyze large volumes of data using standard SQL queries and business intelligence tools?
@@ -3668,7 +3837,9 @@ Amazon Glue
 [correct]
 Amazon Redshift
 [explanation]
-Amazon Redshift is the AWS service that provides a fully managed, scalable, and serverless data warehouse service that allows you to analyze large volumes of data using standard SQL queries and business intelligence tools. Redshift is optimized for high-performance, columnar storage and parallel query execution, enabling you to run complex analytical queries against vast datasets with low latency and high throughput. With Redshift, you can easily provision and scale clusters of instances to meet your performance and capacity requirements, load data from various sources using standard ETL (Extract, Transform, Load) tools, and integrate with popular BI (Business Intelligence) and analytics platforms such as Tableau, Power BI, and Amazon QuickSight to gain insights from your data and make data-driven decisions at scale.
+Amazon Redshift is the AWS service that provides fully managed, scalable, and serverless data warehouse for analytics workloads using standard SQL and your existing BI tools. Redshift is designed for online analytical processing (OLAP) workloads and provides high-performance querying, scalable storage, and advanced data compression capabilities. With Redshift, you can load and analyze data from various sources, including Amazon S3, DynamoDB, and RDS databases, using familiar SQL-based analytics tools and business intelligence (BI) platforms. Redshift offers features such as automated backups, encryption, and workload management, making it suitable for building data warehouses, data lakes, and analytical applications at scale.
+Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. Amazon Redshift Serverless lets you access and analyze data without all of the configurations of a provisioned data warehouse. Resources are automatically provisioned and data warehouse capacity is intelligently scaled to deliver fast performance for even the most demanding and unpredictable workloads. You don't incur charges when the data warehouse is idle, so you only pay for what you use. You can load data and start querying right away in the Amazon Redshift query editor v2 or in your favorite business intelligence (BI) tool. 
+
 
 [q]
 Which AWS service provides a fully managed, scalable, and serverless analytics service that allows you to analyze and visualize large volumes of log data in real-time?
