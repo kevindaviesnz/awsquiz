@@ -303,7 +303,7 @@ Security groups control what outbound and inbound traffic is allowed and work on
 
 
 [q]
-A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon SCompany policy requires the files
+A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon S3. Company policy requires the files
 to be stored for 4 years before than can be deleted. Immediate accessibility is always required as the files contain critical business data that is not easy
 to reproduce. The files are frequently accessed in the first 30 days of object creation but are rarely accessed after the first 30 days.
 
@@ -1450,6 +1450,9 @@ The primary benefits of server virtualization include:
 
 Efficient use of physical hardware resources: Virtualization allows multiple virtual servers to run on a single physical server, maximizing resource utilization and reducing hardware costs.
 Ability to provision virtual servers in a matter of minutes: Virtual servers can be rapidly provisioned, deployed, and scaled to meet changing demands, improving agility and flexibility in resource allocation.
+
+
+
 [q]
 Which of the following is a prime example of IaaS?
 [answers]
@@ -1461,6 +1464,20 @@ D. A service that allows you to consume hardware resources for a short lease per
 A. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application
 [explanation]
 Infrastructure as a Service (IaaS) provides access to fundamental computing resources, such as virtual machines, storage, and networking, allowing users to configure and manage these resources to host their applications. It offers the flexibility and control of managing the underlying infrastructure without the complexity of owning and maintaining physical hardware.
+The correct answer is:
+
+A. A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application
+Here's why:
+
+IaaS (Infrastructure as a Service): This service model provides the fundamental building blocks of cloud computing - virtual machines, storage, networking, and other resources. You have control over these resources and configure them to meet your specific application needs.
+B. PaaS (Platform as a Service): This option describes a platform that abstracts the infrastructure layer, allowing you to focus on developing and deploying your application code. You don't manage the underlying infrastructure itself.
+C. SaaS (Software as a Service): This refers to a service where the complete application is hosted and delivered over the internet. You don't have access or control over the underlying infrastructure.
+
+D. This could be a characteristic of IaaS or a separate service: Paying for resources on a metered basis is a common pricing model in cloud computing, used by both IaaS and some other services. However, it's not the sole defining factor of IaaS.
+In essence, IaaS provides you with the raw building materials (virtual machines, storage, etc.) to construct your own IT environment, while PaaS and SaaS offer more pre-configured environments or complete applications. So, option A that grants control over configuring underlying virtual resources best exemplifies IaaS.
+
+
+
 
 [q]
 Which of the following is a prime example of PaaS?
@@ -1653,6 +1670,17 @@ D. Vulnerability testing guidelines
 C. AuP
 [explanation]
 AuP stands for Acceptable Use Policy. It defines the acceptable behavior and activities for users of a system or network. This policy outlines prohibited actions and behaviors to ensure the security and integrity of the system or network.
+The correct answer is:
+
+C. AuP
+ Here's why:
+
+Compliance policy: This policy outlines the rules and regulations an organization must follow to meet industry standards or legal requirements. It wouldn't directly address prohibited user activities during signup.
+Password policy: This policy defines the criteria for creating secure passwords (e.g., minimum length, character complexity). It's relevant for account creation but not the broader scope of prohibited activities.
+AuP (Acceptable Use Policy): This policy (or Acceptable Use Policy) typically outlines the acceptable and prohibited activities for users of a service or platform. It's the most likely policy to include guidelines on what users cannot do during signup.
+Vulnerability testing guidelines: This policy would focus on how authorized personnel should conduct vulnerability testing within a system, not user behavior during signup.
+ While adhering to signup guidelines might involve creating a secure password (as per password policy) or complying with regulations (as per compliance policy), the AuP is the most comprehensive document that covers acceptable and unacceptable user behavior during account creation.
+
 
 [q]
 A company has deployed applications on Amazon EC2 instances. The company needs to assess application vulnerabilities and must identify infrastructure deployments that do not meet best practices. Which AWS service can the company use to meet these requirements?
@@ -1733,6 +1761,17 @@ D. AWS Free Tier Account
 B. AWS Control Tower
 [explanation]
 AWS Control Tower is a service that enables you to set up and govern a secure, multi-account AWS environment based on AWS best practices and standards. It automates the setup of a new landing zone—a well-architected, secure, and compliant AWS environment—by provisioning and configuring core AWS services, such as AWS Organizations, AWS Single Sign-On, and AWS Config, according to best practices.
+The correct answer is:
+
+B. AWS Control Tower
+ Here's why:
+
+AWS Landing Zone: There isn't a specific AWS service named "AWS Landing Zone." An AWS landing zone is a secure foundation you create within your AWS environment to house your accounts and workloads.
+AWS Control Tower (Correct): This service automates the setup of a new landing zone following best practices. It uses blueprints to create a multi-account structure, configure IAM for identity and access management, and establish governance rules for security and compliance.
+AWS Organizations: While Organizations helps manage multiple AWS accounts within your organization, it doesn't provide the automated setup and configuration functionalities of Control Tower for creating a landing zone.
+AWS Free Tier Account: The Free Tier is a program that provides limited free access to certain AWS services. It doesn't include features for setting up a landing zone.
+ In essence, AWS Control Tower streamlines the process of creating a secure and well-organized foundation for your AWS accounts, aligning with best practices for multi-account environments.
+
 
 [q]
 Which feature of the AWS Organizations service enables you to combine AWS accounts in a container that has common workloads and then apply a common set of policies to those accounts?
@@ -2080,6 +2119,19 @@ How many S3 buckets can be created?
 100
 [explanation]
 In Amazon S3 (Simple Storage Service), you can create up to 100 buckets per AWS account by default. S3 buckets are containers for storing objects, and they provide a way to organize and manage data in the cloud. Each bucket must have a unique name across all of AWS, and there are certain naming conventions and restrictions to follow when creating bucket names. By default, AWS allows you to create up to 100 buckets per account, but you can request a higher limit by contacting AWS support if needed.
+The correct answer is:
+
+Point-in-time backups of Lightsail instances, databases, and block storage disks.
+ Here's why the other options are incorrect:
+
+EC2 instances: Lightsail is a separate service from EC2, offering a simpler, pre-configured virtual server experience. Snapshots are specific to Lightsail resources.
+CloudFormation: CloudFormation is a service for managing and provisioning AWS resources using templates. It doesn't directly create snapshots, although it can be used to automate snapshot creation as part of a larger infrastructure deployment.
+ In essence, Snapshots in Amazon Lightsail are a way to capture a complete image of your resources (instances, databases, or block storage disks) at a specific point in time. This allows you to:
+
+Restore your resources to a previous state if something goes wrong.
+Create new resources based on an existing snapshot, saving time and configuration effort.
+Migrate your resources to a different Lightsail region for redundancy or performance reasons.
+
 
 [q]
 What is the maximum limit of elastic IPs anyone can produce?
@@ -2275,7 +2327,16 @@ B. Amazon Athena
 [explanation]
 Amazon Athena is the AWS service that provides a fully managed, scalable, and serverless data lake storage and analytics service that allows you to store, analyze, and query large volumes of structured and unstructured data. Athena enables you to query data directly from Amazon S3 using standard SQL syntax and open file formats such as CSV, JSON, Parquet, and ORC, without the need to load or transform the data into a separate database or analytics platform. With Athena, you can run ad-hoc queries, interactive analysis, and complex aggregations on data stored in S3, and generate insights and reports using popular BI (Business Intelligence) and visualization tools such as Tableau, Amazon QuickSight, and Jupyter notebooks. Athena provides features such as schema discovery, partition pruning, and query federation, enabling you to analyze data at scale and derive actionable insights from your data lake with minimal setup and management overhead.
 Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to setup or manage, and you pay only for the queries you run. To get started, simply point to your data in S3, define the schema, and start querying using standard SQL.
+The correct answer is:
 
+B. Amazon Athena
+ Here's why:
+
+Amazon Redshift: This service is a data warehouse solution optimized for large datasets and complex queries. It requires provisioning and managing clusters, unlike the serverless nature of Athena.
+Amazon Athena (Correct): This is a serverless interactive query service that allows you to analyze data stored in Amazon S3 using standard SQL. You don't need to manage any infrastructure or servers, and you only pay for the queries you run.
+Amazon EMR: EMR is a managed Hadoop framework for large-scale data processing. While you can use it to analyze data in S3, it requires setting up and managing clusters and writing code for data processing, unlike the user-friendly SQL interface of Athena.
+Amazon QuickSight: This is a business intelligence service for creating visualizations and dashboards from your data. While it can connect to S3 data sources, it doesn't directly provide the ability to query data using standard SQL like Athena.
+ In short, Athena is the AWS service specifically designed for serverless querying of data in S3 using standard SQL, eliminating the need for infrastructure management.
 
 [q]
 Which AWS service provides fully managed, petabyte-scale data warehousing solution that allows you to analyze large datasets using standard SQL and your existing BI tools?
@@ -2313,6 +2374,20 @@ D. Amazon Timestream
 D. Amazon Timestream
 [explanation]
 Amazon Timestream is the AWS service that provides a fully managed, fast, reliable, and scalable time-series database service for IoT and operational applications that require low-latency data ingestion and high-performance querying. Timestream is optimized for storing and analyzing time-series data at scale, such as sensor data, logs, and metrics generated by IoT devices, applications, and infrastructure. It offers features such as automatic data retention, continuous data ingestion, adaptive query processing, and serverless scalability, making it suitable for building real-time monitoring, analytics, and operational intelligence solutions. Timestream integrates with other AWS services such as IoT Core, Kinesis Data Firehose, and Lambda, enabling you to ingest, store, and analyze time-series data from various sources in the AWS cloud.
+The correct answer is:
+
+D. Amazon Timestream
+ Here's why:
+
+Amazon RDS (Relational Database Service): RDS is a popular service for managing relational databases in the cloud. However, it's not optimized for time-series data, which has specific characteristics like high data volume, frequent insertions, and retrieval based on timestamps.
+Amazon DynamoDB: This is a NoSQL database service known for its scalability and fast performance. While it can handle time-series data to some extent, it doesn't offer the same level of optimization and built-in functionality for time-series queries that Timestream does.
+Amazon Redshift: This is a data warehouse service designed for large datasets and complex analytics. While it can store time-series data, it's not ideal for the low-latency ingestion and high-performance querying required by IoT and operational applications.
+Amazon Timestream (Correct): This service is a fully managed, purpose-built time-series database specifically designed for IoT and operational applications. It offers:
+Fast and scalable data ingestion for high volumes of time-series data.
+Low-latency data querying for real-time insights.
+Optimized storage for time-series data, reducing costs compared to generic databases.
+ In essence, Timestream is the AWS service specifically tailored for the needs of IoT and operational applications that deal with large amounts of time-series data requiring low-latency ingestion and fast querying.
+
 
 [q]
 Which AWS service allows you to collect, process, and analyze log data generated by your applications and infrastructure in real-time?
@@ -3056,7 +3131,13 @@ AWS KMS
 [explanation]
 AWS Key Management Service (KMS) is the AWS service that can be used to create, manage, and rotate encryption keys to encrypt data at rest and control access to AWS services and resources. KMS provides a centralized key management infrastructure that allows you to generate, store, and protect encryption keys used to encrypt and decrypt your data stored in AWS services such as Amazon S3, Amazon EBS, Amazon RDS, and Amazon Redshift. With KMS, you can create and manage customer master keys (CMKs), define key policies and permissions, and audit key usage to ensure compliance with security and regulatory requirements. KMS integrates with other AWS services to provide seamless encryption and decryption capabilities, allowing you to protect sensitive data and maintain full control over your encryption keys throughout their lifecycle.
 AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the cryptographic keys that are used to protect your data. AWS KMS uses hardware security modules (HSM) to protect and validate your AWS KMS keys under the FIPS 140-2 Cryptographic Module Validation Program. China (Beijing) and China (Ningxia) Regions do not support the FIPS 140-2 Cryptographic Module Validation Program.
+Although both AWS KMS and AWS Secrets Manager deal with securing sensitive information in AWS, they serve distinct purposes:
 
+AWS Key Management Service (KMS): Acts as a central location to create and manage cryptographic keys. These keys are used to encrypt and decrypt other data, like database tables, S3 objects, or even files. KMS offers a high level of control over these keys, including who can use them and how they are used.
+
+AWS Secrets Manager: Focuses specifically on storing and managing secrets like API keys, database passwords, or OAuth tokens. Secrets Manager encrypts these secrets at rest and in transit using keys managed by KMS. It also provides features for rotating secrets regularly and controlling access to them.
+
+An analogy might help: Imagine KMS as a master key ring that holds all the important keys for your AWS resources. Secrets Manager is a secure safe that uses those keys to encrypt and store your confidential information.
 
 [q]
 Which AWS service can be used to automatically scale resources in response to changes in demand or traffic patterns, ensuring optimal performance and cost efficiency?
@@ -3383,7 +3464,16 @@ Amazon Elasticsearch Service
 [explanation]
 Amazon Elasticsearch Service (Amazon ES) is the AWS service that provides a fully managed, scalable, and serverless analytics service that allows you to analyze and visualize large volumes of log data in real-time. Amazon ES is based on the open-source Elasticsearch and Kibana software stack, providing a distributed search and analytics engine for processing and exploring log data and other time-series data at scale. With Amazon ES, you can ingest log data from various sources such as AWS CloudWatch Logs, Amazon Kinesis Data Firehose, and Amazon S3, and index and analyze the data using Elasticsearch's powerful query language and analytics capabilities. Amazon ES integrates with other AWS services such as Amazon S3, Amazon Kinesis Data Firehose, and AWS Identity and Access Management (IAM) to provide a comprehensive analytics solution for monitoring, troubleshooting, and optimizing the performance of your applications and infrastructure in real-time.
 Elasticsearch is a distributed search and analytics engine built on Apache Lucene. Since its release in 2010, Elasticsearch has quickly become the most popular search engine and is commonly used for log analytics, full-text search, security intelligence, business analytics, and operational intelligence use cases.
+The correct answer is:
 
+Amazon Elasticsearch Service
+ Here's why:
+
+Amazon CloudWatch: CloudWatch is a monitoring service for collecting and visualizing metrics from AWS resources. While it can handle log data to some extent, it's not designed for real-time analytics at the scale of large log volumes.
+Amazon Athena: Athena is a serverless query engine for analyzing data stored in S3. It excels at ad-hoc queries but may not be ideal for real-time log data analysis.
+Amazon Kinesis: Kinesis is a service for processing real-time data streams. However, it doesn't provide built-in analytics or visualization capabilities for log data.
+Amazon Elasticsearch Service (Correct): Amazon Elasticsearch Service is a managed version of Elasticsearch, a powerful search and analytics engine. It's specifically suited for real-time analysis and visualization of large datasets, including log data. It offers scalability, serverless operation, and integrates well with other AWS services for log ingestion and management.
+ In short, CloudWatch focuses on monitoring metrics, Athena is for ad-hoc queries on stored data, Kinesis processes data streams, and Elasticsearch Service is the ideal choice for real-time log analytics and visualization at scale.
 
 
 
@@ -3651,6 +3741,10 @@ AWS CodeDeploy
 AWS Lambda
 [explanation]
 AWS Lambda is a serverless compute service provided by AWS that allows you to deploy and run code in response to events without provisioning or managing servers. While it does not directly support Docker containers, it provides a serverless infrastructure for executing code in various programming languages, making it ideal for event-driven applications and microservices architectures.
+AWS Fargate (Correct): This service is the missing piece that allows you to deploy and manage Docker containers on a serverless infrastructure within ECS. It eliminates the need to provision and manage EC2 instances for your container workloads. You simply define your container configuration and Fargate takes care of the underlying infrastructure, scaling the resources based on your needs.
+
+In essence, ECS provides the orchestration layer, Lambda focuses on serverless code execution (not containers), EKS offers a managed Kubernetes platform, and CodeDeploy automates deployments. But AWS Fargate is the specific service that enables serverless execution of Docker containers within ECS.
+
 
 [q]
 AWS assessment question
@@ -3848,6 +3942,17 @@ AWS CodePipeline
 AWS CodeDeploy
 [explanation]
 AWS CodeDeploy is a fully managed service provided by AWS that allows you to automate code deployments to EC2 instances, Lambda functions, and on-premises servers. It provides features such as automated deployment, rolling updates, and blue/green deployments, enabling you to release new features or updates with confidence and reliability.
+The correct answer is:
+
+AWS CodeDeploy
+ Here's why:
+
+AWS CodeDeploy: This service is specifically designed for automating code deployments across various environments, including EC2 instances, Lambda functions, and on-premises servers. It simplifies the process, minimizes downtime, and offers features like deployment rollback and automated scaling.
+AWS CodeCommit: CodeCommit is a version control service for storing your code securely. It doesn't handle deployments itself.
+AWS CodeBuild: CodeBuild is a service for building, testing, and packaging your code. It can integrate with CodeDeploy as part of a deployment pipeline, but doesn't handle deployments on its own.
+AWS CodePipeline: CodePipeline is a service for creating and managing continuous delivery pipelines. It can orchestrate multiple stages in a deployment process, including code building with CodeBuild and deployment with CodeDeploy. However, CodeDeploy itself is the service that automates deployments to various targets.
+ In essence, CodeCommit stores your code, CodeBuild builds and tests it, CodePipeline orchestrates the pipeline, and CodeDeploy automates the actual deployment process to your instances and servers.
+
 
 [q]
 AWS assessment question
@@ -4187,6 +4292,12 @@ Amazon Glue
 Amazon Glue
 [explanation]
 Amazon Glue is a fully managed service provided by AWS for ingesting, cataloging, and analyzing data lakes. It provides features such as data cataloging, ETL (extract, transform, load) job execution, and data discovery, enabling you to build and manage data lakes at scale with ease.
+Amazon S3: While S3 is a great storage solution for data lakes, it doesn't offer functionalities for ingesting, cataloging, or analyzing data. It simply stores the data objects.
+Amazon EMR: EMR is a managed Hadoop framework for large-scale data processing. You can build ETL pipelines using EMR, but it requires manual configuration and coding.
+Amazon Athena: Athena is a serverless query engine for analyzing data in S3. It doesn't handle data ingestion or cataloging.
+Amazon Glue (Correct): Glue is a fully managed ETL (Extract, Transform, Load) service specifically designed for data lakes. It automates data ingestion from various sources, creates a centralized metadata catalog for your data, and allows you to transform and prepare the data for analytics and machine learning.
+ In simpler terms, S3 is the truck that holds the data, EMR helps you build a custom assembly line to process the data, Athena lets you analyze the processed data, and Glue automates the entire process of loading, organizing, and preparing your data lake for use.
+
 
 [q]
 AWS assessment question
@@ -4226,6 +4337,12 @@ Amazon Kinesis
 AWS Step Functions
 [explanation]
 AWS Step Functions is a fully managed service provided by AWS for orchestrating and automating workflows across AWS services and third-party systems. It allows you to coordinate the execution of distributed applications by defining state machines that specify the sequence of steps and conditions for executing tasks, making it easy to build and manage complex workflows.
+Amazon SQS: Amazon Simple Queue Service (SQS) is a message queuing service for sending and receiving messages between applications. It doesn't orchestrate workflows across services.
+Amazon SNS: Amazon Simple Notification Service (SNS) is a pub/sub messaging service for sending notifications to various destinations. It focuses on message delivery, not workflow orchestration.
+Amazon Kinesis: Amazon Kinesis is a service for real-time data streams. While it can process data streams, it doesn't handle workflow orchestration across different AWS services or systems.
+AWS Step Functions (Correct): AWS Step Functions is a fully managed service specifically designed to orchestrate and automate workflows. It allows you to define workflows as code, visually using a state machine editor, or both. Step Functions can integrate with various AWS services and third-party systems, triggering actions and handling errors in a sequential or parallel manner.
+ In essence, SQS, SNS, and Kinesis handle specific communication aspects within a workflow, while Step Functions acts like the conductor, coordinating and automating the entire sequence of steps across various services.
+
 
 [q]
 AWS assessment question
@@ -4344,7 +4461,19 @@ Amazon Athena
 Amazon Elasticsearch Service
 [explanation]
 Amazon Elasticsearch Service is a fully managed service provided by AWS for analyzing and visualizing log data for operational insights. It offers integrated machine learning capabilities for anomaly detection and forecasting, enabling you to gain deeper insights into your log data.
+The correct answer is :
 
+Amazon Elasticsearch Service
+ Here's why:
+
+Amazon CloudWatch: While CloudWatch can collect and store log data, it has limited built-in capabilities for advanced log analysis, visualization, and especially machine learning.
+Amazon CloudTrail: CloudTrail is for logging AWS API calls and user activity. It doesn't analyze or visualize data or offer machine learning functionalities.
+Amazon Athena: Athena excels at ad-hoc queries on data stored in S3, but it's not ideal for real-time analysis or built-in machine learning for log data.
+Amazon Elasticsearch Service (Correct): As mentioned earlier, Elasticsearch Service is a powerful search and analytics engine well-suited for log data. It offers features like:
+Real-time analysis and visualization of log data.
+Integration with services like Kibana for advanced visualizations and dashboards.
+Machine learning capabilities for anomaly detection, log pattern recognition, and other insights from your log data.
+ While all the other options can play a role in working with logs, Elasticsearch Service provides the most comprehensive package for analyzing, visualizing, and gaining operational insights with machine learning specifically for log data.
 [q] 
 AWS assessment question
 Which AWS service provides a fully managed service for creating and managing virtual private clouds (VPCs) with advanced networking features?
@@ -4774,6 +4903,17 @@ AWS Global Accelerator
 AWS Global Accelerator
 [explanation]
 AWS Global Accelerator is a fully managed service provided by AWS for automatically routing traffic to the closest AWS region for improved latency and availability. It uses the AWS global network to optimize the path from your users to your applications, ensuring low latency and high availability for your users around the world.
+The correct answer is:
+
+AWS Global Accelerator
+ Here's why:
+
+Amazon Route 53: This service focuses on DNS resolution, directing users to the appropriate resource based on factors like domain name and record types. While it can route traffic geographically to some extent, it doesn't automatically route based on real-time latency for optimal performance.
+Amazon CloudFront: CloudFront is a content delivery network (CDN) service that caches content in geographically distributed edge locations. It improves content delivery speed but doesn't directly route traffic to the closest AWS region for applications themselves.
+Amazon CloudWatch: This service monitors and collects metrics from your AWS resources. It doesn't handle traffic routing.
+AWS Global Accelerator (Correct): This service is specifically designed for routing traffic to the optimal AWS endpoint based on a combination of factors, including network performance, health of the endpoint, and configured routing policies. It directs traffic over the AWS global network to the closest and healthiest endpoint, improving latency and availability for your application.
+ While both Route 53 and CloudFront play a role in delivering content and services efficiently, AWS Global Accelerator focuses specifically on dynamic traffic routing for applications based on real-time factors, making it the best choice for automatic regional routing based on latency and availability.''
+
 
 [q] 
 AWS assessment question
@@ -4800,6 +4940,22 @@ AWS Step Functions
 AWS Step Functions
 [explanation]
 AWS Step Functions is a fully managed service provided by AWS for orchestrating and coordinating multiple AWS services into serverless workflows. It allows you to define state machines that specify the sequence of steps and conditions for executing tasks, making it easy to build and manage complex serverless applications.
+The correct answer is:
+
+AWS Serverless Application Model (AWS SAM)
+ Here's why the other options are not quite right:
+
+AWS Lambda: While Lambda is the core service for running serverless code, it doesn't handle deployment, scaling, or full application management.
+Amazon API Gateway: This service creates and manages APIs that can trigger your serverless functions (like those in Lambda). It's a part of a serverless application but doesn't automate deployment or scaling.
+Amazon S3: This is a storage service for objects like code or data. While it can be used to store your serverless application code, it doesn't handle deployments, scaling, or management.
+ AWS Serverless Application Model (AWS SAM) (Correct):  This is a framework specifically designed to simplify building, deploying, and managing serverless applications on AWS. It offers features like:
+
+Local development and testing: Enables you to develop and test your serverless application code locally before deploying it to AWS.
+Template-based deployment: Uses templates written in YAML or JSON to define your application resources, including Lambda functions, API Gateway endpoints, and other AWS services.
+Automated deployments: Allows you to easily deploy your application to AWS with a single command.
+Integrated scaling: Provides mechanisms to automatically scale your serverless resources based on demand.
+ In essence, while Lambda is the engine for your serverless code, AWS SAM acts as the architect, automating the entire lifecycle of your serverless application, including deployment, scaling, and management.
+
 
 [q] 
 AWS assessment question
