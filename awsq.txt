@@ -249,7 +249,7 @@ Use Amazon Textract to extract the text from the reports. Use Amazon SageMaker t
 Use Amazon Textract to extract the text from the reports. Use Amazon Comprehend Medical to identify the PHI from the extracted text.
 Use Amazon Rekognition to extract the text from the reports. Use Amazon Comprehend Medical to identify the PHI from the extracted text.
 [correct]
-Use Amazon Textract to extract the text from the repoorts. Use Amazon Comprehend Medical to identify the PHI from the extracted text.
+Use Amazon Textract to extract the text from the reports. Use Amazon Comprehend Medical to identify the PHI from the extracted text.
 [explanation]
 Amazon Textract is a fully managed machine learning service provided by Amazon Web Services (AWS) that makes it easy to extract text and data 
 from scanned documents. Textract seamlessly integrates with other AWS services such as Amazon S3, Amazon DynamoDB, Amazon Aurora, Amazon Redshift, and Amazon 
@@ -1664,8 +1664,11 @@ D. Amazon GuardDuty
 [correct]
 B. Amazon Inspector
 [explanation]
-Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. It identifies security vulnerabilities and deviations from best practices by analyzing the configuration and behavior of AWS resources, including EC2 instances. Amazon Inspector provides detailed findings and recommendations to remediate security issues.
-Amazon Inspector automatically discovers workloads, such as Amazon EC2 instances, containers, and Lambda functions, and scans them for software vulnerabilities and unintended network exposure.
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. It 
+identifies security vulnerabilities and deviations from best practices by analyzing the configuration and behavior of AWS resources, including EC2 
+instances. Amazon Inspector provides detailed findings and recommendations to remediate security issues.
+Amazon Inspector automatically discovers workloads, such as Amazon EC2 instances, containers, and Lambda functions, and scans them for software
+vulnerabilities and unintended network exposure.
 
 [q]
 Which AWS service publishes up-to-the-minute information regarding any outages or issues with any service across all Regions of the AWS ecosystem?
@@ -4703,7 +4706,7 @@ Amazon Rekognition
 Amazon Transcribe
 Amazon SageMaker
 [correct]
-Amazon Kinesis Video Streams
+Amazon Kinesis
 [explanation]
 Amazon Kinesis Video Streams is a fully managed service provided by AWS for collecting, processing, and analyzing video streams at scale. It allows you to ingest, store, process, and analyze video streams in real-time, enabling you to build applications that require video analytics, such as security monitoring and industrial automation.
 
